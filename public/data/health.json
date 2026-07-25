@@ -1,12 +1,12 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-25T21:26:22.389Z",
+  "generatedAt": "2026-07-25T21:31:49.159Z",
   "run": {
-    "startedAt": "2026-07-25T21:26:17.102Z",
-    "finishedAt": "2026-07-25T21:26:22.389Z",
-    "durationMs": 5287,
+    "startedAt": "2026-07-25T21:31:41.907Z",
+    "finishedAt": "2026-07-25T21:31:49.159Z",
+    "durationMs": 7252,
     "publishedFreshData": true,
-    "previousSnapshotUpdatedAt": "2026-07-25T21:11:59.763Z"
+    "previousSnapshotUpdatedAt": "2026-07-25T21:26:22.389Z"
   },
   "status": "degraded",
   "buildQuality": 48,
@@ -17,7 +17,7 @@
     "degraded": 9,
     "errors": 0,
     "disabled": 0,
-    "averageDurationMs": 529
+    "averageDurationMs": 725
   },
   "protocols": [
     {
@@ -25,7 +25,7 @@
       "protocol": "stonfi",
       "status": "partial",
       "sourceStatus": "partial",
-      "durationMs": 2996,
+      "durationMs": 3677,
       "items": 2,
       "updated": 2,
       "unresolved": 1,
@@ -37,7 +37,7 @@
       "protocol": "dedust",
       "status": "degraded",
       "sourceStatus": "catalog-ready-no-tracked-opportunities",
-      "durationMs": 2286,
+      "durationMs": 3572,
       "items": 0,
       "updated": 0,
       "unresolved": 0,
@@ -61,7 +61,7 @@
       "protocol": "EVAA",
       "status": "degraded",
       "sourceStatus": "integration-ready",
-      "durationMs": 1,
+      "durationMs": 0,
       "items": 5,
       "updated": 0,
       "unresolved": 0,
@@ -97,7 +97,7 @@
       "protocol": "Affluent",
       "status": "degraded",
       "sourceStatus": "integration-ready",
-      "durationMs": 1,
+      "durationMs": 0,
       "items": 4,
       "updated": 0,
       "unresolved": 0,
