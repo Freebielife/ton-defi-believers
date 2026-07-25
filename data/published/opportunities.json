@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.1",
+  "schemaVersion": "1.2",
   "snapshot": {
     "importedAt": "2026-07-25T18:02:07Z",
     "verified": false,
@@ -69,6 +69,36 @@
           "score": 0,
           "level": "low",
           "flags": []
+        },
+        "yieldScore": {
+          "score": 75,
+          "grade": "A",
+          "components": {
+            "yield": 22.44,
+            "confidence": 21,
+            "tvl": 16.98,
+            "risk": 15
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -129,6 +159,36 @@
           "score": 0,
           "level": "low",
           "flags": []
+        },
+        "yieldScore": {
+          "score": 73,
+          "grade": "B",
+          "components": {
+            "yield": 23.73,
+            "confidence": 21,
+            "tvl": 13.64,
+            "risk": 15
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -189,6 +249,36 @@
           "score": 0,
           "level": "low",
           "flags": []
+        },
+        "yieldScore": {
+          "score": 72,
+          "grade": "B",
+          "components": {
+            "yield": 25.62,
+            "confidence": 21,
+            "tvl": 10.02,
+            "risk": 15
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -249,6 +339,36 @@
           "score": 0,
           "level": "low",
           "flags": []
+        },
+        "yieldScore": {
+          "score": 70,
+          "grade": "B",
+          "components": {
+            "yield": 24.72,
+            "confidence": 21,
+            "tvl": 9.2,
+            "risk": 15
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -311,6 +431,36 @@
           "flags": [
             "moderate-tvl"
           ]
+        },
+        "yieldScore": {
+          "score": 66,
+          "grade": "B",
+          "components": {
+            "yield": 24.72,
+            "confidence": 21,
+            "tvl": 6.69,
+            "risk": 13.5
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -371,6 +521,36 @@
           "score": 0,
           "level": "low",
           "flags": []
+        },
+        "yieldScore": {
+          "score": 69,
+          "grade": "B",
+          "components": {
+            "yield": 23.92,
+            "confidence": 21,
+            "tvl": 9.52,
+            "risk": 15
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -431,6 +611,36 @@
           "score": 0,
           "level": "low",
           "flags": []
+        },
+        "yieldScore": {
+          "score": 63,
+          "grade": "C",
+          "components": {
+            "yield": 18.74,
+            "confidence": 21,
+            "tvl": 8.46,
+            "risk": 15
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -493,6 +703,36 @@
           "flags": [
             "moderate-tvl"
           ]
+        },
+        "yieldScore": {
+          "score": 63,
+          "grade": "C",
+          "components": {
+            "yield": 20.89,
+            "confidence": 21,
+            "tvl": 7.66,
+            "risk": 13.5
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -555,6 +795,36 @@
           "flags": [
             "impermanent-loss-or-lp-risk"
           ]
+        },
+        "yieldScore": {
+          "score": 55,
+          "grade": "C",
+          "components": {
+            "yield": 14.12,
+            "confidence": 21,
+            "tvl": 8.7,
+            "risk": 11.25
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -618,6 +888,36 @@
             "liquidation-or-utilization-risk",
             "moderate-tvl"
           ]
+        },
+        "yieldScore": {
+          "score": 54,
+          "grade": "C",
+          "components": {
+            "yield": 13.95,
+            "confidence": 21,
+            "tvl": 7.89,
+            "risk": 11.25
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -681,6 +981,36 @@
             "liquidation-or-utilization-risk",
             "low-tvl"
           ]
+        },
+        "yieldScore": {
+          "score": 41,
+          "grade": "D",
+          "components": {
+            "yield": 8.41,
+            "confidence": 21,
+            "tvl": 2.87,
+            "risk": 9
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -743,6 +1073,36 @@
           "flags": [
             "low-tvl"
           ]
+        },
+        "yieldScore": {
+          "score": 61,
+          "grade": "C",
+          "components": {
+            "yield": 26.99,
+            "confidence": 21,
+            "tvl": 2.17,
+            "risk": 11.25
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -805,6 +1165,36 @@
           "flags": [
             "low-tvl"
           ]
+        },
+        "yieldScore": {
+          "score": 33,
+          "grade": "E",
+          "components": {
+            "yield": 0.86,
+            "confidence": 21,
+            "tvl": 0,
+            "risk": 11.25
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -867,6 +1257,36 @@
           "flags": [
             "low-tvl"
           ]
+        },
+        "yieldScore": {
+          "score": 33,
+          "grade": "E",
+          "components": {
+            "yield": 0.58,
+            "confidence": 21,
+            "tvl": 0,
+            "risk": 11.25
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -927,6 +1347,36 @@
           "score": 0,
           "level": "low",
           "flags": []
+        },
+        "yieldScore": {
+          "score": 66,
+          "grade": "B",
+          "components": {
+            "yield": 10.13,
+            "confidence": 21,
+            "tvl": 20,
+            "risk": 15
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -987,6 +1437,36 @@
           "score": 0,
           "level": "low",
           "flags": []
+        },
+        "yieldScore": {
+          "score": 59,
+          "grade": "C",
+          "components": {
+            "yield": 13.23,
+            "confidence": 21,
+            "tvl": 10.13,
+            "risk": 15
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -1049,6 +1529,36 @@
           "flags": [
             "moderate-tvl"
           ]
+        },
+        "yieldScore": {
+          "score": 53,
+          "grade": "C",
+          "components": {
+            "yield": 10.34,
+            "confidence": 21,
+            "tvl": 7.98,
+            "risk": 13.5
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -1112,6 +1622,36 @@
             "liquidation-or-utilization-risk",
             "moderate-tvl"
           ]
+        },
+        "yieldScore": {
+          "score": 56,
+          "grade": "C",
+          "components": {
+            "yield": 17.18,
+            "confidence": 21,
+            "tvl": 6.67,
+            "risk": 11.25
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -1175,6 +1715,36 @@
             "liquidation-or-utilization-risk",
             "moderate-tvl"
           ]
+        },
+        "yieldScore": {
+          "score": 40,
+          "grade": "D",
+          "components": {
+            "yield": 3.33,
+            "confidence": 21,
+            "tvl": 4.44,
+            "risk": 11.25
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -1238,6 +1808,36 @@
             "liquidation-or-utilization-risk",
             "low-tvl"
           ]
+        },
+        "yieldScore": {
+          "score": 33,
+          "grade": "E",
+          "components": {
+            "yield": 0,
+            "confidence": 21,
+            "tvl": 3.18,
+            "risk": 9
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -1300,6 +1900,36 @@
           "flags": [
             "moderate-tvl"
           ]
+        },
+        "yieldScore": {
+          "score": 51,
+          "grade": "C",
+          "components": {
+            "yield": 9.92,
+            "confidence": 21,
+            "tvl": 6.25,
+            "risk": 13.5
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -1362,6 +1992,36 @@
           "flags": [
             "low-tvl"
           ]
+        },
+        "yieldScore": {
+          "score": 53,
+          "grade": "C",
+          "components": {
+            "yield": 17.62,
+            "confidence": 21,
+            "tvl": 3.18,
+            "risk": 11.25
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -1424,6 +2084,36 @@
           "flags": [
             "moderate-tvl"
           ]
+        },
+        "yieldScore": {
+          "score": 59,
+          "grade": "C",
+          "components": {
+            "yield": 19.06,
+            "confidence": 21,
+            "tvl": 5.87,
+            "risk": 13.5
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -1452,7 +2142,7 @@
         "type": "api",
         "provider": "STON.fi DEX API",
         "url": "https://api.ston.fi/v1/pools",
-        "lastChecked": "2026-07-25T20:00:23.727Z",
+        "lastChecked": "2026-07-25T20:07:33.649Z",
         "importedAt": "2026-07-25T18:02:07Z",
         "origin": "automatic collector"
       },
@@ -1498,6 +2188,36 @@
             "impermanent-loss-or-lp-risk",
             "moderate-tvl"
           ]
+        },
+        "yieldScore": {
+          "score": 47,
+          "grade": "D",
+          "components": {
+            "yield": 1.08,
+            "confidence": 30,
+            "tvl": 5.77,
+            "risk": 9.75
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -1560,6 +2280,36 @@
           "flags": [
             "low-tvl"
           ]
+        },
+        "yieldScore": {
+          "score": 62,
+          "grade": "C",
+          "components": {
+            "yield": 26.86,
+            "confidence": 21,
+            "tvl": 2.46,
+            "risk": 11.25
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -1624,6 +2374,36 @@
             "low-tvl",
             "high-yield"
           ]
+        },
+        "yieldScore": {
+          "score": 63,
+          "grade": "C",
+          "components": {
+            "yield": 34.17,
+            "confidence": 21,
+            "tvl": 0,
+            "risk": 7.5
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -1652,7 +2432,7 @@
         "type": "api",
         "provider": "STON.fi DEX API",
         "url": "https://api.ston.fi/v1/pools",
-        "lastChecked": "2026-07-25T20:00:23.727Z",
+        "lastChecked": "2026-07-25T20:07:33.649Z",
         "importedAt": "2026-07-25T18:02:07Z",
         "origin": "automatic collector"
       },
@@ -1697,6 +2477,36 @@
           "flags": [
             "impermanent-loss-or-lp-risk"
           ]
+        },
+        "yieldScore": {
+          "score": 52,
+          "grade": "C",
+          "components": {
+            "yield": 0,
+            "confidence": 30,
+            "tvl": 11.14,
+            "risk": 11.25
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -1759,6 +2569,36 @@
           "flags": [
             "low-tvl"
           ]
+        },
+        "yieldScore": {
+          "score": 45,
+          "grade": "D",
+          "components": {
+            "yield": 9.07,
+            "confidence": 21,
+            "tvl": 3.29,
+            "risk": 11.25
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     },
@@ -1821,11 +2661,42 @@
           "flags": [
             "low-tvl"
           ]
+        },
+        "yieldScore": {
+          "score": 47,
+          "grade": "D",
+          "components": {
+            "yield": 12.12,
+            "confidence": 21,
+            "tvl": 2.38,
+            "risk": 11.25
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": 0,
+            "tvlChangePercent": 0
+          }
         }
       }
     }
   ],
-  "updatedAt": "2026-07-25T20:00:30.547Z",
-  "normalizedAt": "2026-07-25T20:00:30.726Z",
-  "publishedAt": "2026-07-25T20:00:30.726Z"
+  "updatedAt": "2026-07-25T20:07:39.872Z",
+  "normalizedAt": "2026-07-25T20:07:40.043Z",
+  "insightsGeneratedAt": "2026-07-25T20:07:40.768Z",
+  "publishedAt": "2026-07-25T20:07:40.768Z"
 }
