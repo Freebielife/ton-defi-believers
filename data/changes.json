@@ -1,23 +1,9 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-25T19:22:29.756Z",
+  "generatedAt": "2026-07-25T19:36:19.128Z",
   "thresholds": {
     "apyAbsolutePoints": 0.25,
     "tvlPercent": 2
   },
-  "changes": [
-    {
-      "id": "ston-fi-usdt-gram-pool-1",
-      "protocol": "STON.fi",
-      "product": "USDT-GRAM pool #1",
-      "type": "updated",
-      "apy": {
-        "before": 6.6,
-        "after": 0,
-        "absolute": -6.6,
-        "percent": -100
-      },
-      "tvl": null
-    }
-  ]
+  "changes": []
 }

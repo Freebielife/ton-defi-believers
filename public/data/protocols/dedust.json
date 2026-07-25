@@ -1,5 +1,19 @@
 {
+  "schemaVersion": "1.0",
   "generatedAt": "2026-07-25T19:36:16.615Z",
+  "source": {
+    "provider": "DeDust official API",
+    "url": "https://api.dedust.io/v2/pools"
+  },
+  "summary": {
+    "received": 52252,
+    "normalized": 52252,
+    "withSymbols": 51483,
+    "withTvl": 0,
+    "withYield": 0,
+    "stablePools": 18,
+    "volatilePools": 52234
+  },
   "pools": [
     {
       "address": "EQAAABGlCyy4Vd1Vly6ifo-7dsPq8TWRhyOEmw5b22nq5lY3",

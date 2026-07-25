@@ -884,32 +884,42 @@
       "product": "USDe-tsUSDe (weighted_stable)",
       "type": "liquidity-pool",
       "apy": {
-        "current": 0.3,
+        "current": 0.3762065918530011,
         "average7d": 0.4,
         "base": null,
         "rewards": null,
-        "direction": "flat"
+        "direction": "flat",
+        "metric": "apy"
       },
       "tvlUsd": 276900,
       "utilizationRate": null,
       "links": {
         "official": "https://app.ston.fi/pools",
-        "app": "https://app.ston.fi/pools"
+        "app": "https://app.ston.fi/pools/EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5"
       },
       "source": {
-        "type": "manual",
-        "provider": "STON.fi",
-        "url": "https://app.ston.fi/pools",
-        "lastChecked": null,
+        "type": "api",
+        "provider": "STON.fi DEX API",
+        "url": "https://api.ston.fi/v1/pools",
+        "lastChecked": "2026-07-25T19:22:21.815Z",
         "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
+        "origin": "automatic collector"
       },
       "status": {
         "active": true,
-        "stale": true,
+        "stale": false,
         "lowTvl": false,
         "sourceError": false,
-        "requiresDisambiguation": true
+        "requiresDisambiguation": false
+      },
+      "externalId": "EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
+      "sourceDetails": {
+        "dexVersion": "v2",
+        "assetAddresses": [
+          "EQAIb6KmdfdDR7CN1GBqVJuP25iCnLKCvBlJ07Evuu2dzP5f",
+          "EQDQ5UUyPHrLcQJlPAczd_fjxn8SLrlNQwolBznxCdSlfQwr"
+        ],
+        "routerAddress": "EQAGV9vw11tKW2QOCYCXEmIdyufM3p5CfcgHcY9NiiBLfZGH"
       }
     },
     {
@@ -992,32 +1002,42 @@
       "product": "USDT-GRAM pool #1",
       "type": "liquidity-pool",
       "apy": {
-        "current": 6.6,
+        "current": 0,
         "average7d": 6.4,
         "base": null,
         "rewards": null,
-        "direction": "flat"
+        "direction": "flat",
+        "metric": "apy"
       },
       "tvlUsd": 6100000,
       "utilizationRate": null,
       "links": {
         "official": "https://app.ston.fi/pools",
-        "app": "https://app.ston.fi/pools"
+        "app": "https://app.ston.fi/pools/EQCeDLEujBcoyx-DONITJOue5Jj_whqP9jEtFfz6CXrgY33_"
       },
       "source": {
-        "type": "manual",
-        "provider": "STON.fi",
-        "url": "https://app.ston.fi/pools",
-        "lastChecked": null,
+        "type": "api",
+        "provider": "STON.fi DEX API",
+        "url": "https://api.ston.fi/v1/pools",
+        "lastChecked": "2026-07-25T19:22:21.815Z",
         "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
+        "origin": "automatic collector"
       },
       "status": {
         "active": true,
-        "stale": true,
+        "stale": false,
         "lowTvl": false,
         "sourceError": false,
-        "requiresDisambiguation": true
+        "requiresDisambiguation": false
+      },
+      "externalId": "EQCeDLEujBcoyx-DONITJOue5Jj_whqP9jEtFfz6CXrgY33_",
+      "sourceDetails": {
+        "dexVersion": "v2",
+        "assetAddresses": [
+          "EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs",
+          "EQCcM1Qa7_STSnOSev23Gj5cLJB4wALUCYuuppdOVtSSBuUm"
+        ],
+        "routerAddress": "EQCS4UEa5UaJLzOyyKieqQOQ2P9M-7kXpkO5HnP3Bv250cN3"
       }
     },
     {
@@ -1129,5 +1149,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-25T19:07:19.072Z"
+  "updatedAt": "2026-07-25T19:22:29.324Z"
 }
