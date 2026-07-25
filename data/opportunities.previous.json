@@ -438,7 +438,7 @@
       },
       "status": {
         "active": true,
-        "stale": false,
+        "stale": true,
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": true
@@ -906,7 +906,7 @@
       },
       "status": {
         "active": true,
-        "stale": false,
+        "stale": true,
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": true
@@ -1014,7 +1014,7 @@
       },
       "status": {
         "active": true,
-        "stale": false,
+        "stale": true,
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": true
@@ -1050,7 +1050,7 @@
       },
       "status": {
         "active": true,
-        "stale": false,
+        "stale": true,
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": true
@@ -1129,5 +1129,5 @@
       }
     }
   ],
-  "updatedAt": "2026-07-25T18:14:09.111Z"
+  "updatedAt": "2026-07-25T18:57:15.528Z"
 }
