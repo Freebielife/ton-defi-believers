@@ -1,0 +1,956 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-07-25T20:00:30.726Z",
+  "methodology": {
+    "confidence": "Score from source automation, freshness, metric availability, contract identification and error flags.",
+    "risk": "Heuristic information-quality and product-structure indicator; not investment advice.",
+    "apyEquivalent": "APR is converted with daily compounding only for consistent comparison."
+  },
+  "summary": {
+    "opportunities": 31,
+    "averageConfidence": 69,
+    "riskLevels": {
+      "low": 13,
+      "medium": 15,
+      "very-high": 2,
+      "high": 1
+    },
+    "automaticSources": 2,
+    "manualSources": 29
+  },
+  "opportunities": [
+    {
+      "id": "tonstakers-gram-tston-tston",
+      "protocol": "Tonstakers",
+      "metrics": {
+        "yield": {
+          "value": 12.3,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 12.3
+        },
+        "tvlUsd": 175700000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 0,
+          "level": "low",
+          "flags": []
+        }
+      }
+    },
+    {
+      "id": "stakee-gram-staked",
+      "protocol": "Stakee",
+      "metrics": {
+        "yield": {
+          "value": 13.6,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 13.6
+        },
+        "tvlUsd": 25700000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 0,
+          "level": "low",
+          "flags": []
+        }
+      }
+    },
+    {
+      "id": "hipo-gram-hton-hton",
+      "protocol": "Hipo",
+      "metrics": {
+        "yield": {
+          "value": 15.8,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 15.8
+        },
+        "tvlUsd": 3200000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 0,
+          "level": "low",
+          "flags": []
+        }
+      }
+    },
+    {
+      "id": "bemo-gram-stton-stton",
+      "protocol": "Bemo",
+      "metrics": {
+        "yield": {
+          "value": 14.7,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 14.7
+        },
+        "tvlUsd": 2000000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 0,
+          "level": "low",
+          "flags": []
+        }
+      }
+    },
+    {
+      "id": "bemo-gram-bmton-bmton",
+      "protocol": "Bemo",
+      "metrics": {
+        "yield": {
+          "value": 14.7,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 14.7
+        },
+        "tvlUsd": 470000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "level": "low",
+          "flags": [
+            "moderate-tvl"
+          ]
+        }
+      }
+    },
+    {
+      "id": "kton-gram-kton",
+      "protocol": "KTON",
+      "metrics": {
+        "yield": {
+          "value": 13.8,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 13.8
+        },
+        "tvlUsd": 2400000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 0,
+          "level": "low",
+          "flags": []
+        }
+      }
+    },
+    {
+      "id": "affluent-gram",
+      "protocol": "Affluent",
+      "metrics": {
+        "yield": {
+          "value": 9.2,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 9.2
+        },
+        "tvlUsd": 1300000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 0,
+          "level": "low",
+          "flags": []
+        }
+      }
+    },
+    {
+      "id": "affluent-gram-tston",
+      "protocol": "Affluent",
+      "metrics": {
+        "yield": {
+          "value": 10.9,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 10.9
+        },
+        "tvlUsd": 820200,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "level": "low",
+          "flags": [
+            "moderate-tvl"
+          ]
+        }
+      }
+    },
+    {
+      "id": "storm-trade-gram-ton-slp",
+      "protocol": "Storm Trade",
+      "metrics": {
+        "yield": {
+          "value": 6.2,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 6.2
+        },
+        "tvlUsd": 1500000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "impermanent-loss-or-lp-risk"
+          ]
+        }
+      }
+    },
+    {
+      "id": "evaa-gram-main",
+      "protocol": "EVAA",
+      "metrics": {
+        "yield": {
+          "value": 6.1,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 6.1
+        },
+        "tvlUsd": 937700,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "liquidation-or-utilization-risk",
+            "moderate-tvl"
+          ]
+        }
+      }
+    },
+    {
+      "id": "evaa-gram-lp",
+      "protocol": "EVAA",
+      "metrics": {
+        "yield": {
+          "value": 3.3,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 3.3
+        },
+        "tvlUsd": 52200,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 40,
+          "level": "medium",
+          "flags": [
+            "liquidation-or-utilization-risk",
+            "low-tvl"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ston-fi-gram-tston-tston",
+      "protocol": "STON.fi",
+      "metrics": {
+        "yield": {
+          "value": 1.5,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 1.5
+        },
+        "tvlUsd": 183400,
+        "confidence": {
+          "score": 20,
+          "grade": "E",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available",
+            "marked-stale",
+            "requires-disambiguation"
+          ]
+        },
+        "risk": {
+          "score": 80,
+          "level": "very-high",
+          "flags": [
+            "impermanent-loss-or-lp-risk",
+            "moderate-tvl",
+            "stale-data",
+            "unverified-pool"
+          ]
+        }
+      }
+    },
+    {
+      "id": "gtc-gram-vault",
+      "protocol": "GTC",
+      "metrics": {
+        "yield": {
+          "value": 17.7,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 17.7
+        },
+        "tvlUsd": 34900,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "low-tvl"
+          ]
+        }
+      }
+    },
+    {
+      "id": "morpho-re7-ton",
+      "protocol": "Morpho",
+      "metrics": {
+        "yield": {
+          "value": 0.3,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 0.3
+        },
+        "tvlUsd": 2300,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "low-tvl"
+          ]
+        }
+      }
+    },
+    {
+      "id": "morpho-singularv-ton-tonstakers",
+      "protocol": "Morpho",
+      "metrics": {
+        "yield": {
+          "value": 0.2,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 0.2
+        },
+        "tvlUsd": 251,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "low-tvl"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ethena-tsusde",
+      "protocol": "Ethena",
+      "metrics": {
+        "yield": {
+          "value": 4.1,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 4.1
+        },
+        "tvlUsd": 1500000000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 0,
+          "level": "low",
+          "flags": []
+        }
+      }
+    },
+    {
+      "id": "storm-trade-usdt",
+      "protocol": "Storm Trade",
+      "metrics": {
+        "yield": {
+          "value": 5.7,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 5.7
+        },
+        "tvlUsd": 3400000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 0,
+          "level": "low",
+          "flags": []
+        }
+      }
+    },
+    {
+      "id": "morpho-re7-usdt-v2-vault",
+      "protocol": "Morpho",
+      "metrics": {
+        "yield": {
+          "value": 4.2,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 4.2
+        },
+        "tvlUsd": 990000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "level": "low",
+          "flags": [
+            "moderate-tvl"
+          ]
+        }
+      }
+    },
+    {
+      "id": "evaa-usdt-main",
+      "protocol": "EVAA",
+      "metrics": {
+        "yield": {
+          "value": 8.1,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 8.1
+        },
+        "tvlUsd": 465600,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "liquidation-or-utilization-risk",
+            "moderate-tvl"
+          ]
+        }
+      }
+    },
+    {
+      "id": "evaa-usdt-lp",
+      "protocol": "EVAA",
+      "metrics": {
+        "yield": {
+          "value": 1.2,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 1.2
+        },
+        "tvlUsd": 129100,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "liquidation-or-utilization-risk",
+            "moderate-tvl"
+          ]
+        }
+      }
+    },
+    {
+      "id": "evaa-tsusde-main",
+      "protocol": "EVAA",
+      "metrics": {
+        "yield": {
+          "value": 0,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 0
+        },
+        "tvlUsd": 62200,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 40,
+          "level": "medium",
+          "flags": [
+            "liquidation-or-utilization-risk",
+            "low-tvl"
+          ]
+        }
+      }
+    },
+    {
+      "id": "affluent-tsusde-usdt-vault7",
+      "protocol": "Affluent",
+      "metrics": {
+        "yield": {
+          "value": 4,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 4
+        },
+        "tvlUsd": 365000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "level": "low",
+          "flags": [
+            "moderate-tvl"
+          ]
+        }
+      }
+    },
+    {
+      "id": "affluent-usdt",
+      "protocol": "Affluent",
+      "metrics": {
+        "yield": {
+          "value": 8.4,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 8.4
+        },
+        "tvlUsd": 62300,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "low-tvl"
+          ]
+        }
+      }
+    },
+    {
+      "id": "telegram-wallet-midas-usdt-vault",
+      "protocol": "Telegram Wallet",
+      "metrics": {
+        "yield": {
+          "value": 9.44,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 9.44
+        },
+        "tvlUsd": 293300,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "level": "low",
+          "flags": [
+            "moderate-tvl"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ston-fi-usde-tsusde-weighted-stable",
+      "protocol": "STON.fi",
+      "metrics": {
+        "yield": {
+          "value": 0.3762065918530011,
+          "metric": "apy",
+          "origin": "protocol-reported-apy",
+          "apyEquivalent": 0.3762065918530011
+        },
+        "tvlUsd": 276900,
+        "confidence": {
+          "score": 100,
+          "grade": "A",
+          "reasons": [
+            "automatic-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available",
+            "contract-or-pool-identified"
+          ]
+        },
+        "risk": {
+          "score": 35,
+          "level": "medium",
+          "flags": [
+            "impermanent-loss-or-lp-risk",
+            "moderate-tvl"
+          ]
+        }
+      }
+    },
+    {
+      "id": "gtc-usdt-vault",
+      "protocol": "GTC",
+      "metrics": {
+        "yield": {
+          "value": 17.5,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 17.5
+        },
+        "tvlUsd": 41200,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "low-tvl"
+          ]
+        }
+      }
+    },
+    {
+      "id": "euler-usd",
+      "protocol": "Euler",
+      "metrics": {
+        "yield": {
+          "value": 44.9,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 44.9
+        },
+        "tvlUsd": 2600,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 50,
+          "level": "high",
+          "flags": [
+            "liquidation-or-utilization-risk",
+            "low-tvl",
+            "high-yield"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ston-fi-usdt-gram-pool-1",
+      "protocol": "STON.fi",
+      "metrics": {
+        "yield": {
+          "value": 0,
+          "metric": "apy",
+          "origin": "protocol-reported-apy",
+          "apyEquivalent": 0
+        },
+        "tvlUsd": 6100000,
+        "confidence": {
+          "score": 100,
+          "grade": "A",
+          "reasons": [
+            "automatic-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available",
+            "contract-or-pool-identified"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "impermanent-loss-or-lp-risk"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ston-fi-usdt-gram-pool-2",
+      "protocol": "STON.fi",
+      "metrics": {
+        "yield": {
+          "value": 3,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 3
+        },
+        "tvlUsd": 5300000,
+        "confidence": {
+          "score": 20,
+          "grade": "E",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available",
+            "marked-stale",
+            "requires-disambiguation"
+          ]
+        },
+        "risk": {
+          "score": 70,
+          "level": "very-high",
+          "flags": [
+            "impermanent-loss-or-lp-risk",
+            "stale-data",
+            "unverified-pool"
+          ]
+        }
+      }
+    },
+    {
+      "id": "morpho-re7-cbbtc-v2-vault",
+      "protocol": "Morpho",
+      "metrics": {
+        "yield": {
+          "value": 3.6,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 3.6
+        },
+        "tvlUsd": 66300,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "low-tvl"
+          ]
+        }
+      }
+    },
+    {
+      "id": "morpho-re7-weth-v2-vault",
+      "protocol": "Morpho",
+      "metrics": {
+        "yield": {
+          "value": 5.1,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 5.1
+        },
+        "tvlUsd": 39400,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "low-tvl"
+          ]
+        }
+      }
+    }
+  ]
+}
