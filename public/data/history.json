@@ -3,7 +3,7 @@
   "snapshots": [
     {
       "date": "2026-07-25",
-      "capturedAt": "2026-07-25T19:07:19.700Z",
+      "capturedAt": "2026-07-25T19:22:29.888Z",
       "opportunities": [
         {
           "id": "tonstakers-gram-tston-tston",
@@ -127,7 +127,7 @@
         },
         {
           "id": "ston-fi-usde-tsusde-weighted-stable",
-          "apy": 0.3,
+          "apy": 0.3762065918530011,
           "tvlUsd": 276900
         },
         {
@@ -142,7 +142,7 @@
         },
         {
           "id": "ston-fi-usdt-gram-pool-1",
-          "apy": 6.6,
+          "apy": 0,
           "tvlUsd": 6100000
         },
         {
@@ -163,5 +163,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-07-25T19:07:19.700Z"
+  "updatedAt": "2026-07-25T19:22:29.888Z"
 }
