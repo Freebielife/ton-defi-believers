@@ -1,0 +1,38 @@
+{
+  "generatedFrom": "STON.fi report received 2026-07-25",
+  "verifiedAssets": [
+    {
+      "symbol": "USDT",
+      "address": "EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs",
+      "source": "TON Docs"
+    },
+    {
+      "symbol": "USDe",
+      "address": "EQAIb6KmdfdDR7CN1GBqVJuP25iCnLKCvBlJ07Evuu2dzP5f",
+      "source": "Ethena Docs"
+    },
+    {
+      "symbol": "tsUSDe",
+      "address": "EQDQ5UUyPHrLcQJlPAczd_fjxn8SLrlNQwolBznxCdSlfQwr",
+      "source": "Ethena Docs"
+    }
+  ],
+  "decisions": [
+    {
+      "opportunityId": "ston-fi-usde-tsusde-weighted-stable",
+      "status": "pinned"
+    },
+    {
+      "opportunityId": "ston-fi-usdt-gram-pool-1",
+      "status": "pinned"
+    },
+    {
+      "opportunityId": "ston-fi-usdt-gram-pool-2",
+      "status": "disabled-no-second-pool"
+    },
+    {
+      "opportunityId": "ston-fi-gram-tston-tston",
+      "status": "unresolved"
+    }
+  ]
+}

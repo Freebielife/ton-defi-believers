@@ -38,3 +38,24 @@ assert.equal(
 );
 
 console.log("STON.fi adapter fixture tests passed.");
+
+
+const addressLockedEntry = {
+  symbols: ["USDT", "GRAM"],
+  assetAddresses: ["EQ_USDT", "EQ_GRAM"]
+};
+const validAddressCandidate = {
+  symbols: ["USD", "GRAM"],
+  assetAddresses: ["EQ_USDT", "EQ_GRAM"],
+  poolType: null,
+  dexVersion: "v2"
+};
+const counterfeitCandidate = {
+  symbols: ["USDT", "GRAM"],
+  assetAddresses: ["EQ_FAKE_USDT", "EQ_GRAM"],
+  poolType: null,
+  dexVersion: "v2"
+};
+assert.equal(__test.matches(addressLockedEntry, validAddressCandidate, {}), true);
+assert.equal(__test.matches(addressLockedEntry, counterfeitCandidate, {}), false);
+console.log("STON.fi exact asset-address tests passed.");

@@ -267,14 +267,30 @@ function symbolEquivalent(expected, actual, aliases) {
 }
 
 function matches(entry, candidate, aliases) {
-  const expected = (entry.symbols ?? []).map(normalizeSymbol).filter(Boolean);
-  if (!expected.length) return false;
+  const expectedAddresses = (entry.assetAddresses ?? [])
+    .map(normalizeAddress)
+    .filter(Boolean);
 
-  const found = candidate.symbols.map(normalizeSymbol).filter(Boolean);
-  const allSymbolsMatch = expected.every((symbol) =>
-    found.some((value) => symbolEquivalent(symbol, value, aliases))
-  );
-  if (!allSymbolsMatch) return false;
+  if (expectedAddresses.length) {
+    const foundAddresses = new Set(candidate.assetAddresses.map(normalizeAddress));
+    const allAddressesMatch = expectedAddresses.every((address) =>
+      foundAddresses.has(address)
+    );
+    if (!allAddressesMatch) return false;
+  }
+
+  const expected = (entry.symbols ?? []).map(normalizeSymbol).filter(Boolean);
+  const exactPairLocked = expectedAddresses.length >= 2;
+
+  if (!exactPairLocked && expected.length) {
+    const found = candidate.symbols.map(normalizeSymbol).filter(Boolean);
+    const allSymbolsMatch = expected.every((symbol) =>
+      found.some((value) => symbolEquivalent(symbol, value, aliases))
+    );
+    if (!allSymbolsMatch) return false;
+  }
+
+  if (!expectedAddresses.length && !expected.length) return false;
 
   if (
     entry.expectedPoolType &&
@@ -392,14 +408,41 @@ export async function collectStonfi({ configPath, opportunities }) {
   const selections = new Map();
 
   for (const entry of config.trackedPools) {
+    if (entry.enabled === false) {
+      discoveryReport.push({
+        opportunityId: entry.opportunityId,
+        mode: "disabled",
+        reason: entry.note ?? "Disabled in configuration",
+        selected: null,
+        candidates: []
+      });
+      continue;
+    }
+
     if (entry.poolAddress) {
       const exact =
         candidates.find((pool) => pool.address === entry.poolAddress) ?? null;
-      selections.set(entry.opportunityId, exact);
+      const assetValidationPassed = exact
+        ? matches(
+            {
+              symbols: entry.symbols,
+              assetAddresses: entry.assetAddresses,
+              expectedPoolType: entry.expectedPoolType,
+              dexVersion: entry.dexVersion
+            },
+            exact,
+            aliases
+          )
+        : false;
+
+      const selected = assetValidationPassed ? exact : null;
+      selections.set(entry.opportunityId, selected);
       discoveryReport.push({
         opportunityId: entry.opportunityId,
         mode: "configured-address",
-        selected: exact?.address ?? null,
+        configuredAddress: entry.poolAddress,
+        assetValidationPassed,
+        selected: selected?.address ?? null,
         candidates: exact ? [exact] : []
       });
       continue;
@@ -492,7 +535,9 @@ export async function collectStonfi({ configPath, opportunities }) {
     }
   );
 
-  const unresolved = discoveryReport.filter((item) => !item.selected).length;
+  const unresolved = discoveryReport.filter(
+    (item) => item.mode !== "disabled" && !item.selected
+  ).length;
   return {
     opportunities: next,
     report: {

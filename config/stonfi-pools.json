@@ -20,55 +20,62 @@
       "USDE"
     ],
     "GRAM": [
-      "GRAM"
+      "GRAM",
+      "GRM"
     ],
     "USDT": [
-      "USD₮",
       "USDT"
     ]
   },
   "trackedPools": [
     {
       "opportunityId": "ston-fi-gram-tston-tston",
+      "enabled": true,
       "poolAddress": null,
       "symbols": [
         "GRAM",
         "tsTON"
       ],
-      "expectedPoolType": null,
-      "note": "Автопоиск выполняется одновременно среди STON.fi V1 и V2."
+      "assetAddresses": [],
+      "note": "Пул не найден в текущем каталоге STON.fi. Ручная запись сохраняется."
     },
     {
       "opportunityId": "ston-fi-usde-tsusde-weighted-stable",
-      "poolAddress": null,
+      "enabled": true,
+      "poolAddress": "EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
       "symbols": [
         "USDe",
         "tsUSDe"
       ],
-      "expectedPoolType": null,
-      "note": "Тип пула пока не ограничивается: название типа зависит от версии API."
+      "assetAddresses": [
+        "EQAIb6KmdfdDR7CN1GBqVJuP25iCnLKCvBlJ07Evuu2dzP5f",
+        "EQDQ5UUyPHrLcQJlPAczd_fjxn8SLrlNQwolBznxCdSlfQwr"
+      ],
+      "dexVersion": "v2"
     },
     {
       "opportunityId": "ston-fi-usdt-gram-pool-1",
-      "poolAddress": null,
+      "enabled": true,
+      "poolAddress": "EQCeDLEujBcoyx-DONITJOue5Jj_whqP9jEtFfz6CXrgY33_",
       "symbols": [
         "USDT",
         "GRAM"
       ],
-      "expectedPoolType": null,
-      "rankByTvl": 1,
-      "note": "Крупнейший найденный пул пары по TVL."
+      "assetAddresses": [
+        "EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs",
+        "EQCcM1Qa7_STSnOSev23Gj5cLJB4wALUCYuuppdOVtSSBuUm"
+      ],
+      "dexVersion": "v2"
     },
     {
       "opportunityId": "ston-fi-usdt-gram-pool-2",
+      "enabled": false,
       "poolAddress": null,
       "symbols": [
         "USDT",
         "GRAM"
       ],
-      "expectedPoolType": null,
-      "rankByTvl": 2,
-      "note": "Второй найденный пул пары по TVL."
+      "note": "Найден только один подходящий пул; дублирование запрещено."
     }
   ]
 }
