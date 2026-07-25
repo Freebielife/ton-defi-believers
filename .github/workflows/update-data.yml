@@ -32,14 +32,18 @@ jobs:
           TON_RPC_URL: ${{ secrets.TON_RPC_URL }}
         run: npm run build
 
-      - name: Commit changed public data
+       - name: Commit changed public data
         run: |
           git add data public/data
           if git diff --cached --quiet; then
             echo "No publishable data changes"
             exit 0
           fi
+
           git config user.name "TON DeFi Believers Bot"
           git config user.email "actions@users.noreply.github.com"
+
           git commit -m "chore(data): refresh DeFi metrics"
-          git push
+
+          git pull --rebase origin main
+          git push origin main
