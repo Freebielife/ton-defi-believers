@@ -1,8 +1,32 @@
 {
   "enabled": true,
   "apiBaseUrl": "https://api.ston.fi",
-  "endpoint": "/v1/pools",
-  "timeoutMs": 20000,
+  "timeoutMs": 30000,
+  "discovery": {
+    "enabled": true,
+    "publishOnlyWhenUnique": true,
+    "candidateLimitPerOpportunity": 10
+  },
+  "symbolAliases": {
+    "tsTON": [
+      "TSTON",
+      "tsTON"
+    ],
+    "tsUSDe": [
+      "TSUSDE",
+      "tsUSDe"
+    ],
+    "USDe": [
+      "USDE"
+    ],
+    "GRAM": [
+      "GRAM"
+    ],
+    "USDT": [
+      "USD₮",
+      "USDT"
+    ]
+  },
   "trackedPools": [
     {
       "opportunityId": "ston-fi-gram-tston-tston",
@@ -12,7 +36,7 @@
         "tsTON"
       ],
       "expectedPoolType": null,
-      "note": "Автопоиск формирует кандидатов, но публикация требует однозначного совпадения."
+      "note": "Автопоиск выполняется одновременно среди STON.fi V1 и V2."
     },
     {
       "opportunityId": "ston-fi-usde-tsusde-weighted-stable",
@@ -21,8 +45,8 @@
         "USDe",
         "tsUSDe"
       ],
-      "expectedPoolType": "weighted_stable",
-      "note": "Предпочтителен пул типа weighted_stable."
+      "expectedPoolType": null,
+      "note": "Тип пула пока не ограничивается: название типа зависит от версии API."
     },
     {
       "opportunityId": "ston-fi-usdt-gram-pool-1",
@@ -33,7 +57,7 @@
       ],
       "expectedPoolType": null,
       "rankByTvl": 1,
-      "note": "Первый пул пары — крупнейший по TVL после подтверждения."
+      "note": "Крупнейший найденный пул пары по TVL."
     },
     {
       "opportunityId": "ston-fi-usdt-gram-pool-2",
@@ -44,13 +68,7 @@
       ],
       "expectedPoolType": null,
       "rankByTvl": 2,
-      "note": "Второй пул пары — второй по TVL после подтверждения."
+      "note": "Второй найденный пул пары по TVL."
     }
-  ],
-  "discovery": {
-    "enabled": true,
-    "publishOnlyWhenUnique": true,
-    "candidateLimitPerOpportunity": 8,
-    "minimumSymbolMatch": 2
-  }
+  ]
 }

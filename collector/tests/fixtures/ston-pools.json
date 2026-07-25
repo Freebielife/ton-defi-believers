@@ -1,0 +1,18 @@
+{
+  "pool_list": [
+    {
+      "address": "EQ_POOL_1",
+      "token0_address": "EQ_GRAM",
+      "token1_address": "EQ_TSTON",
+      "tvl_usd": "125000",
+      "apy_7d": "0.042"
+    },
+    {
+      "address": "EQ_POOL_2",
+      "asset_0_address": "EQ_USDT",
+      "asset_1_address": "EQ_GRAM",
+      "tvlUsd": 200000,
+      "apr": 3.5
+    }
+  ]
+}

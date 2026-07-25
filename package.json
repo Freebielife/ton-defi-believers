@@ -1,6 +1,6 @@
 {
   "name": "ton-defi-believers-collector",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -17,6 +17,7 @@
     "integration:status": "node collector/generate-integration-status.mjs",
     "sync:public": "node scripts/sync-public-data.mjs",
     "release:check": "node scripts/release-check.mjs",
-    "build": "npm run build:data && npm run sync:public && npm run release:check"
+    "build": "npm run build:data && npm run sync:public && npm run release:check",
+    "test:adapters": "node collector/tests/stonfi.test.mjs"
   }
 }
