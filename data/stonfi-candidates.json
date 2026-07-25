@@ -1,30 +1,105 @@
 {
-  "generatedAt": "2026-07-25T19:07:12.795Z",
-  "apiPoolsReceived": 47042,
+  "generatedAt": "2026-07-25T19:22:21.815Z",
+  "assetsReceived": 37752,
+  "v1PoolsReceived": 18819,
+  "v2PoolsReceived": 47042,
+  "uniquePoolsReceived": 47042,
+  "farmsReceived": 6,
+  "resolvedPoolSymbols": 40376,
   "opportunities": [
     {
       "opportunityId": "ston-fi-gram-tston-tston",
       "mode": "automatic-discovery",
+      "expectedSymbols": [
+        "GRAM",
+        "tsTON"
+      ],
       "selected": null,
       "candidates": []
     },
     {
       "opportunityId": "ston-fi-usde-tsusde-weighted-stable",
       "mode": "automatic-discovery",
-      "selected": null,
-      "candidates": []
+      "expectedSymbols": [
+        "USDe",
+        "tsUSDe"
+      ],
+      "selected": "EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
+      "candidates": [
+        {
+          "address": "EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
+          "assetAddresses": [
+            "EQAIb6KmdfdDR7CN1GBqVJuP25iCnLKCvBlJ07Evuu2dzP5f",
+            "EQDQ5UUyPHrLcQJlPAczd_fjxn8SLrlNQwolBznxCdSlfQwr"
+          ],
+          "symbols": [
+            "USDE",
+            "TSUSDE"
+          ],
+          "poolType": null,
+          "dexVersion": "v2",
+          "tvlUsd": null,
+          "yieldRate": 0.3762065918530011,
+          "yieldMetric": "apy",
+          "routerAddress": "EQAGV9vw11tKW2QOCYCXEmIdyufM3p5CfcgHcY9NiiBLfZGH"
+        }
+      ]
     },
     {
       "opportunityId": "ston-fi-usdt-gram-pool-1",
       "mode": "automatic-discovery",
-      "selected": null,
-      "candidates": []
+      "expectedSymbols": [
+        "USDT",
+        "GRAM"
+      ],
+      "selected": "EQCeDLEujBcoyx-DONITJOue5Jj_whqP9jEtFfz6CXrgY33_",
+      "candidates": [
+        {
+          "address": "EQCeDLEujBcoyx-DONITJOue5Jj_whqP9jEtFfz6CXrgY33_",
+          "assetAddresses": [
+            "EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs",
+            "EQCcM1Qa7_STSnOSev23Gj5cLJB4wALUCYuuppdOVtSSBuUm"
+          ],
+          "symbols": [
+            "USD",
+            "GRAM"
+          ],
+          "poolType": null,
+          "dexVersion": "v2",
+          "tvlUsd": null,
+          "yieldRate": 0,
+          "yieldMetric": "apy",
+          "routerAddress": "EQCS4UEa5UaJLzOyyKieqQOQ2P9M-7kXpkO5HnP3Bv250cN3"
+        }
+      ]
     },
     {
       "opportunityId": "ston-fi-usdt-gram-pool-2",
       "mode": "automatic-discovery",
+      "expectedSymbols": [
+        "USDT",
+        "GRAM"
+      ],
       "selected": null,
-      "candidates": []
+      "candidates": [
+        {
+          "address": "EQCeDLEujBcoyx-DONITJOue5Jj_whqP9jEtFfz6CXrgY33_",
+          "assetAddresses": [
+            "EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs",
+            "EQCcM1Qa7_STSnOSev23Gj5cLJB4wALUCYuuppdOVtSSBuUm"
+          ],
+          "symbols": [
+            "USD",
+            "GRAM"
+          ],
+          "poolType": null,
+          "dexVersion": "v2",
+          "tvlUsd": null,
+          "yieldRate": 0,
+          "yieldMetric": "apy",
+          "routerAddress": "EQCS4UEa5UaJLzOyyKieqQOQ2P9M-7kXpkO5HnP3Bv250cN3"
+        }
+      ]
     }
   ]
 }
