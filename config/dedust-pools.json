@@ -1,7 +1,11 @@
 {
   "enabled": true,
   "endpoint": "https://api.dedust.io/v2/pools",
-  "timeoutMs": 20000,
+  "timeoutMs": 30000,
   "trackedPools": [],
-  "note": "В исходном наборе пока нет DeDust opportunities. Адаптер готов автоматически импортировать только явно добавленные и проверенные пулы."
+  "discovery": {
+    "publishOnlyWhenUnique": true,
+    "candidateLimit": 10
+  },
+  "note": "DeDust catalog is collected automatically. Specific opportunities are published only after verified pool mapping."
 }

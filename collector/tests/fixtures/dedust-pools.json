@@ -1,0 +1,42 @@
+{
+  "pools": [
+    {
+      "address": "EQ_POOL_STABLE",
+      "type": "stable",
+      "assets": [
+        {
+          "address": "EQ_USDT",
+          "metadata": {
+            "symbol": "USDT"
+          }
+        },
+        {
+          "address": "EQ_USDC",
+          "metadata": {
+            "symbol": "USDC"
+          }
+        }
+      ],
+      "tvlUsd": "250000",
+      "apy": "0.052",
+      "volume24hUsd": 18000,
+      "feeBps": 10
+    },
+    {
+      "pool_address": "EQ_POOL_VOLATILE",
+      "pool_type": "volatile",
+      "tokens": [
+        {
+          "contract_address": "EQ_TON",
+          "symbol": "TON"
+        },
+        {
+          "contract_address": "EQ_DUST",
+          "symbol": "DUST"
+        }
+      ],
+      "tvl_usd": 100000,
+      "apr": 4.1
+    }
+  ]
+}
