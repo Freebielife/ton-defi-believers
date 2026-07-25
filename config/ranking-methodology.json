@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0",
+  "yieldScore": {
+    "range": [
+      0,
+      100
+    ],
+    "weights": {
+      "yieldAttractiveness": 35,
+      "confidence": 30,
+      "tvlDepth": 20,
+      "inverseRisk": 15
+    },
+    "notes": [
+      "Yield attractiveness uses diminishing returns so extreme APY cannot dominate.",
+      "TVL uses a logarithmic scale.",
+      "The score is informational and is not investment advice."
+    ]
+  },
+  "trendWindowsDays": [
+    1,
+    7,
+    30
+  ],
+  "searchIndex": {
+    "source": "published opportunities only",
+    "supports": [
+      "text search",
+      "protocol",
+      "asset",
+      "category",
+      "type",
+      "risk",
+      "APY",
+      "TVL",
+      "Yield Score"
+    ]
+  }
+}
