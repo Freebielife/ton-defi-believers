@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "1.0",
+  "policy": {
+    "primarySourceMustBelongToProtocol": true,
+    "thirdPartyAggregationAsPrimary": false,
+    "failSoft": true,
+    "publishUnverifiedMatches": false
+  },
+  "protocols": [
+    {
+      "id": "stonfi",
+      "name": "STON.fi",
+      "adapter": "stonfi",
+      "mode": "official-api",
+      "enabled": true,
+      "official": {
+        "api": "https://api.ston.fi",
+        "website": "https://ston.fi/"
+      },
+      "status": "automatic",
+      "automationLevel": "automatic",
+      "verification": "official-api-verified",
+      "metrics": [
+        "pool TVL",
+        "pool APR/APY when exposed"
+      ]
+    },
+    {
+      "id": "dedust",
+      "name": "DeDust",
+      "adapter": "dedust",
+      "mode": "official-api",
+      "enabled": true,
+      "official": {
+        "api": "https://api.dedust.io/v2/pools",
+        "docs": "https://docs.dedust.io/"
+      },
+      "status": "automatic",
+      "automationLevel": "automatic-catalog",
+      "verification": "official-api-verified",
+      "metrics": [
+        "pool catalog",
+        "pool TVL/APR when exposed"
+      ]
+    },
+    {
+      "id": "tonstakers",
+      "name": "Tonstakers",
+      "adapter": "tonstakers",
+      "mode": "official-sdk-or-onchain",
+      "enabled": true,
+      "official": {
+        "sdk": "https://github.com/tonstakers/tonstakers-sdk",
+        "website": "https://tonstakers.com/"
+      },
+      "status": "integration-ready",
+      "automationLevel": "sdk-ready",
+      "verification": "official-sdk-verified",
+      "metrics": [
+        "current APY",
+        "historical APY",
+        "TVL",
+        "rates",
+        "instant liquidity"
+      ]
+    },
+    {
+      "id": "evaa",
+      "name": "EVAA",
+      "adapter": "evaa",
+      "mode": "official-sdk-or-onchain",
+      "enabled": true,
+      "official": {
+        "sdk": "https://github.com/evaafi/sdk",
+        "contracts": "https://github.com/evaafi/contracts",
+        "website": "https://evaa.finance/"
+      },
+      "status": "integration-ready",
+      "automationLevel": "sdk-ready",
+      "verification": "official-sdk-verified",
+      "metrics": [
+        "asset supply rate",
+        "borrow rate",
+        "utilization",
+        "liquidity"
+      ]
+    },
+    {
+      "id": "hipo",
+      "name": "Hipo",
+      "adapter": "hipo",
+      "mode": "onchain",
+      "enabled": true,
+      "official": {
+        "contracts": "https://github.com/HipoFinance/contract",
+        "docs": "https://docs.hipo.finance/",
+        "website": "https://hipo.finance/"
+      },
+      "status": "integration-ready",
+      "automationLevel": "onchain-ready",
+      "verification": "official-contracts-verified",
+      "contracts": {
+        "treasury": "EQCLyZHP4Xe8fpchQz76O-_RmUhaVc_9BAoGyJrwJrcbz2eZ",
+        "parent": "EQDPdq8xjAhytYqfGSX8KcFWIReCufsB9Wdg0pLlYSO_h76w"
+      },
+      "metrics": [
+        "exchange rate",
+        "staked TON",
+        "token supply"
+      ]
+    },
+    {
+      "id": "bemo",
+      "name": "Bemo",
+      "adapter": "bemo",
+      "mode": "onchain",
+      "enabled": true,
+      "official": {
+        "contracts": "https://github.com/bemo-fi/smart-contracts-v2",
+        "docs": "https://github.com/bemo-fi/smart-contracts-v2-docs",
+        "website": "https://bemo.fi/"
+      },
+      "status": "integration-ready",
+      "automationLevel": "onchain-ready",
+      "verification": "official-contract-docs-verified",
+      "metrics": [
+        "bmTON supply",
+        "staked TON",
+        "exchange rate"
+      ]
+    },
+    {
+      "id": "affluent",
+      "name": "Affluent",
+      "adapter": "affluent",
+      "mode": "official-source-or-onchain",
+      "enabled": true,
+      "official": {
+        "website": "https://affluent.org/"
+      },
+      "status": "integration-ready",
+      "automationLevel": "source-pending",
+      "verification": "official-public-metrics-not-fixed",
+      "metrics": []
+    },
+    {
+      "id": "storm",
+      "name": "Storm Trade",
+      "adapter": "storm",
+      "mode": "official-sdk-or-onchain",
+      "enabled": true,
+      "official": {
+        "docs": "https://docs.storm.tg/for-developers/sdk",
+        "website": "https://storm.tg/"
+      },
+      "status": "integration-ready",
+      "automationLevel": "sdk-ready",
+      "verification": "official-sdk-identified",
+      "metrics": [
+        "vault and liquidity metrics after schema verification"
+      ]
+    },
+    {
+      "id": "ethena",
+      "name": "Ethena",
+      "adapter": "ethena",
+      "mode": "official-api",
+      "enabled": true,
+      "official": {
+        "docs": "https://docs.ethena.fi/api-documentation/overview",
+        "website": "https://ethena.fi/"
+      },
+      "status": "integration-ready",
+      "automationLevel": "api-ready",
+      "verification": "official-api-identified",
+      "metrics": [
+        "protocol yield data after endpoint verification"
+      ]
+    },
+    {
+      "id": "telegram-wallet",
+      "name": "Telegram Wallet",
+      "adapter": "telegram-wallet",
+      "mode": "official-product-source",
+      "enabled": true,
+      "official": {
+        "website": "https://wallet.tg/"
+      },
+      "status": "manual-until-public-source",
+      "automationLevel": "manual",
+      "verification": "no-stable-public-yield-api",
+      "metrics": []
+    }
+  ]
+}

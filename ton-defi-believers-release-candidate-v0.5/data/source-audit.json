@@ -1,0 +1,96 @@
+{
+  "generatedAt": "2026-07-25T18:29:31.088Z",
+  "policyPassed": true,
+  "protocols": [
+    {
+      "protocolId": "tonstakers",
+      "protocol": "Tonstakers",
+      "opportunityCount": 1,
+      "adapterPresent": true,
+      "mode": "official-sdk-or-onchain",
+      "status": "integration-ready",
+      "primarySourceOwnedByProtocol": true
+    },
+    {
+      "protocolId": "evaa",
+      "protocol": "EVAA",
+      "opportunityCount": 5,
+      "adapterPresent": true,
+      "mode": "official-sdk-or-onchain",
+      "status": "integration-ready",
+      "primarySourceOwnedByProtocol": true
+    },
+    {
+      "protocolId": "stonfi",
+      "protocol": "STON.fi",
+      "opportunityCount": 4,
+      "adapterPresent": true,
+      "mode": "official-api",
+      "status": "automatic",
+      "primarySourceOwnedByProtocol": true
+    },
+    {
+      "protocolId": "dedust",
+      "protocol": "DeDust",
+      "opportunityCount": 0,
+      "adapterPresent": true,
+      "mode": "official-api",
+      "status": "automatic",
+      "primarySourceOwnedByProtocol": true
+    },
+    {
+      "protocolId": "hipo",
+      "protocol": "Hipo",
+      "opportunityCount": 1,
+      "adapterPresent": true,
+      "mode": "onchain",
+      "status": "integration-ready",
+      "primarySourceOwnedByProtocol": true
+    },
+    {
+      "protocolId": "bemo",
+      "protocol": "Bemo",
+      "opportunityCount": 2,
+      "adapterPresent": true,
+      "mode": "onchain",
+      "status": "integration-ready",
+      "primarySourceOwnedByProtocol": true
+    },
+    {
+      "protocolId": "affluent",
+      "protocol": "Affluent",
+      "opportunityCount": 4,
+      "adapterPresent": true,
+      "mode": "official-source-or-onchain",
+      "status": "integration-ready",
+      "primarySourceOwnedByProtocol": true
+    },
+    {
+      "protocolId": "storm-trade",
+      "protocol": "Storm Trade",
+      "opportunityCount": 2,
+      "adapterPresent": true,
+      "mode": "official-sdk-or-onchain",
+      "status": "integration-ready",
+      "primarySourceOwnedByProtocol": true
+    },
+    {
+      "protocolId": "ethena",
+      "protocol": "Ethena",
+      "opportunityCount": 1,
+      "adapterPresent": true,
+      "mode": "official-api",
+      "status": "integration-ready",
+      "primarySourceOwnedByProtocol": true
+    },
+    {
+      "protocolId": "telegram-wallet",
+      "protocol": "Telegram Wallet",
+      "opportunityCount": 1,
+      "adapterPresent": true,
+      "mode": "official-product-source",
+      "status": "manual-until-public-source",
+      "primarySourceOwnedByProtocol": true
+    }
+  ]
+}

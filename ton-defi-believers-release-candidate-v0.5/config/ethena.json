@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "protocolId": "ethena",
+  "publishMode": "retain-existing-until-verified",
+  "trackedOpportunityIds": [
+    "ethena-tsusde"
+  ],
+  "contracts": [],
+  "endpoints": [],
+  "note": "Источник подключён к общему pipeline. Автоматическая публикация включится после фиксации официального endpoint/контракта и проверки формата."
+}

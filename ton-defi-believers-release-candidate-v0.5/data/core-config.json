@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0",
+  "mode": "core-first",
+  "coreProtocols": [
+    "tonstakers",
+    "evaa",
+    "stonfi",
+    "dedust",
+    "hipo",
+    "bemo",
+    "affluent",
+    "storm-trade",
+    "ethena",
+    "telegram-wallet"
+  ],
+  "extendedProtocols": [
+    "stakee",
+    "gtc",
+    "kton",
+    "morpho",
+    "euler"
+  ],
+  "homepage": {
+    "defaultTier": "core",
+    "showExtendedToggle": false,
+    "showCoveredTvl": true,
+    "showProtocolsCount": true,
+    "showOpportunitiesCount": true
+  },
+  "expansionRule": {
+    "targetExtendedCount": 15,
+    "requirements": [
+      "stable data source",
+      "publicly accessible product",
+      "verifiable TVL",
+      "verifiable APY or yield metric",
+      "clear official link"
+    ]
+  }
+}

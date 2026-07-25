@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "protocolId": "telegram-wallet",
+  "publishMode": "retain-existing-until-verified",
+  "trackedOpportunityIds": [
+    "telegram-wallet-midas-usdt-vault"
+  ],
+  "contracts": [],
+  "endpoints": [],
+  "note": "Источник подключён к общему pipeline. Автоматическая публикация включится после фиксации официального endpoint/контракта и проверки формата."
+}

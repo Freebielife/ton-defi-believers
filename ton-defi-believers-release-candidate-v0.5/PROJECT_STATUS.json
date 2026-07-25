@@ -1,0 +1,24 @@
+{
+  "release": "v0.5",
+  "stage": "awaiting-owner-deployment",
+  "completedWithoutOwnerAccess": [
+    "independent source registry for 10 core protocols",
+    "automatic STON.fi adapter",
+    "automatic DeDust catalog adapter",
+    "validation and source audit",
+    "stats, changes and 180-day history generation",
+    "static public/data export",
+    "GitHub Actions workflow",
+    "Netlify build configuration",
+    "release checker",
+    "frontend data loader",
+    "Russian owner setup guide"
+  ],
+  "ownerActionRequired": [
+    "create or select GitHub repository",
+    "upload release files",
+    "run first GitHub Action",
+    "connect repository to Netlify",
+    "provide repository or deployment URL for verification"
+  ]
+}

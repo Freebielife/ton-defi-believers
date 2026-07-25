@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "protocolId": "affluent",
+  "publishMode": "retain-existing-until-verified",
+  "trackedOpportunityIds": [
+    "affluent-gram",
+    "affluent-gram-tston",
+    "affluent-tsusde-usdt-vault7",
+    "affluent-usdt"
+  ],
+  "contracts": [],
+  "endpoints": [],
+  "note": "Источник подключён к общему pipeline. Автоматическая публикация включится после фиксации официального endpoint/контракта и проверки формата."
+}

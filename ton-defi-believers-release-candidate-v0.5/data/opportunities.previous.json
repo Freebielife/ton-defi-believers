@@ -1,0 +1,1133 @@
+{
+  "schemaVersion": "1.0",
+  "snapshot": {
+    "importedAt": "2026-07-25T18:02:07Z",
+    "verified": false,
+    "note": "Initial manual dataset. APY, TVL, UR and links must be verified before public launch."
+  },
+  "settings": {
+    "currency": "USD",
+    "timestamps": "UTC",
+    "lowTvlThresholdUsd": 10000,
+    "staleAfterHours": 24
+  },
+  "opportunities": [
+    {
+      "id": "tonstakers-gram-tston-tston",
+      "protocol": "Tonstakers",
+      "category": "gram",
+      "asset": "GRAM",
+      "product": "GRAM-tsTON (tsTON)",
+      "type": "liquid-staking",
+      "apy": {
+        "current": 12.3,
+        "average7d": 13.4,
+        "base": null,
+        "rewards": null,
+        "direction": "down"
+      },
+      "tvlUsd": 175700000,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://tonstakers.com/",
+        "app": "https://tonstakers.com/"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Tonstakers",
+        "url": "https://tonstakers.com/",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "stakee-gram-staked",
+      "protocol": "Stakee",
+      "category": "gram",
+      "asset": "GRAM",
+      "product": "GRAM (STAKED)",
+      "type": "staking",
+      "apy": {
+        "current": 13.6,
+        "average7d": 14.3,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 25700000,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/StakeeBot/app",
+        "app": "https://t.me/StakeeBot/app"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Stakee",
+        "url": "https://t.me/StakeeBot/app",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "hipo-gram-hton-hton",
+      "protocol": "Hipo",
+      "category": "gram",
+      "asset": "GRAM",
+      "product": "GRAM-hTON (hTON)",
+      "type": "liquid-staking",
+      "apy": {
+        "current": 15.8,
+        "average7d": 20,
+        "base": null,
+        "rewards": null,
+        "direction": "down"
+      },
+      "tvlUsd": 3200000,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://hipo.finance/",
+        "app": "https://hipo.finance/"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Hipo",
+        "url": "https://hipo.finance/",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "bemo-gram-stton-stton",
+      "protocol": "Bemo",
+      "category": "gram",
+      "asset": "GRAM",
+      "product": "GRAM-stTON (stTON)",
+      "type": "liquid-staking",
+      "apy": {
+        "current": 14.7,
+        "average7d": 15.1,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 2000000,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://bemo.fi/",
+        "app": "https://bemo.fi/"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Bemo",
+        "url": "https://bemo.fi/",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "bemo-gram-bmton-bmton",
+      "protocol": "Bemo",
+      "category": "gram",
+      "asset": "GRAM",
+      "product": "GRAM-bmTON (bmTON)",
+      "type": "liquid-staking",
+      "apy": {
+        "current": 14.7,
+        "average7d": 15.1,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 470000,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://bemo.fi/",
+        "app": "https://bemo.fi/"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Bemo",
+        "url": "https://bemo.fi/",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "kton-gram-kton",
+      "protocol": "KTON",
+      "category": "gram",
+      "asset": "GRAM",
+      "product": "GRAM (KTON)",
+      "type": "staking",
+      "apy": {
+        "current": 13.8,
+        "average7d": 13.8,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 2400000,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://kton.io/",
+        "app": "https://kton.io/"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "KTON",
+        "url": "https://kton.io/",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "affluent-gram",
+      "protocol": "Affluent",
+      "category": "gram",
+      "asset": "GRAM",
+      "product": "GRAM",
+      "type": "vault",
+      "apy": {
+        "current": 9.2,
+        "average7d": 9.2,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 1300000,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/AffluentAppBot",
+        "app": "https://t.me/AffluentAppBot"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Affluent",
+        "url": "https://t.me/AffluentAppBot",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "affluent-gram-tston",
+      "protocol": "Affluent",
+      "category": "gram",
+      "asset": "GRAM",
+      "product": "GRAM-TSTON",
+      "type": "vault",
+      "apy": {
+        "current": 10.9,
+        "average7d": 13.3,
+        "base": null,
+        "rewards": null,
+        "direction": "down"
+      },
+      "tvlUsd": 820200,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/AffluentAppBot",
+        "app": "https://t.me/AffluentAppBot"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Affluent",
+        "url": "https://t.me/AffluentAppBot",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "storm-trade-gram-ton-slp",
+      "protocol": "Storm Trade",
+      "category": "gram",
+      "asset": "GRAM",
+      "product": "GRAM (TON-SLP)",
+      "type": "liquidity-pool",
+      "apy": {
+        "current": 6.2,
+        "average7d": 6.2,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 1500000,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/StormTradeBot",
+        "app": "https://t.me/StormTradeBot"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Storm Trade",
+        "url": "https://t.me/StormTradeBot",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "evaa-gram-main",
+      "protocol": "EVAA",
+      "category": "gram",
+      "asset": "GRAM",
+      "product": "GRAM (Main)",
+      "type": "lending",
+      "apy": {
+        "current": 6.1,
+        "average7d": 6.1,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 937700,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/EvaaAppBot",
+        "app": "https://t.me/EvaaAppBot"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "EVAA",
+        "url": "https://t.me/EvaaAppBot",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "evaa-gram-lp",
+      "protocol": "EVAA",
+      "category": "gram",
+      "asset": "GRAM",
+      "product": "GRAM (LP)",
+      "type": "lending",
+      "apy": {
+        "current": 3.3,
+        "average7d": 4.4,
+        "base": null,
+        "rewards": null,
+        "direction": "down"
+      },
+      "tvlUsd": 52200,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/EvaaAppBot",
+        "app": "https://t.me/EvaaAppBot"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "EVAA",
+        "url": "https://t.me/EvaaAppBot",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "ston-fi-gram-tston-tston",
+      "protocol": "STON.fi",
+      "category": "gram",
+      "asset": "GRAM",
+      "product": "GRAM-tsTON (tsTON)",
+      "type": "liquidity-pool",
+      "apy": {
+        "current": 1.5,
+        "average7d": 3.8,
+        "base": null,
+        "rewards": null,
+        "direction": "down"
+      },
+      "tvlUsd": 183400,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://app.ston.fi/pools",
+        "app": "https://app.ston.fi/pools"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "STON.fi",
+        "url": "https://app.ston.fi/pools",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": true
+      }
+    },
+    {
+      "id": "gtc-gram-vault",
+      "protocol": "GTC",
+      "category": "gram",
+      "asset": "GRAM",
+      "product": "GRAM vault",
+      "type": "vault",
+      "apy": {
+        "current": 17.7,
+        "average7d": 14.4,
+        "base": null,
+        "rewards": null,
+        "direction": "up"
+      },
+      "tvlUsd": 34900,
+      "utilizationRate": 74.4,
+      "links": {
+        "official": "https://t.me/GiftToCreditBot/app",
+        "app": "https://t.me/GiftToCreditBot/app"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "GTC",
+        "url": "https://t.me/GiftToCreditBot/app",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "morpho-re7-ton",
+      "protocol": "Morpho",
+      "category": "gram",
+      "asset": "TON",
+      "product": "Re7 TON",
+      "type": "vault",
+      "apy": {
+        "current": 0.3,
+        "average7d": 0.3,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 2300,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/MorphoOrgBot",
+        "app": "https://t.me/MorphoOrgBot"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Morpho",
+        "url": "https://t.me/MorphoOrgBot",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": true,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "morpho-singularv-ton-tonstakers",
+      "protocol": "Morpho",
+      "category": "gram",
+      "asset": "TON",
+      "product": "SingularV TON Tonstakers",
+      "type": "vault",
+      "apy": {
+        "current": 0.2,
+        "average7d": 0.2,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 251,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/MorphoOrgBot",
+        "app": "https://t.me/MorphoOrgBot"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Morpho",
+        "url": "https://t.me/MorphoOrgBot",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": true,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "ethena-tsusde",
+      "protocol": "Ethena",
+      "category": "stablecoins",
+      "asset": "tsUSDe",
+      "product": "tsUSDe",
+      "type": "yield-token",
+      "apy": {
+        "current": 4.1,
+        "average7d": 4,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 1500000000,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://app.ethena.fi/earn/ton",
+        "app": "https://app.ethena.fi/earn/ton"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Ethena",
+        "url": "https://app.ethena.fi/earn/ton",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "storm-trade-usdt",
+      "protocol": "Storm Trade",
+      "category": "stablecoins",
+      "asset": "USDT",
+      "product": "USDT",
+      "type": "vault",
+      "apy": {
+        "current": 5.7,
+        "average7d": 5.8,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 3400000,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/StormTradeBot",
+        "app": "https://t.me/StormTradeBot"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Storm Trade",
+        "url": "https://t.me/StormTradeBot",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "morpho-re7-usdt-v2-vault",
+      "protocol": "Morpho",
+      "category": "stablecoins",
+      "asset": "USDT",
+      "product": "Re7 USDT V2 vault",
+      "type": "vault",
+      "apy": {
+        "current": 4.2,
+        "average7d": 4.2,
+        "base": 0.1,
+        "rewards": 4.1,
+        "direction": "flat"
+      },
+      "tvlUsd": 990000,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/MorphoOrgBot",
+        "app": "https://t.me/MorphoOrgBot"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Morpho",
+        "url": "https://t.me/MorphoOrgBot",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "evaa-usdt-main",
+      "protocol": "EVAA",
+      "category": "stablecoins",
+      "asset": "USDT",
+      "product": "USDT (Main)",
+      "type": "lending",
+      "apy": {
+        "current": 8.1,
+        "average7d": 4.1,
+        "base": null,
+        "rewards": null,
+        "direction": "up"
+      },
+      "tvlUsd": 465600,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/EvaaAppBot",
+        "app": "https://t.me/EvaaAppBot"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "EVAA",
+        "url": "https://t.me/EvaaAppBot",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "evaa-usdt-lp",
+      "protocol": "EVAA",
+      "category": "stablecoins",
+      "asset": "USDT",
+      "product": "USDT (LP)",
+      "type": "lending",
+      "apy": {
+        "current": 1.2,
+        "average7d": 1.1,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 129100,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/EvaaAppBot",
+        "app": "https://t.me/EvaaAppBot"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "EVAA",
+        "url": "https://t.me/EvaaAppBot",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "evaa-tsusde-main",
+      "protocol": "EVAA",
+      "category": "stablecoins",
+      "asset": "TSUSDE",
+      "product": "TSUSDE (Main)",
+      "type": "lending",
+      "apy": {
+        "current": 0,
+        "average7d": 0.2,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 62200,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/EvaaAppBot",
+        "app": "https://t.me/EvaaAppBot"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "EVAA",
+        "url": "https://t.me/EvaaAppBot",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "affluent-tsusde-usdt-vault7",
+      "protocol": "Affluent",
+      "category": "stablecoins",
+      "asset": "TSUSDE-USDT",
+      "product": "TSUSDE-USDT-VAULT7",
+      "type": "vault",
+      "apy": {
+        "current": 4,
+        "average7d": 4,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 365000,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/AffluentAppBot",
+        "app": "https://t.me/AffluentAppBot"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Affluent",
+        "url": "https://t.me/AffluentAppBot",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "affluent-usdt",
+      "protocol": "Affluent",
+      "category": "stablecoins",
+      "asset": "USDT",
+      "product": "USDT",
+      "type": "vault",
+      "apy": {
+        "current": 8.4,
+        "average7d": 8.3,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 62300,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/AffluentAppBot",
+        "app": "https://t.me/AffluentAppBot"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Affluent",
+        "url": "https://t.me/AffluentAppBot",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "telegram-wallet-midas-usdt-vault",
+      "protocol": "Telegram Wallet",
+      "category": "stablecoins",
+      "asset": "USDT",
+      "product": "Midas USDT vault",
+      "type": "vault",
+      "apy": {
+        "current": 9.44,
+        "average7d": 9.44,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 293300,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/wallet",
+        "app": "https://t.me/wallet"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Telegram Wallet",
+        "url": "https://t.me/wallet",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "ston-fi-usde-tsusde-weighted-stable",
+      "protocol": "STON.fi",
+      "category": "stablecoins",
+      "asset": "USDe-tsUSDe",
+      "product": "USDe-tsUSDe (weighted_stable)",
+      "type": "liquidity-pool",
+      "apy": {
+        "current": 0.3,
+        "average7d": 0.4,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 276900,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://app.ston.fi/pools",
+        "app": "https://app.ston.fi/pools"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "STON.fi",
+        "url": "https://app.ston.fi/pools",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": true
+      }
+    },
+    {
+      "id": "gtc-usdt-vault",
+      "protocol": "GTC",
+      "category": "stablecoins",
+      "asset": "USDT",
+      "product": "USDT vault",
+      "type": "vault",
+      "apy": {
+        "current": 17.5,
+        "average7d": 18,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 41200,
+      "utilizationRate": 83.1,
+      "links": {
+        "official": "https://t.me/GiftToCreditBot/app",
+        "app": "https://t.me/GiftToCreditBot/app"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "GTC",
+        "url": "https://t.me/GiftToCreditBot/app",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "euler-usd",
+      "protocol": "Euler",
+      "category": "stablecoins",
+      "asset": "USDT",
+      "product": "USD₮",
+      "type": "lending",
+      "apy": {
+        "current": 44.9,
+        "average7d": 44.9,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 2600,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/EulerFinanceBot",
+        "app": "https://t.me/EulerFinanceBot"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Euler",
+        "url": "https://t.me/EulerFinanceBot",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": true,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "ston-fi-usdt-gram-pool-1",
+      "protocol": "STON.fi",
+      "category": "gram-usdt",
+      "asset": "USDT-GRAM",
+      "product": "USDT-GRAM pool #1",
+      "type": "liquidity-pool",
+      "apy": {
+        "current": 6.6,
+        "average7d": 6.4,
+        "base": null,
+        "rewards": null,
+        "direction": "flat"
+      },
+      "tvlUsd": 6100000,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://app.ston.fi/pools",
+        "app": "https://app.ston.fi/pools"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "STON.fi",
+        "url": "https://app.ston.fi/pools",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": true
+      }
+    },
+    {
+      "id": "ston-fi-usdt-gram-pool-2",
+      "protocol": "STON.fi",
+      "category": "gram-usdt",
+      "asset": "USDT-GRAM",
+      "product": "USDT-GRAM pool #2",
+      "type": "liquidity-pool",
+      "apy": {
+        "current": 3,
+        "average7d": 6.4,
+        "base": null,
+        "rewards": null,
+        "direction": "down"
+      },
+      "tvlUsd": 5300000,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://app.ston.fi/pools",
+        "app": "https://app.ston.fi/pools"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "STON.fi",
+        "url": "https://app.ston.fi/pools",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": true
+      }
+    },
+    {
+      "id": "morpho-re7-cbbtc-v2-vault",
+      "protocol": "Morpho",
+      "category": "btc",
+      "asset": "cbBTC",
+      "product": "Re7 cbBTC V2 vault",
+      "type": "vault",
+      "apy": {
+        "current": 3.6,
+        "average7d": 3.6,
+        "base": 0,
+        "rewards": 3.6,
+        "direction": "flat"
+      },
+      "tvlUsd": 66300,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/MorphoOrgBot",
+        "app": "https://t.me/MorphoOrgBot"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Morpho",
+        "url": "https://t.me/MorphoOrgBot",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    },
+    {
+      "id": "morpho-re7-weth-v2-vault",
+      "protocol": "Morpho",
+      "category": "eth",
+      "asset": "WETH",
+      "product": "Re7 WETH V2 vault",
+      "type": "vault",
+      "apy": {
+        "current": 5.1,
+        "average7d": 5.1,
+        "base": 0,
+        "rewards": 5.1,
+        "direction": "flat"
+      },
+      "tvlUsd": 39400,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://t.me/MorphoOrgBot",
+        "app": "https://t.me/MorphoOrgBot"
+      },
+      "source": {
+        "type": "manual",
+        "provider": "Morpho",
+        "url": "https://t.me/MorphoOrgBot",
+        "lastChecked": null,
+        "importedAt": "2026-07-25T18:02:07Z",
+        "origin": "user-provided snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      }
+    }
+  ],
+  "updatedAt": "2026-07-25T18:14:09.111Z"
+}

@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "endpoint": "https://api.dedust.io/v2/pools",
+  "timeoutMs": 20000,
+  "trackedPools": [],
+  "note": "В исходном наборе пока нет DeDust opportunities. Адаптер готов автоматически импортировать только явно добавленные и проверенные пулы."
+}

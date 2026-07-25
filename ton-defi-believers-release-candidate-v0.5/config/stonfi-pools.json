@@ -1,0 +1,56 @@
+{
+  "enabled": true,
+  "apiBaseUrl": "https://api.ston.fi",
+  "endpoint": "/v1/pools",
+  "timeoutMs": 20000,
+  "trackedPools": [
+    {
+      "opportunityId": "ston-fi-gram-tston-tston",
+      "poolAddress": null,
+      "symbols": [
+        "GRAM",
+        "tsTON"
+      ],
+      "expectedPoolType": null,
+      "note": "Автопоиск формирует кандидатов, но публикация требует однозначного совпадения."
+    },
+    {
+      "opportunityId": "ston-fi-usde-tsusde-weighted-stable",
+      "poolAddress": null,
+      "symbols": [
+        "USDe",
+        "tsUSDe"
+      ],
+      "expectedPoolType": "weighted_stable",
+      "note": "Предпочтителен пул типа weighted_stable."
+    },
+    {
+      "opportunityId": "ston-fi-usdt-gram-pool-1",
+      "poolAddress": null,
+      "symbols": [
+        "USDT",
+        "GRAM"
+      ],
+      "expectedPoolType": null,
+      "rankByTvl": 1,
+      "note": "Первый пул пары — крупнейший по TVL после подтверждения."
+    },
+    {
+      "opportunityId": "ston-fi-usdt-gram-pool-2",
+      "poolAddress": null,
+      "symbols": [
+        "USDT",
+        "GRAM"
+      ],
+      "expectedPoolType": null,
+      "rankByTvl": 2,
+      "note": "Второй пул пары — второй по TVL после подтверждения."
+    }
+  ],
+  "discovery": {
+    "enabled": true,
+    "publishOnlyWhenUnique": true,
+    "candidateLimitPerOpportunity": 8,
+    "minimumSymbolMatch": 2
+  }
+}

@@ -1,0 +1,387 @@
+{
+  "schemaVersion": "1.0",
+  "updatedAt": "2026-07-25T18:07:38Z",
+  "selectionPolicy": {
+    "coreSize": 10,
+    "primaryMetric": "trackedTvlUsd",
+    "additionalCriteria": [
+      "operational stability",
+      "official or reliable data source",
+      "reputation and usage",
+      "active product maintenance"
+    ],
+    "note": "TVL is the primary ranking signal, not a guarantee of safety."
+  },
+  "protocols": [
+    {
+      "id": "tonstakers",
+      "description": {
+        "en": "Liquid staking protocol in the TON ecosystem.",
+        "ru": "Протокол ликвидного стейкинга в экосистеме TON."
+      },
+      "links": {
+        "website": "https://tonstakers.com/",
+        "app": "https://tonstakers.com/"
+      },
+      "dataMode": "automatic",
+      "sourcePriority": [
+        "official-api",
+        "official-sdk",
+        "onchain",
+        "manual"
+      ],
+      "name": "Tonstakers",
+      "tier": "core",
+      "active": true,
+      "opportunitiesCount": 1,
+      "trackedTvlUsd": 175700000,
+      "includedInV1": true,
+      "notes": []
+    },
+    {
+      "id": "evaa",
+      "description": {
+        "en": "Lending and borrowing protocol for TON assets.",
+        "ru": "Протокол кредитования и займов для активов TON."
+      },
+      "links": {
+        "website": "https://evaa.finance/",
+        "app": "https://t.me/EvaaAppBot"
+      },
+      "dataMode": "automatic",
+      "sourcePriority": [
+        "official-sdk",
+        "onchain",
+        "official-api",
+        "manual"
+      ],
+      "name": "EVAA",
+      "tier": "core",
+      "active": true,
+      "opportunitiesCount": 5,
+      "trackedTvlUsd": 1646800,
+      "includedInV1": true,
+      "notes": []
+    },
+    {
+      "id": "stonfi",
+      "description": {
+        "en": "Decentralized exchange and liquidity protocol on TON.",
+        "ru": "Децентрализованная биржа и протокол ликвидности в TON."
+      },
+      "links": {
+        "website": "https://ston.fi/",
+        "app": "https://app.ston.fi/pools"
+      },
+      "dataMode": "automatic",
+      "sourcePriority": [
+        "official-api",
+        "onchain",
+        "official-sdk",
+        "manual"
+      ],
+      "name": "STON.fi",
+      "tier": "core",
+      "active": true,
+      "opportunitiesCount": 4,
+      "trackedTvlUsd": 11860300,
+      "includedInV1": true,
+      "notes": []
+    },
+    {
+      "id": "dedust",
+      "description": {
+        "en": "Decentralized exchange and liquidity protocol on TON.",
+        "ru": "Децентрализованная биржа и протокол ликвидности в TON."
+      },
+      "links": {
+        "website": "https://dedust.io/",
+        "app": "https://dedust.io/"
+      },
+      "dataMode": "automatic",
+      "sourcePriority": [
+        "official-api",
+        "official-sdk",
+        "onchain",
+        "manual"
+      ],
+      "name": "DeDust",
+      "tier": "core",
+      "active": true,
+      "opportunitiesCount": 0,
+      "trackedTvlUsd": 0,
+      "includedInV1": true,
+      "notes": [
+        "No opportunity records yet in the initial dataset."
+      ]
+    },
+    {
+      "id": "hipo",
+      "description": {
+        "en": "Liquid staking protocol for TON.",
+        "ru": "Протокол ликвидного стейкинга TON."
+      },
+      "links": {
+        "website": "https://hipo.finance/",
+        "app": "https://hipo.finance/"
+      },
+      "dataMode": "manual",
+      "sourcePriority": [
+        "official-api",
+        "official-sdk",
+        "onchain",
+        "manual"
+      ],
+      "name": "Hipo",
+      "tier": "core",
+      "active": true,
+      "opportunitiesCount": 1,
+      "trackedTvlUsd": 3200000,
+      "includedInV1": true,
+      "notes": []
+    },
+    {
+      "id": "bemo",
+      "description": {
+        "en": "Liquid staking and yield products in the TON ecosystem.",
+        "ru": "Ликвидный стейкинг и доходные продукты в экосистеме TON."
+      },
+      "links": {
+        "website": "https://bemo.fi/",
+        "app": "https://bemo.fi/"
+      },
+      "dataMode": "manual",
+      "sourcePriority": [
+        "official-api",
+        "official-sdk",
+        "onchain",
+        "manual"
+      ],
+      "name": "Bemo",
+      "tier": "core",
+      "active": true,
+      "opportunitiesCount": 2,
+      "trackedTvlUsd": 2470000,
+      "includedInV1": true,
+      "notes": []
+    },
+    {
+      "id": "affluent",
+      "description": {
+        "en": "Yield vaults for TON ecosystem assets.",
+        "ru": "Доходные хранилища для активов экосистемы TON."
+      },
+      "links": {
+        "website": null,
+        "app": "https://t.me/AffluentAppBot"
+      },
+      "dataMode": "manual",
+      "sourcePriority": [
+        "official-api",
+        "official-sdk",
+        "onchain",
+        "manual"
+      ],
+      "name": "Affluent",
+      "tier": "core",
+      "active": true,
+      "opportunitiesCount": 4,
+      "trackedTvlUsd": 2547500,
+      "includedInV1": true,
+      "notes": []
+    },
+    {
+      "id": "storm-trade",
+      "description": {
+        "en": "Trading and yield products available through Telegram.",
+        "ru": "Торговые и доходные продукты, доступные через Telegram."
+      },
+      "links": {
+        "website": null,
+        "app": "https://t.me/StormTradeBot"
+      },
+      "dataMode": "manual",
+      "sourcePriority": [
+        "official-api",
+        "official-sdk",
+        "onchain",
+        "manual"
+      ],
+      "name": "Storm Trade",
+      "tier": "core",
+      "active": true,
+      "opportunitiesCount": 2,
+      "trackedTvlUsd": 4900000,
+      "includedInV1": true,
+      "notes": []
+    },
+    {
+      "id": "ethena",
+      "description": {
+        "en": "Synthetic dollar and yield products available for TON users.",
+        "ru": "Синтетический доллар и доходные продукты для пользователей TON."
+      },
+      "links": {
+        "website": "https://www.ethena.fi/",
+        "app": "https://app.ethena.fi/earn/ton"
+      },
+      "dataMode": "manual",
+      "sourcePriority": [
+        "official-api",
+        "official-sdk",
+        "manual"
+      ],
+      "name": "Ethena",
+      "tier": "core",
+      "active": true,
+      "opportunitiesCount": 1,
+      "trackedTvlUsd": 1500000000,
+      "includedInV1": true,
+      "notes": []
+    },
+    {
+      "id": "telegram-wallet",
+      "description": {
+        "en": "Earn products distributed through Telegram Wallet.",
+        "ru": "Доходные продукты, доступные через Telegram Wallet."
+      },
+      "links": {
+        "website": null,
+        "app": "https://t.me/wallet"
+      },
+      "dataMode": "manual",
+      "sourcePriority": [
+        "official-api",
+        "official-feed",
+        "manual"
+      ],
+      "name": "Telegram Wallet",
+      "tier": "core",
+      "active": true,
+      "opportunitiesCount": 1,
+      "trackedTvlUsd": 293300,
+      "includedInV1": true,
+      "notes": []
+    },
+    {
+      "id": "stakee",
+      "description": {
+        "en": "Staking service for TON ecosystem assets.",
+        "ru": "Сервис стейкинга активов экосистемы TON."
+      },
+      "links": {
+        "website": null,
+        "app": "https://t.me/StakeeBot/app"
+      },
+      "dataMode": "manual",
+      "sourcePriority": [
+        "official-api",
+        "onchain",
+        "manual"
+      ],
+      "name": "Stakee",
+      "tier": "extended",
+      "active": true,
+      "opportunitiesCount": 1,
+      "trackedTvlUsd": 25700000,
+      "includedInV1": false,
+      "notes": []
+    },
+    {
+      "id": "gtc",
+      "description": {
+        "en": "Lending and yield vaults for TON ecosystem assets.",
+        "ru": "Кредитные и доходные хранилища для активов экосистемы TON."
+      },
+      "links": {
+        "website": null,
+        "app": "https://t.me/GiftToCreditBot/app"
+      },
+      "dataMode": "manual",
+      "sourcePriority": [
+        "official-api",
+        "onchain",
+        "manual"
+      ],
+      "name": "GTC",
+      "tier": "extended",
+      "active": true,
+      "opportunitiesCount": 2,
+      "trackedTvlUsd": 76100,
+      "includedInV1": false,
+      "notes": []
+    },
+    {
+      "id": "kton",
+      "description": {
+        "en": "Staking product related to TON ecosystem assets.",
+        "ru": "Стейкинговый продукт, связанный с активами экосистемы TON."
+      },
+      "links": {
+        "website": "https://kton.io/",
+        "app": "https://kton.io/"
+      },
+      "dataMode": "manual",
+      "sourcePriority": [
+        "official-api",
+        "onchain",
+        "manual"
+      ],
+      "name": "KTON",
+      "tier": "extended",
+      "active": true,
+      "opportunitiesCount": 1,
+      "trackedTvlUsd": 2400000,
+      "includedInV1": false,
+      "notes": []
+    },
+    {
+      "id": "morpho",
+      "description": {
+        "en": "Vault infrastructure surfaced to TON users through Telegram apps.",
+        "ru": "Инфраструктура хранилищ, доступная пользователям TON через Telegram-приложения."
+      },
+      "links": {
+        "website": "https://morpho.org/",
+        "app": "https://t.me/MorphoOrgBot"
+      },
+      "dataMode": "manual",
+      "sourcePriority": [
+        "official-api",
+        "official-sdk",
+        "manual"
+      ],
+      "name": "Morpho",
+      "tier": "extended",
+      "active": true,
+      "opportunitiesCount": 5,
+      "trackedTvlUsd": 1098251,
+      "includedInV1": false,
+      "notes": []
+    },
+    {
+      "id": "euler",
+      "description": {
+        "en": "Lending infrastructure available through a Telegram app.",
+        "ru": "Кредитная инфраструктура, доступная через Telegram-приложение."
+      },
+      "links": {
+        "website": "https://www.euler.finance/",
+        "app": "https://t.me/EulerFinanceBot"
+      },
+      "dataMode": "manual",
+      "sourcePriority": [
+        "official-api",
+        "official-sdk",
+        "manual"
+      ],
+      "name": "Euler",
+      "tier": "extended",
+      "active": true,
+      "opportunitiesCount": 1,
+      "trackedTvlUsd": 2600,
+      "includedInV1": false,
+      "notes": []
+    }
+  ]
+}

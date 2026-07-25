@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-07-25T18:29:31.120Z",
+  "scope": "core",
+  "metrics": {
+    "protocolsTracked": 9,
+    "opportunitiesTracked": 21,
+    "coveredTvlUsd": 1702617900,
+    "averageApy": 6.930476190476192
+  },
+  "leaders": {
+    "largestOpportunity": {
+      "id": "ethena-tsusde",
+      "protocol": "Ethena",
+      "product": "tsUSDe",
+      "tvlUsd": 1500000000
+    },
+    "highestDisplayedApy": {
+      "id": "hipo-gram-hton-hton",
+      "protocol": "Hipo",
+      "product": "GRAM-hTON (hTON)",
+      "apy": 15.8
+    }
+  },
+  "disclosure": {
+    "en": "TVL and yield figures are informational and do not guarantee safety or future returns.",
+    "ru": "TVL и доходность приведены в информационных целях и не гарантируют безопасность или будущий результат."
+  }
+}

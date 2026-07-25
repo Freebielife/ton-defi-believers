@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "protocolId": "tonstakers",
+  "publishMode": "retain-existing-until-verified",
+  "trackedOpportunityIds": [
+    "tonstakers-gram-tston-tston"
+  ],
+  "contracts": [],
+  "endpoints": [],
+  "note": "Методы подтверждены официальным SDK. Collector не создаёт кошелёк и не выполняет транзакции.",
+  "sdkPackage": "tonstakers-sdk",
+  "readMethods": [
+    "getCurrentApy",
+    "getHistoricalApy",
+    "getTvl",
+    "getRates",
+    "getInstantLiquidity"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "ton-defi-believers-collector",
+  "version": "0.5.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "collect": "node collector/collect.mjs",
+    "stats": "node collector/generate-stats.mjs",
+    "validate": "node collector/validate.mjs",
+    "build:data": "node collector/prepare-snapshot.mjs && npm run collect && npm run validate && npm run stats && npm run changes && npm run history && npm run audit:sources && npm run integration:status",
+    "changes": "node collector/generate-changes.mjs",
+    "history": "node collector/update-history.mjs",
+    "audit:sources": "node collector/audit-sources.mjs",
+    "integration:status": "node collector/generate-integration-status.mjs",
+    "sync:public": "node scripts/sync-public-data.mjs",
+    "release:check": "node scripts/release-check.mjs",
+    "build": "npm run build:data && npm run sync:public && npm run release:check"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "protocolId": "evaa",
+  "publishMode": "retain-existing-until-verified",
+  "trackedOpportunityIds": [
+    "evaa-gram-main",
+    "evaa-gram-lp",
+    "evaa-usdt-main",
+    "evaa-usdt-lp",
+    "evaa-tsusde-main"
+  ],
+  "contracts": [],
+  "endpoints": [],
+  "note": "Официальный SDK и контракты подтверждены. Перед автопубликацией требуется закрепить версию пула и единицы rate.",
+  "sdkPackage": "@evaafi/sdk",
+  "readModel": [
+    "asset config",
+    "asset dynamics",
+    "supply rate",
+    "borrow rate"
+  ]
+}

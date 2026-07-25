@@ -1,0 +1,23 @@
+{
+  "enabled": true,
+  "protocolId": "hipo",
+  "publishMode": "retain-existing-until-getters-verified",
+  "trackedOpportunityIds": [
+    "hipo-gram-hton-hton"
+  ],
+  "contracts": [
+    {
+      "role": "treasury",
+      "address": "EQCLyZHP4Xe8fpchQz76O-_RmUhaVc_9BAoGyJrwJrcbz2eZ",
+      "verifiedFrom": "official Hipo contract repository"
+    },
+    {
+      "role": "parent",
+      "address": "EQDPdq8xjAhytYqfGSX8KcFWIReCufsB9Wdg0pLlYSO_h76w",
+      "verifiedFrom": "official Hipo contract repository"
+    }
+  ],
+  "endpoints": [],
+  "note": "Контракты подтверждены. Имена getter-методов намеренно не угадываются.",
+  "getMethods": []
+}

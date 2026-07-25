@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "protocolId": "storm",
+  "publishMode": "retain-existing-until-verified",
+  "trackedOpportunityIds": [
+    "storm-trade-gram-ton-slp",
+    "storm-trade-usdt"
+  ],
+  "contracts": [],
+  "endpoints": [],
+  "note": "Источник подключён к общему pipeline. Автоматическая публикация включится после фиксации официального endpoint/контракта и проверки формата."
+}
