@@ -1,6 +1,6 @@
 {
   "name": "ton-defi-believers-collector",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -18,7 +18,8 @@
     "sync:public": "node scripts/sync-public-data.mjs",
     "release:check": "node scripts/release-check.mjs",
     "build": "npm run build:data && npm run sync:public && npm run release:check",
-    "test:adapters": "node collector/tests/stonfi.test.mjs && node collector/tests/dedust.test.mjs && node collector/tests/metrics.test.mjs && node collector/tests/score.test.mjs",
+    "test:adapters": "node collector/tests/stonfi.test.mjs && node collector/tests/dedust.test.mjs && node collector/tests/metrics.test.mjs && node collector/tests/score.test.mjs && node collector/tests/health-monitor.test.mjs",
+    "test:health": "node collector/tests/health-monitor.test.mjs",
     "metrics": "node collector/build-metrics.mjs",
     "insights": "node collector/build-insights.mjs",
     "search:index": "node collector/build-search-index.mjs"

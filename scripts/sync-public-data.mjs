@@ -4,12 +4,13 @@ import path from "node:path";
 const root = process.cwd();
 const sourceDir = path.join(root, "data");
 const targetDir = path.join(root, "public", "data");
-
 const files = [
   "protocols.json",
   "changes.json",
   "core-config.json",
   "collector-report.json",
+  "health.json",
+  "health-history.json",
   "stats.json",
   "history.json",
   "opportunities.json",
@@ -24,7 +25,6 @@ const files = [
 ];
 
 await fs.mkdir(targetDir, { recursive: true });
-
 let copied = 0;
 for (const filename of files) {
   try {
@@ -46,7 +46,6 @@ async function copyJsonDirectory(name) {
     await fs.mkdir(target, { recursive: true });
     const filenames = await fs.readdir(source);
     let count = 0;
-
     for (const filename of filenames.filter((item) =>
       item.endsWith(".json")
     )) {

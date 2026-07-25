@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-07-25T21:26:22.389Z",
+  "run": {
+    "startedAt": "2026-07-25T21:26:17.102Z",
+    "finishedAt": "2026-07-25T21:26:22.389Z",
+    "durationMs": 5287,
+    "publishedFreshData": true,
+    "previousSnapshotUpdatedAt": "2026-07-25T21:11:59.763Z"
+  },
+  "status": "degraded",
+  "buildQuality": 48,
+  "summary": {
+    "total": 10,
+    "healthy": 0,
+    "partial": 1,
+    "degraded": 9,
+    "errors": 0,
+    "disabled": 0,
+    "averageDurationMs": 529
+  },
+  "protocols": [
+    {
+      "adapter": "stonfi",
+      "protocol": "stonfi",
+      "status": "partial",
+      "sourceStatus": "partial",
+      "durationMs": 2996,
+      "items": 2,
+      "updated": 2,
+      "unresolved": 1,
+      "retainedPreviousData": false,
+      "message": null
+    },
+    {
+      "adapter": "dedust",
+      "protocol": "dedust",
+      "status": "degraded",
+      "sourceStatus": "catalog-ready-no-tracked-opportunities",
+      "durationMs": 2286,
+      "items": 0,
+      "updated": 0,
+      "unresolved": 0,
+      "retainedPreviousData": false,
+      "message": null
+    },
+    {
+      "adapter": "tonstakers",
+      "protocol": "Tonstakers",
+      "status": "degraded",
+      "sourceStatus": "integration-ready",
+      "durationMs": 1,
+      "items": 1,
+      "updated": 0,
+      "unresolved": 0,
+      "retainedPreviousData": false,
+      "message": "Источник изолирован от других протоколов. Существующие данные сохранены до проверки официального endpoint или on-chain контракта."
+    },
+    {
+      "adapter": "evaa",
+      "protocol": "EVAA",
+      "status": "degraded",
+      "sourceStatus": "integration-ready",
+      "durationMs": 1,
+      "items": 5,
+      "updated": 0,
+      "unresolved": 0,
+      "retainedPreviousData": false,
+      "message": "Источник изолирован от других протоколов. Существующие данные сохранены до проверки официального endpoint или on-chain контракта."
+    },
+    {
+      "adapter": "hipo",
+      "protocol": "Hipo",
+      "status": "degraded",
+      "sourceStatus": "integration-ready",
+      "durationMs": 0,
+      "items": 1,
+      "updated": 0,
+      "unresolved": 0,
+      "retainedPreviousData": false,
+      "message": "Источник изолирован от других протоколов. Существующие данные сохранены до проверки официального endpoint или on-chain контракта."
+    },
+    {
+      "adapter": "bemo",
+      "protocol": "Bemo",
+      "status": "degraded",
+      "sourceStatus": "integration-ready",
+      "durationMs": 0,
+      "items": 2,
+      "updated": 0,
+      "unresolved": 0,
+      "retainedPreviousData": false,
+      "message": "Источник изолирован от других протоколов. Существующие данные сохранены до проверки официального endpoint или on-chain контракта."
+    },
+    {
+      "adapter": "affluent",
+      "protocol": "Affluent",
+      "status": "degraded",
+      "sourceStatus": "integration-ready",
+      "durationMs": 1,
+      "items": 4,
+      "updated": 0,
+      "unresolved": 0,
+      "retainedPreviousData": false,
+      "message": "Источник изолирован от других протоколов. Существующие данные сохранены до проверки официального endpoint или on-chain контракта."
+    },
+    {
+      "adapter": "storm",
+      "protocol": "Storm Trade",
+      "status": "degraded",
+      "sourceStatus": "integration-ready",
+      "durationMs": 0,
+      "items": 2,
+      "updated": 0,
+      "unresolved": 0,
+      "retainedPreviousData": false,
+      "message": "Источник изолирован от других протоколов. Существующие данные сохранены до проверки официального endpoint или on-chain контракта."
+    },
+    {
+      "adapter": "ethena",
+      "protocol": "Ethena",
+      "status": "degraded",
+      "sourceStatus": "integration-ready",
+      "durationMs": 0,
+      "items": 1,
+      "updated": 0,
+      "unresolved": 0,
+      "retainedPreviousData": false,
+      "message": "Источник изолирован от других протоколов. Существующие данные сохранены до проверки официального endpoint или on-chain контракта."
+    },
+    {
+      "adapter": "telegram-wallet",
+      "protocol": "Telegram Wallet",
+      "status": "degraded",
+      "sourceStatus": "manual-until-public-source",
+      "durationMs": 0,
+      "items": 1,
+      "updated": 0,
+      "unresolved": 0,
+      "retainedPreviousData": false,
+      "message": "Источник изолирован от других протоколов. Существующие данные сохранены до проверки официального endpoint или on-chain контракта."
+    }
+  ]
+}

@@ -2222,7 +2222,7 @@
       "product": "USDe-tsUSDe (weighted_stable)",
       "type": "liquidity-pool",
       "apy": {
-        "current": 0.37375342789813804,
+        "current": 0.3736989513680733,
         "average7d": 0.4,
         "base": null,
         "rewards": null,
@@ -2239,7 +2239,7 @@
         "type": "api",
         "provider": "STON.fi DEX API",
         "url": "https://api.ston.fi/v1/pools",
-        "lastChecked": "2026-07-25T21:11:53.077Z",
+        "lastChecked": "2026-07-25T21:26:17.105Z",
         "importedAt": "2026-07-25T18:02:07Z",
         "origin": "automatic collector"
       },
@@ -2261,10 +2261,10 @@
       },
       "metrics": {
         "yield": {
-          "value": 0.37375342789813804,
+          "value": 0.3736989513680733,
           "metric": "apy",
           "origin": "protocol-reported-apy",
-          "apyEquivalent": 0.37375342789813804
+          "apyEquivalent": 0.3736989513680733
         },
         "tvlUsd": 276900,
         "confidence": {
@@ -2529,7 +2529,7 @@
         "type": "api",
         "provider": "STON.fi DEX API",
         "url": "https://api.ston.fi/v1/pools",
-        "lastChecked": "2026-07-25T21:11:53.077Z",
+        "lastChecked": "2026-07-25T21:26:17.105Z",
         "importedAt": "2026-07-25T18:02:07Z",
         "origin": "automatic collector"
       },
@@ -2888,7 +2888,7 @@
       }
     }
   ],
-  "updatedAt": "2026-07-25T21:11:59.763Z",
-  "normalizedAt": "2026-07-25T21:11:59.932Z",
-  "insightsGeneratedAt": "2026-07-25T21:12:00.648Z"
+  "updatedAt": "2026-07-25T21:26:22.389Z",
+  "normalizedAt": "2026-07-25T21:26:23.024Z",
+  "insightsGeneratedAt": "2026-07-25T21:26:25.826Z"
 }
