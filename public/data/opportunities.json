@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "snapshot": {
     "importedAt": "2026-07-25T18:02:07Z",
     "verified": false,
@@ -46,6 +46,30 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 12.3,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 12.3
+        },
+        "tvlUsd": 175700000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 0,
+          "level": "low",
+          "flags": []
+        }
       }
     },
     {
@@ -82,6 +106,30 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 13.6,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 13.6
+        },
+        "tvlUsd": 25700000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 0,
+          "level": "low",
+          "flags": []
+        }
       }
     },
     {
@@ -118,6 +166,30 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 15.8,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 15.8
+        },
+        "tvlUsd": 3200000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 0,
+          "level": "low",
+          "flags": []
+        }
       }
     },
     {
@@ -154,6 +226,30 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 14.7,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 14.7
+        },
+        "tvlUsd": 2000000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 0,
+          "level": "low",
+          "flags": []
+        }
       }
     },
     {
@@ -190,6 +286,32 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 14.7,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 14.7
+        },
+        "tvlUsd": 470000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "level": "low",
+          "flags": [
+            "moderate-tvl"
+          ]
+        }
       }
     },
     {
@@ -226,6 +348,30 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 13.8,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 13.8
+        },
+        "tvlUsd": 2400000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 0,
+          "level": "low",
+          "flags": []
+        }
       }
     },
     {
@@ -262,6 +408,30 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 9.2,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 9.2
+        },
+        "tvlUsd": 1300000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 0,
+          "level": "low",
+          "flags": []
+        }
       }
     },
     {
@@ -298,6 +468,32 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 10.9,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 10.9
+        },
+        "tvlUsd": 820200,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "level": "low",
+          "flags": [
+            "moderate-tvl"
+          ]
+        }
       }
     },
     {
@@ -334,6 +530,32 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 6.2,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 6.2
+        },
+        "tvlUsd": 1500000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "impermanent-loss-or-lp-risk"
+          ]
+        }
       }
     },
     {
@@ -370,6 +592,33 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 6.1,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 6.1
+        },
+        "tvlUsd": 937700,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "liquidation-or-utilization-risk",
+            "moderate-tvl"
+          ]
+        }
       }
     },
     {
@@ -406,6 +655,33 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 3.3,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 3.3
+        },
+        "tvlUsd": 52200,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 40,
+          "level": "medium",
+          "flags": [
+            "liquidation-or-utilization-risk",
+            "low-tvl"
+          ]
+        }
       }
     },
     {
@@ -442,6 +718,37 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": true
+      },
+      "metrics": {
+        "yield": {
+          "value": 1.5,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 1.5
+        },
+        "tvlUsd": 183400,
+        "confidence": {
+          "score": 20,
+          "grade": "E",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available",
+            "marked-stale",
+            "requires-disambiguation"
+          ]
+        },
+        "risk": {
+          "score": 80,
+          "level": "very-high",
+          "flags": [
+            "impermanent-loss-or-lp-risk",
+            "moderate-tvl",
+            "stale-data",
+            "unverified-pool"
+          ]
+        }
       }
     },
     {
@@ -478,6 +785,32 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 17.7,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 17.7
+        },
+        "tvlUsd": 34900,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "low-tvl"
+          ]
+        }
       }
     },
     {
@@ -514,6 +847,32 @@
         "lowTvl": true,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 0.3,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 0.3
+        },
+        "tvlUsd": 2300,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "low-tvl"
+          ]
+        }
       }
     },
     {
@@ -550,6 +909,32 @@
         "lowTvl": true,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 0.2,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 0.2
+        },
+        "tvlUsd": 251,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "low-tvl"
+          ]
+        }
       }
     },
     {
@@ -586,6 +971,30 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 4.1,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 4.1
+        },
+        "tvlUsd": 1500000000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 0,
+          "level": "low",
+          "flags": []
+        }
       }
     },
     {
@@ -622,6 +1031,30 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 5.7,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 5.7
+        },
+        "tvlUsd": 3400000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 0,
+          "level": "low",
+          "flags": []
+        }
       }
     },
     {
@@ -658,6 +1091,32 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 4.2,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 4.2
+        },
+        "tvlUsd": 990000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "level": "low",
+          "flags": [
+            "moderate-tvl"
+          ]
+        }
       }
     },
     {
@@ -694,6 +1153,33 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 8.1,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 8.1
+        },
+        "tvlUsd": 465600,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "liquidation-or-utilization-risk",
+            "moderate-tvl"
+          ]
+        }
       }
     },
     {
@@ -730,6 +1216,33 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 1.2,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 1.2
+        },
+        "tvlUsd": 129100,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "liquidation-or-utilization-risk",
+            "moderate-tvl"
+          ]
+        }
       }
     },
     {
@@ -766,6 +1279,33 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 0,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 0
+        },
+        "tvlUsd": 62200,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 40,
+          "level": "medium",
+          "flags": [
+            "liquidation-or-utilization-risk",
+            "low-tvl"
+          ]
+        }
       }
     },
     {
@@ -802,6 +1342,32 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 4,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 4
+        },
+        "tvlUsd": 365000,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "level": "low",
+          "flags": [
+            "moderate-tvl"
+          ]
+        }
       }
     },
     {
@@ -838,6 +1404,32 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 8.4,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 8.4
+        },
+        "tvlUsd": 62300,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "low-tvl"
+          ]
+        }
       }
     },
     {
@@ -874,6 +1466,32 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 9.44,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 9.44
+        },
+        "tvlUsd": 293300,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "level": "low",
+          "flags": [
+            "moderate-tvl"
+          ]
+        }
       }
     },
     {
@@ -901,7 +1519,7 @@
         "type": "api",
         "provider": "STON.fi DEX API",
         "url": "https://api.ston.fi/v1/pools",
-        "lastChecked": "2026-07-25T19:36:12.509Z",
+        "lastChecked": "2026-07-25T20:00:23.727Z",
         "importedAt": "2026-07-25T18:02:07Z",
         "origin": "automatic collector"
       },
@@ -920,6 +1538,34 @@
           "EQDQ5UUyPHrLcQJlPAczd_fjxn8SLrlNQwolBznxCdSlfQwr"
         ],
         "routerAddress": "EQAGV9vw11tKW2QOCYCXEmIdyufM3p5CfcgHcY9NiiBLfZGH"
+      },
+      "metrics": {
+        "yield": {
+          "value": 0.3762065918530011,
+          "metric": "apy",
+          "origin": "protocol-reported-apy",
+          "apyEquivalent": 0.3762065918530011
+        },
+        "tvlUsd": 276900,
+        "confidence": {
+          "score": 100,
+          "grade": "A",
+          "reasons": [
+            "automatic-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available",
+            "contract-or-pool-identified"
+          ]
+        },
+        "risk": {
+          "score": 35,
+          "level": "medium",
+          "flags": [
+            "impermanent-loss-or-lp-risk",
+            "moderate-tvl"
+          ]
+        }
       }
     },
     {
@@ -956,6 +1602,32 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 17.5,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 17.5
+        },
+        "tvlUsd": 41200,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "low-tvl"
+          ]
+        }
       }
     },
     {
@@ -992,6 +1664,34 @@
         "lowTvl": true,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 44.9,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 44.9
+        },
+        "tvlUsd": 2600,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 50,
+          "level": "high",
+          "flags": [
+            "liquidation-or-utilization-risk",
+            "low-tvl",
+            "high-yield"
+          ]
+        }
       }
     },
     {
@@ -1019,7 +1719,7 @@
         "type": "api",
         "provider": "STON.fi DEX API",
         "url": "https://api.ston.fi/v1/pools",
-        "lastChecked": "2026-07-25T19:36:12.509Z",
+        "lastChecked": "2026-07-25T20:00:23.727Z",
         "importedAt": "2026-07-25T18:02:07Z",
         "origin": "automatic collector"
       },
@@ -1038,6 +1738,33 @@
           "EQCcM1Qa7_STSnOSev23Gj5cLJB4wALUCYuuppdOVtSSBuUm"
         ],
         "routerAddress": "EQCS4UEa5UaJLzOyyKieqQOQ2P9M-7kXpkO5HnP3Bv250cN3"
+      },
+      "metrics": {
+        "yield": {
+          "value": 0,
+          "metric": "apy",
+          "origin": "protocol-reported-apy",
+          "apyEquivalent": 0
+        },
+        "tvlUsd": 6100000,
+        "confidence": {
+          "score": 100,
+          "grade": "A",
+          "reasons": [
+            "automatic-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available",
+            "contract-or-pool-identified"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "impermanent-loss-or-lp-risk"
+          ]
+        }
       }
     },
     {
@@ -1074,6 +1801,36 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": true
+      },
+      "metrics": {
+        "yield": {
+          "value": 3,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 3
+        },
+        "tvlUsd": 5300000,
+        "confidence": {
+          "score": 20,
+          "grade": "E",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available",
+            "marked-stale",
+            "requires-disambiguation"
+          ]
+        },
+        "risk": {
+          "score": 70,
+          "level": "very-high",
+          "flags": [
+            "impermanent-loss-or-lp-risk",
+            "stale-data",
+            "unverified-pool"
+          ]
+        }
       }
     },
     {
@@ -1110,6 +1867,32 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 3.6,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 3.6
+        },
+        "tvlUsd": 66300,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "low-tvl"
+          ]
+        }
       }
     },
     {
@@ -1146,8 +1929,35 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "metrics": {
+        "yield": {
+          "value": 5.1,
+          "metric": "apy",
+          "origin": "manual-snapshot",
+          "apyEquivalent": 5.1
+        },
+        "tvlUsd": 39400,
+        "confidence": {
+          "score": 70,
+          "grade": "B",
+          "reasons": [
+            "manual-source",
+            "fresh-within-6h",
+            "tvl-available",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 25,
+          "level": "medium",
+          "flags": [
+            "low-tvl"
+          ]
+        }
       }
     }
   ],
-  "updatedAt": "2026-07-25T19:36:18.774Z"
+  "updatedAt": "2026-07-25T20:00:30.547Z",
+  "normalizedAt": "2026-07-25T20:00:30.726Z"
 }

@@ -685,73 +685,6 @@
       }
     },
     {
-      "id": "ston-fi-gram-tston-tston",
-      "protocol": "STON.fi",
-      "category": "gram",
-      "asset": "GRAM",
-      "product": "GRAM-tsTON (tsTON)",
-      "type": "liquidity-pool",
-      "apy": {
-        "current": 1.5,
-        "average7d": 3.8,
-        "base": null,
-        "rewards": null,
-        "direction": "down"
-      },
-      "tvlUsd": 183400,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://app.ston.fi/pools",
-        "app": "https://app.ston.fi/pools"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "STON.fi",
-        "url": "https://app.ston.fi/pools",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": true,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": true
-      },
-      "metrics": {
-        "yield": {
-          "value": 1.5,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 1.5
-        },
-        "tvlUsd": 183400,
-        "confidence": {
-          "score": 20,
-          "grade": "E",
-          "reasons": [
-            "manual-source",
-            "fresh-within-6h",
-            "tvl-available",
-            "yield-available",
-            "marked-stale",
-            "requires-disambiguation"
-          ]
-        },
-        "risk": {
-          "score": 80,
-          "level": "very-high",
-          "flags": [
-            "impermanent-loss-or-lp-risk",
-            "moderate-tvl",
-            "stale-data",
-            "unverified-pool"
-          ]
-        }
-      }
-    },
-    {
       "id": "gtc-gram-vault",
       "protocol": "GTC",
       "category": "gram",
@@ -1768,72 +1701,6 @@
       }
     },
     {
-      "id": "ston-fi-usdt-gram-pool-2",
-      "protocol": "STON.fi",
-      "category": "gram-usdt",
-      "asset": "USDT-GRAM",
-      "product": "USDT-GRAM pool #2",
-      "type": "liquidity-pool",
-      "apy": {
-        "current": 3,
-        "average7d": 6.4,
-        "base": null,
-        "rewards": null,
-        "direction": "down"
-      },
-      "tvlUsd": 5300000,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://app.ston.fi/pools",
-        "app": "https://app.ston.fi/pools"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "STON.fi",
-        "url": "https://app.ston.fi/pools",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": true,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": true
-      },
-      "metrics": {
-        "yield": {
-          "value": 3,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 3
-        },
-        "tvlUsd": 5300000,
-        "confidence": {
-          "score": 20,
-          "grade": "E",
-          "reasons": [
-            "manual-source",
-            "fresh-within-6h",
-            "tvl-available",
-            "yield-available",
-            "marked-stale",
-            "requires-disambiguation"
-          ]
-        },
-        "risk": {
-          "score": 70,
-          "level": "very-high",
-          "flags": [
-            "impermanent-loss-or-lp-risk",
-            "stale-data",
-            "unverified-pool"
-          ]
-        }
-      }
-    },
-    {
       "id": "morpho-re7-cbbtc-v2-vault",
       "protocol": "Morpho",
       "category": "btc",
@@ -1959,5 +1826,6 @@
     }
   ],
   "updatedAt": "2026-07-25T20:00:30.547Z",
-  "normalizedAt": "2026-07-25T20:00:30.726Z"
+  "normalizedAt": "2026-07-25T20:00:30.726Z",
+  "publishedAt": "2026-07-25T20:00:30.726Z"
 }
