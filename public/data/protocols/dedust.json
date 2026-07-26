@@ -1,18 +1,18 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-26T07:06:00.890Z",
+  "generatedAt": "2026-07-26T09:25:37.822Z",
   "source": {
     "provider": "DeDust official API",
     "url": "https://api.dedust.io/v2/pools"
   },
   "summary": {
-    "received": 52261,
-    "normalized": 52261,
-    "withSymbols": 51492,
+    "received": 52262,
+    "normalized": 52262,
+    "withSymbols": 51493,
     "withTvl": 0,
     "withYield": 0,
     "stablePools": 18,
-    "volatilePools": 52243
+    "volatilePools": 52244
   },
   "pools": [
     {
@@ -714357,6 +714357,22 @@
       ],
       "assetAddresses": [
         "EQBh2pyKxF79ZnmvDwSOXoiBgdPw-r5lsRHPWsBQtNmNkoJI"
+      ],
+      "poolType": "volatile",
+      "tvlUsd": null,
+      "yieldRate": null,
+      "yieldMetric": null,
+      "volume24hUsd": null,
+      "feeBps": null
+    },
+    {
+      "address": "EQCyUB18sIwaLaAUxnp3Kr0aY3AhZFY97TrD-KTnuXyM1JOz",
+      "symbols": [
+        "TON",
+        "JETTON"
+      ],
+      "assetAddresses": [
+        "EQDe9XVpZ2fu_gjjjJd9pSmM2sDQJ5Wmjm57tk7G3dKr2iqX"
       ],
       "poolType": "volatile",
       "tvlUsd": null,
