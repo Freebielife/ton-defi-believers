@@ -56,11 +56,11 @@
         },
         "tvlUsd": 175700000,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -71,11 +71,11 @@
           "flags": []
         },
         "yieldScore": {
-          "score": 73,
+          "score": 71,
           "grade": "B",
           "components": {
             "yield": 22.44,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 16.98,
             "risk": 15
           }
@@ -146,11 +146,11 @@
         },
         "tvlUsd": 25700000,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -161,11 +161,11 @@
           "flags": []
         },
         "yieldScore": {
-          "score": 71,
+          "score": 69,
           "grade": "B",
           "components": {
             "yield": 23.73,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 13.64,
             "risk": 15
           }
@@ -236,11 +236,11 @@
         },
         "tvlUsd": 3200000,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -251,11 +251,11 @@
           "flags": []
         },
         "yieldScore": {
-          "score": 69,
+          "score": 67,
           "grade": "B",
           "components": {
             "yield": 25.62,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 10.02,
             "risk": 15
           }
@@ -326,11 +326,11 @@
         },
         "tvlUsd": 2000000,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -341,11 +341,11 @@
           "flags": []
         },
         "yieldScore": {
-          "score": 68,
+          "score": 65,
           "grade": "B",
           "components": {
             "yield": 24.72,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 9.2,
             "risk": 15
           }
@@ -416,11 +416,11 @@
         },
         "tvlUsd": 470000,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -433,11 +433,11 @@
           ]
         },
         "yieldScore": {
-          "score": 64,
+          "score": 61,
           "grade": "C",
           "components": {
             "yield": 24.72,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 6.69,
             "risk": 13.5
           }
@@ -508,11 +508,11 @@
         },
         "tvlUsd": 2400000,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -523,11 +523,11 @@
           "flags": []
         },
         "yieldScore": {
-          "score": 67,
+          "score": 65,
           "grade": "B",
           "components": {
             "yield": 23.92,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 9.52,
             "risk": 15
           }
@@ -598,11 +598,11 @@
         },
         "tvlUsd": 1300000,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -613,11 +613,11 @@
           "flags": []
         },
         "yieldScore": {
-          "score": 61,
+          "score": 59,
           "grade": "C",
           "components": {
             "yield": 18.74,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 8.46,
             "risk": 15
           }
@@ -688,11 +688,11 @@
         },
         "tvlUsd": 820200,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -705,11 +705,11 @@
           ]
         },
         "yieldScore": {
-          "score": 61,
+          "score": 59,
           "grade": "C",
           "components": {
             "yield": 20.89,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 7.66,
             "risk": 13.5
           }
@@ -780,11 +780,11 @@
         },
         "tvlUsd": 1500000,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -797,11 +797,11 @@
           ]
         },
         "yieldScore": {
-          "score": 53,
+          "score": 51,
           "grade": "C",
           "components": {
             "yield": 14.12,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 8.7,
             "risk": 11.25
           }
@@ -872,11 +872,11 @@
         },
         "tvlUsd": 937700,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -890,11 +890,11 @@
           ]
         },
         "yieldScore": {
-          "score": 52,
+          "score": 50,
           "grade": "C",
           "components": {
             "yield": 13.95,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 7.89,
             "risk": 11.25
           }
@@ -965,11 +965,11 @@
         },
         "tvlUsd": 52200,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -983,11 +983,11 @@
           ]
         },
         "yieldScore": {
-          "score": 39,
+          "score": 37,
           "grade": "D",
           "components": {
             "yield": 8.41,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 2.87,
             "risk": 9
           }
@@ -1058,11 +1058,11 @@
         },
         "tvlUsd": 183400,
         "confidence": {
-          "score": 12,
+          "score": 5,
           "grade": "E",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available",
             "marked-stale",
@@ -1080,11 +1080,11 @@
           ]
         },
         "yieldScore": {
-          "score": 16,
+          "score": 14,
           "grade": "E",
           "components": {
             "yield": 4.11,
-            "confidence": 3.6,
+            "confidence": 1.5,
             "tvl": 5.05,
             "risk": 3
           }
@@ -1155,11 +1155,11 @@
         },
         "tvlUsd": 34900,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -1172,11 +1172,11 @@
           ]
         },
         "yieldScore": {
-          "score": 59,
+          "score": 57,
           "grade": "C",
           "components": {
             "yield": 26.99,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 2.17,
             "risk": 11.25
           }
@@ -1247,11 +1247,11 @@
         },
         "tvlUsd": 2300,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -1264,11 +1264,11 @@
           ]
         },
         "yieldScore": {
-          "score": 31,
+          "score": 29,
           "grade": "E",
           "components": {
             "yield": 0.86,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 0,
             "risk": 11.25
           }
@@ -1339,11 +1339,11 @@
         },
         "tvlUsd": 251,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -1356,11 +1356,11 @@
           ]
         },
         "yieldScore": {
-          "score": 30,
+          "score": 28,
           "grade": "E",
           "components": {
             "yield": 0.58,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 0,
             "risk": 11.25
           }
@@ -1431,11 +1431,11 @@
         },
         "tvlUsd": 1500000000,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -1446,11 +1446,11 @@
           "flags": []
         },
         "yieldScore": {
-          "score": 64,
+          "score": 62,
           "grade": "C",
           "components": {
             "yield": 10.13,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 20,
             "risk": 15
           }
@@ -1521,11 +1521,11 @@
         },
         "tvlUsd": 3400000,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -1536,11 +1536,11 @@
           "flags": []
         },
         "yieldScore": {
-          "score": 57,
+          "score": 55,
           "grade": "C",
           "components": {
             "yield": 13.23,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 10.13,
             "risk": 15
           }
@@ -1611,11 +1611,11 @@
         },
         "tvlUsd": 990000,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -1628,11 +1628,11 @@
           ]
         },
         "yieldScore": {
-          "score": 50,
-          "grade": "C",
+          "score": 48,
+          "grade": "D",
           "components": {
             "yield": 10.34,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 7.98,
             "risk": 13.5
           }
@@ -1703,11 +1703,11 @@
         },
         "tvlUsd": 465600,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -1721,11 +1721,11 @@
           ]
         },
         "yieldScore": {
-          "score": 54,
+          "score": 52,
           "grade": "C",
           "components": {
             "yield": 17.18,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 6.67,
             "risk": 11.25
           }
@@ -1796,11 +1796,11 @@
         },
         "tvlUsd": 129100,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -1814,11 +1814,11 @@
           ]
         },
         "yieldScore": {
-          "score": 38,
+          "score": 36,
           "grade": "D",
           "components": {
             "yield": 3.33,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 4.44,
             "risk": 11.25
           }
@@ -1889,11 +1889,11 @@
         },
         "tvlUsd": 62200,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -1907,11 +1907,11 @@
           ]
         },
         "yieldScore": {
-          "score": 31,
+          "score": 29,
           "grade": "E",
           "components": {
             "yield": 0,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 3.18,
             "risk": 9
           }
@@ -1982,11 +1982,11 @@
         },
         "tvlUsd": 365000,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -1999,11 +1999,11 @@
           ]
         },
         "yieldScore": {
-          "score": 48,
+          "score": 46,
           "grade": "D",
           "components": {
             "yield": 9.92,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 6.25,
             "risk": 13.5
           }
@@ -2074,11 +2074,11 @@
         },
         "tvlUsd": 62300,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -2091,11 +2091,11 @@
           ]
         },
         "yieldScore": {
-          "score": 51,
-          "grade": "C",
+          "score": 49,
+          "grade": "D",
           "components": {
             "yield": 17.62,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 3.18,
             "risk": 11.25
           }
@@ -2166,11 +2166,11 @@
         },
         "tvlUsd": 293300,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -2183,11 +2183,11 @@
           ]
         },
         "yieldScore": {
-          "score": 57,
+          "score": 55,
           "grade": "C",
           "components": {
             "yield": 19.06,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 5.87,
             "risk": 13.5
           }
@@ -2222,7 +2222,7 @@
       "product": "USDe-tsUSDe (weighted_stable)",
       "type": "liquidity-pool",
       "apy": {
-        "current": 0.005037032113963669,
+        "current": 0.0569328868864627,
         "average7d": 0.4,
         "base": null,
         "rewards": null,
@@ -2239,7 +2239,7 @@
         "type": "api",
         "provider": "STON.fi DEX API",
         "url": "https://api.ston.fi/v1/pools",
-        "lastChecked": "2026-07-26T17:18:04.468Z",
+        "lastChecked": "2026-07-26T19:37:12.302Z",
         "importedAt": "2026-07-25T18:02:07Z",
         "origin": "automatic collector"
       },
@@ -2261,10 +2261,10 @@
       },
       "metrics": {
         "yield": {
-          "value": 0.005037032113963669,
+          "value": 0.0569328868864627,
           "metric": "apy",
           "origin": "protocol-reported-apy",
-          "apyEquivalent": 0.005037032113963669
+          "apyEquivalent": 0.0569328868864627
         },
         "tvlUsd": 276900,
         "confidence": {
@@ -2290,7 +2290,7 @@
           "score": 46,
           "grade": "D",
           "components": {
-            "yield": 0.01,
+            "yield": 0.17,
             "confidence": 30,
             "tvl": 5.77,
             "risk": 9.75
@@ -2300,19 +2300,19 @@
           "1d": {
             "available": true,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": -0.36606401318217685,
+            "apyChangePoints": -0.3141681584096778,
             "tvlChangePercent": 0
           },
           "7d": {
             "available": true,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": -0.36606401318217685,
+            "apyChangePoints": -0.3141681584096778,
             "tvlChangePercent": 0
           },
           "30d": {
             "available": true,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": -0.36606401318217685,
+            "apyChangePoints": -0.3141681584096778,
             "tvlChangePercent": 0
           }
         }
@@ -2362,11 +2362,11 @@
         },
         "tvlUsd": 41200,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -2379,11 +2379,11 @@
           ]
         },
         "yieldScore": {
-          "score": 59,
+          "score": 57,
           "grade": "C",
           "components": {
             "yield": 26.86,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 2.46,
             "risk": 11.25
           }
@@ -2454,11 +2454,11 @@
         },
         "tvlUsd": 2600,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -2473,11 +2473,11 @@
           ]
         },
         "yieldScore": {
-          "score": 60,
+          "score": 58,
           "grade": "C",
           "components": {
             "yield": 34.17,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 0,
             "risk": 7.5
           }
@@ -2529,7 +2529,7 @@
         "type": "api",
         "provider": "STON.fi DEX API",
         "url": "https://api.ston.fi/v1/pools",
-        "lastChecked": "2026-07-26T17:18:04.468Z",
+        "lastChecked": "2026-07-26T19:37:12.302Z",
         "importedAt": "2026-07-25T18:02:07Z",
         "origin": "automatic collector"
       },
@@ -2651,11 +2651,11 @@
         },
         "tvlUsd": 5300000,
         "confidence": {
-          "score": 12,
+          "score": 5,
           "grade": "E",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available",
             "marked-stale",
@@ -2672,11 +2672,11 @@
           ]
         },
         "yieldScore": {
-          "score": 27,
+          "score": 25,
           "grade": "E",
           "components": {
             "yield": 7.74,
-            "confidence": 3.6,
+            "confidence": 1.5,
             "tvl": 10.9,
             "risk": 4.5
           }
@@ -2747,11 +2747,11 @@
         },
         "tvlUsd": 66300,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -2764,11 +2764,11 @@
           ]
         },
         "yieldScore": {
-          "score": 42,
+          "score": 40,
           "grade": "D",
           "components": {
             "yield": 9.07,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 3.29,
             "risk": 11.25
           }
@@ -2839,11 +2839,11 @@
         },
         "tvlUsd": 39400,
         "confidence": {
-          "score": 62,
+          "score": 55,
           "grade": "C",
           "reasons": [
             "manual-source",
-            "fresh-within-24h",
+            "fresh-within-72h",
             "tvl-available",
             "yield-available"
           ]
@@ -2856,11 +2856,11 @@
           ]
         },
         "yieldScore": {
-          "score": 44,
+          "score": 42,
           "grade": "D",
           "components": {
             "yield": 12.12,
-            "confidence": 18.6,
+            "confidence": 16.5,
             "tvl": 2.38,
             "risk": 11.25
           }
@@ -2888,7 +2888,7 @@
       }
     }
   ],
-  "updatedAt": "2026-07-26T17:18:09.847Z",
-  "normalizedAt": "2026-07-26T17:18:10.072Z",
-  "insightsGeneratedAt": "2026-07-26T17:18:10.923Z"
+  "updatedAt": "2026-07-26T19:37:19.230Z",
+  "normalizedAt": "2026-07-26T19:37:19.400Z",
+  "insightsGeneratedAt": "2026-07-26T19:37:20.085Z"
 }
