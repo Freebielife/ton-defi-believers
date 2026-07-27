@@ -2222,7 +2222,7 @@
       "product": "USDe-tsUSDe (weighted_stable)",
       "type": "liquidity-pool",
       "apy": {
-        "current": 0.05704368946324312,
+        "current": 0.057043646176424545,
         "average7d": 0.4,
         "base": null,
         "rewards": null,
@@ -2239,7 +2239,7 @@
         "type": "api",
         "provider": "STON.fi DEX API",
         "url": "https://api.ston.fi/v1/pools",
-        "lastChecked": "2026-07-27T15:16:21.411Z",
+        "lastChecked": "2026-07-27T17:13:41.933Z",
         "importedAt": "2026-07-25T18:02:07Z",
         "origin": "automatic collector"
       },
@@ -2261,10 +2261,10 @@
       },
       "metrics": {
         "yield": {
-          "value": 0.05704368946324312,
+          "value": 0.057043646176424545,
           "metric": "apy",
           "origin": "protocol-reported-apy",
-          "apyEquivalent": 0.05704368946324312
+          "apyEquivalent": 0.057043646176424545
         },
         "tvlUsd": 276900,
         "confidence": {
@@ -2300,19 +2300,19 @@
           "1d": {
             "available": true,
             "referenceDate": "2026-07-26",
-            "apyChangePoints": -0.0017527379821968836,
+            "apyChangePoints": -0.0017527812690154576,
             "tvlChangePercent": 0
           },
           "7d": {
             "available": true,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": -0.3140573558328974,
+            "apyChangePoints": -0.314057399119716,
             "tvlChangePercent": 0
           },
           "30d": {
             "available": true,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": -0.3140573558328974,
+            "apyChangePoints": -0.314057399119716,
             "tvlChangePercent": 0
           }
         }
@@ -2529,7 +2529,7 @@
         "type": "api",
         "provider": "STON.fi DEX API",
         "url": "https://api.ston.fi/v1/pools",
-        "lastChecked": "2026-07-27T15:16:21.411Z",
+        "lastChecked": "2026-07-27T17:13:41.933Z",
         "importedAt": "2026-07-25T18:02:07Z",
         "origin": "automatic collector"
       },
@@ -2888,7 +2888,7 @@
       }
     }
   ],
-  "updatedAt": "2026-07-27T15:16:27.993Z",
-  "normalizedAt": "2026-07-27T15:16:28.129Z",
-  "insightsGeneratedAt": "2026-07-27T15:16:28.700Z"
+  "updatedAt": "2026-07-27T17:13:50.377Z",
+  "normalizedAt": "2026-07-27T17:13:50.546Z",
+  "insightsGeneratedAt": "2026-07-27T17:13:51.234Z"
 }
