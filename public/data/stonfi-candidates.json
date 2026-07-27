@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-27T11:42:36.893Z",
-  "assetsReceived": 37786,
+  "generatedAt": "2026-07-27T15:16:21.411Z",
+  "assetsReceived": 37790,
   "v1PoolsReceived": 18819,
-  "v2PoolsReceived": 47077,
-  "uniquePoolsReceived": 47077,
+  "v2PoolsReceived": 47081,
+  "uniquePoolsReceived": 47081,
   "farmsReceived": 6,
-  "resolvedPoolSymbols": 40411,
+  "resolvedPoolSymbols": 40415,
   "opportunities": [
     {
       "opportunityId": "ston-fi-gram-tston-tston",
@@ -37,7 +37,7 @@
           "poolType": null,
           "dexVersion": "v2",
           "tvlUsd": null,
-          "yieldRate": 0.05563055604007605,
+          "yieldRate": 0.05704368946324312,
           "yieldMetric": "apy",
           "routerAddress": "EQAGV9vw11tKW2QOCYCXEmIdyufM3p5CfcgHcY9NiiBLfZGH"
         }
