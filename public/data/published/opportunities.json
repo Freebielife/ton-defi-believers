@@ -2125,7 +2125,7 @@
       "product": "USDe-tsUSDe (weighted_stable)",
       "type": "liquidity-pool",
       "apy": {
-        "current": 0.05884965067581849,
+        "current": 0.05514786282156958,
         "average7d": 0.4,
         "base": null,
         "rewards": null,
@@ -2142,7 +2142,7 @@
         "type": "api",
         "provider": "STON.fi DEX API",
         "url": "https://api.ston.fi/v1/pools",
-        "lastChecked": "2026-07-27T04:09:51.847Z",
+        "lastChecked": "2026-07-27T07:54:53.632Z",
         "importedAt": "2026-07-25T18:02:07Z",
         "origin": "automatic collector"
       },
@@ -2164,10 +2164,10 @@
       },
       "metrics": {
         "yield": {
-          "value": 0.05884965067581849,
+          "value": 0.05514786282156958,
           "metric": "apy",
           "origin": "protocol-reported-apy",
-          "apyEquivalent": 0.05884965067581849
+          "apyEquivalent": 0.05514786282156958
         },
         "tvlUsd": 276900,
         "confidence": {
@@ -2193,7 +2193,7 @@
           "score": 46,
           "grade": "D",
           "components": {
-            "yield": 0.17,
+            "yield": 0.16,
             "confidence": 30,
             "tvl": 5.77,
             "risk": 9.75
@@ -2203,19 +2203,19 @@
           "1d": {
             "available": true,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": -0.31225139462032203,
+            "apyChangePoints": -0.31595318247457094,
             "tvlChangePercent": 0
           },
           "7d": {
             "available": true,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": -0.31225139462032203,
+            "apyChangePoints": -0.31595318247457094,
             "tvlChangePercent": 0
           },
           "30d": {
             "available": true,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": -0.31225139462032203,
+            "apyChangePoints": -0.31595318247457094,
             "tvlChangePercent": 0
           }
         }
@@ -2432,7 +2432,7 @@
         "type": "api",
         "provider": "STON.fi DEX API",
         "url": "https://api.ston.fi/v1/pools",
-        "lastChecked": "2026-07-27T04:09:51.847Z",
+        "lastChecked": "2026-07-27T07:54:53.632Z",
         "importedAt": "2026-07-25T18:02:07Z",
         "origin": "automatic collector"
       },
@@ -2695,8 +2695,8 @@
       }
     }
   ],
-  "updatedAt": "2026-07-27T04:09:58.803Z",
-  "normalizedAt": "2026-07-27T04:09:58.980Z",
-  "insightsGeneratedAt": "2026-07-27T04:09:59.710Z",
-  "publishedAt": "2026-07-27T04:09:59.710Z"
+  "updatedAt": "2026-07-27T07:55:00.030Z",
+  "normalizedAt": "2026-07-27T07:55:00.177Z",
+  "insightsGeneratedAt": "2026-07-27T07:55:00.746Z",
+  "publishedAt": "2026-07-27T07:55:00.746Z"
 }
