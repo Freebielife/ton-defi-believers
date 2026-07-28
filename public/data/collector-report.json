@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-07-28T09:49:47.916Z",
+  "generatedAt": "2026-07-28T12:16:17.109Z",
   "sourcePolicy": {
     "primarySourceMustBelongToProtocol": true,
     "thirdPartyAggregationAsPrimary": false,
@@ -10,27 +10,21 @@
   "adapters": [
     {
       "adapter": "stonfi",
-      "status": "partial",
-      "updated": 2,
-      "unresolved": 1,
-      "assetsReceived": 37802,
-      "v1PoolsReceived": 18819,
-      "v2PoolsReceived": 47093,
-      "uniquePoolsReceived": 47093,
-      "farmsReceived": 165,
-      "candidatesFile": "data/stonfi-candidates.json",
-      "durationMs": 3511
+      "status": "error",
+      "retainedPreviousData": true,
+      "durationMs": 30163,
+      "message": "This operation was aborted"
     },
     {
       "adapter": "dedust",
       "status": "catalog-ready-no-tracked-opportunities",
-      "apiPoolsReceived": 52272,
-      "normalizedPools": 52272,
+      "apiPoolsReceived": 52273,
+      "normalizedPools": 52273,
       "poolsWithTvl": 0,
       "poolsWithYield": 0,
       "updated": 0,
       "snapshotFile": "data/protocols/dedust.json",
-      "durationMs": 2074
+      "durationMs": 3690
     },
     {
       "adapter": "tonstakers",
@@ -39,7 +33,7 @@
       "mode": "official-sdk-or-onchain",
       "retainedExistingRecords": 1,
       "automaticUpdates": 0,
-      "checkedAt": "2026-07-28T09:49:47.914Z",
+      "checkedAt": "2026-07-28T12:16:17.108Z",
       "message": "Источник изолирован от других протоколов. Существующие данные сохранены до проверки официального endpoint или on-chain контракта.",
       "durationMs": 1
     },
@@ -50,7 +44,7 @@
       "mode": "official-sdk-or-onchain",
       "retainedExistingRecords": 5,
       "automaticUpdates": 0,
-      "checkedAt": "2026-07-28T09:49:47.914Z",
+      "checkedAt": "2026-07-28T12:16:17.108Z",
       "message": "Источник изолирован от других протоколов. Существующие данные сохранены до проверки официального endpoint или on-chain контракта.",
       "durationMs": 0
     },
@@ -61,7 +55,7 @@
       "mode": "onchain",
       "retainedExistingRecords": 1,
       "automaticUpdates": 0,
-      "checkedAt": "2026-07-28T09:49:47.914Z",
+      "checkedAt": "2026-07-28T12:16:17.108Z",
       "message": "Источник изолирован от других протоколов. Существующие данные сохранены до проверки официального endpoint или on-chain контракта.",
       "durationMs": 0
     },
@@ -72,7 +66,7 @@
       "mode": "onchain",
       "retainedExistingRecords": 2,
       "automaticUpdates": 0,
-      "checkedAt": "2026-07-28T09:49:47.914Z",
+      "checkedAt": "2026-07-28T12:16:17.109Z",
       "message": "Источник изолирован от других протоколов. Существующие данные сохранены до проверки официального endpoint или on-chain контракта.",
       "durationMs": 0
     },
@@ -83,7 +77,7 @@
       "mode": "official-source-or-onchain",
       "retainedExistingRecords": 4,
       "automaticUpdates": 0,
-      "checkedAt": "2026-07-28T09:49:47.915Z",
+      "checkedAt": "2026-07-28T12:16:17.109Z",
       "message": "Источник изолирован от других протоколов. Существующие данные сохранены до проверки официального endpoint или on-chain контракта.",
       "durationMs": 0
     },
@@ -94,7 +88,7 @@
       "mode": "official-sdk-or-onchain",
       "retainedExistingRecords": 2,
       "automaticUpdates": 0,
-      "checkedAt": "2026-07-28T09:49:47.915Z",
+      "checkedAt": "2026-07-28T12:16:17.109Z",
       "message": "Источник изолирован от других протоколов. Существующие данные сохранены до проверки официального endpoint или on-chain контракта.",
       "durationMs": 0
     },
@@ -105,7 +99,7 @@
       "mode": "official-api",
       "retainedExistingRecords": 1,
       "automaticUpdates": 0,
-      "checkedAt": "2026-07-28T09:49:47.915Z",
+      "checkedAt": "2026-07-28T12:16:17.109Z",
       "message": "Источник изолирован от других протоколов. Существующие данные сохранены до проверки официального endpoint или on-chain контракта.",
       "durationMs": 0
     },
@@ -116,17 +110,17 @@
       "mode": "official-product-source",
       "retainedExistingRecords": 1,
       "automaticUpdates": 0,
-      "checkedAt": "2026-07-28T09:49:47.916Z",
+      "checkedAt": "2026-07-28T12:16:17.109Z",
       "message": "Источник изолирован от других протоколов. Существующие данные сохранены до проверки официального endpoint или on-chain контракта.",
       "durationMs": 0
     }
   ],
   "summary": {
     "total": 10,
-    "automatic": 2,
+    "automatic": 1,
     "pendingVerification": 8,
-    "errors": 0,
-    "publishedFreshData": true,
-    "retainedPreviousSnapshot": false
+    "errors": 1,
+    "publishedFreshData": false,
+    "retainedPreviousSnapshot": true
   }
 }
