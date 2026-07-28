@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-07-28T12:16:17.109Z",
+  "updatedAt": "2026-07-28T14:44:40.405Z",
   "limit": 168,
   "entries": [
     {
@@ -2021,6 +2021,75 @@
           "status": "degraded",
           "sourceStatus": "catalog-ready-no-tracked-opportunities",
           "durationMs": 3690,
+          "items": 0
+        },
+        "tonstakers": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 1,
+          "items": 1
+        },
+        "evaa": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 5
+        },
+        "hipo": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "bemo": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 2
+        },
+        "affluent": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 4
+        },
+        "storm": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 2
+        },
+        "ethena": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "telegram-wallet": {
+          "status": "degraded",
+          "sourceStatus": "manual-until-public-source",
+          "durationMs": 0,
+          "items": 1
+        }
+      }
+    },
+    {
+      "generatedAt": "2026-07-28T14:44:40.405Z",
+      "status": "degraded",
+      "buildQuality": 48,
+      "durationMs": 6640,
+      "publishedFreshData": true,
+      "protocols": {
+        "stonfi": {
+          "status": "partial",
+          "sourceStatus": "partial",
+          "durationMs": 4302,
+          "items": 2
+        },
+        "dedust": {
+          "status": "degraded",
+          "sourceStatus": "catalog-ready-no-tracked-opportunities",
+          "durationMs": 2335,
           "items": 0
         },
         "tonstakers": {

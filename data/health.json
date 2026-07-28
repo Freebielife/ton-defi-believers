@@ -1,43 +1,43 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-28T12:16:17.109Z",
+  "generatedAt": "2026-07-28T14:44:40.405Z",
   "run": {
-    "startedAt": "2026-07-28T12:15:43.255Z",
-    "finishedAt": "2026-07-28T12:16:17.109Z",
-    "durationMs": 33854,
-    "publishedFreshData": false,
+    "startedAt": "2026-07-28T14:44:33.765Z",
+    "finishedAt": "2026-07-28T14:44:40.405Z",
+    "durationMs": 6640,
+    "publishedFreshData": true,
     "previousSnapshotUpdatedAt": "2026-07-28T09:49:47.916Z"
   },
   "status": "degraded",
-  "buildQuality": 41,
+  "buildQuality": 48,
   "summary": {
     "total": 10,
     "healthy": 0,
-    "partial": 0,
+    "partial": 1,
     "degraded": 9,
-    "errors": 1,
+    "errors": 0,
     "disabled": 0,
-    "averageDurationMs": 3385
+    "averageDurationMs": 664
   },
   "protocols": [
     {
       "adapter": "stonfi",
       "protocol": "stonfi",
-      "status": "error",
-      "sourceStatus": "error",
-      "durationMs": 30163,
-      "items": 0,
-      "updated": 0,
-      "unresolved": 0,
-      "retainedPreviousData": true,
-      "message": "This operation was aborted"
+      "status": "partial",
+      "sourceStatus": "partial",
+      "durationMs": 4302,
+      "items": 2,
+      "updated": 2,
+      "unresolved": 1,
+      "retainedPreviousData": false,
+      "message": null
     },
     {
       "adapter": "dedust",
       "protocol": "dedust",
       "status": "degraded",
       "sourceStatus": "catalog-ready-no-tracked-opportunities",
-      "durationMs": 3690,
+      "durationMs": 2335,
       "items": 0,
       "updated": 0,
       "unresolved": 0,
