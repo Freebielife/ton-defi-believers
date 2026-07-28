@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-28T19:41:53.930Z",
+  "generatedAt": "2026-07-28T22:18:15.966Z",
   "methodology": "Yield Score combines diminishing-return yield attractiveness, confidence, TVL depth and inverse risk. It is informational, not investment advice.",
   "opportunities": [
     {
@@ -77,6 +77,30 @@
     },
     {
       "rank": 7,
+      "id": "dedust-liquidity-pools",
+      "protocol": "DeDust",
+      "product": "TON–USDT pool",
+      "score": 47,
+      "grade": "D",
+      "apy": 0,
+      "tvlUsd": 654671.84832,
+      "confidence": 100,
+      "risk": "medium"
+    },
+    {
+      "rank": 8,
+      "id": "ston-fi-usde-tsusde-weighted-stable",
+      "protocol": "STON.fi",
+      "product": "USDe–tsUSDe pool",
+      "score": 46,
+      "grade": "D",
+      "apy": 0.23675613063442064,
+      "tvlUsd": 276730.5739117511,
+      "confidence": 100,
+      "risk": "medium"
+    },
+    {
+      "rank": 9,
       "id": "evaa-supply-markets",
       "protocol": "EVAA",
       "product": "tsUSDe supply · Main Pool",
@@ -88,7 +112,7 @@
       "risk": "medium"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "id": "ethena-tsusde",
       "protocol": "Ethena",
       "product": "tsUSDe on TON",
@@ -100,7 +124,7 @@
       "risk": "low"
     },
     {
-      "rank": 9,
+      "rank": 11,
       "id": "affluent-usdt-lending-vault",
       "protocol": "Affluent",
       "product": "USDT Lending Vault",
@@ -112,7 +136,7 @@
       "risk": "low"
     },
     {
-      "rank": 10,
+      "rank": 12,
       "id": "storm-trade-usdt",
       "protocol": "Storm Trade",
       "product": "USDT liquidity vault",
@@ -124,19 +148,7 @@
       "risk": "low"
     },
     {
-      "rank": 11,
-      "id": "ston-fi-usde-tsusde-weighted-stable",
-      "protocol": "STON.fi",
-      "product": "USDe–tsUSDe pool",
-      "score": 37,
-      "grade": "D",
-      "apy": 0.11922537340736117,
-      "tvlUsd": null,
-      "confidence": 90,
-      "risk": "medium"
-    },
-    {
-      "rank": 12,
+      "rank": 13,
       "id": "bemo-liquid-staking",
       "protocol": "Bemo",
       "product": "GRAM → bmGRAM",
@@ -146,18 +158,6 @@
       "tvlUsd": null,
       "confidence": 50,
       "risk": "low"
-    },
-    {
-      "rank": 13,
-      "id": "dedust-liquidity-pools",
-      "protocol": "DeDust",
-      "product": "TON–USDT pool",
-      "score": 26,
-      "grade": "E",
-      "apy": null,
-      "tvlUsd": null,
-      "confidence": 60,
-      "risk": "high"
     },
     {
       "rank": 14,
