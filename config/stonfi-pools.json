@@ -3,7 +3,7 @@
   "apiBaseUrl": "https://api.ston.fi",
   "timeoutMs": 30000,
   "discovery": {
-    "enabled": true,
+    "enabled": false,
     "publishOnlyWhenUnique": true,
     "candidateLimitPerOpportunity": 10
   },
@@ -29,17 +29,6 @@
   },
   "trackedPools": [
     {
-      "opportunityId": "ston-fi-gram-tston-tston",
-      "enabled": true,
-      "poolAddress": null,
-      "symbols": [
-        "GRAM",
-        "tsTON"
-      ],
-      "assetAddresses": [],
-      "note": "Пул не найден в текущем каталоге STON.fi. Ручная запись сохраняется."
-    },
-    {
       "opportunityId": "ston-fi-usde-tsusde-weighted-stable",
       "enabled": true,
       "poolAddress": "EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
@@ -52,30 +41,11 @@
         "EQDQ5UUyPHrLcQJlPAczd_fjxn8SLrlNQwolBznxCdSlfQwr"
       ],
       "dexVersion": "v2"
-    },
-    {
-      "opportunityId": "ston-fi-usdt-gram-pool-1",
-      "enabled": true,
-      "poolAddress": "EQCeDLEujBcoyx-DONITJOue5Jj_whqP9jEtFfz6CXrgY33_",
-      "symbols": [
-        "USDT",
-        "GRAM"
-      ],
-      "assetAddresses": [
-        "EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs",
-        "EQCcM1Qa7_STSnOSev23Gj5cLJB4wALUCYuuppdOVtSSBuUm"
-      ],
-      "dexVersion": "v2"
-    },
-    {
-      "opportunityId": "ston-fi-usdt-gram-pool-2",
-      "enabled": false,
-      "poolAddress": null,
-      "symbols": [
-        "USDT",
-        "GRAM"
-      ],
-      "note": "Найден только один подходящий пул; дублирование запрещено."
     }
-  ]
+  ],
+  "onchain": {
+    "enabled": true,
+    "timeoutMs": 20000,
+    "tolerancePercent": 2
+  }
 }

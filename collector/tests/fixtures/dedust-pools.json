@@ -4,18 +4,8 @@
       "address": "EQ_POOL_STABLE",
       "type": "stable",
       "assets": [
-        {
-          "address": "EQ_USDT",
-          "metadata": {
-            "symbol": "USDT"
-          }
-        },
-        {
-          "address": "EQ_USDC",
-          "metadata": {
-            "symbol": "USDC"
-          }
-        }
+        { "address": "EQ_USDT", "metadata": { "symbol": "USDT" } },
+        { "address": "EQ_USDC", "metadata": { "symbol": "USDC" } }
       ],
       "tvlUsd": "250000",
       "apy": "0.052",
@@ -26,17 +16,26 @@
       "pool_address": "EQ_POOL_VOLATILE",
       "pool_type": "volatile",
       "tokens": [
-        {
-          "contract_address": "EQ_TON",
-          "symbol": "TON"
-        },
-        {
-          "contract_address": "EQ_DUST",
-          "symbol": "DUST"
-        }
+        { "contract_address": "EQ_TON", "symbol": "TON" },
+        { "contract_address": "EQ_DUST", "symbol": "DUST" }
       ],
       "tvl_usd": 100000,
       "apr": 4.1
+    },
+    {
+      "address": "EQ_TON_USDT",
+      "pool_type": "volatile",
+      "trade_fee": "0.25",
+      "assets": [
+        { "type": "native" },
+        { "type": "jetton", "address": "EQ_USDT" }
+      ],
+      "reserves": ["100000000000", "500000000"],
+      "last_price": "5",
+      "stats": {
+        "fees": ["0", "0"],
+        "volume": ["0", "0"]
+      }
     }
   ]
 }

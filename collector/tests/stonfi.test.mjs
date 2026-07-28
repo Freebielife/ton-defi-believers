@@ -22,6 +22,30 @@ assert.deepEqual(candidate.symbols.sort(), ["GRAM", "TSTON"]);
 assert.equal(candidate.tvlUsd, 125000);
 assert.equal(candidate.yieldRate, 4.2);
 assert.equal(candidate.yieldMetric, "apy");
+assert.equal(candidate.yieldPeriod, "7d");
+assert.equal(candidate.yieldPeriods.apy7d, 4.2);
+
+const exactPoolShape = __test.makeCandidate({
+  address: "EQ_EXACT",
+  token0_address: "EQ_USDE",
+  token1_address: "EQ_TSUSDE",
+  lp_total_supply_usd: "456789.12",
+  apy_1d: "0.08",
+  apy_7d: "0.05",
+  apy_30d: "0.03",
+  underlying_apr: "0.02",
+  reserve0: "1000000",
+  reserve1: "2000000",
+  volume_24h_usd: "12345"
+}, new Map(), new Map(), "v2");
+assert.equal(exactPoolShape.tvlUsd, 456789.12);
+assert.equal(exactPoolShape.yieldRate, 5);
+assert.equal(exactPoolShape.yieldPeriod, "7d");
+assert.equal(exactPoolShape.yieldPeriods.apy1d, 8);
+assert.equal(exactPoolShape.yieldPeriods.apy30d, 3);
+assert.equal(exactPoolShape.yieldPeriods.underlyingApr, 2);
+assert.equal(exactPoolShape.volume24hUsd, 12345);
+assert.deepEqual(exactPoolShape.rawReserves, ["1000000", "2000000"]);
 
 const aliases = { TSTON: ["tsTON"] };
 assert.equal(

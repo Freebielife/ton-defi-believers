@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A simple overview of selected DeFi opportunities in the TON ecosystem."
+    />
+    <meta name="theme-color" content="#07111f" />
+    <title>TON DeFi Believers</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="TON DeFi Believers home">
+        <span class="brand-mark" aria-hidden="true">T</span>
+        <span>
+          <strong>TON DeFi Believers</strong>
+          <small>The Home of TON DeFi Yields</small>
+        </span>
+      </a>
+
+      <button class="language-button" id="languageButton" type="button" aria-label="Switch language">
+        RU
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="pageTitle">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="pilot">Pilot version · 15 selected protocols</p>
+          <h1 id="pageTitle" data-i18n="title">A quick view of TON DeFi</h1>
+          <p class="hero-text" data-i18n="subtitle">
+            Compare selected staking, lending, liquidity and vault opportunities without opening many different apps.
+          </p>
+        </div>
+
+        <div class="summary" aria-label="Market summary">
+          <article>
+            <span id="protocolCount">15</span>
+            <small data-i18n="protocols">Protocols</small>
+          </article>
+          <article>
+            <span id="opportunityCount">—</span>
+            <small data-i18n="opportunities">Opportunities</small>
+          </article>
+          <article>
+            <span id="lastUpdated">—</span>
+            <small data-i18n="snapshot">Dataset snapshot</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="notice" aria-label="Data notice">
+        <span class="notice-dot" aria-hidden="true"></span>
+        <p id="dataNotice" data-i18n="notice">
+          Only values confirmed by an official API or official page are shown. A dash means the product is verified, but no stable current public metric is available.
+        </p>
+      </section>
+
+      <section class="market" aria-labelledby="marketTitle">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="selectedMarket">Selected market</p>
+            <h2 id="marketTitle" data-i18n="marketTitle">TON DeFi opportunities</h2>
+          </div>
+          <p class="result-count" id="resultCount" aria-live="polite"></p>
+        </div>
+
+        <div class="controls">
+          <label class="search-field">
+            <span class="sr-only" data-i18n="searchLabel">Search</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" />
+            </svg>
+            <input id="searchInput" type="search" autocomplete="off" placeholder="Search protocol, asset or pool" />
+          </label>
+
+          <div class="filters" id="filters" aria-label="Opportunity filters">
+            <button type="button" class="filter-button is-active" data-filter="all" data-i18n="all">All</button>
+            <button type="button" class="filter-button" data-filter="staking" data-i18n="staking">Staking</button>
+            <button type="button" class="filter-button" data-filter="lending" data-i18n="lending">Lending</button>
+            <button type="button" class="filter-button" data-filter="liquidity" data-i18n="liquidity">Liquidity</button>
+            <button type="button" class="filter-button" data-filter="vault" data-i18n="vaults">Vaults</button>
+          </div>
+
+          <label class="sort-field">
+            <span data-i18n="sort">Sort</span>
+            <select id="sortSelect">
+              <option value="tvl" data-i18n="sortTvl">TVL: high to low</option>
+              <option value="apy" data-i18n="sortApy">Yield: high to low</option>
+              <option value="protocol" data-i18n="sortProtocol">Protocol: A–Z</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="table-shell">
+          <table>
+            <thead>
+              <tr>
+                <th data-i18n="protocol">Protocol</th>
+                <th data-i18n="product">Product / pool</th>
+                <th data-i18n="asset">Asset</th>
+                <th data-i18n="yield">Yield</th>
+                <th>TVL</th>
+                <th data-i18n="data">Data</th>
+                <th><span class="sr-only" data-i18n="open">Open</span></th>
+              </tr>
+            </thead>
+            <tbody id="marketRows">
+              <tr class="loading-row">
+                <td colspan="7" data-i18n="loading">Loading market data…</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <strong data-i18n="emptyTitle">Nothing found</strong>
+          <p data-i18n="emptyText">Try another search or category.</p>
+        </div>
+      </section>
+
+      <section class="protocol-list" aria-labelledby="coverageTitle">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow" data-i18n="coverage">Coverage</p>
+            <h2 id="coverageTitle" data-i18n="coverageTitle">The 15 protocols in this pilot</h2>
+          </div>
+        </div>
+        <div class="protocol-grid" id="protocolGrid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p data-i18n="disclaimer">
+        Information only. Yield can change and DeFi involves smart-contract, liquidity and market risks.
+      </p>
+      <a href="https://github.com/Freebielife/ton-defi-believers" target="_blank" rel="noreferrer">GitHub</a>
+    </footer>
+
+    <template id="rowTemplate">
+      <tr>
+        <td data-label="Protocol">
+          <div class="protocol-cell">
+            <span class="protocol-icon" aria-hidden="true"></span>
+            <div>
+              <strong class="protocol-name"></strong>
+              <small class="opportunity-type"></small>
+            </div>
+          </div>
+        </td>
+        <td data-label="Product / pool"><strong class="product-name"></strong></td>
+        <td data-label="Asset"><span class="asset-pill"></span></td>
+        <td data-label="Yield" class="yield-cell">
+          <strong class="apy-value"></strong>
+          <small class="yield-note" hidden></small>
+        </td>
+        <td data-label="TVL"><span class="tvl-value"></span></td>
+        <td data-label="Data" class="source-cell"><span class="source-badge"></span><small class="source-detail"></small></td>
+        <td class="action-cell">
+          <a class="open-link" target="_blank" rel="noopener noreferrer" aria-label="Open protocol">
+            <span class="open-link-label">Open</span>
+            <span class="open-link-arrow" aria-hidden="true">↗</span>
+          </a>
+        </td>
+      </tr>
+    </template>
+  </body>
+</html>

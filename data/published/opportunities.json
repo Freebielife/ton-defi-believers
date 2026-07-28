@@ -1,44 +1,54 @@
 {
   "schemaVersion": "1.2",
+  "updatedAt": "2026-07-28T18:37:01Z",
   "snapshot": {
-    "importedAt": "2026-07-25T18:02:07Z",
-    "verified": false,
-    "note": "Initial manual dataset. APY, TVL, UR and links must be verified before public launch."
+    "name": "expanded-market-v5",
+    "verifiedAt": "2026-07-28T18:37:01Z",
+    "scope": "one clear market entry for each of 15 selected TON DeFi protocols",
+    "policy": "Official protocol sources are used. Numeric rates are shown with a visible qualification when variable, promotional, pool-dependent or based on a dated official snapshot."
   },
   "settings": {
     "currency": "USD",
-    "timestamps": "UTC",
-    "lowTvlThresholdUsd": 10000,
-    "staleAfterHours": 24
+    "coreOnly": true,
+    "showUnverifiedMetrics": false
   },
   "opportunities": [
     {
-      "id": "tonstakers-gram-tston-tston",
+      "id": "tonstakers-liquid-staking",
       "protocol": "Tonstakers",
       "category": "gram",
       "asset": "GRAM",
-      "product": "GRAM-tsTON (tsTON)",
+      "product": "GRAM → tsTON",
       "type": "liquid-staking",
       "apy": {
-        "current": 12.3,
-        "average7d": 13.4,
+        "current": 20.37,
+        "average7d": null,
         "base": null,
         "rewards": null,
-        "direction": "down"
+        "direction": null,
+        "metric": "apy",
+        "isMaximum": false,
+        "qualifier": "variable-current-estimate",
+        "observedAt": "2026-07-28T00:00:00Z",
+        "note": {
+          "ru": "Сейчас ≈20,37% · сеть до 24%",
+          "en": "Now ≈20.37% · network up to 24%"
+        },
+        "isApproximate": true
       },
-      "tvlUsd": 175700000,
+      "tvlUsd": null,
       "utilizationRate": null,
       "links": {
         "official": "https://tonstakers.com/",
-        "app": "https://tonstakers.com/"
+        "app": "https://app.tonstakers.com/"
       },
       "source": {
-        "type": "manual",
-        "provider": "Tonstakers",
-        "url": "https://tonstakers.com/",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
+        "type": "official-announcement",
+        "provider": "Tonstakers / TON Wallet",
+        "url": "https://t.me/s/tonwallet_news_en/139",
+        "lastChecked": "2026-07-28T19:10:00Z",
+        "origin": "official protocol source",
+        "secondaryUrl": "https://t.me/s/thetonstakers_ru"
       },
       "status": {
         "active": true,
@@ -47,381 +57,26 @@
         "sourceError": false,
         "requiresDisambiguation": false
       },
-      "metrics": {
-        "yield": {
-          "value": 12.3,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 12.3
-        },
-        "tvlUsd": 175700000,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 0,
-          "level": "low",
-          "flags": []
-        },
-        "yieldScore": {
-          "score": 69,
-          "grade": "B",
-          "components": {
-            "yield": 22.44,
-            "confidence": 15,
-            "tvl": 16.98,
-            "risk": 15
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
+      "verification": {
+        "verifiedAt": "2026-07-28T19:10:00Z",
+        "note": {
+          "ru": "TON Wallet сообщил текущую ставку Tonstakers 20,37%+ APY после обновления сети. Сам Tonstakers указывает базовый APY до 24%. Ставка меняется по валидационным циклам; актуальное значение следует проверять в приложении.",
+          "en": "TON Wallet reported a current Tonstakers rate of 20.37%+ APY after the network upgrade. Tonstakers itself states base APY of up to 24%. The rate changes by validation cycle; check the app for the live value."
         }
-      }
-    },
-    {
-      "id": "stakee-gram-staked",
-      "protocol": "Stakee",
-      "category": "gram",
-      "asset": "GRAM",
-      "product": "GRAM (STAKED)",
-      "type": "staking",
-      "apy": {
-        "current": 13.6,
-        "average7d": 14.3,
-        "base": null,
-        "rewards": null,
-        "direction": "flat"
-      },
-      "tvlUsd": 25700000,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://t.me/StakeeBot/app",
-        "app": "https://t.me/StakeeBot/app"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "Stakee",
-        "url": "https://t.me/StakeeBot/app",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
       },
       "metrics": {
         "yield": {
-          "value": 13.6,
+          "value": 20.37,
           "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 13.6
+          "origin": "unknown",
+          "apyEquivalent": 20.37
         },
-        "tvlUsd": 25700000,
+        "tvlUsd": null,
         "confidence": {
           "score": 50,
           "grade": "C",
           "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 0,
-          "level": "low",
-          "flags": []
-        },
-        "yieldScore": {
-          "score": 67,
-          "grade": "B",
-          "components": {
-            "yield": 23.73,
-            "confidence": 15,
-            "tvl": 13.64,
-            "risk": 15
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "hipo-gram-hton-hton",
-      "protocol": "Hipo",
-      "category": "gram",
-      "asset": "GRAM",
-      "product": "GRAM-hTON (hTON)",
-      "type": "liquid-staking",
-      "apy": {
-        "current": 15.8,
-        "average7d": 20,
-        "base": null,
-        "rewards": null,
-        "direction": "down"
-      },
-      "tvlUsd": 3200000,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://hipo.finance/",
-        "app": "https://hipo.finance/"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "Hipo",
-        "url": "https://hipo.finance/",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 15.8,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 15.8
-        },
-        "tvlUsd": 3200000,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 0,
-          "level": "low",
-          "flags": []
-        },
-        "yieldScore": {
-          "score": 66,
-          "grade": "B",
-          "components": {
-            "yield": 25.62,
-            "confidence": 15,
-            "tvl": 10.02,
-            "risk": 15
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "bemo-gram-stton-stton",
-      "protocol": "Bemo",
-      "category": "gram",
-      "asset": "GRAM",
-      "product": "GRAM-stTON (stTON)",
-      "type": "liquid-staking",
-      "apy": {
-        "current": 14.7,
-        "average7d": 15.1,
-        "base": null,
-        "rewards": null,
-        "direction": "flat"
-      },
-      "tvlUsd": 2000000,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://bemo.fi/",
-        "app": "https://bemo.fi/"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "Bemo",
-        "url": "https://bemo.fi/",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 14.7,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 14.7
-        },
-        "tvlUsd": 2000000,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 0,
-          "level": "low",
-          "flags": []
-        },
-        "yieldScore": {
-          "score": 64,
-          "grade": "C",
-          "components": {
-            "yield": 24.72,
-            "confidence": 15,
-            "tvl": 9.2,
-            "risk": 15
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "bemo-gram-bmton-bmton",
-      "protocol": "Bemo",
-      "category": "gram",
-      "asset": "GRAM",
-      "product": "GRAM-bmTON (bmTON)",
-      "type": "liquid-staking",
-      "apy": {
-        "current": 14.7,
-        "average7d": 15.1,
-        "base": null,
-        "rewards": null,
-        "direction": "flat"
-      },
-      "tvlUsd": 470000,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://bemo.fi/",
-        "app": "https://bemo.fi/"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "Bemo",
-        "url": "https://bemo.fi/",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 14.7,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 14.7
-        },
-        "tvlUsd": 470000,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
+            "fresh-within-6h",
             "yield-available"
           ]
         },
@@ -429,1166 +84,76 @@
           "score": 10,
           "level": "low",
           "flags": [
-            "moderate-tvl"
-          ]
-        },
-        "yieldScore": {
-          "score": 60,
-          "grade": "C",
-          "components": {
-            "yield": 24.72,
-            "confidence": 15,
-            "tvl": 6.69,
-            "risk": 13.5
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "kton-gram-kton",
-      "protocol": "KTON",
-      "category": "gram",
-      "asset": "GRAM",
-      "product": "GRAM (KTON)",
-      "type": "staking",
-      "apy": {
-        "current": 13.8,
-        "average7d": 13.8,
-        "base": null,
-        "rewards": null,
-        "direction": "flat"
-      },
-      "tvlUsd": 2400000,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://kton.io/",
-        "app": "https://kton.io/"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "KTON",
-        "url": "https://kton.io/",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 13.8,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 13.8
-        },
-        "tvlUsd": 2400000,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 0,
-          "level": "low",
-          "flags": []
-        },
-        "yieldScore": {
-          "score": 63,
-          "grade": "C",
-          "components": {
-            "yield": 23.92,
-            "confidence": 15,
-            "tvl": 9.52,
-            "risk": 15
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "affluent-gram",
-      "protocol": "Affluent",
-      "category": "gram",
-      "asset": "GRAM",
-      "product": "GRAM",
-      "type": "vault",
-      "apy": {
-        "current": 9.2,
-        "average7d": 9.2,
-        "base": null,
-        "rewards": null,
-        "direction": "flat"
-      },
-      "tvlUsd": 1300000,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://t.me/AffluentAppBot",
-        "app": "https://t.me/AffluentAppBot"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "Affluent",
-        "url": "https://t.me/AffluentAppBot",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 9.2,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 9.2
-        },
-        "tvlUsd": 1300000,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 0,
-          "level": "low",
-          "flags": []
-        },
-        "yieldScore": {
-          "score": 57,
-          "grade": "C",
-          "components": {
-            "yield": 18.74,
-            "confidence": 15,
-            "tvl": 8.46,
-            "risk": 15
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "affluent-gram-tston",
-      "protocol": "Affluent",
-      "category": "gram",
-      "asset": "GRAM",
-      "product": "GRAM-TSTON",
-      "type": "vault",
-      "apy": {
-        "current": 10.9,
-        "average7d": 13.3,
-        "base": null,
-        "rewards": null,
-        "direction": "down"
-      },
-      "tvlUsd": 820200,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://t.me/AffluentAppBot",
-        "app": "https://t.me/AffluentAppBot"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "Affluent",
-        "url": "https://t.me/AffluentAppBot",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 10.9,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 10.9
-        },
-        "tvlUsd": 820200,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 10,
-          "level": "low",
-          "flags": [
-            "moderate-tvl"
+            "unknown-tvl"
           ]
         },
         "yieldScore": {
           "score": 57,
           "grade": "C",
           "components": {
-            "yield": 20.89,
+            "yield": 28.59,
             "confidence": 15,
-            "tvl": 7.66,
+            "tvl": 0,
             "risk": 13.5
           }
         },
         "trends": {
           "1d": {
-            "available": true,
+            "available": false,
             "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
+            "apyChangePoints": null,
+            "tvlChangePercent": null
           },
           "7d": {
-            "available": true,
+            "available": false,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
+            "apyChangePoints": null,
+            "tvlChangePercent": null
           },
           "30d": {
-            "available": true,
+            "available": false,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
+            "apyChangePoints": null,
+            "tvlChangePercent": null
           }
         }
       }
     },
     {
-      "id": "storm-trade-gram-ton-slp",
-      "protocol": "Storm Trade",
-      "category": "gram",
-      "asset": "GRAM",
-      "product": "GRAM (TON-SLP)",
-      "type": "liquidity-pool",
-      "apy": {
-        "current": 6.2,
-        "average7d": 6.2,
-        "base": null,
-        "rewards": null,
-        "direction": "flat"
-      },
-      "tvlUsd": 1500000,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://t.me/StormTradeBot",
-        "app": "https://t.me/StormTradeBot"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "Storm Trade",
-        "url": "https://t.me/StormTradeBot",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 6.2,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 6.2
-        },
-        "tvlUsd": 1500000,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 25,
-          "level": "medium",
-          "flags": [
-            "impermanent-loss-or-lp-risk"
-          ]
-        },
-        "yieldScore": {
-          "score": 49,
-          "grade": "D",
-          "components": {
-            "yield": 14.12,
-            "confidence": 15,
-            "tvl": 8.7,
-            "risk": 11.25
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "evaa-gram-main",
+      "id": "evaa-supply-markets",
       "protocol": "EVAA",
-      "category": "gram",
-      "asset": "GRAM",
-      "product": "GRAM (Main)",
-      "type": "lending",
-      "apy": {
-        "current": 6.1,
-        "average7d": 6.1,
-        "base": null,
-        "rewards": null,
-        "direction": "flat"
-      },
-      "tvlUsd": 937700,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://t.me/EvaaAppBot",
-        "app": "https://t.me/EvaaAppBot"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "EVAA",
-        "url": "https://t.me/EvaaAppBot",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 6.1,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 6.1
-        },
-        "tvlUsd": 937700,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 25,
-          "level": "medium",
-          "flags": [
-            "liquidation-or-utilization-risk",
-            "moderate-tvl"
-          ]
-        },
-        "yieldScore": {
-          "score": 48,
-          "grade": "D",
-          "components": {
-            "yield": 13.95,
-            "confidence": 15,
-            "tvl": 7.89,
-            "risk": 11.25
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "evaa-gram-lp",
-      "protocol": "EVAA",
-      "category": "gram",
-      "asset": "GRAM",
-      "product": "GRAM (LP)",
-      "type": "lending",
-      "apy": {
-        "current": 3.3,
-        "average7d": 4.4,
-        "base": null,
-        "rewards": null,
-        "direction": "down"
-      },
-      "tvlUsd": 52200,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://t.me/EvaaAppBot",
-        "app": "https://t.me/EvaaAppBot"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "EVAA",
-        "url": "https://t.me/EvaaAppBot",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 3.3,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 3.3
-        },
-        "tvlUsd": 52200,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 40,
-          "level": "medium",
-          "flags": [
-            "liquidation-or-utilization-risk",
-            "low-tvl"
-          ]
-        },
-        "yieldScore": {
-          "score": 35,
-          "grade": "D",
-          "components": {
-            "yield": 8.41,
-            "confidence": 15,
-            "tvl": 2.87,
-            "risk": 9
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "gtc-gram-vault",
-      "protocol": "GTC",
-      "category": "gram",
-      "asset": "GRAM",
-      "product": "GRAM vault",
-      "type": "vault",
-      "apy": {
-        "current": 17.7,
-        "average7d": 14.4,
-        "base": null,
-        "rewards": null,
-        "direction": "up"
-      },
-      "tvlUsd": 34900,
-      "utilizationRate": 74.4,
-      "links": {
-        "official": "https://t.me/GiftToCreditBot/app",
-        "app": "https://t.me/GiftToCreditBot/app"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "GTC",
-        "url": "https://t.me/GiftToCreditBot/app",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 17.7,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 17.7
-        },
-        "tvlUsd": 34900,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 25,
-          "level": "medium",
-          "flags": [
-            "low-tvl"
-          ]
-        },
-        "yieldScore": {
-          "score": 55,
-          "grade": "C",
-          "components": {
-            "yield": 26.99,
-            "confidence": 15,
-            "tvl": 2.17,
-            "risk": 11.25
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "morpho-re7-ton",
-      "protocol": "Morpho",
-      "category": "gram",
-      "asset": "TON",
-      "product": "Re7 TON",
-      "type": "vault",
-      "apy": {
-        "current": 0.3,
-        "average7d": 0.3,
-        "base": null,
-        "rewards": null,
-        "direction": "flat"
-      },
-      "tvlUsd": 2300,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://t.me/MorphoOrgBot",
-        "app": "https://t.me/MorphoOrgBot"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "Morpho",
-        "url": "https://t.me/MorphoOrgBot",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": true,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 0.3,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 0.3
-        },
-        "tvlUsd": 2300,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 25,
-          "level": "medium",
-          "flags": [
-            "low-tvl"
-          ]
-        },
-        "yieldScore": {
-          "score": 27,
-          "grade": "E",
-          "components": {
-            "yield": 0.86,
-            "confidence": 15,
-            "tvl": 0,
-            "risk": 11.25
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "morpho-singularv-ton-tonstakers",
-      "protocol": "Morpho",
-      "category": "gram",
-      "asset": "TON",
-      "product": "SingularV TON Tonstakers",
-      "type": "vault",
-      "apy": {
-        "current": 0.2,
-        "average7d": 0.2,
-        "base": null,
-        "rewards": null,
-        "direction": "flat"
-      },
-      "tvlUsd": 251,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://t.me/MorphoOrgBot",
-        "app": "https://t.me/MorphoOrgBot"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "Morpho",
-        "url": "https://t.me/MorphoOrgBot",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": true,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 0.2,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 0.2
-        },
-        "tvlUsd": 251,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 25,
-          "level": "medium",
-          "flags": [
-            "low-tvl"
-          ]
-        },
-        "yieldScore": {
-          "score": 27,
-          "grade": "E",
-          "components": {
-            "yield": 0.58,
-            "confidence": 15,
-            "tvl": 0,
-            "risk": 11.25
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "ethena-tsusde",
-      "protocol": "Ethena",
-      "category": "stablecoins",
+      "category": "lending",
       "asset": "tsUSDe",
-      "product": "tsUSDe",
-      "type": "yield-token",
-      "apy": {
-        "current": 4.1,
-        "average7d": 4,
-        "base": null,
-        "rewards": null,
-        "direction": "flat"
-      },
-      "tvlUsd": 1500000000,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://app.ethena.fi/earn/ton",
-        "app": "https://app.ethena.fi/earn/ton"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "Ethena",
-        "url": "https://app.ethena.fi/earn/ton",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 4.1,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 4.1
-        },
-        "tvlUsd": 1500000000,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 0,
-          "level": "low",
-          "flags": []
-        },
-        "yieldScore": {
-          "score": 60,
-          "grade": "C",
-          "components": {
-            "yield": 10.13,
-            "confidence": 15,
-            "tvl": 20,
-            "risk": 15
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "storm-trade-usdt",
-      "protocol": "Storm Trade",
-      "category": "stablecoins",
-      "asset": "USDT",
-      "product": "USDT",
-      "type": "vault",
-      "apy": {
-        "current": 5.7,
-        "average7d": 5.8,
-        "base": null,
-        "rewards": null,
-        "direction": "flat"
-      },
-      "tvlUsd": 3400000,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://t.me/StormTradeBot",
-        "app": "https://t.me/StormTradeBot"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "Storm Trade",
-        "url": "https://t.me/StormTradeBot",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 5.7,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 5.7
-        },
-        "tvlUsd": 3400000,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 0,
-          "level": "low",
-          "flags": []
-        },
-        "yieldScore": {
-          "score": 53,
-          "grade": "C",
-          "components": {
-            "yield": 13.23,
-            "confidence": 15,
-            "tvl": 10.13,
-            "risk": 15
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "morpho-re7-usdt-v2-vault",
-      "protocol": "Morpho",
-      "category": "stablecoins",
-      "asset": "USDT",
-      "product": "Re7 USDT V2 vault",
-      "type": "vault",
-      "apy": {
-        "current": 4.2,
-        "average7d": 4.2,
-        "base": 0.1,
-        "rewards": 4.1,
-        "direction": "flat"
-      },
-      "tvlUsd": 990000,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://t.me/MorphoOrgBot",
-        "app": "https://t.me/MorphoOrgBot"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "Morpho",
-        "url": "https://t.me/MorphoOrgBot",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 4.2,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 4.2
-        },
-        "tvlUsd": 990000,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 10,
-          "level": "low",
-          "flags": [
-            "moderate-tvl"
-          ]
-        },
-        "yieldScore": {
-          "score": 47,
-          "grade": "D",
-          "components": {
-            "yield": 10.34,
-            "confidence": 15,
-            "tvl": 7.98,
-            "risk": 13.5
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "evaa-usdt-main",
-      "protocol": "EVAA",
-      "category": "stablecoins",
-      "asset": "USDT",
-      "product": "USDT (Main)",
+      "product": "tsUSDe supply · Main Pool",
       "type": "lending",
       "apy": {
-        "current": 8.1,
-        "average7d": 4.1,
+        "current": 10.04,
+        "average7d": null,
         "base": null,
         "rewards": null,
-        "direction": "up"
+        "direction": null,
+        "metric": "apy",
+        "qualifier": "variable-conditional-boost",
+        "observedAt": "2026-07-28T00:00:00Z",
+        "note": {
+          "ru": "Boost · TON ID · лимит 10k · до 25 сент.",
+          "en": "Boost · TON ID · 10k cap · until 25 Sep"
+        },
+        "isMaximum": false,
+        "isApproximate": false
       },
-      "tvlUsd": 465600,
+      "tvlUsd": null,
       "utilizationRate": null,
       "links": {
-        "official": "https://t.me/EvaaAppBot",
-        "app": "https://t.me/EvaaAppBot"
+        "official": "https://evaa.finance/",
+        "app": "https://app.evaa.finance/"
       },
       "source": {
-        "type": "manual",
+        "type": "official-announcement",
         "provider": "EVAA",
-        "url": "https://t.me/EvaaAppBot",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
+        "url": "https://t.me/s/evaaprotocol?before=773",
+        "lastChecked": "2026-07-28T19:10:00Z",
+        "origin": "official protocol source"
       },
       "status": {
         "active": true,
@@ -1597,21 +162,26 @@
         "sourceError": false,
         "requiresDisambiguation": false
       },
+      "verification": {
+        "verifiedAt": "2026-07-28T19:10:00Z",
+        "note": {
+          "ru": "EVAA опубликовал 10,04% Supply APY для tsUSDe в Main Pool. Ставка динамическая. Повышенная часть действует до 25 сентября, распространяется на первые 10 000 tsUSDe и требует TON ID.",
+          "en": "EVAA published 10.04% Supply APY for tsUSDe in the Main Pool. The rate is dynamic. The boost runs until 25 September, applies to the first 10,000 tsUSDe and requires TON ID."
+        }
+      },
       "metrics": {
         "yield": {
-          "value": 8.1,
+          "value": 10.04,
           "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 8.1
+          "origin": "unknown",
+          "apyEquivalent": 10.04
         },
-        "tvlUsd": 465600,
+        "tvlUsd": null,
         "confidence": {
           "score": 50,
           "grade": "C",
           "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
+            "fresh-within-6h",
             "yield-available"
           ]
         },
@@ -1620,499 +190,37 @@
           "level": "medium",
           "flags": [
             "liquidation-or-utilization-risk",
-            "moderate-tvl"
+            "unknown-tvl"
           ]
         },
         "yieldScore": {
-          "score": 50,
-          "grade": "C",
-          "components": {
-            "yield": 17.18,
-            "confidence": 15,
-            "tvl": 6.67,
-            "risk": 11.25
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "evaa-usdt-lp",
-      "protocol": "EVAA",
-      "category": "stablecoins",
-      "asset": "USDT",
-      "product": "USDT (LP)",
-      "type": "lending",
-      "apy": {
-        "current": 1.2,
-        "average7d": 1.1,
-        "base": null,
-        "rewards": null,
-        "direction": "flat"
-      },
-      "tvlUsd": 129100,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://t.me/EvaaAppBot",
-        "app": "https://t.me/EvaaAppBot"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "EVAA",
-        "url": "https://t.me/EvaaAppBot",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 1.2,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 1.2
-        },
-        "tvlUsd": 129100,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 25,
-          "level": "medium",
-          "flags": [
-            "liquidation-or-utilization-risk",
-            "moderate-tvl"
-          ]
-        },
-        "yieldScore": {
-          "score": 34,
-          "grade": "E",
-          "components": {
-            "yield": 3.33,
-            "confidence": 15,
-            "tvl": 4.44,
-            "risk": 11.25
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "evaa-tsusde-main",
-      "protocol": "EVAA",
-      "category": "stablecoins",
-      "asset": "TSUSDE",
-      "product": "TSUSDE (Main)",
-      "type": "lending",
-      "apy": {
-        "current": 0,
-        "average7d": 0.2,
-        "base": null,
-        "rewards": null,
-        "direction": "flat"
-      },
-      "tvlUsd": 62200,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://t.me/EvaaAppBot",
-        "app": "https://t.me/EvaaAppBot"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "EVAA",
-        "url": "https://t.me/EvaaAppBot",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 0,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 0
-        },
-        "tvlUsd": 62200,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 40,
-          "level": "medium",
-          "flags": [
-            "liquidation-or-utilization-risk",
-            "low-tvl"
-          ]
-        },
-        "yieldScore": {
-          "score": 27,
-          "grade": "E",
-          "components": {
-            "yield": 0,
-            "confidence": 15,
-            "tvl": 3.18,
-            "risk": 9
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "affluent-tsusde-usdt-vault7",
-      "protocol": "Affluent",
-      "category": "stablecoins",
-      "asset": "TSUSDE-USDT",
-      "product": "TSUSDE-USDT-VAULT7",
-      "type": "vault",
-      "apy": {
-        "current": 4,
-        "average7d": 4,
-        "base": null,
-        "rewards": null,
-        "direction": "flat"
-      },
-      "tvlUsd": 365000,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://t.me/AffluentAppBot",
-        "app": "https://t.me/AffluentAppBot"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "Affluent",
-        "url": "https://t.me/AffluentAppBot",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 4,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 4
-        },
-        "tvlUsd": 365000,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 10,
-          "level": "low",
-          "flags": [
-            "moderate-tvl"
-          ]
-        },
-        "yieldScore": {
-          "score": 45,
+          "score": 46,
           "grade": "D",
           "components": {
-            "yield": 9.92,
+            "yield": 19.84,
             "confidence": 15,
-            "tvl": 6.25,
-            "risk": 13.5
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "affluent-usdt",
-      "protocol": "Affluent",
-      "category": "stablecoins",
-      "asset": "USDT",
-      "product": "USDT",
-      "type": "vault",
-      "apy": {
-        "current": 8.4,
-        "average7d": 8.3,
-        "base": null,
-        "rewards": null,
-        "direction": "flat"
-      },
-      "tvlUsd": 62300,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://t.me/AffluentAppBot",
-        "app": "https://t.me/AffluentAppBot"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "Affluent",
-        "url": "https://t.me/AffluentAppBot",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 8.4,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 8.4
-        },
-        "tvlUsd": 62300,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 25,
-          "level": "medium",
-          "flags": [
-            "low-tvl"
-          ]
-        },
-        "yieldScore": {
-          "score": 47,
-          "grade": "D",
-          "components": {
-            "yield": 17.62,
-            "confidence": 15,
-            "tvl": 3.18,
+            "tvl": 0,
             "risk": 11.25
           }
         },
         "trends": {
           "1d": {
-            "available": true,
+            "available": false,
             "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
+            "apyChangePoints": null,
+            "tvlChangePercent": null
           },
           "7d": {
-            "available": true,
+            "available": false,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
+            "apyChangePoints": null,
+            "tvlChangePercent": null
           },
           "30d": {
-            "available": true,
+            "available": false,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
-        }
-      }
-    },
-    {
-      "id": "telegram-wallet-midas-usdt-vault",
-      "protocol": "Telegram Wallet",
-      "category": "stablecoins",
-      "asset": "USDT",
-      "product": "Midas USDT vault",
-      "type": "vault",
-      "apy": {
-        "current": 9.44,
-        "average7d": 9.44,
-        "base": null,
-        "rewards": null,
-        "direction": "flat"
-      },
-      "tvlUsd": 293300,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://t.me/wallet",
-        "app": "https://t.me/wallet"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "Telegram Wallet",
-        "url": "https://t.me/wallet",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
-      },
-      "metrics": {
-        "yield": {
-          "value": 9.44,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 9.44
-        },
-        "tvlUsd": 293300,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 10,
-          "level": "low",
-          "flags": [
-            "moderate-tvl"
-          ]
-        },
-        "yieldScore": {
-          "score": 53,
-          "grade": "C",
-          "components": {
-            "yield": 19.06,
-            "confidence": 15,
-            "tvl": 5.87,
-            "risk": 13.5
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
+            "apyChangePoints": null,
+            "tvlChangePercent": null
           }
         }
       }
@@ -2121,30 +229,37 @@
       "id": "ston-fi-usde-tsusde-weighted-stable",
       "protocol": "STON.fi",
       "category": "stablecoins",
-      "asset": "USDe-tsUSDe",
-      "product": "USDe-tsUSDe (weighted_stable)",
+      "asset": "USDe–tsUSDe",
+      "product": "USDe–tsUSDe pool",
       "type": "liquidity-pool",
       "apy": {
-        "current": 0.11929843064828471,
-        "average7d": 0.4,
+        "current": 0.11922537340736117,
+        "average7d": null,
         "base": null,
         "rewards": null,
-        "direction": "flat",
-        "metric": "apy"
+        "direction": null,
+        "metric": "apy",
+        "isMaximum": false,
+        "isApproximate": false,
+        "qualifier": "official-api-snapshot",
+        "observedAt": "2026-07-28T14:44:33.766Z",
+        "note": {
+          "ru": "Последний успешный API-снимок; новый сборщик использует APY за 7 дней",
+          "en": "Last successful API snapshot; the updated collector uses 7-day APY"
+        }
       },
-      "tvlUsd": 276900,
+      "tvlUsd": null,
       "utilizationRate": null,
       "links": {
-        "official": "https://app.ston.fi/pools",
+        "official": "https://ston.fi/",
         "app": "https://app.ston.fi/pools/EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5"
       },
       "source": {
         "type": "api",
-        "provider": "STON.fi DEX API",
-        "url": "https://api.ston.fi/v1/pools",
-        "lastChecked": "2026-07-28T18:48:34.386Z",
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "automatic collector"
+        "provider": "STON.fi official API",
+        "url": "https://api.ston.fi/v1/pools/EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
+        "lastChecked": "2026-07-28T14:44:33.766Z",
+        "origin": "official protocol source"
       },
       "status": {
         "active": true,
@@ -2152,6 +267,13 @@
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
+      },
+      "verification": {
+        "verifiedAt": "2026-07-28T17:44:45Z",
+        "note": {
+          "ru": "Пул закреплён по точному адресу. При следующем успешном обновлении сайт возьмёт 7-дневный APY, TVL из lp_total_supply_usd и сверит резервы с блокчейном.",
+          "en": "The pool is locked by exact address. On the next successful update, the site will use 7-day APY, TVL from lp_total_supply_usd and verify reserves on-chain."
+        }
       },
       "externalId": "EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
       "sourceDetails": {
@@ -2164,19 +286,18 @@
       },
       "metrics": {
         "yield": {
-          "value": 0.11929843064828471,
+          "value": 0.11922537340736117,
           "metric": "apy",
           "origin": "protocol-reported-apy",
-          "apyEquivalent": 0.11929843064828471
+          "apyEquivalent": 0.11922537340736117
         },
-        "tvlUsd": 276900,
+        "tvlUsd": null,
         "confidence": {
-          "score": 100,
+          "score": 90,
           "grade": "A",
           "reasons": [
             "automatic-source",
             "fresh-within-6h",
-            "tvl-available",
             "yield-available",
             "contract-or-pool-identified"
           ]
@@ -2186,16 +307,16 @@
           "level": "medium",
           "flags": [
             "impermanent-loss-or-lp-risk",
-            "moderate-tvl"
+            "unknown-tvl"
           ]
         },
         "yieldScore": {
-          "score": 46,
+          "score": 37,
           "grade": "D",
           "components": {
             "yield": 0.35,
-            "confidence": 30,
-            "tvl": 5.77,
+            "confidence": 27,
+            "tvl": 0,
             "risk": 9.75
           }
         },
@@ -2203,238 +324,182 @@
           "1d": {
             "available": true,
             "referenceDate": "2026-07-27",
-            "apyChangePoints": 0.0005552858048929465,
-            "tvlChangePercent": 0
+            "apyChangePoints": 0.00048222856396940017,
+            "tvlChangePercent": null
           },
           "7d": {
             "available": true,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": -0.2518026146478558,
-            "tvlChangePercent": 0
+            "apyChangePoints": -0.25187567188877935,
+            "tvlChangePercent": null
           },
           "30d": {
             "available": true,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": -0.2518026146478558,
-            "tvlChangePercent": 0
+            "apyChangePoints": -0.25187567188877935,
+            "tvlChangePercent": null
           }
         }
       }
     },
     {
-      "id": "gtc-usdt-vault",
-      "protocol": "GTC",
-      "category": "stablecoins",
-      "asset": "USDT",
-      "product": "USDT vault",
-      "type": "vault",
+      "id": "dedust-liquidity-pools",
+      "protocol": "DeDust",
+      "category": "liquidity",
+      "asset": "TON–USDT",
+      "product": "TON–USDT pool",
+      "type": "liquidity-pool",
       "apy": {
-        "current": 17.5,
-        "average7d": 18,
+        "current": null,
+        "average7d": null,
         "base": null,
         "rewards": null,
-        "direction": "flat"
+        "direction": null,
+        "metric": "apr",
+        "qualifier": "calculated-on-update",
+        "display": {
+          "ru": "Рассчитывается",
+          "en": "Calculated on update"
+        },
+        "observedAt": "2026-07-28T00:00:00Z",
+        "note": {
+          "ru": "Fee APR за последние 7 дней",
+          "en": "Fee APR over the last 7 days"
+        },
+        "isMaximum": false,
+        "isApproximate": false
       },
-      "tvlUsd": 41200,
-      "utilizationRate": 83.1,
+      "tvlUsd": null,
+      "utilizationRate": null,
       "links": {
-        "official": "https://t.me/GiftToCreditBot/app",
-        "app": "https://t.me/GiftToCreditBot/app"
+        "official": "https://dedust.io/",
+        "app": "https://app.dedust.io/pools/EQA-X_yo3fzzbDbJ_0bzFWKqtRuZFIRa1sJsveZJ1YpViO3r"
       },
       "source": {
-        "type": "manual",
-        "provider": "GTC",
-        "url": "https://t.me/GiftToCreditBot/app",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
+        "type": "api",
+        "provider": "DeDust official API + TON blockchain",
+        "url": "https://api.dedust.io/v2/pools/EQA-X_yo3fzzbDbJ_0bzFWKqtRuZFIRa1sJsveZJ1YpViO3r/trades",
+        "lastChecked": "2026-07-28T19:10:00Z",
+        "origin": "automatic collector"
       },
       "status": {
         "active": true,
-        "stale": false,
+        "stale": true,
         "lowTvl": false,
         "sourceError": false,
         "requiresDisambiguation": false
       },
-      "metrics": {
-        "yield": {
-          "value": 17.5,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 17.5
-        },
-        "tvlUsd": 41200,
-        "confidence": {
-          "score": 50,
-          "grade": "C",
-          "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
-          ]
-        },
-        "risk": {
-          "score": 25,
-          "level": "medium",
-          "flags": [
-            "low-tvl"
-          ]
-        },
-        "yieldScore": {
-          "score": 56,
-          "grade": "C",
-          "components": {
-            "yield": 26.86,
-            "confidence": 15,
-            "tvl": 2.46,
-            "risk": 11.25
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
+      "verification": {
+        "verifiedAt": "2026-07-28T19:10:00Z",
+        "note": {
+          "ru": "Пул TON/USDT закреплён по адресу. После успешного автоматического обновления APR рассчитывается по сделкам за 7 дней, фактической комиссии пула, доле LP 80% и TVL по резервам.",
+          "en": "The TON/USDT pool is locked by address. After a successful automatic update, APR is calculated from 7-day trades, the pool fee, the 80% LP share and reserve-based TVL."
         }
-      }
-    },
-    {
-      "id": "euler-usd",
-      "protocol": "Euler",
-      "category": "stablecoins",
-      "asset": "USDT",
-      "product": "USD₮",
-      "type": "lending",
-      "apy": {
-        "current": 44.9,
-        "average7d": 44.9,
-        "base": null,
-        "rewards": null,
-        "direction": "flat"
-      },
-      "tvlUsd": 2600,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://t.me/EulerFinanceBot",
-        "app": "https://t.me/EulerFinanceBot"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "Euler",
-        "url": "https://t.me/EulerFinanceBot",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": true,
-        "sourceError": false,
-        "requiresDisambiguation": false
       },
       "metrics": {
         "yield": {
-          "value": 44.9,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 44.9
+          "value": null,
+          "metric": "apr",
+          "origin": "protocol-reported-apr",
+          "apyEquivalent": null
         },
-        "tvlUsd": 2600,
+        "tvlUsd": null,
         "confidence": {
-          "score": 50,
+          "score": 60,
           "grade": "C",
           "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
-            "yield-available"
+            "automatic-source",
+            "fresh-within-6h",
+            "contract-or-pool-identified",
+            "marked-stale"
           ]
         },
         "risk": {
           "score": 50,
           "level": "high",
           "flags": [
-            "liquidation-or-utilization-risk",
-            "low-tvl",
-            "high-yield"
+            "impermanent-loss-or-lp-risk",
+            "unknown-tvl",
+            "stale-data"
           ]
         },
         "yieldScore": {
-          "score": 57,
-          "grade": "C",
+          "score": 26,
+          "grade": "E",
           "components": {
-            "yield": 34.17,
-            "confidence": 15,
+            "yield": 0,
+            "confidence": 18,
             "tvl": 0,
             "risk": 7.5
           }
         },
         "trends": {
           "1d": {
-            "available": true,
+            "available": false,
             "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
+            "apyChangePoints": null,
+            "tvlChangePercent": null
           },
           "7d": {
-            "available": true,
+            "available": false,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
+            "apyChangePoints": null,
+            "tvlChangePercent": null
           },
           "30d": {
-            "available": true,
+            "available": false,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
+            "apyChangePoints": null,
+            "tvlChangePercent": null
           }
         }
+      },
+      "externalId": "EQA-X_yo3fzzbDbJ_0bzFWKqtRuZFIRa1sJsveZJ1YpViO3r",
+      "sourceDetails": {
+        "metricPeriod": "7d",
+        "calculation": "trade-volume × pool-fee × 80% LP share ÷ TVL × annualization",
+        "poolAddress": "EQA-X_yo3fzzbDbJ_0bzFWKqtRuZFIRa1sJsveZJ1YpViO3r",
+        "assetAddresses": [
+          "native",
+          "EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs"
+        ]
       }
     },
     {
-      "id": "ston-fi-usdt-gram-pool-1",
-      "protocol": "STON.fi",
-      "category": "gram-usdt",
-      "asset": "USDT-GRAM",
-      "product": "USDT-GRAM pool #1",
-      "type": "liquidity-pool",
+      "id": "hipo-liquid-staking",
+      "protocol": "Hipo",
+      "category": "gram",
+      "asset": "GRAM",
+      "product": "GRAM → hGRAM",
+      "type": "liquid-staking",
       "apy": {
-        "current": 0,
-        "average7d": 6.4,
+        "current": 17.5,
+        "average7d": null,
         "base": null,
         "rewards": null,
-        "direction": "flat",
-        "metric": "apy"
+        "direction": null,
+        "metric": "apy",
+        "qualifier": "normal-range-estimate",
+        "observedAt": "2026-07-28T00:00:00Z",
+        "note": {
+          "ru": "Обычный ориентир · ставка по раундам",
+          "en": "Normal range · rate changes by round"
+        },
+        "isMaximum": false,
+        "isApproximate": true
       },
-      "tvlUsd": 6100000,
+      "tvlUsd": null,
       "utilizationRate": null,
       "links": {
-        "official": "https://app.ston.fi/pools",
-        "app": "https://app.ston.fi/pools/EQCeDLEujBcoyx-DONITJOue5Jj_whqP9jEtFfz6CXrgY33_"
+        "official": "https://hipo.finance/",
+        "app": "https://hipo.finance/app/"
       },
       "source": {
-        "type": "api",
-        "provider": "STON.fi DEX API",
-        "url": "https://api.ston.fi/v1/pools",
-        "lastChecked": "2026-07-28T18:48:34.386Z",
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "automatic collector"
+        "type": "official-announcement",
+        "provider": "Hipo",
+        "url": "https://t.me/s/hipofinance",
+        "lastChecked": "2026-07-28T19:10:00Z",
+        "origin": "official protocol source"
       },
       "status": {
         "active": true,
@@ -2443,192 +508,313 @@
         "sourceError": false,
         "requiresDisambiguation": false
       },
-      "externalId": "EQCeDLEujBcoyx-DONITJOue5Jj_whqP9jEtFfz6CXrgY33_",
-      "sourceDetails": {
-        "dexVersion": "v2",
-        "assetAddresses": [
-          "EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs",
-          "EQCcM1Qa7_STSnOSev23Gj5cLJB4wALUCYuuppdOVtSSBuUm"
-        ],
-        "routerAddress": "EQCS4UEa5UaJLzOyyKieqQOQ2P9M-7kXpkO5HnP3Bv250cN3"
-      },
-      "metrics": {
-        "yield": {
-          "value": 0,
-          "metric": "apy",
-          "origin": "protocol-reported-apy",
-          "apyEquivalent": 0
-        },
-        "tvlUsd": 6100000,
-        "confidence": {
-          "score": 100,
-          "grade": "A",
-          "reasons": [
-            "automatic-source",
-            "fresh-within-6h",
-            "tvl-available",
-            "yield-available",
-            "contract-or-pool-identified"
-          ]
-        },
-        "risk": {
-          "score": 25,
-          "level": "medium",
-          "flags": [
-            "impermanent-loss-or-lp-risk"
-          ]
-        },
-        "yieldScore": {
-          "score": 52,
-          "grade": "C",
-          "components": {
-            "yield": 0,
-            "confidence": 30,
-            "tvl": 11.14,
-            "risk": 11.25
-          }
-        },
-        "trends": {
-          "1d": {
-            "available": true,
-            "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "7d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          },
-          "30d": {
-            "available": true,
-            "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
-          }
+      "verification": {
+        "verifiedAt": "2026-07-28T19:10:00Z",
+        "note": {
+          "ru": "Hipo объяснил, что отображавшийся всплеск 37,66% был временным эффектом крупного вывода средств. В пересчёте двух раундов результат составлял около 17,3%, а обычный диапазон протокола — около 17,5% APY. Фактическая ставка меняется после каждого раунда.",
+          "en": "Hipo explained that the displayed 37.66% spike was a temporary effect of a large withdrawal. Across two rounds the result was about 17.3%, while the protocol described its normal range as roughly 17.5% APY. The live rate changes after each round."
         }
-      }
-    },
-    {
-      "id": "morpho-re7-cbbtc-v2-vault",
-      "protocol": "Morpho",
-      "category": "btc",
-      "asset": "cbBTC",
-      "product": "Re7 cbBTC V2 vault",
-      "type": "vault",
-      "apy": {
-        "current": 3.6,
-        "average7d": 3.6,
-        "base": 0,
-        "rewards": 3.6,
-        "direction": "flat"
-      },
-      "tvlUsd": 66300,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://t.me/MorphoOrgBot",
-        "app": "https://t.me/MorphoOrgBot"
-      },
-      "source": {
-        "type": "manual",
-        "provider": "Morpho",
-        "url": "https://t.me/MorphoOrgBot",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false,
-        "requiresDisambiguation": false
       },
       "metrics": {
         "yield": {
-          "value": 3.6,
+          "value": 17.5,
           "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 3.6
+          "origin": "unknown",
+          "apyEquivalent": 17.5
         },
-        "tvlUsd": 66300,
+        "tvlUsd": null,
         "confidence": {
           "score": 50,
           "grade": "C",
           "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
+            "fresh-within-6h",
             "yield-available"
           ]
         },
         "risk": {
-          "score": 25,
-          "level": "medium",
+          "score": 10,
+          "level": "low",
           "flags": [
-            "low-tvl"
+            "unknown-tvl"
+          ]
+        },
+        "yieldScore": {
+          "score": 55,
+          "grade": "C",
+          "components": {
+            "yield": 26.86,
+            "confidence": 15,
+            "tvl": 0,
+            "risk": 13.5
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": false,
+            "referenceDate": "2026-07-27",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          },
+          "7d": {
+            "available": false,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          },
+          "30d": {
+            "available": false,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          }
+        }
+      }
+    },
+    {
+      "id": "bemo-liquid-staking",
+      "protocol": "Bemo",
+      "category": "gram",
+      "asset": "GRAM",
+      "product": "GRAM → bmGRAM",
+      "type": "liquid-staking",
+      "apy": {
+        "current": 3.41,
+        "average7d": null,
+        "base": null,
+        "rewards": null,
+        "direction": null,
+        "metric": "apy",
+        "isMaximum": false,
+        "isApproximate": false,
+        "qualifier": "official-app-current",
+        "observedAt": "2026-07-28T00:00:00Z",
+        "note": {
+          "ru": "Текущее значение в приложении",
+          "en": "Current value in the app"
+        }
+      },
+      "tvlUsd": null,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://bemo.fi/",
+        "app": "https://app.bemo.fi/"
+      },
+      "source": {
+        "type": "official-page",
+        "provider": "Bemo",
+        "url": "https://app.bemo.fi/",
+        "lastChecked": "2026-07-28T19:10:00Z",
+        "origin": "official protocol source"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      },
+      "verification": {
+        "verifiedAt": "2026-07-28T19:10:00Z",
+        "note": {
+          "ru": "Официальное приложение Bemo v2 показывает 3,41% APY для стейкинга GRAM с получением bmGRAM. Это текущее интерфейсное значение и оно может измениться.",
+          "en": "The official Bemo v2 app displays 3.41% APY for staking GRAM and receiving bmGRAM. This is the current interface value and may change."
+        }
+      },
+      "metrics": {
+        "yield": {
+          "value": 3.41,
+          "metric": "apy",
+          "origin": "unknown",
+          "apyEquivalent": 3.41
+        },
+        "tvlUsd": null,
+        "confidence": {
+          "score": 50,
+          "grade": "C",
+          "reasons": [
+            "fresh-within-6h",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "level": "low",
+          "flags": [
+            "unknown-tvl"
+          ]
+        },
+        "yieldScore": {
+          "score": 37,
+          "grade": "D",
+          "components": {
+            "yield": 8.66,
+            "confidence": 15,
+            "tvl": 0,
+            "risk": 13.5
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": false,
+            "referenceDate": "2026-07-27",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          },
+          "7d": {
+            "available": false,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          },
+          "30d": {
+            "available": false,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          }
+        }
+      }
+    },
+    {
+      "id": "affluent-usdt-lending-vault",
+      "protocol": "Affluent",
+      "category": "stablecoins",
+      "asset": "USDT",
+      "product": "USDT Lending Vault",
+      "type": "vault",
+      "apy": {
+        "current": 4.1,
+        "average7d": null,
+        "base": null,
+        "rewards": null,
+        "direction": null,
+        "metric": "apy",
+        "isMaximum": false,
+        "isApproximate": false,
+        "qualifier": "official-app-current",
+        "observedAt": "2026-07-28T00:00:00Z",
+        "note": {
+          "ru": "Текущая в приложении · авто-ребалансировка",
+          "en": "Current in app · auto-rebalancing"
+        }
+      },
+      "tvlUsd": null,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://affluent.org/",
+        "app": "https://app.affluent.org/earn/EQAGtgnr1G0XDilGURcOB3pUhl-Lo__J-TaJP0K4ey8cuSaW"
+      },
+      "source": {
+        "type": "official-page",
+        "provider": "Affluent",
+        "url": "https://app.affluent.org/earn/EQAGtgnr1G0XDilGURcOB3pUhl-Lo__J-TaJP0K4ey8cuSaW",
+        "lastChecked": "2026-07-28T19:10:00Z",
+        "origin": "official protocol source"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      },
+      "verification": {
+        "verifiedAt": "2026-07-28T19:10:00Z",
+        "note": {
+          "ru": "В строке Affluent теперь указан собственный USDT Lending Vault, а не отдельный продукт Sentora. Официальное приложение показывало 4,1% APY; стратегия автоматически распределяет капитал между разрешёнными USDT-рынками, поэтому ставка меняется.",
+          "en": "The Affluent row now uses its own USDT Lending Vault rather than the separate Sentora product. The official app displayed 4.1% APY; the strategy automatically reallocates capital across approved USDT markets, so the rate changes."
+        }
+      },
+      "metrics": {
+        "yield": {
+          "value": 4.1,
+          "metric": "apy",
+          "origin": "unknown",
+          "apyEquivalent": 4.1
+        },
+        "tvlUsd": null,
+        "confidence": {
+          "score": 50,
+          "grade": "C",
+          "reasons": [
+            "fresh-within-6h",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "level": "low",
+          "flags": [
+            "unknown-tvl"
           ]
         },
         "yieldScore": {
           "score": 39,
           "grade": "D",
           "components": {
-            "yield": 9.07,
+            "yield": 10.13,
             "confidence": 15,
-            "tvl": 3.29,
-            "risk": 11.25
+            "tvl": 0,
+            "risk": 13.5
           }
         },
         "trends": {
           "1d": {
-            "available": true,
+            "available": false,
             "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
+            "apyChangePoints": null,
+            "tvlChangePercent": null
           },
           "7d": {
-            "available": true,
+            "available": false,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
+            "apyChangePoints": null,
+            "tvlChangePercent": null
           },
           "30d": {
-            "available": true,
+            "available": false,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
+            "apyChangePoints": null,
+            "tvlChangePercent": null
           }
         }
       }
     },
     {
-      "id": "morpho-re7-weth-v2-vault",
-      "protocol": "Morpho",
-      "category": "eth",
-      "asset": "WETH",
-      "product": "Re7 WETH V2 vault",
+      "id": "storm-trade-usdt",
+      "protocol": "Storm Trade",
+      "category": "stablecoins",
+      "asset": "USDT",
+      "product": "USDT liquidity vault",
       "type": "vault",
       "apy": {
-        "current": 5.1,
-        "average7d": 5.1,
-        "base": 0,
-        "rewards": 5.1,
-        "direction": "flat"
+        "current": 4.2,
+        "average7d": null,
+        "base": null,
+        "rewards": null,
+        "direction": null,
+        "metric": "apr",
+        "isMaximum": false,
+        "isApproximate": false,
+        "qualifier": "official-page-current",
+        "observedAt": "2026-07-28T00:00:00Z",
+        "note": {
+          "ru": "Текущая на сайте · зависит от торговли",
+          "en": "Current on site · depends on trading"
+        }
       },
-      "tvlUsd": 39400,
+      "tvlUsd": null,
       "utilizationRate": null,
       "links": {
-        "official": "https://t.me/MorphoOrgBot",
-        "app": "https://t.me/MorphoOrgBot"
+        "official": "https://storm.tg/",
+        "app": "https://app.storm.tg/vault/USDT"
       },
       "source": {
-        "type": "manual",
-        "provider": "Morpho",
-        "url": "https://t.me/MorphoOrgBot",
-        "lastChecked": null,
-        "importedAt": "2026-07-25T18:02:07Z",
-        "origin": "user-provided snapshot"
+        "type": "official-page",
+        "provider": "Storm Trade",
+        "url": "https://storm.tg/",
+        "lastChecked": "2026-07-28T19:10:00Z",
+        "origin": "official protocol source"
       },
       "status": {
         "active": true,
@@ -2637,66 +823,814 @@
         "sourceError": false,
         "requiresDisambiguation": false
       },
+      "verification": {
+        "verifiedAt": "2026-07-28T19:10:00Z",
+        "note": {
+          "ru": "Официальный сайт Storm Trade показывает 4,20% APR для предоставления ликвидности в USDT. Доход формируется из торговой активности протокола, поэтому значение не является фиксированным.",
+          "en": "The official Storm Trade site displays 4.20% APR for USDT liquidity provision. Returns come from protocol trading activity, so the rate is not fixed."
+        }
+      },
       "metrics": {
         "yield": {
-          "value": 5.1,
-          "metric": "apy",
-          "origin": "manual-snapshot",
-          "apyEquivalent": 5.1
+          "value": 4.2,
+          "metric": "apr",
+          "origin": "unknown",
+          "apyEquivalent": 4.289195885693453
         },
-        "tvlUsd": 39400,
+        "tvlUsd": null,
         "confidence": {
           "score": 50,
           "grade": "C",
           "reasons": [
-            "manual-source",
-            "old-or-undated-source",
-            "tvl-available",
+            "fresh-within-6h",
             "yield-available"
           ]
         },
         "risk": {
-          "score": 25,
-          "level": "medium",
+          "score": 10,
+          "level": "low",
           "flags": [
-            "low-tvl"
+            "unknown-tvl"
           ]
         },
         "yieldScore": {
-          "score": 41,
+          "score": 39,
           "grade": "D",
           "components": {
-            "yield": 12.12,
+            "yield": 10.52,
             "confidence": 15,
-            "tvl": 2.38,
-            "risk": 11.25
+            "tvl": 0,
+            "risk": 13.5
           }
         },
         "trends": {
           "1d": {
             "available": true,
             "referenceDate": "2026-07-27",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
+            "apyChangePoints": -1.410804114306547,
+            "tvlChangePercent": null
           },
           "7d": {
             "available": true,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
+            "apyChangePoints": -1.410804114306547,
+            "tvlChangePercent": null
           },
           "30d": {
             "available": true,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": 0,
-            "tvlChangePercent": 0
+            "apyChangePoints": -1.410804114306547,
+            "tvlChangePercent": null
+          }
+        }
+      }
+    },
+    {
+      "id": "ethena-tsusde",
+      "protocol": "Ethena",
+      "category": "stablecoins",
+      "asset": "tsUSDe",
+      "product": "tsUSDe on TON",
+      "type": "yield-token",
+      "apy": {
+        "current": 3.84,
+        "average7d": null,
+        "base": null,
+        "rewards": null,
+        "direction": null,
+        "metric": "apy",
+        "qualifier": "official-month-end-snapshot",
+        "observedAt": "2026-06-30T00:00:00Z",
+        "note": {
+          "ru": "Снимок на конец июня · 30д ср. 3,6%",
+          "en": "End-Jun snapshot · 30d avg 3.6%"
+        },
+        "isMaximum": false,
+        "isApproximate": false
+      },
+      "tvlUsd": null,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://ethena.fi/",
+        "app": "https://app.ethena.fi/earn/ton"
+      },
+      "source": {
+        "type": "official-page",
+        "provider": "Ethena Governance",
+        "url": "https://gov.ethenafoundation.com/t/ethena-s-june-2026-governance-update/808",
+        "lastChecked": "2026-07-28T19:10:00Z",
+        "origin": "official protocol source"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      },
+      "verification": {
+        "verifiedAt": "2026-07-28T19:10:00Z",
+        "note": {
+          "ru": "Официальный отчёт Ethena за июнь 2026 года указывает 3,84% APY для sUSDe на конец месяца и 3,6% в среднем за 30 дней. tsUSDe — версия доходного актива в TON; ставка меняется вместе с доходностью sUSDe.",
+          "en": "Ethena’s official June 2026 report states 3.84% APY for sUSDe at month-end and a 3.6% 30-day average. tsUSDe is the TON version of the reward-bearing asset; its rate changes with sUSDe yield."
+        }
+      },
+      "externalId": "EQDQ5UUyPHrLcQJlPAczd_fjxn8SLrlNQwolBznxCdSlfQwr",
+      "metrics": {
+        "yield": {
+          "value": 3.84,
+          "metric": "apy",
+          "origin": "unknown",
+          "apyEquivalent": 3.84
+        },
+        "tvlUsd": null,
+        "confidence": {
+          "score": 55,
+          "grade": "C",
+          "reasons": [
+            "fresh-within-6h",
+            "yield-available",
+            "contract-or-pool-identified"
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "level": "low",
+          "flags": [
+            "unknown-tvl"
+          ]
+        },
+        "yieldScore": {
+          "score": 40,
+          "grade": "D",
+          "components": {
+            "yield": 9.58,
+            "confidence": 16.5,
+            "tvl": 0,
+            "risk": 13.5
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": true,
+            "referenceDate": "2026-07-27",
+            "apyChangePoints": -0.2599999999999998,
+            "tvlChangePercent": null
+          },
+          "7d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": -0.2599999999999998,
+            "tvlChangePercent": null
+          },
+          "30d": {
+            "available": true,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": -0.2599999999999998,
+            "tvlChangePercent": null
+          }
+        }
+      }
+    },
+    {
+      "id": "telegram-wallet-re7-usdt-earn",
+      "protocol": "Telegram Wallet",
+      "category": "stablecoins",
+      "asset": "USDT",
+      "product": "USDT Earn · Re7 Labs",
+      "type": "vault",
+      "apy": {
+        "current": 18,
+        "average7d": null,
+        "base": null,
+        "rewards": null,
+        "direction": null,
+        "metric": "apy",
+        "isMaximum": true,
+        "qualifier": "expected-not-guaranteed",
+        "observedAt": "2026-07-28T00:00:00Z",
+        "note": {
+          "ru": "Ожидаемая · не гарантирована",
+          "en": "Expected · not guaranteed"
+        },
+        "isApproximate": false
+      },
+      "tvlUsd": null,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://wallet.tg/",
+        "app": "https://t.me/wallet"
+      },
+      "source": {
+        "type": "official-announcement",
+        "provider": "TON Wallet / Re7 Labs",
+        "url": "https://t.me/s/tonwallet_news_en/119",
+        "lastChecked": "2026-07-28T19:10:00Z",
+        "origin": "official protocol source"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      },
+      "verification": {
+        "verifiedAt": "2026-07-28T19:10:00Z",
+        "note": {
+          "ru": "TON Wallet указывает доходность до 18% APY для стратегии Re7. Это ожидаемая доходность, рассчитанная по исторической средней стратегии; прошлые результаты не гарантируют будущих, а фактическая ставка зависит от рынка и базовых протоколов.",
+          "en": "TON Wallet states up to 18% APY for the Re7 strategy. This is an expected yield based on the strategy’s historical average; past performance does not guarantee future results and the actual rate depends on markets and underlying protocols."
+        }
+      },
+      "metrics": {
+        "yield": {
+          "value": 18,
+          "metric": "apy",
+          "origin": "unknown",
+          "apyEquivalent": 18
+        },
+        "tvlUsd": null,
+        "confidence": {
+          "score": 50,
+          "grade": "C",
+          "reasons": [
+            "fresh-within-6h",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "level": "low",
+          "flags": [
+            "unknown-tvl"
+          ]
+        },
+        "yieldScore": {
+          "score": 56,
+          "grade": "C",
+          "components": {
+            "yield": 27.19,
+            "confidence": 15,
+            "tvl": 0,
+            "risk": 13.5
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": false,
+            "referenceDate": "2026-07-27",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          },
+          "7d": {
+            "available": false,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          },
+          "30d": {
+            "available": false,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          }
+        }
+      }
+    },
+    {
+      "id": "tonco-concentrated-liquidity",
+      "protocol": "TONCO",
+      "category": "liquidity",
+      "asset": "GRAM / USDT + others",
+      "product": "Concentrated liquidity pools",
+      "type": "liquidity-pool",
+      "apy": {
+        "current": null,
+        "average7d": null,
+        "base": null,
+        "rewards": null,
+        "direction": null,
+        "metric": "apr",
+        "isMaximum": false,
+        "qualifier": "pool-and-range-dependent",
+        "observedAt": null,
+        "display": {
+          "ru": "Зависит от пула",
+          "en": "Pool-dependent"
+        },
+        "note": {
+          "ru": "APR зависит от пары и выбранного диапазона",
+          "en": "APR depends on the pair and selected price range"
+        },
+        "isApproximate": false
+      },
+      "tvlUsd": null,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://tonco.io/",
+        "app": "https://app.tonco.io/#/explore"
+      },
+      "source": {
+        "type": "official-page",
+        "provider": "TONCO",
+        "url": "https://docs.tonco.io/en/liquidity-providing-tutorial/adding-liquidity.html",
+        "lastChecked": "2026-07-28T18:37:01Z",
+        "origin": "official protocol source"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      },
+      "verification": {
+        "verifiedAt": "2026-07-28T18:37:01Z",
+        "note": {
+          "ru": "TONCO показывает TVL, объём, комиссии и APR отдельно для каждого пула. Доход получают только позиции, чей диапазон включает текущую цену; поэтому единой ставки для всего протокола нет.",
+          "en": "TONCO displays TVL, volume, fees and APR separately for each pool. A position earns only while the current price remains inside its selected range, so there is no single protocol-wide rate."
+        }
+      },
+      "metrics": {
+        "yield": {
+          "value": null,
+          "metric": "apr",
+          "origin": "unknown",
+          "apyEquivalent": null
+        },
+        "tvlUsd": null,
+        "confidence": {
+          "score": 40,
+          "grade": "D",
+          "reasons": [
+            "fresh-within-6h"
+          ]
+        },
+        "risk": {
+          "score": 35,
+          "level": "medium",
+          "flags": [
+            "impermanent-loss-or-lp-risk",
+            "unknown-tvl"
+          ]
+        },
+        "yieldScore": {
+          "score": 22,
+          "grade": "E",
+          "components": {
+            "yield": 0,
+            "confidence": 12,
+            "tvl": 0,
+            "risk": 9.75
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": false,
+            "referenceDate": "2026-07-27",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          },
+          "7d": {
+            "available": false,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          },
+          "30d": {
+            "available": false,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          }
+        }
+      }
+    },
+    {
+      "id": "tradoor-usdt-liquidity-pool",
+      "protocol": "Tradoor",
+      "category": "vault",
+      "asset": "USDT",
+      "product": "Perps USDT liquidity pool",
+      "type": "vault",
+      "apy": {
+        "current": null,
+        "average7d": null,
+        "base": null,
+        "rewards": null,
+        "direction": null,
+        "metric": "apr",
+        "isMaximum": false,
+        "qualifier": "dynamic-pool-apr",
+        "observedAt": null,
+        "display": {
+          "ru": "Динамический APR",
+          "en": "Dynamic APR"
+        },
+        "note": {
+          "ru": "Меняется вместе с торговой активностью",
+          "en": "Changes with trading activity"
+        },
+        "isApproximate": false
+      },
+      "tvlUsd": null,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://tradoor.io/",
+        "app": "https://app.tradoor.io/"
+      },
+      "source": {
+        "type": "official-page",
+        "provider": "Tradoor Docs",
+        "url": "https://docs.tradoor.io/tradoor-user-guide-v2/add-liquidity-on-tradoor/how-to-add-liquidity-to-pools",
+        "lastChecked": "2026-07-28T18:37:01Z",
+        "origin": "official protocol source"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      },
+      "verification": {
+        "verifiedAt": "2026-07-28T18:37:01Z",
+        "note": {
+          "ru": "APR пула формируется из торговых, funding- и rollover-комиссий, а также результатов ликвидаций. Протокол прямо предупреждает, что ставка не гарантирована и может заметно меняться.",
+          "en": "Pool APR comes from trading, funding and rollover fees plus liquidation outcomes. The protocol explicitly states that the rate is not guaranteed and can vary materially."
+        }
+      },
+      "metrics": {
+        "yield": {
+          "value": null,
+          "metric": "apr",
+          "origin": "unknown",
+          "apyEquivalent": null
+        },
+        "tvlUsd": null,
+        "confidence": {
+          "score": 40,
+          "grade": "D",
+          "reasons": [
+            "fresh-within-6h"
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "level": "low",
+          "flags": [
+            "unknown-tvl"
+          ]
+        },
+        "yieldScore": {
+          "score": 26,
+          "grade": "E",
+          "components": {
+            "yield": 0,
+            "confidence": 12,
+            "tvl": 0,
+            "risk": 13.5
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": false,
+            "referenceDate": "2026-07-27",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          },
+          "7d": {
+            "available": false,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          },
+          "30d": {
+            "available": false,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          }
+        }
+      }
+    },
+    {
+      "id": "torch-tgusd-staking",
+      "protocol": "Torch Finance",
+      "category": "stablecoin",
+      "asset": "tgUSD / stgUSD",
+      "product": "tgUSD staking",
+      "type": "yield-token",
+      "apy": {
+        "current": 12.72,
+        "average7d": null,
+        "base": null,
+        "rewards": null,
+        "direction": null,
+        "metric": "apy",
+        "isMaximum": false,
+        "qualifier": "weekly-official-snapshot",
+        "observedAt": null,
+        "note": {
+          "ru": "Недельный официальный снимок · ставка меняется",
+          "en": "Official weekly snapshot · rate changes"
+        },
+        "isApproximate": false
+      },
+      "tvlUsd": null,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://torch.finance/",
+        "app": "https://t.me/tgusd_official_bot/app"
+      },
+      "source": {
+        "type": "official-announcement",
+        "provider": "Torch Finance",
+        "url": "https://t.me/s/torch_ton",
+        "lastChecked": "2026-07-28T18:37:01Z",
+        "origin": "official protocol announcement"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      },
+      "verification": {
+        "verifiedAt": "2026-07-28T18:37:01Z",
+        "note": {
+          "ru": "Torch Finance публикует доходность tgUSD еженедельно. 12,72% APY — официальный недельный снимок, а не фиксированная или гарантированная ставка.",
+          "en": "Torch Finance publishes tgUSD yield weekly. The 12.72% APY figure is an official weekly snapshot, not a fixed or guaranteed rate."
+        }
+      },
+      "metrics": {
+        "yield": {
+          "value": 12.72,
+          "metric": "apy",
+          "origin": "unknown",
+          "apyEquivalent": 12.72
+        },
+        "tvlUsd": null,
+        "confidence": {
+          "score": 50,
+          "grade": "C",
+          "reasons": [
+            "fresh-within-6h",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "level": "low",
+          "flags": [
+            "unknown-tvl"
+          ]
+        },
+        "yieldScore": {
+          "score": 51,
+          "grade": "C",
+          "components": {
+            "yield": 22.87,
+            "confidence": 15,
+            "tvl": 0,
+            "risk": 13.5
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": false,
+            "referenceDate": "2026-07-27",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          },
+          "7d": {
+            "available": false,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          },
+          "30d": {
+            "available": false,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          }
+        }
+      }
+    },
+    {
+      "id": "jvault-storm-staking",
+      "protocol": "JVault",
+      "category": "staking",
+      "asset": "STORM",
+      "product": "STORM staking pool",
+      "type": "staking",
+      "apy": {
+        "current": 17.97,
+        "average7d": null,
+        "base": null,
+        "rewards": null,
+        "direction": null,
+        "metric": "apr",
+        "isMaximum": false,
+        "qualifier": "official-pool-snapshot",
+        "observedAt": null,
+        "note": {
+          "ru": "Официальный снимок пула · значение меняется",
+          "en": "Official pool snapshot · value changes"
+        },
+        "isApproximate": false
+      },
+      "tvlUsd": null,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://jvault.xyz/",
+        "app": "https://jvault.xyz/staking/v2/"
+      },
+      "source": {
+        "type": "official-page",
+        "provider": "JVault Staking v2",
+        "url": "https://jvault.xyz/staking/v2/",
+        "lastChecked": "2026-07-28T18:37:01Z",
+        "origin": "official protocol source"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      },
+      "verification": {
+        "verifiedAt": "2026-07-28T18:37:01Z",
+        "note": {
+          "ru": "На официальной странице JVault для пула STORM отображался APR 17,97%. Это снимок конкретного пула: ставка, лимиты и периоды вывода могут измениться.",
+          "en": "JVault’s official page displayed 17.97% APR for the STORM pool. This is a snapshot of one specific pool; the rate, limits and unstaking periods can change."
+        }
+      },
+      "metrics": {
+        "yield": {
+          "value": 17.97,
+          "metric": "apr",
+          "origin": "unknown",
+          "apyEquivalent": 19.680532641314596
+        },
+        "tvlUsd": null,
+        "confidence": {
+          "score": 50,
+          "grade": "C",
+          "reasons": [
+            "fresh-within-6h",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "level": "low",
+          "flags": [
+            "unknown-tvl"
+          ]
+        },
+        "yieldScore": {
+          "score": 57,
+          "grade": "C",
+          "components": {
+            "yield": 28.21,
+            "confidence": 15,
+            "tvl": 0,
+            "risk": 13.5
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": false,
+            "referenceDate": "2026-07-27",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          },
+          "7d": {
+            "available": false,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          },
+          "30d": {
+            "available": false,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          }
+        }
+      }
+    },
+    {
+      "id": "stakee-gram-staking",
+      "protocol": "Stakee",
+      "category": "gram",
+      "asset": "GRAM",
+      "product": "GRAM staking",
+      "type": "staking",
+      "apy": {
+        "current": 21,
+        "average7d": null,
+        "base": null,
+        "rewards": null,
+        "direction": null,
+        "metric": "apy",
+        "isMaximum": false,
+        "qualifier": "official-current-marketing-rate",
+        "observedAt": "2026-07-28T18:37:01Z",
+        "note": {
+          "ru": "Сейчас 21% · заявлено до 25%",
+          "en": "Now 21% · advertised up to 25%"
+        },
+        "isApproximate": false
+      },
+      "tvlUsd": null,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://stakee.org/",
+        "app": "https://app.stakee.org/"
+      },
+      "source": {
+        "type": "official-page",
+        "provider": "Stakee",
+        "url": "https://stakee.org/",
+        "lastChecked": "2026-07-28T18:37:01Z",
+        "origin": "official protocol source"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false,
+        "requiresDisambiguation": false
+      },
+      "verification": {
+        "verifiedAt": "2026-07-28T18:37:01Z",
+        "note": {
+          "ru": "Официальный сайт показывает 21% годовой доходности и формулировку «до 25% APY». Ставка зависит от условий сети и не является гарантированной.",
+          "en": "The official website shows a 21% annual yield and advertises up to 25% APY. The rate depends on network conditions and is not guaranteed."
+        }
+      },
+      "metrics": {
+        "yield": {
+          "value": 21,
+          "metric": "apy",
+          "origin": "unknown",
+          "apyEquivalent": 21
+        },
+        "tvlUsd": null,
+        "confidence": {
+          "score": 50,
+          "grade": "C",
+          "reasons": [
+            "fresh-within-6h",
+            "yield-available"
+          ]
+        },
+        "risk": {
+          "score": 10,
+          "level": "low",
+          "flags": [
+            "unknown-tvl"
+          ]
+        },
+        "yieldScore": {
+          "score": 57,
+          "grade": "C",
+          "components": {
+            "yield": 28.92,
+            "confidence": 15,
+            "tvl": 0,
+            "risk": 13.5
+          }
+        },
+        "trends": {
+          "1d": {
+            "available": false,
+            "referenceDate": "2026-07-27",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          },
+          "7d": {
+            "available": false,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
+          },
+          "30d": {
+            "available": false,
+            "referenceDate": "2026-07-25",
+            "apyChangePoints": null,
+            "tvlChangePercent": null
           }
         }
       }
     }
   ],
-  "updatedAt": "2026-07-28T18:48:40.014Z",
-  "normalizedAt": "2026-07-28T18:48:40.187Z",
-  "insightsGeneratedAt": "2026-07-28T18:48:40.890Z",
-  "publishedAt": "2026-07-28T18:48:40.890Z"
+  "normalizedAt": "2026-07-28T19:41:52.496Z",
+  "insightsGeneratedAt": "2026-07-28T19:41:53.930Z",
+  "publishedAt": "2026-07-28T19:41:53.930Z"
 }

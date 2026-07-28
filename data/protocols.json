@@ -1,73 +1,65 @@
 {
-  "schemaVersion": "1.0",
-  "updatedAt": "2026-07-25T18:07:38Z",
+  "schemaVersion": "1.3",
+  "updatedAt": "2026-07-28T18:37:01Z",
   "selectionPolicy": {
-    "coreSize": 10,
-    "primaryMetric": "trackedTvlUsd",
-    "additionalCriteria": [
-      "operational stability",
-      "official or reliable data source",
-      "reputation and usage",
-      "active product maintenance"
-    ],
-    "note": "TVL is the primary ranking signal, not a guarantee of safety."
+    "scope": "15 selected TON DeFi protocols",
+    "rule": "One representative, currently verifiable product or market entry per protocol. The list is intentionally compact but broad enough for a quick market overview."
   },
   "protocols": [
     {
       "id": "tonstakers",
+      "name": "Tonstakers",
       "description": {
-        "en": "Liquid staking protocol in the TON ecosystem.",
-        "ru": "Протокол ликвидного стейкинга в экосистеме TON."
+        "en": "Liquid staking with tsTON.",
+        "ru": "Ликвидный стейкинг с токеном tsTON."
       },
       "links": {
         "website": "https://tonstakers.com/",
-        "app": "https://tonstakers.com/"
+        "app": "https://app.tonstakers.com/"
       },
       "dataMode": "automatic",
       "sourcePriority": [
         "official-api",
-        "official-sdk",
-        "onchain",
-        "manual"
+        "official-page",
+        "onchain"
       ],
-      "name": "Tonstakers",
       "tier": "core",
       "active": true,
       "opportunitiesCount": 1,
-      "trackedTvlUsd": 175700000,
+      "trackedTvlUsd": null,
       "includedInV1": true,
       "notes": []
     },
     {
       "id": "evaa",
+      "name": "EVAA",
       "description": {
-        "en": "Lending and borrowing protocol for TON assets.",
-        "ru": "Протокол кредитования и займов для активов TON."
+        "en": "Lending markets for major TON ecosystem assets.",
+        "ru": "Лендинговые рынки для основных активов экосистемы TON."
       },
       "links": {
         "website": "https://evaa.finance/",
-        "app": "https://t.me/EvaaAppBot"
+        "app": "https://app.evaa.finance/"
       },
       "dataMode": "automatic",
       "sourcePriority": [
-        "official-sdk",
-        "onchain",
         "official-api",
-        "manual"
+        "official-page",
+        "onchain"
       ],
-      "name": "EVAA",
       "tier": "core",
       "active": true,
-      "opportunitiesCount": 5,
-      "trackedTvlUsd": 1646800,
+      "opportunitiesCount": 1,
+      "trackedTvlUsd": null,
       "includedInV1": true,
       "notes": []
     },
     {
       "id": "stonfi",
+      "name": "STON.fi",
       "description": {
-        "en": "Decentralized exchange and liquidity protocol on TON.",
-        "ru": "Децентрализованная биржа и протокол ликвидности в TON."
+        "en": "Decentralized exchange and liquidity pools on TON.",
+        "ru": "Децентрализованная биржа и пулы ликвидности в TON."
       },
       "links": {
         "website": "https://ston.fi/",
@@ -76,311 +68,298 @@
       "dataMode": "automatic",
       "sourcePriority": [
         "official-api",
-        "onchain",
-        "official-sdk",
-        "manual"
+        "official-page",
+        "onchain"
       ],
-      "name": "STON.fi",
       "tier": "core",
       "active": true,
-      "opportunitiesCount": 4,
-      "trackedTvlUsd": 11860300,
+      "opportunitiesCount": 1,
+      "trackedTvlUsd": null,
       "includedInV1": true,
       "notes": []
     },
     {
       "id": "dedust",
+      "name": "DeDust",
       "description": {
-        "en": "Decentralized exchange and liquidity protocol on TON.",
-        "ru": "Децентрализованная биржа и протокол ликвидности в TON."
+        "en": "Decentralized exchange with liquidity pools on TON.",
+        "ru": "Децентрализованная биржа с пулами ликвидности в TON."
       },
       "links": {
         "website": "https://dedust.io/",
-        "app": "https://dedust.io/"
+        "app": "https://dedust.io/pools"
       },
       "dataMode": "automatic",
       "sourcePriority": [
         "official-api",
-        "official-sdk",
-        "onchain",
-        "manual"
+        "official-page",
+        "onchain"
       ],
-      "name": "DeDust",
-      "tier": "core",
-      "active": true,
-      "opportunitiesCount": 0,
-      "trackedTvlUsd": 0,
-      "includedInV1": true,
-      "notes": [
-        "No opportunity records yet in the initial dataset."
-      ]
-    },
-    {
-      "id": "hipo",
-      "description": {
-        "en": "Liquid staking protocol for TON.",
-        "ru": "Протокол ликвидного стейкинга TON."
-      },
-      "links": {
-        "website": "https://hipo.finance/",
-        "app": "https://hipo.finance/"
-      },
-      "dataMode": "manual",
-      "sourcePriority": [
-        "official-api",
-        "official-sdk",
-        "onchain",
-        "manual"
-      ],
-      "name": "Hipo",
       "tier": "core",
       "active": true,
       "opportunitiesCount": 1,
-      "trackedTvlUsd": 3200000,
+      "trackedTvlUsd": null,
+      "includedInV1": true,
+      "notes": []
+    },
+    {
+      "id": "hipo",
+      "name": "Hipo",
+      "description": {
+        "en": "Liquid staking with hGRAM.",
+        "ru": "Ликвидный стейкинг с токеном hGRAM."
+      },
+      "links": {
+        "website": "https://hipo.finance/",
+        "app": "https://hipo.finance/app/"
+      },
+      "dataMode": "verified",
+      "sourcePriority": [
+        "official-api",
+        "official-page",
+        "onchain"
+      ],
+      "tier": "core",
+      "active": true,
+      "opportunitiesCount": 1,
+      "trackedTvlUsd": null,
       "includedInV1": true,
       "notes": []
     },
     {
       "id": "bemo",
+      "name": "Bemo",
       "description": {
-        "en": "Liquid staking and yield products in the TON ecosystem.",
-        "ru": "Ликвидный стейкинг и доходные продукты в экосистеме TON."
+        "en": "Liquid staking with bmGRAM.",
+        "ru": "Ликвидный стейкинг с токеном bmGRAM."
       },
       "links": {
         "website": "https://bemo.fi/",
-        "app": "https://bemo.fi/"
+        "app": "https://app.bemo.fi/"
       },
-      "dataMode": "manual",
+      "dataMode": "verified",
       "sourcePriority": [
         "official-api",
-        "official-sdk",
-        "onchain",
-        "manual"
+        "official-page",
+        "onchain"
       ],
-      "name": "Bemo",
       "tier": "core",
       "active": true,
-      "opportunitiesCount": 2,
-      "trackedTvlUsd": 2470000,
+      "opportunitiesCount": 1,
+      "trackedTvlUsd": null,
       "includedInV1": true,
       "notes": []
     },
     {
       "id": "affluent",
+      "name": "Affluent",
       "description": {
-        "en": "Yield vaults for TON ecosystem assets.",
-        "ru": "Доходные хранилища для активов экосистемы TON."
+        "en": "Automated yield vaults on TON.",
+        "ru": "Автоматизированные хранилища доходности в TON."
       },
       "links": {
-        "website": null,
-        "app": "https://t.me/AffluentAppBot"
+        "website": "https://affluent.org/",
+        "app": "https://app.affluent.org/earn/EQAGtgnr1G0XDilGURcOB3pUhl-Lo__J-TaJP0K4ey8cuSaW"
       },
-      "dataMode": "manual",
+      "dataMode": "verified",
       "sourcePriority": [
         "official-api",
-        "official-sdk",
-        "onchain",
-        "manual"
+        "official-page",
+        "onchain"
       ],
-      "name": "Affluent",
       "tier": "core",
       "active": true,
-      "opportunitiesCount": 4,
-      "trackedTvlUsd": 2547500,
+      "opportunitiesCount": 1,
+      "trackedTvlUsd": null,
       "includedInV1": true,
       "notes": []
     },
     {
       "id": "storm-trade",
+      "name": "Storm Trade",
       "description": {
-        "en": "Trading and yield products available through Telegram.",
-        "ru": "Торговые и доходные продукты, доступные через Telegram."
+        "en": "Decentralized derivatives trading and liquidity vaults.",
+        "ru": "Децентрализованная торговля деривативами и хранилища ликвидности."
       },
       "links": {
-        "website": null,
-        "app": "https://t.me/StormTradeBot"
+        "website": "https://storm.tg/",
+        "app": "https://app.storm.tg/vault/USDT"
       },
-      "dataMode": "manual",
+      "dataMode": "verified",
       "sourcePriority": [
         "official-api",
-        "official-sdk",
-        "onchain",
-        "manual"
+        "official-page",
+        "onchain"
       ],
-      "name": "Storm Trade",
       "tier": "core",
       "active": true,
-      "opportunitiesCount": 2,
-      "trackedTvlUsd": 4900000,
+      "opportunitiesCount": 1,
+      "trackedTvlUsd": null,
       "includedInV1": true,
       "notes": []
     },
     {
       "id": "ethena",
+      "name": "Ethena",
       "description": {
-        "en": "Synthetic dollar and yield products available for TON users.",
-        "ru": "Синтетический доллар и доходные продукты для пользователей TON."
+        "en": "USDe and reward-bearing tsUSDe available on TON.",
+        "ru": "USDe и доходный токен tsUSDe, доступные в TON."
       },
       "links": {
-        "website": "https://www.ethena.fi/",
+        "website": "https://ethena.fi/",
         "app": "https://app.ethena.fi/earn/ton"
       },
-      "dataMode": "manual",
+      "dataMode": "verified",
       "sourcePriority": [
         "official-api",
-        "official-sdk",
-        "manual"
+        "official-page",
+        "onchain"
       ],
-      "name": "Ethena",
       "tier": "core",
       "active": true,
       "opportunitiesCount": 1,
-      "trackedTvlUsd": 1500000000,
+      "trackedTvlUsd": null,
       "includedInV1": true,
       "notes": []
     },
     {
       "id": "telegram-wallet",
+      "name": "Telegram Wallet",
       "description": {
-        "en": "Earn products distributed through Telegram Wallet.",
-        "ru": "Доходные продукты, доступные через Telegram Wallet."
+        "en": "Telegram-native access to selected third-party DeFi strategies.",
+        "ru": "Доступ из Telegram к выбранным сторонним DeFi-стратегиям."
       },
       "links": {
-        "website": null,
+        "website": "https://wallet.tg/",
         "app": "https://t.me/wallet"
       },
-      "dataMode": "manual",
+      "dataMode": "verified",
       "sourcePriority": [
         "official-api",
-        "official-feed",
-        "manual"
+        "official-page",
+        "onchain"
       ],
-      "name": "Telegram Wallet",
       "tier": "core",
       "active": true,
       "opportunitiesCount": 1,
-      "trackedTvlUsd": 293300,
+      "trackedTvlUsd": null,
+      "includedInV1": true,
+      "notes": []
+    },
+    {
+      "id": "tonco",
+      "name": "TONCO",
+      "description": {
+        "en": "Concentrated-liquidity DEX for capital-efficient pools on TON.",
+        "ru": "DEX с концентрированной ликвидностью для более эффективных пулов в TON."
+      },
+      "links": {
+        "website": "https://tonco.io/",
+        "app": "https://app.tonco.io/#/explore"
+      },
+      "dataMode": "verified",
+      "sourcePriority": [
+        "official-page",
+        "official-docs"
+      ],
+      "tier": "core",
+      "active": true,
+      "opportunitiesCount": 1,
+      "trackedTvlUsd": null,
+      "includedInV1": true,
+      "notes": []
+    },
+    {
+      "id": "tradoor",
+      "name": "Tradoor",
+      "description": {
+        "en": "Perpetuals and options protocol with liquidity pools for market makers.",
+        "ru": "Протокол бессрочных контрактов и опционов с пулами ликвидности для маркет-мейкеров."
+      },
+      "links": {
+        "website": "https://tradoor.io/",
+        "app": "https://app.tradoor.io/"
+      },
+      "dataMode": "verified",
+      "sourcePriority": [
+        "official-page",
+        "official-docs"
+      ],
+      "tier": "core",
+      "active": true,
+      "opportunitiesCount": 1,
+      "trackedTvlUsd": null,
+      "includedInV1": true,
+      "notes": []
+    },
+    {
+      "id": "torch-finance",
+      "name": "Torch Finance",
+      "description": {
+        "en": "StableSwap and yield-bearing stablecoin products built for TON and Telegram.",
+        "ru": "StableSwap и доходные стейблкоин-продукты для TON и Telegram."
+      },
+      "links": {
+        "website": "https://torch.finance/",
+        "app": "https://t.me/tgusd_official_bot/app"
+      },
+      "dataMode": "verified",
+      "sourcePriority": [
+        "official-page",
+        "official-docs",
+        "official-announcement"
+      ],
+      "tier": "core",
+      "active": true,
+      "opportunitiesCount": 1,
+      "trackedTvlUsd": null,
+      "includedInV1": true,
+      "notes": []
+    },
+    {
+      "id": "jvault",
+      "name": "JVault",
+      "description": {
+        "en": "Decentralized token-staking pools and revenue-sharing tools on TON.",
+        "ru": "Децентрализованные пулы стейкинга токенов и инструменты распределения дохода в TON."
+      },
+      "links": {
+        "website": "https://jvault.xyz/",
+        "app": "https://jvault.xyz/staking/v2/"
+      },
+      "dataMode": "verified",
+      "sourcePriority": [
+        "official-page",
+        "official-docs"
+      ],
+      "tier": "core",
+      "active": true,
+      "opportunitiesCount": 1,
+      "trackedTvlUsd": null,
       "includedInV1": true,
       "notes": []
     },
     {
       "id": "stakee",
-      "description": {
-        "en": "Staking service for TON ecosystem assets.",
-        "ru": "Сервис стейкинга активов экосистемы TON."
-      },
-      "links": {
-        "website": null,
-        "app": "https://t.me/StakeeBot/app"
-      },
-      "dataMode": "manual",
-      "sourcePriority": [
-        "official-api",
-        "onchain",
-        "manual"
-      ],
       "name": "Stakee",
-      "tier": "extended",
+      "description": {
+        "en": "GRAM staking with a web and Telegram interface and flexible withdrawals.",
+        "ru": "Стейкинг GRAM через сайт и Telegram с гибким выводом средств."
+      },
+      "links": {
+        "website": "https://stakee.org/",
+        "app": "https://app.stakee.org/"
+      },
+      "dataMode": "verified",
+      "sourcePriority": [
+        "official-page",
+        "official-app"
+      ],
+      "tier": "core",
       "active": true,
       "opportunitiesCount": 1,
-      "trackedTvlUsd": 25700000,
-      "includedInV1": false,
-      "notes": []
-    },
-    {
-      "id": "gtc",
-      "description": {
-        "en": "Lending and yield vaults for TON ecosystem assets.",
-        "ru": "Кредитные и доходные хранилища для активов экосистемы TON."
-      },
-      "links": {
-        "website": null,
-        "app": "https://t.me/GiftToCreditBot/app"
-      },
-      "dataMode": "manual",
-      "sourcePriority": [
-        "official-api",
-        "onchain",
-        "manual"
-      ],
-      "name": "GTC",
-      "tier": "extended",
-      "active": true,
-      "opportunitiesCount": 2,
-      "trackedTvlUsd": 76100,
-      "includedInV1": false,
-      "notes": []
-    },
-    {
-      "id": "kton",
-      "description": {
-        "en": "Staking product related to TON ecosystem assets.",
-        "ru": "Стейкинговый продукт, связанный с активами экосистемы TON."
-      },
-      "links": {
-        "website": "https://kton.io/",
-        "app": "https://kton.io/"
-      },
-      "dataMode": "manual",
-      "sourcePriority": [
-        "official-api",
-        "onchain",
-        "manual"
-      ],
-      "name": "KTON",
-      "tier": "extended",
-      "active": true,
-      "opportunitiesCount": 1,
-      "trackedTvlUsd": 2400000,
-      "includedInV1": false,
-      "notes": []
-    },
-    {
-      "id": "morpho",
-      "description": {
-        "en": "Vault infrastructure surfaced to TON users through Telegram apps.",
-        "ru": "Инфраструктура хранилищ, доступная пользователям TON через Telegram-приложения."
-      },
-      "links": {
-        "website": "https://morpho.org/",
-        "app": "https://t.me/MorphoOrgBot"
-      },
-      "dataMode": "manual",
-      "sourcePriority": [
-        "official-api",
-        "official-sdk",
-        "manual"
-      ],
-      "name": "Morpho",
-      "tier": "extended",
-      "active": true,
-      "opportunitiesCount": 5,
-      "trackedTvlUsd": 1098251,
-      "includedInV1": false,
-      "notes": []
-    },
-    {
-      "id": "euler",
-      "description": {
-        "en": "Lending infrastructure available through a Telegram app.",
-        "ru": "Кредитная инфраструктура, доступная через Telegram-приложение."
-      },
-      "links": {
-        "website": "https://www.euler.finance/",
-        "app": "https://t.me/EulerFinanceBot"
-      },
-      "dataMode": "manual",
-      "sourcePriority": [
-        "official-api",
-        "official-sdk",
-        "manual"
-      ],
-      "name": "Euler",
-      "tier": "extended",
-      "active": true,
-      "opportunitiesCount": 1,
-      "trackedTvlUsd": 2600,
-      "includedInV1": false,
+      "trackedTvlUsd": null,
+      "includedInV1": true,
       "notes": []
     }
   ]

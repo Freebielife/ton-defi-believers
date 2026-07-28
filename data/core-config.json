@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "1.0",
-  "mode": "core-first",
+  "schemaVersion": "1.1",
+  "mode": "pilot-core-only",
   "coreProtocols": [
     "tonstakers",
     "evaa",
@@ -13,28 +13,12 @@
     "ethena",
     "telegram-wallet"
   ],
-  "extendedProtocols": [
-    "stakee",
-    "gtc",
-    "kton",
-    "morpho",
-    "euler"
-  ],
+  "extendedProtocols": [],
   "homepage": {
     "defaultTier": "core",
     "showExtendedToggle": false,
-    "showCoveredTvl": true,
+    "showCoveredTvl": false,
     "showProtocolsCount": true,
     "showOpportunitiesCount": true
-  },
-  "expansionRule": {
-    "targetExtendedCount": 15,
-    "requirements": [
-      "stable data source",
-      "publicly accessible product",
-      "verifiable TVL",
-      "verifiable APY or yield metric",
-      "clear official link"
-    ]
   }
 }

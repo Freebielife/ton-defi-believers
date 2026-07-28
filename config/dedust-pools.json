@@ -1,11 +1,43 @@
 {
   "enabled": true,
+  "apiBaseUrl": "https://api.dedust.io",
   "endpoint": "https://api.dedust.io/v2/pools",
   "timeoutMs": 30000,
-  "trackedPools": [],
-  "discovery": {
-    "publishOnlyWhenUnique": true,
-    "candidateLimit": 10
+  "trades": {
+    "pageSize": 500,
+    "maxPages": 25
   },
-  "note": "DeDust catalog is collected automatically. Specific opportunities are published only after verified pool mapping."
+  "onchain": {
+    "enabled": true,
+    "timeoutMs": 20000,
+    "tolerancePercent": 2
+  },
+  "trackedPools": [
+    {
+      "opportunityId": "dedust-liquidity-pools",
+      "enabled": true,
+      "poolAddress": "EQA-X_yo3fzzbDbJ_0bzFWKqtRuZFIRa1sJsveZJ1YpViO3r",
+      "poolType": "volatile",
+      "symbols": [
+        "TON",
+        "USDT"
+      ],
+      "assetAddresses": [
+        "EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs"
+      ],
+      "assetDecimals": [
+        9,
+        6
+      ],
+      "stableAssetIndex": 1,
+      "stableAssetSymbol": "USDT",
+      "stableAssetAddress": "EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs",
+      "displayAsset": "TON–USDT",
+      "displayProduct": "TON–USDT pool",
+      "aprWindowDays": 7,
+      "lpFeeShare": 0.8,
+      "fallbackTradeFeeRate": 0.0025
+    }
+  ],
+  "note": "One representative DeDust pool is locked by address. Seven-day fee APR is calculated from official trades; reserves are checked on-chain when TON RPC is available."
 }

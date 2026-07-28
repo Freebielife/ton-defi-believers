@@ -1,42 +1,43 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-28T18:48:41.046Z",
-  "count": 29,
+  "generatedAt": "2026-07-28T19:41:54.261Z",
+  "count": 15,
   "facets": {
     "protocols": [
       "Affluent",
       "Bemo",
+      "DeDust",
       "EVAA",
       "Ethena",
-      "Euler",
-      "GTC",
       "Hipo",
-      "KTON",
-      "Morpho",
+      "JVault",
       "STON.fi",
       "Stakee",
       "Storm Trade",
+      "TONCO",
       "Telegram Wallet",
-      "Tonstakers"
+      "Tonstakers",
+      "Torch Finance",
+      "Tradoor"
     ],
     "assets": [
       "GRAM",
-      "TON",
-      "TSUSDE",
-      "TSUSDE-USDT",
+      "GRAM / USDT + others",
+      "STORM",
+      "TON–USDT",
       "USDT",
-      "USDT-GRAM",
-      "USDe-tsUSDe",
-      "WETH",
-      "cbBTC",
+      "USDe–tsUSDe",
+      "tgUSD / stgUSD",
       "tsUSDe"
     ],
     "categories": [
-      "btc",
-      "eth",
       "gram",
-      "gram-usdt",
-      "stablecoins"
+      "lending",
+      "liquidity",
+      "stablecoin",
+      "stablecoins",
+      "staking",
+      "vault"
     ],
     "types": [
       "lending",
@@ -54,828 +55,436 @@
   },
   "records": [
     {
-      "id": "tonstakers-gram-tston-tston",
+      "id": "tonstakers-liquid-staking",
       "protocol": "Tonstakers",
-      "product": "GRAM-tsTON (tsTON)",
+      "product": "GRAM → tsTON",
       "asset": "GRAM",
       "category": "gram",
       "type": "liquid-staking",
-      "apy": 12.3,
-      "tvlUsd": 175700000,
-      "yieldScore": 69,
+      "apy": 20.37,
+      "tvlUsd": null,
+      "yieldScore": 57,
       "confidence": 50,
       "risk": "low",
       "links": {
         "official": "https://tonstakers.com/",
-        "app": "https://tonstakers.com/"
+        "app": "https://app.tonstakers.com/"
       },
-      "searchText": "tonstakers gram tston tston tonstakers gram tston tston gram liquid staking low c",
+      "searchText": "tonstakers liquid staking tonstakers gram tston gram liquid staking low c unknown tvl",
       "terms": [
-        "tonstakers gram tston tston",
+        "tonstakers liquid staking",
         "tonstakers",
-        "gram tston tston",
-        "gram",
-        "liquid staking",
-        "low",
-        "c"
-      ]
-    },
-    {
-      "id": "stakee-gram-staked",
-      "protocol": "Stakee",
-      "product": "GRAM (STAKED)",
-      "asset": "GRAM",
-      "category": "gram",
-      "type": "staking",
-      "apy": 13.6,
-      "tvlUsd": 25700000,
-      "yieldScore": 67,
-      "confidence": 50,
-      "risk": "low",
-      "links": {
-        "official": "https://t.me/StakeeBot/app",
-        "app": "https://t.me/StakeeBot/app"
-      },
-      "searchText": "stakee gram staked stakee gram staked gram staking low c",
-      "terms": [
-        "stakee gram staked",
-        "stakee",
-        "gram staked",
-        "gram",
-        "staking",
-        "low",
-        "c"
-      ]
-    },
-    {
-      "id": "hipo-gram-hton-hton",
-      "protocol": "Hipo",
-      "product": "GRAM-hTON (hTON)",
-      "asset": "GRAM",
-      "category": "gram",
-      "type": "liquid-staking",
-      "apy": 15.8,
-      "tvlUsd": 3200000,
-      "yieldScore": 66,
-      "confidence": 50,
-      "risk": "low",
-      "links": {
-        "official": "https://hipo.finance/",
-        "app": "https://hipo.finance/"
-      },
-      "searchText": "hipo gram hton hton hipo gram hton hton gram liquid staking low c",
-      "terms": [
-        "hipo gram hton hton",
-        "hipo",
-        "gram hton hton",
-        "gram",
-        "liquid staking",
-        "low",
-        "c"
-      ]
-    },
-    {
-      "id": "bemo-gram-stton-stton",
-      "protocol": "Bemo",
-      "product": "GRAM-stTON (stTON)",
-      "asset": "GRAM",
-      "category": "gram",
-      "type": "liquid-staking",
-      "apy": 14.7,
-      "tvlUsd": 2000000,
-      "yieldScore": 64,
-      "confidence": 50,
-      "risk": "low",
-      "links": {
-        "official": "https://bemo.fi/",
-        "app": "https://bemo.fi/"
-      },
-      "searchText": "bemo gram stton stton bemo gram stton stton gram liquid staking low c",
-      "terms": [
-        "bemo gram stton stton",
-        "bemo",
-        "gram stton stton",
-        "gram",
-        "liquid staking",
-        "low",
-        "c"
-      ]
-    },
-    {
-      "id": "bemo-gram-bmton-bmton",
-      "protocol": "Bemo",
-      "product": "GRAM-bmTON (bmTON)",
-      "asset": "GRAM",
-      "category": "gram",
-      "type": "liquid-staking",
-      "apy": 14.7,
-      "tvlUsd": 470000,
-      "yieldScore": 60,
-      "confidence": 50,
-      "risk": "low",
-      "links": {
-        "official": "https://bemo.fi/",
-        "app": "https://bemo.fi/"
-      },
-      "searchText": "bemo gram bmton bmton bemo gram bmton bmton gram liquid staking low c moderate tvl",
-      "terms": [
-        "bemo gram bmton bmton",
-        "bemo",
-        "gram bmton bmton",
-        "gram",
-        "liquid staking",
-        "low",
-        "c",
-        "moderate tvl"
-      ]
-    },
-    {
-      "id": "kton-gram-kton",
-      "protocol": "KTON",
-      "product": "GRAM (KTON)",
-      "asset": "GRAM",
-      "category": "gram",
-      "type": "staking",
-      "apy": 13.8,
-      "tvlUsd": 2400000,
-      "yieldScore": 63,
-      "confidence": 50,
-      "risk": "low",
-      "links": {
-        "official": "https://kton.io/",
-        "app": "https://kton.io/"
-      },
-      "searchText": "kton gram kton kton gram kton gram staking low c",
-      "terms": [
-        "kton gram kton",
-        "kton",
-        "gram kton",
-        "gram",
-        "staking",
-        "low",
-        "c"
-      ]
-    },
-    {
-      "id": "affluent-gram",
-      "protocol": "Affluent",
-      "product": "GRAM",
-      "asset": "GRAM",
-      "category": "gram",
-      "type": "vault",
-      "apy": 9.2,
-      "tvlUsd": 1300000,
-      "yieldScore": 57,
-      "confidence": 50,
-      "risk": "low",
-      "links": {
-        "official": "https://t.me/AffluentAppBot",
-        "app": "https://t.me/AffluentAppBot"
-      },
-      "searchText": "affluent gram affluent gram vault low c",
-      "terms": [
-        "affluent gram",
-        "affluent",
-        "gram",
-        "vault",
-        "low",
-        "c"
-      ]
-    },
-    {
-      "id": "affluent-gram-tston",
-      "protocol": "Affluent",
-      "product": "GRAM-TSTON",
-      "asset": "GRAM",
-      "category": "gram",
-      "type": "vault",
-      "apy": 10.9,
-      "tvlUsd": 820200,
-      "yieldScore": 57,
-      "confidence": 50,
-      "risk": "low",
-      "links": {
-        "official": "https://t.me/AffluentAppBot",
-        "app": "https://t.me/AffluentAppBot"
-      },
-      "searchText": "affluent gram tston affluent gram tston gram vault low c moderate tvl",
-      "terms": [
-        "affluent gram tston",
-        "affluent",
         "gram tston",
         "gram",
-        "vault",
+        "liquid staking",
         "low",
         "c",
-        "moderate tvl"
+        "unknown tvl"
       ]
     },
     {
-      "id": "storm-trade-gram-ton-slp",
-      "protocol": "Storm Trade",
-      "product": "GRAM (TON-SLP)",
-      "asset": "GRAM",
-      "category": "gram",
-      "type": "liquidity-pool",
-      "apy": 6.2,
-      "tvlUsd": 1500000,
-      "yieldScore": 49,
-      "confidence": 50,
-      "risk": "medium",
-      "links": {
-        "official": "https://t.me/StormTradeBot",
-        "app": "https://t.me/StormTradeBot"
-      },
-      "searchText": "storm trade gram ton slp storm trade gram ton slp gram liquidity pool medium c impermanent loss or lp risk",
-      "terms": [
-        "storm trade gram ton slp",
-        "storm trade",
-        "gram ton slp",
-        "gram",
-        "liquidity pool",
-        "medium",
-        "c",
-        "impermanent loss or lp risk"
-      ]
-    },
-    {
-      "id": "evaa-gram-main",
+      "id": "evaa-supply-markets",
       "protocol": "EVAA",
-      "product": "GRAM (Main)",
-      "asset": "GRAM",
-      "category": "gram",
-      "type": "lending",
-      "apy": 6.1,
-      "tvlUsd": 937700,
-      "yieldScore": 48,
-      "confidence": 50,
-      "risk": "medium",
-      "links": {
-        "official": "https://t.me/EvaaAppBot",
-        "app": "https://t.me/EvaaAppBot"
-      },
-      "searchText": "evaa gram main evaa gram main gram lending medium c liquidation or utilization risk moderate tvl",
-      "terms": [
-        "evaa gram main",
-        "evaa",
-        "gram main",
-        "gram",
-        "lending",
-        "medium",
-        "c",
-        "liquidation or utilization risk",
-        "moderate tvl"
-      ]
-    },
-    {
-      "id": "evaa-gram-lp",
-      "protocol": "EVAA",
-      "product": "GRAM (LP)",
-      "asset": "GRAM",
-      "category": "gram",
-      "type": "lending",
-      "apy": 3.3,
-      "tvlUsd": 52200,
-      "yieldScore": 35,
-      "confidence": 50,
-      "risk": "medium",
-      "links": {
-        "official": "https://t.me/EvaaAppBot",
-        "app": "https://t.me/EvaaAppBot"
-      },
-      "searchText": "evaa gram lp evaa gram lp gram lending medium c liquidation or utilization risk low tvl",
-      "terms": [
-        "evaa gram lp",
-        "evaa",
-        "gram lp",
-        "gram",
-        "lending",
-        "medium",
-        "c",
-        "liquidation or utilization risk",
-        "low tvl"
-      ]
-    },
-    {
-      "id": "gtc-gram-vault",
-      "protocol": "GTC",
-      "product": "GRAM vault",
-      "asset": "GRAM",
-      "category": "gram",
-      "type": "vault",
-      "apy": 17.7,
-      "tvlUsd": 34900,
-      "yieldScore": 55,
-      "confidence": 50,
-      "risk": "medium",
-      "links": {
-        "official": "https://t.me/GiftToCreditBot/app",
-        "app": "https://t.me/GiftToCreditBot/app"
-      },
-      "searchText": "gtc gram vault gtc gram vault gram vault medium c low tvl",
-      "terms": [
-        "gtc gram vault",
-        "gtc",
-        "gram vault",
-        "gram",
-        "vault",
-        "medium",
-        "c",
-        "low tvl"
-      ]
-    },
-    {
-      "id": "morpho-re7-ton",
-      "protocol": "Morpho",
-      "product": "Re7 TON",
-      "asset": "TON",
-      "category": "gram",
-      "type": "vault",
-      "apy": 0.3,
-      "tvlUsd": 2300,
-      "yieldScore": 27,
-      "confidence": 50,
-      "risk": "medium",
-      "links": {
-        "official": "https://t.me/MorphoOrgBot",
-        "app": "https://t.me/MorphoOrgBot"
-      },
-      "searchText": "morpho re7 ton morpho re7 ton ton gram vault medium c low tvl",
-      "terms": [
-        "morpho re7 ton",
-        "morpho",
-        "re7 ton",
-        "ton",
-        "gram",
-        "vault",
-        "medium",
-        "c",
-        "low tvl"
-      ]
-    },
-    {
-      "id": "morpho-singularv-ton-tonstakers",
-      "protocol": "Morpho",
-      "product": "SingularV TON Tonstakers",
-      "asset": "TON",
-      "category": "gram",
-      "type": "vault",
-      "apy": 0.2,
-      "tvlUsd": 251,
-      "yieldScore": 27,
-      "confidence": 50,
-      "risk": "medium",
-      "links": {
-        "official": "https://t.me/MorphoOrgBot",
-        "app": "https://t.me/MorphoOrgBot"
-      },
-      "searchText": "morpho singularv ton tonstakers morpho singularv ton tonstakers ton gram vault medium c low tvl",
-      "terms": [
-        "morpho singularv ton tonstakers",
-        "morpho",
-        "singularv ton tonstakers",
-        "ton",
-        "gram",
-        "vault",
-        "medium",
-        "c",
-        "low tvl"
-      ]
-    },
-    {
-      "id": "ethena-tsusde",
-      "protocol": "Ethena",
-      "product": "tsUSDe",
+      "product": "tsUSDe supply · Main Pool",
       "asset": "tsUSDe",
-      "category": "stablecoins",
-      "type": "yield-token",
-      "apy": 4.1,
-      "tvlUsd": 1500000000,
-      "yieldScore": 60,
+      "category": "lending",
+      "type": "lending",
+      "apy": 10.04,
+      "tvlUsd": null,
+      "yieldScore": 46,
       "confidence": 50,
-      "risk": "low",
+      "risk": "medium",
       "links": {
-        "official": "https://app.ethena.fi/earn/ton",
-        "app": "https://app.ethena.fi/earn/ton"
+        "official": "https://evaa.finance/",
+        "app": "https://app.evaa.finance/"
       },
-      "searchText": "ethena tsusde ethena tsusde stablecoins yield token low c",
+      "searchText": "evaa supply markets evaa tsusde supply main pool tsusde lending medium c liquidation or utilization risk unknown tvl",
       "terms": [
-        "ethena tsusde",
-        "ethena",
+        "evaa supply markets",
+        "evaa",
+        "tsusde supply main pool",
         "tsusde",
-        "stablecoins",
-        "yield token",
-        "low",
-        "c"
-      ]
-    },
-    {
-      "id": "storm-trade-usdt",
-      "protocol": "Storm Trade",
-      "product": "USDT",
-      "asset": "USDT",
-      "category": "stablecoins",
-      "type": "vault",
-      "apy": 5.7,
-      "tvlUsd": 3400000,
-      "yieldScore": 53,
-      "confidence": 50,
-      "risk": "low",
-      "links": {
-        "official": "https://t.me/StormTradeBot",
-        "app": "https://t.me/StormTradeBot"
-      },
-      "searchText": "storm trade usdt storm trade usdt stablecoins vault low c",
-      "terms": [
-        "storm trade usdt",
-        "storm trade",
-        "usdt",
-        "stablecoins",
-        "vault",
-        "low",
-        "c"
-      ]
-    },
-    {
-      "id": "morpho-re7-usdt-v2-vault",
-      "protocol": "Morpho",
-      "product": "Re7 USDT V2 vault",
-      "asset": "USDT",
-      "category": "stablecoins",
-      "type": "vault",
-      "apy": 4.2,
-      "tvlUsd": 990000,
-      "yieldScore": 47,
-      "confidence": 50,
-      "risk": "low",
-      "links": {
-        "official": "https://t.me/MorphoOrgBot",
-        "app": "https://t.me/MorphoOrgBot"
-      },
-      "searchText": "morpho re7 usdt v2 vault morpho re7 usdt v2 vault usdt stablecoins vault low c moderate tvl",
-      "terms": [
-        "morpho re7 usdt v2 vault",
-        "morpho",
-        "re7 usdt v2 vault",
-        "usdt",
-        "stablecoins",
-        "vault",
-        "low",
-        "c",
-        "moderate tvl"
-      ]
-    },
-    {
-      "id": "evaa-usdt-main",
-      "protocol": "EVAA",
-      "product": "USDT (Main)",
-      "asset": "USDT",
-      "category": "stablecoins",
-      "type": "lending",
-      "apy": 8.1,
-      "tvlUsd": 465600,
-      "yieldScore": 50,
-      "confidence": 50,
-      "risk": "medium",
-      "links": {
-        "official": "https://t.me/EvaaAppBot",
-        "app": "https://t.me/EvaaAppBot"
-      },
-      "searchText": "evaa usdt main evaa usdt main usdt stablecoins lending medium c liquidation or utilization risk moderate tvl",
-      "terms": [
-        "evaa usdt main",
-        "evaa",
-        "usdt main",
-        "usdt",
-        "stablecoins",
         "lending",
         "medium",
         "c",
         "liquidation or utilization risk",
-        "moderate tvl"
-      ]
-    },
-    {
-      "id": "evaa-usdt-lp",
-      "protocol": "EVAA",
-      "product": "USDT (LP)",
-      "asset": "USDT",
-      "category": "stablecoins",
-      "type": "lending",
-      "apy": 1.2,
-      "tvlUsd": 129100,
-      "yieldScore": 34,
-      "confidence": 50,
-      "risk": "medium",
-      "links": {
-        "official": "https://t.me/EvaaAppBot",
-        "app": "https://t.me/EvaaAppBot"
-      },
-      "searchText": "evaa usdt lp evaa usdt lp usdt stablecoins lending medium c liquidation or utilization risk moderate tvl",
-      "terms": [
-        "evaa usdt lp",
-        "evaa",
-        "usdt lp",
-        "usdt",
-        "stablecoins",
-        "lending",
-        "medium",
-        "c",
-        "liquidation or utilization risk",
-        "moderate tvl"
-      ]
-    },
-    {
-      "id": "evaa-tsusde-main",
-      "protocol": "EVAA",
-      "product": "TSUSDE (Main)",
-      "asset": "TSUSDE",
-      "category": "stablecoins",
-      "type": "lending",
-      "apy": 0,
-      "tvlUsd": 62200,
-      "yieldScore": 27,
-      "confidence": 50,
-      "risk": "medium",
-      "links": {
-        "official": "https://t.me/EvaaAppBot",
-        "app": "https://t.me/EvaaAppBot"
-      },
-      "searchText": "evaa tsusde main evaa tsusde main tsusde stablecoins lending medium c liquidation or utilization risk low tvl",
-      "terms": [
-        "evaa tsusde main",
-        "evaa",
-        "tsusde main",
-        "tsusde",
-        "stablecoins",
-        "lending",
-        "medium",
-        "c",
-        "liquidation or utilization risk",
-        "low tvl"
-      ]
-    },
-    {
-      "id": "affluent-tsusde-usdt-vault7",
-      "protocol": "Affluent",
-      "product": "TSUSDE-USDT-VAULT7",
-      "asset": "TSUSDE-USDT",
-      "category": "stablecoins",
-      "type": "vault",
-      "apy": 4,
-      "tvlUsd": 365000,
-      "yieldScore": 45,
-      "confidence": 50,
-      "risk": "low",
-      "links": {
-        "official": "https://t.me/AffluentAppBot",
-        "app": "https://t.me/AffluentAppBot"
-      },
-      "searchText": "affluent tsusde usdt vault7 affluent tsusde usdt vault7 tsusde usdt stablecoins vault low c moderate tvl",
-      "terms": [
-        "affluent tsusde usdt vault7",
-        "affluent",
-        "tsusde usdt vault7",
-        "tsusde usdt",
-        "stablecoins",
-        "vault",
-        "low",
-        "c",
-        "moderate tvl"
-      ]
-    },
-    {
-      "id": "affluent-usdt",
-      "protocol": "Affluent",
-      "product": "USDT",
-      "asset": "USDT",
-      "category": "stablecoins",
-      "type": "vault",
-      "apy": 8.4,
-      "tvlUsd": 62300,
-      "yieldScore": 47,
-      "confidence": 50,
-      "risk": "medium",
-      "links": {
-        "official": "https://t.me/AffluentAppBot",
-        "app": "https://t.me/AffluentAppBot"
-      },
-      "searchText": "affluent usdt affluent usdt stablecoins vault medium c low tvl",
-      "terms": [
-        "affluent usdt",
-        "affluent",
-        "usdt",
-        "stablecoins",
-        "vault",
-        "medium",
-        "c",
-        "low tvl"
-      ]
-    },
-    {
-      "id": "telegram-wallet-midas-usdt-vault",
-      "protocol": "Telegram Wallet",
-      "product": "Midas USDT vault",
-      "asset": "USDT",
-      "category": "stablecoins",
-      "type": "vault",
-      "apy": 9.44,
-      "tvlUsd": 293300,
-      "yieldScore": 53,
-      "confidence": 50,
-      "risk": "low",
-      "links": {
-        "official": "https://t.me/wallet",
-        "app": "https://t.me/wallet"
-      },
-      "searchText": "telegram wallet midas usdt vault telegram wallet midas usdt vault usdt stablecoins vault low c moderate tvl",
-      "terms": [
-        "telegram wallet midas usdt vault",
-        "telegram wallet",
-        "midas usdt vault",
-        "usdt",
-        "stablecoins",
-        "vault",
-        "low",
-        "c",
-        "moderate tvl"
+        "unknown tvl"
       ]
     },
     {
       "id": "ston-fi-usde-tsusde-weighted-stable",
       "protocol": "STON.fi",
-      "product": "USDe-tsUSDe (weighted_stable)",
-      "asset": "USDe-tsUSDe",
+      "product": "USDe–tsUSDe pool",
+      "asset": "USDe–tsUSDe",
       "category": "stablecoins",
       "type": "liquidity-pool",
-      "apy": 0.11929843064828471,
-      "tvlUsd": 276900,
-      "yieldScore": 46,
-      "confidence": 100,
+      "apy": 0.11922537340736117,
+      "tvlUsd": null,
+      "yieldScore": 37,
+      "confidence": 90,
       "risk": "medium",
       "links": {
-        "official": "https://app.ston.fi/pools",
+        "official": "https://ston.fi/",
         "app": "https://app.ston.fi/pools/EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5"
       },
-      "searchText": "ston fi usde tsusde weighted stable ston fi usde tsusde weighted stable usde tsusde stablecoins liquidity pool medium a impermanent loss or lp risk moderate tvl",
+      "searchText": "ston fi usde tsusde weighted stable ston fi usde tsusde pool usde tsusde stablecoins liquidity pool medium a impermanent loss or lp risk unknown tvl",
       "terms": [
         "ston fi usde tsusde weighted stable",
         "ston fi",
-        "usde tsusde weighted stable",
+        "usde tsusde pool",
         "usde tsusde",
         "stablecoins",
         "liquidity pool",
         "medium",
         "a",
         "impermanent loss or lp risk",
-        "moderate tvl"
+        "unknown tvl"
       ]
     },
     {
-      "id": "gtc-usdt-vault",
-      "protocol": "GTC",
-      "product": "USDT vault",
-      "asset": "USDT",
-      "category": "stablecoins",
-      "type": "vault",
-      "apy": 17.5,
-      "tvlUsd": 41200,
-      "yieldScore": 56,
-      "confidence": 50,
-      "risk": "medium",
-      "links": {
-        "official": "https://t.me/GiftToCreditBot/app",
-        "app": "https://t.me/GiftToCreditBot/app"
-      },
-      "searchText": "gtc usdt vault gtc usdt vault usdt stablecoins vault medium c low tvl",
-      "terms": [
-        "gtc usdt vault",
-        "gtc",
-        "usdt vault",
-        "usdt",
-        "stablecoins",
-        "vault",
-        "medium",
-        "c",
-        "low tvl"
-      ]
-    },
-    {
-      "id": "euler-usd",
-      "protocol": "Euler",
-      "product": "USD₮",
-      "asset": "USDT",
-      "category": "stablecoins",
-      "type": "lending",
-      "apy": 44.9,
-      "tvlUsd": 2600,
-      "yieldScore": 57,
-      "confidence": 50,
+      "id": "dedust-liquidity-pools",
+      "protocol": "DeDust",
+      "product": "TON–USDT pool",
+      "asset": "TON–USDT",
+      "category": "liquidity",
+      "type": "liquidity-pool",
+      "apy": null,
+      "tvlUsd": null,
+      "yieldScore": 26,
+      "confidence": 60,
       "risk": "high",
       "links": {
-        "official": "https://t.me/EulerFinanceBot",
-        "app": "https://t.me/EulerFinanceBot"
+        "official": "https://dedust.io/",
+        "app": "https://app.dedust.io/pools/EQA-X_yo3fzzbDbJ_0bzFWKqtRuZFIRa1sJsveZJ1YpViO3r"
       },
-      "searchText": "euler usd euler usd usdt stablecoins lending high c liquidation or utilization risk low tvl high yield",
+      "searchText": "dedust liquidity pools dedust ton usdt pool ton usdt liquidity liquidity pool high c impermanent loss or lp risk unknown tvl stale data",
       "terms": [
-        "euler usd",
-        "euler",
-        "usd",
-        "usdt",
-        "stablecoins",
-        "lending",
+        "dedust liquidity pools",
+        "dedust",
+        "ton usdt pool",
+        "ton usdt",
+        "liquidity",
+        "liquidity pool",
         "high",
         "c",
-        "liquidation or utilization risk",
-        "low tvl",
-        "high yield"
+        "impermanent loss or lp risk",
+        "unknown tvl",
+        "stale data"
       ]
     },
     {
-      "id": "ston-fi-usdt-gram-pool-1",
-      "protocol": "STON.fi",
-      "product": "USDT-GRAM pool #1",
-      "asset": "USDT-GRAM",
-      "category": "gram-usdt",
-      "type": "liquidity-pool",
-      "apy": 0,
-      "tvlUsd": 6100000,
-      "yieldScore": 52,
-      "confidence": 100,
-      "risk": "medium",
+      "id": "hipo-liquid-staking",
+      "protocol": "Hipo",
+      "product": "GRAM → hGRAM",
+      "asset": "GRAM",
+      "category": "gram",
+      "type": "liquid-staking",
+      "apy": 17.5,
+      "tvlUsd": null,
+      "yieldScore": 55,
+      "confidence": 50,
+      "risk": "low",
       "links": {
-        "official": "https://app.ston.fi/pools",
-        "app": "https://app.ston.fi/pools/EQCeDLEujBcoyx-DONITJOue5Jj_whqP9jEtFfz6CXrgY33_"
+        "official": "https://hipo.finance/",
+        "app": "https://hipo.finance/app/"
       },
-      "searchText": "ston fi usdt gram pool 1 ston fi usdt gram pool 1 usdt gram gram usdt liquidity pool medium a impermanent loss or lp risk",
+      "searchText": "hipo liquid staking hipo gram hgram gram liquid staking low c unknown tvl",
       "terms": [
-        "ston fi usdt gram pool 1",
-        "ston fi",
-        "usdt gram pool 1",
-        "usdt gram",
-        "gram usdt",
-        "liquidity pool",
-        "medium",
-        "a",
-        "impermanent loss or lp risk"
+        "hipo liquid staking",
+        "hipo",
+        "gram hgram",
+        "gram",
+        "liquid staking",
+        "low",
+        "c",
+        "unknown tvl"
       ]
     },
     {
-      "id": "morpho-re7-cbbtc-v2-vault",
-      "protocol": "Morpho",
-      "product": "Re7 cbBTC V2 vault",
-      "asset": "cbBTC",
-      "category": "btc",
+      "id": "bemo-liquid-staking",
+      "protocol": "Bemo",
+      "product": "GRAM → bmGRAM",
+      "asset": "GRAM",
+      "category": "gram",
+      "type": "liquid-staking",
+      "apy": 3.41,
+      "tvlUsd": null,
+      "yieldScore": 37,
+      "confidence": 50,
+      "risk": "low",
+      "links": {
+        "official": "https://bemo.fi/",
+        "app": "https://app.bemo.fi/"
+      },
+      "searchText": "bemo liquid staking bemo gram bmgram gram liquid staking low c unknown tvl",
+      "terms": [
+        "bemo liquid staking",
+        "bemo",
+        "gram bmgram",
+        "gram",
+        "liquid staking",
+        "low",
+        "c",
+        "unknown tvl"
+      ]
+    },
+    {
+      "id": "affluent-usdt-lending-vault",
+      "protocol": "Affluent",
+      "product": "USDT Lending Vault",
+      "asset": "USDT",
+      "category": "stablecoins",
       "type": "vault",
-      "apy": 3.6,
-      "tvlUsd": 66300,
+      "apy": 4.1,
+      "tvlUsd": null,
       "yieldScore": 39,
       "confidence": 50,
-      "risk": "medium",
+      "risk": "low",
       "links": {
-        "official": "https://t.me/MorphoOrgBot",
-        "app": "https://t.me/MorphoOrgBot"
+        "official": "https://affluent.org/",
+        "app": "https://app.affluent.org/earn/EQAGtgnr1G0XDilGURcOB3pUhl-Lo__J-TaJP0K4ey8cuSaW"
       },
-      "searchText": "morpho re7 cbbtc v2 vault morpho re7 cbbtc v2 vault cbbtc btc vault medium c low tvl",
+      "searchText": "affluent usdt lending vault affluent usdt lending vault usdt stablecoins vault low c unknown tvl",
       "terms": [
-        "morpho re7 cbbtc v2 vault",
-        "morpho",
-        "re7 cbbtc v2 vault",
-        "cbbtc",
-        "btc",
+        "affluent usdt lending vault",
+        "affluent",
+        "usdt lending vault",
+        "usdt",
+        "stablecoins",
         "vault",
-        "medium",
+        "low",
         "c",
-        "low tvl"
+        "unknown tvl"
       ]
     },
     {
-      "id": "morpho-re7-weth-v2-vault",
-      "protocol": "Morpho",
-      "product": "Re7 WETH V2 vault",
-      "asset": "WETH",
-      "category": "eth",
+      "id": "storm-trade-usdt",
+      "protocol": "Storm Trade",
+      "product": "USDT liquidity vault",
+      "asset": "USDT",
+      "category": "stablecoins",
       "type": "vault",
-      "apy": 5.1,
-      "tvlUsd": 39400,
-      "yieldScore": 41,
+      "apy": 4.289195885693453,
+      "tvlUsd": null,
+      "yieldScore": 39,
       "confidence": 50,
+      "risk": "low",
+      "links": {
+        "official": "https://storm.tg/",
+        "app": "https://app.storm.tg/vault/USDT"
+      },
+      "searchText": "storm trade usdt storm trade usdt liquidity vault usdt stablecoins vault low c unknown tvl",
+      "terms": [
+        "storm trade usdt",
+        "storm trade",
+        "usdt liquidity vault",
+        "usdt",
+        "stablecoins",
+        "vault",
+        "low",
+        "c",
+        "unknown tvl"
+      ]
+    },
+    {
+      "id": "ethena-tsusde",
+      "protocol": "Ethena",
+      "product": "tsUSDe on TON",
+      "asset": "tsUSDe",
+      "category": "stablecoins",
+      "type": "yield-token",
+      "apy": 3.84,
+      "tvlUsd": null,
+      "yieldScore": 40,
+      "confidence": 55,
+      "risk": "low",
+      "links": {
+        "official": "https://ethena.fi/",
+        "app": "https://app.ethena.fi/earn/ton"
+      },
+      "searchText": "ethena tsusde ethena tsusde on ton tsusde stablecoins yield token low c unknown tvl",
+      "terms": [
+        "ethena tsusde",
+        "ethena",
+        "tsusde on ton",
+        "tsusde",
+        "stablecoins",
+        "yield token",
+        "low",
+        "c",
+        "unknown tvl"
+      ]
+    },
+    {
+      "id": "telegram-wallet-re7-usdt-earn",
+      "protocol": "Telegram Wallet",
+      "product": "USDT Earn · Re7 Labs",
+      "asset": "USDT",
+      "category": "stablecoins",
+      "type": "vault",
+      "apy": 18,
+      "tvlUsd": null,
+      "yieldScore": 56,
+      "confidence": 50,
+      "risk": "low",
+      "links": {
+        "official": "https://wallet.tg/",
+        "app": "https://t.me/wallet"
+      },
+      "searchText": "telegram wallet re7 usdt earn telegram wallet usdt earn re7 labs usdt stablecoins vault low c unknown tvl",
+      "terms": [
+        "telegram wallet re7 usdt earn",
+        "telegram wallet",
+        "usdt earn re7 labs",
+        "usdt",
+        "stablecoins",
+        "vault",
+        "low",
+        "c",
+        "unknown tvl"
+      ]
+    },
+    {
+      "id": "tonco-concentrated-liquidity",
+      "protocol": "TONCO",
+      "product": "Concentrated liquidity pools",
+      "asset": "GRAM / USDT + others",
+      "category": "liquidity",
+      "type": "liquidity-pool",
+      "apy": null,
+      "tvlUsd": null,
+      "yieldScore": 22,
+      "confidence": 40,
       "risk": "medium",
       "links": {
-        "official": "https://t.me/MorphoOrgBot",
-        "app": "https://t.me/MorphoOrgBot"
+        "official": "https://tonco.io/",
+        "app": "https://app.tonco.io/#/explore"
       },
-      "searchText": "morpho re7 weth v2 vault morpho re7 weth v2 vault weth eth vault medium c low tvl",
+      "searchText": "tonco concentrated liquidity tonco concentrated liquidity pools gram usdt others liquidity liquidity pool medium d impermanent loss or lp risk unknown tvl",
       "terms": [
-        "morpho re7 weth v2 vault",
-        "morpho",
-        "re7 weth v2 vault",
-        "weth",
-        "eth",
-        "vault",
+        "tonco concentrated liquidity",
+        "tonco",
+        "concentrated liquidity pools",
+        "gram usdt others",
+        "liquidity",
+        "liquidity pool",
         "medium",
+        "d",
+        "impermanent loss or lp risk",
+        "unknown tvl"
+      ]
+    },
+    {
+      "id": "tradoor-usdt-liquidity-pool",
+      "protocol": "Tradoor",
+      "product": "Perps USDT liquidity pool",
+      "asset": "USDT",
+      "category": "vault",
+      "type": "vault",
+      "apy": null,
+      "tvlUsd": null,
+      "yieldScore": 26,
+      "confidence": 40,
+      "risk": "low",
+      "links": {
+        "official": "https://tradoor.io/",
+        "app": "https://app.tradoor.io/"
+      },
+      "searchText": "tradoor usdt liquidity pool tradoor perps usdt liquidity pool usdt vault low d unknown tvl",
+      "terms": [
+        "tradoor usdt liquidity pool",
+        "tradoor",
+        "perps usdt liquidity pool",
+        "usdt",
+        "vault",
+        "low",
+        "d",
+        "unknown tvl"
+      ]
+    },
+    {
+      "id": "torch-tgusd-staking",
+      "protocol": "Torch Finance",
+      "product": "tgUSD staking",
+      "asset": "tgUSD / stgUSD",
+      "category": "stablecoin",
+      "type": "yield-token",
+      "apy": 12.72,
+      "tvlUsd": null,
+      "yieldScore": 51,
+      "confidence": 50,
+      "risk": "low",
+      "links": {
+        "official": "https://torch.finance/",
+        "app": "https://t.me/tgusd_official_bot/app"
+      },
+      "searchText": "torch tgusd staking torch finance tgusd staking tgusd stgusd stablecoin yield token low c unknown tvl",
+      "terms": [
+        "torch tgusd staking",
+        "torch finance",
+        "tgusd staking",
+        "tgusd stgusd",
+        "stablecoin",
+        "yield token",
+        "low",
         "c",
-        "low tvl"
+        "unknown tvl"
+      ]
+    },
+    {
+      "id": "jvault-storm-staking",
+      "protocol": "JVault",
+      "product": "STORM staking pool",
+      "asset": "STORM",
+      "category": "staking",
+      "type": "staking",
+      "apy": 19.680532641314596,
+      "tvlUsd": null,
+      "yieldScore": 57,
+      "confidence": 50,
+      "risk": "low",
+      "links": {
+        "official": "https://jvault.xyz/",
+        "app": "https://jvault.xyz/staking/v2/"
+      },
+      "searchText": "jvault storm staking jvault storm staking pool storm staking low c unknown tvl",
+      "terms": [
+        "jvault storm staking",
+        "jvault",
+        "storm staking pool",
+        "storm",
+        "staking",
+        "low",
+        "c",
+        "unknown tvl"
+      ]
+    },
+    {
+      "id": "stakee-gram-staking",
+      "protocol": "Stakee",
+      "product": "GRAM staking",
+      "asset": "GRAM",
+      "category": "gram",
+      "type": "staking",
+      "apy": 21,
+      "tvlUsd": null,
+      "yieldScore": 57,
+      "confidence": 50,
+      "risk": "low",
+      "links": {
+        "official": "https://stakee.org/",
+        "app": "https://app.stakee.org/"
+      },
+      "searchText": "stakee gram staking stakee gram staking gram staking low c unknown tvl",
+      "terms": [
+        "stakee gram staking",
+        "stakee",
+        "gram staking",
+        "gram",
+        "staking",
+        "low",
+        "c",
+        "unknown tvl"
       ]
     }
   ]

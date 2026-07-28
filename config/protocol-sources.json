@@ -104,8 +104,8 @@
         "parent": "EQDPdq8xjAhytYqfGSX8KcFWIReCufsB9Wdg0pLlYSO_h76w"
       },
       "metrics": [
-        "exchange rate",
-        "staked TON",
+        "hGRAM exchange rate",
+        "staked GRAM",
         "token supply"
       ]
     },
@@ -124,8 +124,8 @@
       "automationLevel": "onchain-ready",
       "verification": "official-contract-docs-verified",
       "metrics": [
-        "bmTON supply",
-        "staked TON",
+        "bmGRAM supply",
+        "staked GRAM",
         "exchange rate"
       ]
     },
@@ -136,11 +136,12 @@
       "mode": "official-source-or-onchain",
       "enabled": true,
       "official": {
-        "website": "https://affluent.org/"
+        "website": "https://affluent.org/",
+        "announcements": "https://t.me/s/affluent"
       },
       "status": "integration-ready",
       "automationLevel": "source-pending",
-      "verification": "official-public-metrics-not-fixed",
+      "verification": "official-product-and-announcement-verified",
       "metrics": []
     },
     {
@@ -184,11 +185,91 @@
       "mode": "official-product-source",
       "enabled": true,
       "official": {
-        "website": "https://wallet.tg/"
+        "website": "https://wallet.tg/",
+        "help": "https://help.wallet.tg/category/31-defi-account"
       },
       "status": "manual-until-public-source",
       "automationLevel": "manual",
-      "verification": "no-stable-public-yield-api",
+      "verification": "official-product-documentation-verified",
+      "metrics": []
+    },
+    {
+      "id": "tonco",
+      "name": "TONCO",
+      "adapter": "tonco",
+      "mode": "official-product-source",
+      "enabled": false,
+      "official": {
+        "website": "https://tonco.io/",
+        "docs": "https://docs.tonco.io/",
+        "app": "https://app.tonco.io/"
+      },
+      "status": "manual-until-public-source",
+      "automationLevel": "manual",
+      "verification": "official-product-documentation-verified",
+      "metrics": []
+    },
+    {
+      "id": "tradoor",
+      "name": "Tradoor",
+      "adapter": "tradoor",
+      "mode": "official-product-source",
+      "enabled": false,
+      "official": {
+        "website": "https://tradoor.io/",
+        "docs": "https://docs.tradoor.io/",
+        "app": "https://app.tradoor.io/"
+      },
+      "status": "manual-until-public-source",
+      "automationLevel": "manual",
+      "verification": "official-product-documentation-verified",
+      "metrics": []
+    },
+    {
+      "id": "torch-finance",
+      "name": "Torch Finance",
+      "adapter": "torch-finance",
+      "mode": "official-product-source",
+      "enabled": false,
+      "official": {
+        "website": "https://torch.finance/",
+        "docs": "https://doc.torch.finance/",
+        "telegram": "https://t.me/s/torch_ton"
+      },
+      "status": "manual-until-public-source",
+      "automationLevel": "manual",
+      "verification": "official-product-documentation-verified",
+      "metrics": []
+    },
+    {
+      "id": "jvault",
+      "name": "JVault",
+      "adapter": "jvault",
+      "mode": "official-product-source",
+      "enabled": false,
+      "official": {
+        "website": "https://jvault.xyz/",
+        "docs": "https://docs.jvault.xyz/",
+        "app": "https://jvault.xyz/staking/v2/"
+      },
+      "status": "manual-until-public-source",
+      "automationLevel": "manual",
+      "verification": "official-product-documentation-verified",
+      "metrics": []
+    },
+    {
+      "id": "stakee",
+      "name": "Stakee",
+      "adapter": "stakee",
+      "mode": "official-product-source",
+      "enabled": false,
+      "official": {
+        "website": "https://stakee.org/",
+        "app": "https://app.stakee.org/"
+      },
+      "status": "manual-until-public-source",
+      "automationLevel": "manual",
+      "verification": "official-product-page-verified",
       "metrics": []
     }
   ]

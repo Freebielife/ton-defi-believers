@@ -1,25 +1,20 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-28T18:48:40.461Z",
+  "generatedAt": "2026-07-28T19:41:53.055Z",
   "scope": "core",
   "metrics": {
-    "protocolsTracked": 9,
-    "opportunitiesTracked": 21,
-    "coveredTvlUsd": 1702617900,
-    "averageApy": 6.607585639554681
+    "protocolsTracked": 15,
+    "opportunitiesTracked": 15,
+    "coveredTvlUsd": null,
+    "averageApy": 10.344358374823038
   },
   "leaders": {
-    "largestOpportunity": {
-      "id": "ethena-tsusde",
-      "protocol": "Ethena",
-      "product": "tsUSDe",
-      "tvlUsd": 1500000000
-    },
+    "largestOpportunity": null,
     "highestDisplayedApy": {
-      "id": "hipo-gram-hton-hton",
-      "protocol": "Hipo",
-      "product": "GRAM-hTON (hTON)",
-      "apy": 15.8
+      "id": "stakee-gram-staking",
+      "protocol": "Stakee",
+      "product": "GRAM staking",
+      "apy": 21
     }
   },
   "disclosure": {

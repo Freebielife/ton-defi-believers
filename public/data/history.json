@@ -486,165 +486,85 @@
     },
     {
       "date": "2026-07-28",
-      "capturedAt": "2026-07-28T18:48:40.740Z",
+      "capturedAt": "2026-07-28T19:41:53.640Z",
       "opportunities": [
         {
-          "id": "tonstakers-gram-tston-tston",
-          "apy": 12.3,
-          "tvlUsd": 175700000
+          "id": "tonstakers-liquid-staking",
+          "apy": 20.37,
+          "tvlUsd": 0
         },
         {
-          "id": "stakee-gram-staked",
-          "apy": 13.6,
-          "tvlUsd": 25700000
-        },
-        {
-          "id": "hipo-gram-hton-hton",
-          "apy": 15.8,
-          "tvlUsd": 3200000
-        },
-        {
-          "id": "bemo-gram-stton-stton",
-          "apy": 14.7,
-          "tvlUsd": 2000000
-        },
-        {
-          "id": "bemo-gram-bmton-bmton",
-          "apy": 14.7,
-          "tvlUsd": 470000
-        },
-        {
-          "id": "kton-gram-kton",
-          "apy": 13.8,
-          "tvlUsd": 2400000
-        },
-        {
-          "id": "affluent-gram",
-          "apy": 9.2,
-          "tvlUsd": 1300000
-        },
-        {
-          "id": "affluent-gram-tston",
-          "apy": 10.9,
-          "tvlUsd": 820200
-        },
-        {
-          "id": "storm-trade-gram-ton-slp",
-          "apy": 6.2,
-          "tvlUsd": 1500000
-        },
-        {
-          "id": "evaa-gram-main",
-          "apy": 6.1,
-          "tvlUsd": 937700
-        },
-        {
-          "id": "evaa-gram-lp",
-          "apy": 3.3,
-          "tvlUsd": 52200
-        },
-        {
-          "id": "ston-fi-gram-tston-tston",
-          "apy": 1.5,
-          "tvlUsd": 183400
-        },
-        {
-          "id": "gtc-gram-vault",
-          "apy": 17.7,
-          "tvlUsd": 34900
-        },
-        {
-          "id": "morpho-re7-ton",
-          "apy": 0.3,
-          "tvlUsd": 2300
-        },
-        {
-          "id": "morpho-singularv-ton-tonstakers",
-          "apy": 0.2,
-          "tvlUsd": 251
-        },
-        {
-          "id": "ethena-tsusde",
-          "apy": 4.1,
-          "tvlUsd": 1500000000
-        },
-        {
-          "id": "storm-trade-usdt",
-          "apy": 5.7,
-          "tvlUsd": 3400000
-        },
-        {
-          "id": "morpho-re7-usdt-v2-vault",
-          "apy": 4.2,
-          "tvlUsd": 990000
-        },
-        {
-          "id": "evaa-usdt-main",
-          "apy": 8.1,
-          "tvlUsd": 465600
-        },
-        {
-          "id": "evaa-usdt-lp",
-          "apy": 1.2,
-          "tvlUsd": 129100
-        },
-        {
-          "id": "evaa-tsusde-main",
-          "apy": 0,
-          "tvlUsd": 62200
-        },
-        {
-          "id": "affluent-tsusde-usdt-vault7",
-          "apy": 4,
-          "tvlUsd": 365000
-        },
-        {
-          "id": "affluent-usdt",
-          "apy": 8.4,
-          "tvlUsd": 62300
-        },
-        {
-          "id": "telegram-wallet-midas-usdt-vault",
-          "apy": 9.44,
-          "tvlUsd": 293300
+          "id": "evaa-supply-markets",
+          "apy": 10.04,
+          "tvlUsd": 0
         },
         {
           "id": "ston-fi-usde-tsusde-weighted-stable",
-          "apy": 0.11929843064828471,
-          "tvlUsd": 276900
+          "apy": 0.11922537340736117,
+          "tvlUsd": 0
         },
         {
-          "id": "gtc-usdt-vault",
-          "apy": 17.5,
-          "tvlUsd": 41200
-        },
-        {
-          "id": "euler-usd",
-          "apy": 44.9,
-          "tvlUsd": 2600
-        },
-        {
-          "id": "ston-fi-usdt-gram-pool-1",
+          "id": "dedust-liquidity-pools",
           "apy": 0,
-          "tvlUsd": 6100000
+          "tvlUsd": 0
         },
         {
-          "id": "ston-fi-usdt-gram-pool-2",
-          "apy": 3,
-          "tvlUsd": 5300000
+          "id": "hipo-liquid-staking",
+          "apy": 17.5,
+          "tvlUsd": 0
         },
         {
-          "id": "morpho-re7-cbbtc-v2-vault",
-          "apy": 3.6,
-          "tvlUsd": 66300
+          "id": "bemo-liquid-staking",
+          "apy": 3.41,
+          "tvlUsd": 0
         },
         {
-          "id": "morpho-re7-weth-v2-vault",
-          "apy": 5.1,
-          "tvlUsd": 39400
+          "id": "affluent-usdt-lending-vault",
+          "apy": 4.1,
+          "tvlUsd": 0
+        },
+        {
+          "id": "storm-trade-usdt",
+          "apy": 4.2,
+          "tvlUsd": 0
+        },
+        {
+          "id": "ethena-tsusde",
+          "apy": 3.84,
+          "tvlUsd": 0
+        },
+        {
+          "id": "telegram-wallet-re7-usdt-earn",
+          "apy": 18,
+          "tvlUsd": 0
+        },
+        {
+          "id": "tonco-concentrated-liquidity",
+          "apy": 0,
+          "tvlUsd": 0
+        },
+        {
+          "id": "tradoor-usdt-liquidity-pool",
+          "apy": 0,
+          "tvlUsd": 0
+        },
+        {
+          "id": "torch-tgusd-staking",
+          "apy": 12.72,
+          "tvlUsd": 0
+        },
+        {
+          "id": "jvault-storm-staking",
+          "apy": 17.97,
+          "tvlUsd": 0
+        },
+        {
+          "id": "stakee-gram-staking",
+          "apy": 21,
+          "tvlUsd": 0
         }
       ]
     }
   ],
-  "updatedAt": "2026-07-28T18:48:40.747Z"
+  "updatedAt": "2026-07-28T19:41:53.648Z"
 }

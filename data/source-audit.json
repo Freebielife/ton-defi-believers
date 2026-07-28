@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T18:48:41.186Z",
+  "generatedAt": "2026-07-28T19:41:54.539Z",
   "policyPassed": true,
   "protocols": [
     {
@@ -14,7 +14,7 @@
     {
       "protocolId": "evaa",
       "protocol": "EVAA",
-      "opportunityCount": 5,
+      "opportunityCount": 1,
       "adapterPresent": true,
       "mode": "official-sdk-or-onchain",
       "status": "integration-ready",
@@ -23,7 +23,7 @@
     {
       "protocolId": "stonfi",
       "protocol": "STON.fi",
-      "opportunityCount": 4,
+      "opportunityCount": 1,
       "adapterPresent": true,
       "mode": "official-api",
       "status": "automatic",
@@ -32,7 +32,7 @@
     {
       "protocolId": "dedust",
       "protocol": "DeDust",
-      "opportunityCount": 0,
+      "opportunityCount": 1,
       "adapterPresent": true,
       "mode": "official-api",
       "status": "automatic",
@@ -50,7 +50,7 @@
     {
       "protocolId": "bemo",
       "protocol": "Bemo",
-      "opportunityCount": 2,
+      "opportunityCount": 1,
       "adapterPresent": true,
       "mode": "onchain",
       "status": "integration-ready",
@@ -59,7 +59,7 @@
     {
       "protocolId": "affluent",
       "protocol": "Affluent",
-      "opportunityCount": 4,
+      "opportunityCount": 1,
       "adapterPresent": true,
       "mode": "official-source-or-onchain",
       "status": "integration-ready",
@@ -68,7 +68,7 @@
     {
       "protocolId": "storm-trade",
       "protocol": "Storm Trade",
-      "opportunityCount": 2,
+      "opportunityCount": 1,
       "adapterPresent": true,
       "mode": "official-sdk-or-onchain",
       "status": "integration-ready",
@@ -86,6 +86,51 @@
     {
       "protocolId": "telegram-wallet",
       "protocol": "Telegram Wallet",
+      "opportunityCount": 1,
+      "adapterPresent": true,
+      "mode": "official-product-source",
+      "status": "manual-until-public-source",
+      "primarySourceOwnedByProtocol": true
+    },
+    {
+      "protocolId": "tonco",
+      "protocol": "TONCO",
+      "opportunityCount": 1,
+      "adapterPresent": true,
+      "mode": "official-product-source",
+      "status": "manual-until-public-source",
+      "primarySourceOwnedByProtocol": true
+    },
+    {
+      "protocolId": "tradoor",
+      "protocol": "Tradoor",
+      "opportunityCount": 1,
+      "adapterPresent": true,
+      "mode": "official-product-source",
+      "status": "manual-until-public-source",
+      "primarySourceOwnedByProtocol": true
+    },
+    {
+      "protocolId": "torch-finance",
+      "protocol": "Torch Finance",
+      "opportunityCount": 1,
+      "adapterPresent": true,
+      "mode": "official-product-source",
+      "status": "manual-until-public-source",
+      "primarySourceOwnedByProtocol": true
+    },
+    {
+      "protocolId": "jvault",
+      "protocol": "JVault",
+      "opportunityCount": 1,
+      "adapterPresent": true,
+      "mode": "official-product-source",
+      "status": "manual-until-public-source",
+      "primarySourceOwnedByProtocol": true
+    },
+    {
+      "protocolId": "stakee",
+      "protocol": "Stakee",
       "opportunityCount": 1,
       "adapterPresent": true,
       "mode": "official-product-source",

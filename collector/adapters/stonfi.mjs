@@ -6,15 +6,13 @@ import {
   readJson,
   writeJsonAtomic
 } from "../lib/utils.mjs";
+import { writeProtocolSnapshot } from "../lib/protocol-output.mjs";
+import { verifyPoolReserves } from "../lib/ton-rpc.mjs";
 
 const TON_NATIVE = "EQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM9c";
 
 function normalizeSymbol(value) {
-  return String(value ?? "")
-    .trim()
-    .toUpperCase()
-    .replace(/^J?W?/, (prefix) => prefix)
-    .replace(/[^A-Z0-9]/g, "");
+  return String(value ?? "").trim().toUpperCase().replace(/[^A-Z0-9]/g, "");
 }
 
 function normalizeAddress(value) {
@@ -23,117 +21,75 @@ function normalizeAddress(value) {
 
 function unwrap(payload, keys = []) {
   if (Array.isArray(payload)) return payload;
-
   for (const key of keys) {
     if (Array.isArray(payload?.[key])) return payload[key];
     if (Array.isArray(payload?.data?.[key])) return payload.data[key];
   }
-
   return asArray(payload);
+}
+
+function unwrapPool(payload) {
+  return payload?.pool ?? payload?.data?.pool ?? payload?.data ?? payload;
 }
 
 function assetAddress(asset) {
   return normalizeAddress(
-    asset?.contract_address ??
-    asset?.contractAddress ??
-    asset?.address ??
-    asset?.jetton_address ??
-    asset?.jettonAddress
+    asset?.contract_address ?? asset?.contractAddress ?? asset?.address ??
+    asset?.jetton_address ?? asset?.jettonAddress
   );
 }
 
 function assetSymbol(asset) {
   return normalizeSymbol(
-    asset?.symbol ??
-    asset?.ticker ??
-    asset?.meta?.symbol ??
-    asset?.metadata?.symbol ??
-    asset?.display_name ??
-    asset?.displayName ??
-    asset?.name
+    asset?.symbol ?? asset?.ticker ?? asset?.meta?.symbol ??
+    asset?.metadata?.symbol ?? asset?.display_name ?? asset?.displayName ?? asset?.name
   );
 }
 
 function poolAddress(pool) {
   return normalizeAddress(
-    pool?.address ??
-    pool?.pool_address ??
-    pool?.poolAddress ??
-    pool?.contract_address ??
-    pool?.contractAddress
+    pool?.address ?? pool?.pool_address ?? pool?.poolAddress ??
+    pool?.contract_address ?? pool?.contractAddress
   );
 }
 
 function poolAssetAddresses(pool) {
-  const direct = [
-    pool?.token0_address,
-    pool?.token1_address,
-    pool?.token_0_address,
-    pool?.token_1_address,
-    pool?.asset0_address,
-    pool?.asset1_address,
-    pool?.asset_0_address,
-    pool?.asset_1_address,
-    pool?.jetton0_address,
-    pool?.jetton1_address,
-    pool?.jetton_0_address,
-    pool?.jetton_1_address,
-    pool?.token0?.address,
-    pool?.token1?.address,
-    pool?.asset0?.address,
-    pool?.asset1?.address
+  const values = [
+    pool?.token0_address, pool?.token1_address, pool?.token_0_address, pool?.token_1_address,
+    pool?.asset0_address, pool?.asset1_address, pool?.asset_0_address, pool?.asset_1_address,
+    pool?.jetton0_address, pool?.jetton1_address, pool?.jetton_0_address, pool?.jetton_1_address,
+    pool?.token0?.address, pool?.token1?.address, pool?.asset0?.address, pool?.asset1?.address
   ];
-
   if (Array.isArray(pool?.assets)) {
     for (const asset of pool.assets) {
-      direct.push(
-        typeof asset === "string"
-          ? asset
-          : asset?.address ?? asset?.contract_address ?? asset?.jetton_address
-      );
+      values.push(typeof asset === "string" ? asset : assetAddress(asset));
     }
   }
-
-  return [...new Set(direct.map(normalizeAddress).filter(Boolean))];
+  return [...new Set(values.map(normalizeAddress).filter(Boolean))];
 }
 
 function poolEmbeddedSymbols(pool) {
   const values = [
-    pool?.token0_symbol,
-    pool?.token1_symbol,
-    pool?.asset0_symbol,
-    pool?.asset1_symbol,
-    pool?.token0?.symbol,
-    pool?.token1?.symbol,
-    pool?.asset0?.symbol,
-    pool?.asset1?.symbol
+    pool?.token0_symbol, pool?.token1_symbol, pool?.asset0_symbol, pool?.asset1_symbol,
+    pool?.token0?.symbol, pool?.token1?.symbol, pool?.asset0?.symbol, pool?.asset1?.symbol
   ];
-
   if (Array.isArray(pool?.assets)) {
-    for (const asset of pool.assets) {
-      if (typeof asset !== "string") {
-        values.push(asset?.symbol, asset?.metadata?.symbol, asset?.meta?.symbol);
-      }
-    }
+    for (const asset of pool.assets) if (typeof asset !== "string") values.push(assetSymbol(asset));
   }
-
   return [...new Set(values.map(normalizeSymbol).filter(Boolean))];
 }
 
 function poolType(pool) {
   return String(
-    pool?.pool_type ??
-    pool?.poolType ??
-    pool?.type ??
-    pool?.curve_type ??
-    pool?.curveType ??
-    pool?.dex_type ??
-    ""
+    pool?.pool_type ?? pool?.poolType ?? pool?.type ?? pool?.curve_type ??
+    pool?.curveType ?? pool?.dex_type ?? ""
   ).toLowerCase();
 }
 
 function extractTvlUsd(pool) {
   return firstFinite(
+    pool?.lp_total_supply_usd,
+    pool?.lpTotalSupplyUsd,
     pool?.tvl_usd,
     pool?.tvlUsd,
     pool?.tvl,
@@ -149,407 +105,288 @@ function extractTvlUsd(pool) {
 function normalizePercent(value) {
   const number = Number(value);
   if (!Number.isFinite(number)) return null;
-
-  // Most APIs expose percent as 4.2, but some expose fraction as 0.042.
   if (number > 0 && number < 1) return number * 100;
   return number;
 }
 
-function extractYield(pool, farmByPool) {
-  const poolAddr = poolAddress(pool);
-  const farm = farmByPool.get(poolAddr);
+function extractYieldPeriods(pool, farm = null) {
+  const periods = {
+    apy1d: normalizePercent(pool?.apy_1d ?? farm?.apy_1d),
+    apy7d: normalizePercent(pool?.apy_7d ?? farm?.apy_7d),
+    apy30d: normalizePercent(pool?.apy_30d ?? farm?.apy_30d),
+    underlyingApr: normalizePercent(pool?.underlying_apr ?? farm?.underlying_apr)
+  };
 
-  const apy = [
-    pool?.apy,
-    pool?.apy_1d,
-    pool?.apy_7d,
-    pool?.apy_annual,
-    pool?.stats?.apy,
-    farm?.apy,
-    farm?.apy_1d,
-    farm?.apy_7d
-  ].map(normalizePercent).find((value) => value !== null);
+  const primary = [
+    [periods.apy7d, "7d"],
+    [periods.apy30d, "30d"],
+    [periods.apy1d, "1d"],
+    [normalizePercent(pool?.apy ?? farm?.apy), "reported"]
+  ].find(([value]) => value !== null);
 
-  if (apy !== undefined) return { value: apy, metric: "apy" };
-
-  const apr = [
-    pool?.apr,
-    pool?.apr_1d,
-    pool?.apr_7d,
-    pool?.fee_apr,
-    pool?.total_apr,
-    pool?.stats?.apr,
-    farm?.apr,
-    farm?.apr_1d,
-    farm?.apr_7d
-  ].map(normalizePercent).find((value) => value !== null);
-
-  return apr === undefined
-    ? { value: null, metric: null }
-    : { value: apr, metric: "apr" };
+  return {
+    value: primary?.[0] ?? null,
+    metric: primary ? "apy" : null,
+    period: primary?.[1] ?? null,
+    ...periods
+  };
 }
 
 function buildAssetMap(assets) {
   const map = new Map();
-
   for (const asset of assets) {
     const address = assetAddress(asset);
     const symbol = assetSymbol(asset);
     if (address && symbol) map.set(address, symbol);
   }
-
   map.set(TON_NATIVE, "TON");
   return map;
 }
 
 function buildFarmMap(farms) {
   const map = new Map();
-
   for (const farm of farms) {
-    const address = normalizeAddress(
-      farm?.pool_address ??
-      farm?.poolAddress ??
-      farm?.pool?.address
-    );
-    if (!address) continue;
-
-    const existing = map.get(address);
-    const currentValue = firstFinite(farm?.tvl_usd, farm?.tvlUsd, farm?.tvl) ?? 0;
-    const existingValue = firstFinite(existing?.tvl_usd, existing?.tvlUsd, existing?.tvl) ?? -1;
-
-    if (!existing || currentValue > existingValue) map.set(address, farm);
+    const address = normalizeAddress(farm?.pool_address ?? farm?.poolAddress ?? farm?.pool?.address);
+    if (address) map.set(address, farm);
   }
-
   return map;
 }
 
-function makeCandidate(pool, assetMap, farmByPool, dexVersion) {
+function makeCandidate(pool, assetMap = new Map(), farmByPool = new Map(), dexVersion = null, fallback = {}) {
   const addresses = poolAssetAddresses(pool);
   const embedded = poolEmbeddedSymbols(pool);
   const resolved = addresses.map((address) => assetMap.get(address)).filter(Boolean);
-  const symbols = [...new Set([...embedded, ...resolved])];
-  const yieldData = extractYield(pool, farmByPool);
+  const symbols = [...new Set([...embedded, ...resolved, ...(fallback.symbols ?? []).map(normalizeSymbol)])];
+  const yieldData = extractYieldPeriods(pool, farmByPool.get(poolAddress(pool)));
 
   return {
     address: poolAddress(pool),
-    assetAddresses: addresses,
+    assetAddresses: addresses.length ? addresses : (fallback.assetAddresses ?? []),
     symbols,
-    poolType: poolType(pool) || null,
-    dexVersion,
+    poolType: poolType(pool) || fallback.poolType || null,
+    dexVersion: dexVersion ?? fallback.dexVersion ?? null,
     tvlUsd: extractTvlUsd(pool),
     yieldRate: yieldData.value,
     yieldMetric: yieldData.metric,
-    routerAddress:
-      pool?.router_address ??
-      pool?.routerAddress ??
-      pool?.router?.address ??
-      null
+    yieldPeriod: yieldData.period,
+    yieldPeriods: {
+      apy1d: yieldData.apy1d,
+      apy7d: yieldData.apy7d,
+      apy30d: yieldData.apy30d,
+      underlyingApr: yieldData.underlyingApr
+    },
+    volume24hUsd: firstFinite(pool?.volume_24h_usd, pool?.volume24hUsd),
+    rawReserves: [pool?.reserve0, pool?.reserve1],
+    routerAddress: pool?.router_address ?? pool?.routerAddress ?? pool?.router?.address ?? null
   };
 }
 
 function symbolEquivalent(expected, actual, aliases) {
   if (expected === actual) return true;
-
-  const expectedAliases = new Set([
-    expected,
-    ...(aliases[expected] ?? []).map(normalizeSymbol)
-  ]);
-  const actualAliases = new Set([
-    actual,
-    ...(aliases[actual] ?? []).map(normalizeSymbol)
-  ]);
-
-  for (const item of expectedAliases) {
-    if (actualAliases.has(item)) return true;
-  }
-
-  return false;
+  const expectedAliases = new Set([expected, ...(aliases[expected] ?? []).map(normalizeSymbol)]);
+  const actualAliases = new Set([actual, ...(aliases[actual] ?? []).map(normalizeSymbol)]);
+  return [...expectedAliases].some((item) => actualAliases.has(item));
 }
 
-function matches(entry, candidate, aliases) {
-  const expectedAddresses = (entry.assetAddresses ?? [])
-    .map(normalizeAddress)
-    .filter(Boolean);
-
+function matches(entry, candidate, aliases = {}) {
+  const expectedAddresses = (entry.assetAddresses ?? []).map(normalizeAddress).filter(Boolean);
   if (expectedAddresses.length) {
-    const foundAddresses = new Set(candidate.assetAddresses.map(normalizeAddress));
-    const allAddressesMatch = expectedAddresses.every((address) =>
-      foundAddresses.has(address)
-    );
-    if (!allAddressesMatch) return false;
+    const actual = new Set(candidate.assetAddresses.map(normalizeAddress));
+    if (!expectedAddresses.every((address) => actual.has(address))) return false;
   }
 
-  const expected = (entry.symbols ?? []).map(normalizeSymbol).filter(Boolean);
-  const exactPairLocked = expectedAddresses.length >= 2;
-
-  if (!exactPairLocked && expected.length) {
-    const found = candidate.symbols.map(normalizeSymbol).filter(Boolean);
-    const allSymbolsMatch = expected.every((symbol) =>
-      found.some((value) => symbolEquivalent(symbol, value, aliases))
-    );
-    if (!allSymbolsMatch) return false;
+  const expectedSymbols = (entry.symbols ?? []).map(normalizeSymbol).filter(Boolean);
+  if (expectedSymbols.length && expectedAddresses.length < 2) {
+    const actual = candidate.symbols.map(normalizeSymbol);
+    if (!expectedSymbols.every((symbol) => actual.some((value) => symbolEquivalent(symbol, value, aliases)))) {
+      return false;
+    }
   }
 
-  if (!expectedAddresses.length && !expected.length) return false;
-
-  if (
-    entry.expectedPoolType &&
-    candidate.poolType &&
-    !candidate.poolType.includes(String(entry.expectedPoolType).toLowerCase())
-  ) {
-    return false;
-  }
-
-  if (entry.dexVersion && candidate.dexVersion !== entry.dexVersion) return false;
+  if (!expectedAddresses.length && !expectedSymbols.length) return false;
+  if (entry.expectedPoolType && candidate.poolType && !candidate.poolType.includes(String(entry.expectedPoolType).toLowerCase())) return false;
+  if (entry.dexVersion && candidate.dexVersion && candidate.dexVersion !== entry.dexVersion) return false;
   return true;
 }
 
 function selectCandidate(entry, candidates, publishOnlyWhenUnique) {
-  const ranked = [...candidates].sort(
-    (a, b) => (b.tvlUsd ?? -1) - (a.tvlUsd ?? -1)
-  );
-
+  const ranked = [...candidates].sort((a, b) => (b.tvlUsd ?? -1) - (a.tvlUsd ?? -1));
   if (entry.rankByTvl) return ranked[entry.rankByTvl - 1] ?? null;
   if (ranked.length === 1) return ranked[0];
   return publishOnlyWhenUnique ? null : ranked[0] ?? null;
 }
 
-async function fetchJson(url, timeoutMs) {
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), timeoutMs);
-
-  try {
-    const response = await fetch(url, {
-      headers: {
-        accept: "application/json",
-        "user-agent": "TON-DeFi-Believers-Collector/0.6"
-      },
-      signal: controller.signal
-    });
-
-    if (!response.ok) {
-      throw new Error(`STON.fi API returned HTTP ${response.status}: ${url}`);
+async function fetchJson(url, timeoutMs, retries = 3) {
+  let lastError;
+  for (let attempt = 1; attempt <= retries; attempt += 1) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+    try {
+      const response = await fetch(url, {
+        headers: { accept: "application/json", "user-agent": "TON-DeFi-Believers-Collector/1.2" },
+        signal: controller.signal
+      });
+      if (!response.ok) throw new Error(`STON.fi API returned HTTP ${response.status}: ${url}`);
+      return await response.json();
+    } catch (error) {
+      lastError = error;
+      if (attempt < retries) await new Promise((resolve) => setTimeout(resolve, attempt * 750));
+    } finally {
+      clearTimeout(timer);
     }
-
-    return await response.json();
-  } finally {
-    clearTimeout(timer);
   }
+  throw lastError;
 }
 
 async function fetchOptional(url, timeoutMs) {
+  try { return await fetchJson(url, timeoutMs, 2); }
+  catch (error) { console.warn(`Optional STON.fi endpoint failed: ${error.message}`); return null; }
+}
+
+async function onchainCheck(entry, pool, config) {
+  if (config.onchain?.enabled === false) return { status: "disabled" };
   try {
-    return await fetchJson(url, timeoutMs);
+    const dexVersion = entry.dexVersion ?? pool.dexVersion;
+    const reserveIndexes = dexVersion === "v1" ? [0, 1] : [3, 4];
+    const result = await verifyPoolReserves({
+      address: pool.address,
+      method: "get_pool_data",
+      reserveIndexes,
+      apiReserves: pool.rawReserves,
+      timeoutMs: config.onchain?.timeoutMs ?? 20000,
+      tolerancePercent: config.onchain?.tolerancePercent ?? 2
+    });
+    return { status: result.passed ? "verified" : "mismatch", ...result };
   } catch (error) {
-    console.warn(`Optional STON.fi endpoint failed: ${error.message}`);
-    return null;
+    return { status: "unavailable", message: error instanceof Error ? error.message : String(error) };
   }
 }
 
-function dedupePools(items) {
-  const map = new Map();
-
-  for (const item of items) {
-    const key = poolAddress(item.pool);
-    if (!key) continue;
-    const previous = map.get(key);
-
-    // Prefer V2 copy when the same address somehow occurs twice.
-    if (!previous || item.dexVersion === "v2") map.set(key, item);
-  }
-
-  return [...map.values()];
+function yieldNote(period) {
+  const labels = {
+    "7d": { ru: "APY за последние 7 дней", en: "APY over the last 7 days" },
+    "30d": { ru: "APY за последние 30 дней", en: "APY over the last 30 days" },
+    "1d": { ru: "APY за последние 24 часа", en: "APY over the last 24 hours" },
+    reported: { ru: "APY из официального API", en: "APY from the official API" }
+  };
+  return labels[period] ?? labels.reported;
 }
 
 export async function collectStonfi({ configPath, opportunities }) {
   const config = await readJson(configPath);
-  if (!config.enabled) {
-    return { opportunities, report: { adapter: "stonfi", status: "disabled" } };
-  }
+  if (!config.enabled) return { opportunities, report: { adapter: "stonfi", status: "disabled" } };
 
   const checkedAt = nowIso();
   const apiBase = config.apiBaseUrl.replace(/\/$/, "");
   const timeoutMs = config.timeoutMs ?? 20000;
-
-  const [assetsPayload, v1Payload, v2Payload, farmsPayload] = await Promise.all([
-    fetchJson(`${apiBase}/v1/assets`, timeoutMs),
-    fetchJson(`${apiBase}/v1/pools?dex_v2=false`, timeoutMs),
-    fetchJson(`${apiBase}/v1/pools?dex_v2=true`, timeoutMs),
-    fetchOptional(`${apiBase}/v1/farms?only_active=true`, timeoutMs)
-  ]);
-
-  const assets = unwrap(assetsPayload, ["assets", "asset_list"]);
-  const v1Pools = unwrap(v1Payload, ["pools", "pool_list"])
-    .map((pool) => ({ pool, dexVersion: "v1" }));
-  const v2Pools = unwrap(v2Payload, ["pools", "pool_list"])
-    .map((pool) => ({ pool, dexVersion: "v2" }));
-  const farms = farmsPayload
-    ? unwrap(farmsPayload, ["farms", "farm_list"])
-    : [];
-
-  const assetMap = buildAssetMap(assets);
-  const farmByPool = buildFarmMap(farms);
-  const rawPools = dedupePools([...v1Pools, ...v2Pools]);
-
-  const candidates = rawPools
-    .map(({ pool, dexVersion }) =>
-      makeCandidate(pool, assetMap, farmByPool, dexVersion)
-    )
-    .filter((pool) => pool.address);
-
-  const aliases = Object.fromEntries(
-    Object.entries(config.symbolAliases ?? {}).map(([key, values]) => [
-      normalizeSymbol(key),
-      values
-    ])
-  );
-
-  const discoveryReport = [];
+  const aliases = Object.fromEntries(Object.entries(config.symbolAliases ?? {}).map(([key, values]) => [normalizeSymbol(key), values]));
   const selections = new Map();
+  const discovery = [];
 
-  for (const entry of config.trackedPools) {
-    if (entry.enabled === false) {
-      discoveryReport.push({
-        opportunityId: entry.opportunityId,
-        mode: "disabled",
-        reason: entry.note ?? "Disabled in configuration",
-        selected: null,
-        candidates: []
-      });
-      continue;
-    }
+  for (const entry of (config.trackedPools ?? []).filter((item) => item.enabled !== false)) {
+    let candidate = null;
+    let endpoint = null;
 
     if (entry.poolAddress) {
-      const exact =
-        candidates.find((pool) => pool.address === entry.poolAddress) ?? null;
-      const assetValidationPassed = exact
-        ? matches(
-            {
-              symbols: entry.symbols,
-              assetAddresses: entry.assetAddresses,
-              expectedPoolType: entry.expectedPoolType,
-              dexVersion: entry.dexVersion
-            },
-            exact,
-            aliases
-          )
-        : false;
-
-      const selected = assetValidationPassed ? exact : null;
-      selections.set(entry.opportunityId, selected);
-      discoveryReport.push({
-        opportunityId: entry.opportunityId,
-        mode: "configured-address",
-        configuredAddress: entry.poolAddress,
-        assetValidationPassed,
-        selected: selected?.address ?? null,
-        candidates: exact ? [exact] : []
-      });
-      continue;
+      endpoint = `${apiBase}/v1/pools/${entry.poolAddress}`;
+      const payload = await fetchJson(endpoint, timeoutMs);
+      const raw = unwrapPool(payload);
+      candidate = makeCandidate(raw, new Map(), new Map(), entry.dexVersion, entry);
+      if (!candidate.address) candidate.address = entry.poolAddress;
+      if (!matches(entry, candidate, aliases)) candidate = null;
+    } else {
+      endpoint = `${apiBase}/v1/pools?dex_v2=${entry.dexVersion !== "v1"}`;
+      const payload = await fetchJson(endpoint, timeoutMs);
+      const candidates = unwrap(payload, ["pools", "pool_list"])
+        .map((pool) => makeCandidate(pool, new Map(), new Map(), entry.dexVersion, entry))
+        .filter((pool) => pool.address && matches(entry, pool, aliases));
+      candidate = selectCandidate(entry, candidates, config.discovery?.publishOnlyWhenUnique !== false);
     }
 
-    const matching = candidates
-      .filter((pool) => matches(entry, pool, aliases))
-      .sort((a, b) => (b.tvlUsd ?? -1) - (a.tvlUsd ?? -1))
-      .slice(0, config.discovery?.candidateLimitPerOpportunity ?? 10);
-
-    const selected = selectCandidate(
-      entry,
-      matching,
-      config.discovery?.publishOnlyWhenUnique !== false
-    );
-
-    selections.set(entry.opportunityId, selected);
-    discoveryReport.push({
-      opportunityId: entry.opportunityId,
-      mode: "automatic-discovery",
-      expectedSymbols: entry.symbols,
-      selected: selected?.address ?? null,
-      candidates: matching
-    });
+    const chain = candidate ? await onchainCheck(entry, candidate, config) : { status: "not-run" };
+    if (candidate) candidate.onchain = chain;
+    selections.set(entry.opportunityId, candidate);
+    discovery.push({ opportunityId: entry.opportunityId, endpoint, selected: candidate?.address ?? null, candidate });
   }
 
-  let updated = 0;
   const next = opportunities.map((opportunity) => {
     if (!selections.has(opportunity.id)) return opportunity;
     const pool = selections.get(opportunity.id);
+    if (!pool) return opportunity;
 
-    if (!pool) {
-      return {
-        ...opportunity,
-        status: {
-          ...opportunity.status,
-          stale: true,
-          requiresDisambiguation: true
-        }
-      };
-    }
-
-    updated += 1;
     return {
       ...opportunity,
       tvlUsd: pool.tvlUsd ?? opportunity.tvlUsd,
       apy: {
         ...opportunity.apy,
-        current: pool.yieldRate ?? opportunity.apy.current,
-        metric: pool.yieldMetric ?? opportunity.apy.metric ?? "unknown"
+        current: pool.yieldRate ?? opportunity.apy?.current,
+        average7d: pool.yieldPeriods.apy7d,
+        metric: pool.yieldMetric ?? "apy",
+        qualifier: `official-api-${pool.yieldPeriod ?? "reported"}`,
+        observedAt: checkedAt,
+        note: yieldNote(pool.yieldPeriod),
+        isApproximate: false
       },
-      links: {
-        ...opportunity.links,
-        app: `https://app.ston.fi/pools/${pool.address}`
-      },
+      links: { ...opportunity.links, app: `https://app.ston.fi/pools/${pool.address}` },
       source: {
         type: "api",
-        provider: "STON.fi DEX API",
-        url: `${apiBase}/v1/pools`,
+        provider: "STON.fi official API",
+        url: `${apiBase}/v1/pools/${pool.address}`,
         lastChecked: checkedAt,
-        importedAt: opportunity.source?.importedAt ?? checkedAt,
         origin: "automatic collector"
+      },
+      externalId: pool.address,
+      sourceDetails: {
+        metricPeriod: pool.yieldPeriod,
+        apy1d: pool.yieldPeriods.apy1d,
+        apy7d: pool.yieldPeriods.apy7d,
+        apy30d: pool.yieldPeriods.apy30d,
+        underlyingApr: pool.yieldPeriods.underlyingApr,
+        volume24hUsd: pool.volume24hUsd,
+        dexVersion: pool.dexVersion,
+        assetAddresses: pool.assetAddresses,
+        routerAddress: pool.routerAddress,
+        onchain: pool.onchain
+      },
+      verification: {
+        verifiedAt: checkedAt,
+        note: {
+          ru: `Доходность взята из официального API STON.fi (${pool.yieldPeriod ?? "текущий"} период). TVL — поле lp_total_supply_usd. Резервы: ${pool.onchain?.status === "verified" ? "проверены в блокчейне" : "on-chain проверка временно недоступна"}.`,
+          en: `Yield comes from the official STON.fi API (${pool.yieldPeriod ?? "current"} period). TVL uses lp_total_supply_usd. Reserves: ${pool.onchain?.status === "verified" ? "verified on-chain" : "on-chain check temporarily unavailable"}.`
+        }
       },
       status: {
         ...opportunity.status,
         stale: false,
         sourceError: false,
         requiresDisambiguation: false
-      },
-      externalId: pool.address,
-      sourceDetails: {
-        dexVersion: pool.dexVersion,
-        assetAddresses: pool.assetAddresses,
-        routerAddress: pool.routerAddress
       }
     };
   });
 
-  await writeJsonAtomic(
-    path.join(process.cwd(), "data", "stonfi-candidates.json"),
-    {
-      generatedAt: checkedAt,
-      assetsReceived: assets.length,
-      v1PoolsReceived: v1Pools.length,
-      v2PoolsReceived: v2Pools.length,
-      uniquePoolsReceived: candidates.length,
-      farmsReceived: farms.length,
-      resolvedPoolSymbols: candidates.filter((item) => item.symbols.length >= 2).length,
-      opportunities: discoveryReport
-    }
-  );
+  const snapshotFile = await writeProtocolSnapshot("stonfi", {
+    schemaVersion: "1.1",
+    generatedAt: checkedAt,
+    source: { provider: "STON.fi official API", mode: "exact-pool-endpoint" },
+    pools: discovery
+  });
+  await writeJsonAtomic(path.join(process.cwd(), "data", "stonfi-candidates.json"), {
+    generatedAt: checkedAt,
+    mode: "exact-pool-endpoint",
+    opportunities: discovery
+  });
 
-  const unresolved = discoveryReport.filter(
-    (item) => item.mode !== "disabled" && !item.selected
-  ).length;
+  const updated = discovery.filter((item) => item.selected).length;
   return {
     opportunities: next,
     report: {
       adapter: "stonfi",
-      status: unresolved ? (updated ? "partial" : "needs-review") : "ok",
+      status: updated === discovery.length ? "ok" : updated ? "partial" : "needs-review",
+      requestedPools: discovery.length,
+      exactPoolRequests: discovery.filter((item) => item.endpoint?.includes("/v1/pools/EQ")).length,
       updated,
-      unresolved,
-      assetsReceived: assets.length,
-      v1PoolsReceived: v1Pools.length,
-      v2PoolsReceived: v2Pools.length,
-      uniquePoolsReceived: candidates.length,
-      farmsReceived: farms.length,
+      onchainVerified: discovery.filter((item) => item.candidate?.onchain?.status === "verified").length,
+      snapshotFile,
       candidatesFile: "data/stonfi-candidates.json"
     }
   };
@@ -558,12 +395,13 @@ export async function collectStonfi({ configPath, opportunities }) {
 export const __test = {
   normalizeSymbol,
   unwrap,
-  assetAddress,
-  assetSymbol,
   poolAddress,
   poolAssetAddresses,
   poolEmbeddedSymbols,
+  extractTvlUsd,
+  extractYieldPeriods,
   buildAssetMap,
+  buildFarmMap,
   makeCandidate,
   matches,
   selectCandidate

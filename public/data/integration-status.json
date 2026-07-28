@@ -1,11 +1,11 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-28T18:48:41.325Z",
+  "generatedAt": "2026-07-28T19:41:54.810Z",
   "summary": {
-    "protocols": 10,
+    "protocols": 15,
     "automaticNow": 2,
     "integrationReady": 8,
-    "manualOrPending": 2
+    "manualOrPending": 7
   },
   "definitions": {
     "automaticNow": "Collector can currently refresh at least part of this protocol automatically.",
@@ -16,7 +16,7 @@
     {
       "id": "stonfi",
       "protocol": "STON.fi",
-      "opportunityCount": 4,
+      "opportunityCount": 1,
       "automationLevel": "automatic",
       "verification": "official-api-verified",
       "automaticNow": true,
@@ -34,7 +34,7 @@
     {
       "id": "dedust",
       "protocol": "DeDust",
-      "opportunityCount": 0,
+      "opportunityCount": 1,
       "automationLevel": "automatic-catalog",
       "verification": "official-api-verified",
       "automaticNow": true,
@@ -73,7 +73,7 @@
     {
       "id": "evaa",
       "protocol": "EVAA",
-      "opportunityCount": 5,
+      "opportunityCount": 1,
       "automationLevel": "sdk-ready",
       "verification": "official-sdk-verified",
       "automaticNow": false,
@@ -100,8 +100,8 @@
       "automaticNow": false,
       "integrationReady": true,
       "metrics": [
-        "exchange rate",
-        "staked TON",
+        "hGRAM exchange rate",
+        "staked GRAM",
         "token supply"
       ],
       "primarySource": {
@@ -117,14 +117,14 @@
     {
       "id": "bemo",
       "protocol": "Bemo",
-      "opportunityCount": 2,
+      "opportunityCount": 1,
       "automationLevel": "onchain-ready",
       "verification": "official-contract-docs-verified",
       "automaticNow": false,
       "integrationReady": true,
       "metrics": [
-        "bmTON supply",
-        "staked TON",
+        "bmGRAM supply",
+        "staked GRAM",
         "exchange rate"
       ],
       "primarySource": {
@@ -137,21 +137,22 @@
     {
       "id": "affluent",
       "protocol": "Affluent",
-      "opportunityCount": 4,
+      "opportunityCount": 1,
       "automationLevel": "source-pending",
-      "verification": "official-public-metrics-not-fixed",
+      "verification": "official-product-and-announcement-verified",
       "automaticNow": false,
       "integrationReady": false,
       "metrics": [],
       "primarySource": {
-        "website": "https://affluent.org/"
+        "website": "https://affluent.org/",
+        "announcements": "https://t.me/s/affluent"
       },
       "contracts": null
     },
     {
       "id": "storm",
       "protocol": "Storm Trade",
-      "opportunityCount": 2,
+      "opportunityCount": 1,
       "automationLevel": "sdk-ready",
       "verification": "official-sdk-identified",
       "automaticNow": false,
@@ -187,12 +188,92 @@
       "protocol": "Telegram Wallet",
       "opportunityCount": 1,
       "automationLevel": "manual",
-      "verification": "no-stable-public-yield-api",
+      "verification": "official-product-documentation-verified",
       "automaticNow": false,
       "integrationReady": false,
       "metrics": [],
       "primarySource": {
-        "website": "https://wallet.tg/"
+        "website": "https://wallet.tg/",
+        "help": "https://help.wallet.tg/category/31-defi-account"
+      },
+      "contracts": null
+    },
+    {
+      "id": "tonco",
+      "protocol": "TONCO",
+      "opportunityCount": 1,
+      "automationLevel": "manual",
+      "verification": "official-product-documentation-verified",
+      "automaticNow": false,
+      "integrationReady": false,
+      "metrics": [],
+      "primarySource": {
+        "website": "https://tonco.io/",
+        "docs": "https://docs.tonco.io/",
+        "app": "https://app.tonco.io/"
+      },
+      "contracts": null
+    },
+    {
+      "id": "tradoor",
+      "protocol": "Tradoor",
+      "opportunityCount": 1,
+      "automationLevel": "manual",
+      "verification": "official-product-documentation-verified",
+      "automaticNow": false,
+      "integrationReady": false,
+      "metrics": [],
+      "primarySource": {
+        "website": "https://tradoor.io/",
+        "docs": "https://docs.tradoor.io/",
+        "app": "https://app.tradoor.io/"
+      },
+      "contracts": null
+    },
+    {
+      "id": "torch-finance",
+      "protocol": "Torch Finance",
+      "opportunityCount": 1,
+      "automationLevel": "manual",
+      "verification": "official-product-documentation-verified",
+      "automaticNow": false,
+      "integrationReady": false,
+      "metrics": [],
+      "primarySource": {
+        "website": "https://torch.finance/",
+        "docs": "https://doc.torch.finance/",
+        "telegram": "https://t.me/s/torch_ton"
+      },
+      "contracts": null
+    },
+    {
+      "id": "jvault",
+      "protocol": "JVault",
+      "opportunityCount": 1,
+      "automationLevel": "manual",
+      "verification": "official-product-documentation-verified",
+      "automaticNow": false,
+      "integrationReady": false,
+      "metrics": [],
+      "primarySource": {
+        "website": "https://jvault.xyz/",
+        "docs": "https://docs.jvault.xyz/",
+        "app": "https://jvault.xyz/staking/v2/"
+      },
+      "contracts": null
+    },
+    {
+      "id": "stakee",
+      "protocol": "Stakee",
+      "opportunityCount": 1,
+      "automationLevel": "manual",
+      "verification": "official-product-page-verified",
+      "automaticNow": false,
+      "integrationReady": false,
+      "metrics": [],
+      "primarySource": {
+        "website": "https://stakee.org/",
+        "app": "https://app.stakee.org/"
       },
       "contracts": null
     }

@@ -3,12 +3,9 @@
   "protocolId": "affluent",
   "publishMode": "retain-existing-until-verified",
   "trackedOpportunityIds": [
-    "affluent-gram",
-    "affluent-gram-tston",
-    "affluent-tsusde-usdt-vault7",
-    "affluent-usdt"
+    "affluent-usdt-lending-vault"
   ],
   "contracts": [],
   "endpoints": [],
-  "note": "Источник подключён к общему pipeline. Автоматическая публикация включится после фиксации официального endpoint/контракта и проверки формата."
+  "note": "В пилоте отслеживается собственный Affluent USDT Lending Vault. Текущая ставка проверяется по официальной странице продукта."
 }

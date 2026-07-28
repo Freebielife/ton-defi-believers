@@ -17,19 +17,24 @@ const active = opportunitiesDocument.opportunities.filter(
 const core = active.filter((item) => coreNames.has(item.protocol));
 
 const tvlValues = core
-  .map((item) => Number(item.tvlUsd))
+  .map((item) => item.tvlUsd)
+  .filter((value) => value !== null && value !== undefined && value !== "")
+  .map(Number)
   .filter((value) => Number.isFinite(value) && value >= 0);
 
 const apyValues = core
-  .map((item) => Number(item.apy?.current))
+  .filter((item) => (item.apy?.metric ?? "apy") === "apy" && item.apy?.isMaximum !== true)
+  .map((item) => item.apy?.current)
+  .filter((value) => value !== null && value !== undefined && value !== "")
+  .map(Number)
   .filter((value) => Number.isFinite(value));
 
 const byTvl = [...core]
-  .filter((item) => Number.isFinite(Number(item.tvlUsd)))
+  .filter((item) => item.tvlUsd !== null && item.tvlUsd !== undefined && item.tvlUsd !== "" && Number.isFinite(Number(item.tvlUsd)))
   .sort((a, b) => Number(b.tvlUsd) - Number(a.tvlUsd));
 
 const byApy = [...core]
-  .filter((item) => Number.isFinite(Number(item.apy?.current)))
+  .filter((item) => (item.apy?.metric ?? "apy") === "apy" && item.apy?.current !== null && item.apy?.current !== undefined && item.apy?.current !== "" && Number.isFinite(Number(item.apy?.current)))
   .sort((a, b) => Number(b.apy.current) - Number(a.apy.current));
 
 const stats = {
@@ -39,7 +44,9 @@ const stats = {
   metrics: {
     protocolsTracked: new Set(core.map((item) => item.protocol)).size,
     opportunitiesTracked: core.length,
-    coveredTvlUsd: tvlValues.reduce((sum, value) => sum + value, 0),
+    coveredTvlUsd: tvlValues.length
+      ? tvlValues.reduce((sum, value) => sum + value, 0)
+      : null,
     averageApy: apyValues.length
       ? apyValues.reduce((sum, value) => sum + value, 0) / apyValues.length
       : null
