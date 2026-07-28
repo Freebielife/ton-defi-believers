@@ -1,6 +1,6 @@
 {
   "name": "ton-defi-believers-collector",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -10,7 +10,7 @@
     "collect": "node collector/collect.mjs",
     "stats": "node collector/generate-stats.mjs",
     "validate": "node collector/validate.mjs",
-    "build:data": "node collector/prepare-snapshot.mjs && npm run collect && npm run metrics && npm run validate && npm run stats && npm run changes && npm run history && npm run insights && npm run search:index && npm run audit:sources && npm run integration:status",
+    "build:data": "npm run market:import && node collector/prepare-snapshot.mjs && npm run collect && npm run metrics && npm run validate && npm run stats && npm run changes && npm run history && npm run insights && npm run search:index && npm run audit:sources && npm run integration:status",
     "changes": "node collector/generate-changes.mjs",
     "history": "node collector/update-history.mjs",
     "audit:sources": "node collector/audit-sources.mjs",
@@ -18,10 +18,11 @@
     "sync:public": "node scripts/sync-public-data.mjs",
     "release:check": "node scripts/release-check.mjs",
     "build": "npm run build:data && npm run sync:public && npm run release:check",
-    "test:adapters": "node collector/tests/stonfi.test.mjs && node collector/tests/dedust.test.mjs && node collector/tests/ton-rpc.test.mjs && node collector/tests/metrics.test.mjs && node collector/tests/score.test.mjs && node collector/tests/health-monitor.test.mjs",
+    "test:adapters": "node collector/tests/ton-yields-daily.test.mjs && node collector/tests/stonfi.test.mjs && node collector/tests/dedust.test.mjs && node collector/tests/ton-rpc.test.mjs && node collector/tests/metrics.test.mjs && node collector/tests/score.test.mjs && node collector/tests/health-monitor.test.mjs",
     "test:health": "node collector/tests/health-monitor.test.mjs",
     "metrics": "node collector/build-metrics.mjs",
     "insights": "node collector/build-insights.mjs",
-    "search:index": "node collector/build-search-index.mjs"
+    "search:index": "node collector/build-search-index.mjs",
+    "market:import": "node collector/import-ton-yields-daily.mjs"
   }
 }

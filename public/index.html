@@ -3,10 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="A simple overview of selected DeFi opportunities in the TON ecosystem."
-    />
+    <meta name="description" content="Current TON DeFi yields, 7-day averages and TVL grouped by asset." />
     <meta name="theme-color" content="#07111f" />
     <title>TON DeFi Believers</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
@@ -22,50 +19,35 @@
           <small>The Home of TON DeFi Yields</small>
         </span>
       </a>
-
-      <button class="language-button" id="languageButton" type="button" aria-label="Switch language">
-        RU
-      </button>
+      <button class="language-button" id="languageButton" type="button" aria-label="Switch language">RU</button>
     </header>
 
     <main>
       <section class="hero" aria-labelledby="pageTitle">
         <div class="hero-copy">
-          <p class="eyebrow" data-i18n="pilot">Pilot version · 15 selected protocols</p>
-          <h1 id="pageTitle" data-i18n="title">A quick view of TON DeFi</h1>
-          <p class="hero-text" data-i18n="subtitle">
-            Compare selected staking, lending, liquidity and vault opportunities without opening many different apps.
-          </p>
+          <p class="eyebrow" data-i18n="pilot">Market catalog · daily snapshot</p>
+          <h1 id="pageTitle" data-i18n="title">TON DeFi market at a glance</h1>
+          <p class="hero-text" data-i18n="subtitle">Current yield, 7-day average and TVL for concrete TON DeFi products — grouped by asset, not ranked as investment advice.</p>
         </div>
 
         <div class="summary" aria-label="Market summary">
-          <article>
-            <span id="protocolCount">15</span>
-            <small data-i18n="protocols">Protocols</small>
-          </article>
-          <article>
-            <span id="opportunityCount">—</span>
-            <small data-i18n="opportunities">Opportunities</small>
-          </article>
-          <article>
-            <span id="lastUpdated">—</span>
-            <small data-i18n="snapshot">Dataset snapshot</small>
-          </article>
+          <article><span id="marketTvl">—</span><small data-i18n="marketTvl">Market TVL</small></article>
+          <article><span id="opportunityCount">—</span><small data-i18n="opportunities">Opportunities</small></article>
+          <article><span id="protocolCount">—</span><small data-i18n="protocols">Protocols</small></article>
+          <article><span id="lastUpdated">—</span><small data-i18n="snapshot">Snapshot</small></article>
         </div>
       </section>
 
       <section class="notice" aria-label="Data notice">
         <span class="notice-dot" aria-hidden="true"></span>
-        <p id="dataNotice" data-i18n="notice">
-          Only values confirmed by an official API or official page are shown. A dash means the product is verified, but no stable current public metric is available.
-        </p>
+        <p><strong data-i18n="noticePrefix">Data snapshot:</strong> <a id="sourceLink" target="_blank" rel="noreferrer">TON Yields Daily</a> — <span data-i18n="notice">values change and are not guaranteed. Low TVL means less than $10K. The default order is by TVL, not by the highest yield.</span></p>
       </section>
 
       <section class="market" aria-labelledby="marketTitle">
         <div class="section-heading">
           <div>
-            <p class="eyebrow" data-i18n="selectedMarket">Selected market</p>
-            <h2 id="marketTitle" data-i18n="marketTitle">TON DeFi opportunities</h2>
+            <p class="eyebrow" data-i18n="market">Market catalog</p>
+            <h2 id="marketTitle" data-i18n="marketTitle">Yield opportunities</h2>
           </div>
           <p class="result-count" id="resultCount" aria-live="polite"></p>
         </div>
@@ -73,25 +55,25 @@
         <div class="controls">
           <label class="search-field">
             <span class="sr-only" data-i18n="searchLabel">Search</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" />
-            </svg>
-            <input id="searchInput" type="search" autocomplete="off" placeholder="Search protocol, asset or pool" />
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" /></svg>
+            <input id="searchInput" type="search" autocomplete="off" placeholder="Search protocol, asset or product" />
           </label>
 
-          <div class="filters" id="filters" aria-label="Opportunity filters">
-            <button type="button" class="filter-button is-active" data-filter="all" data-i18n="all">All</button>
-            <button type="button" class="filter-button" data-filter="staking" data-i18n="staking">Staking</button>
-            <button type="button" class="filter-button" data-filter="lending" data-i18n="lending">Lending</button>
-            <button type="button" class="filter-button" data-filter="liquidity" data-i18n="liquidity">Liquidity</button>
-            <button type="button" class="filter-button" data-filter="vault" data-i18n="vaults">Vaults</button>
+          <div class="filters" id="filters" aria-label="Asset filters">
+            <button type="button" class="filter-button is-active" data-filter="all" data-i18n="all">All assets</button>
+            <button type="button" class="filter-button" data-filter="gram" data-i18n="gram">GRAM</button>
+            <button type="button" class="filter-button" data-filter="stablecoins" data-i18n="stablecoins">Stablecoins</button>
+            <button type="button" class="filter-button" data-filter="gram-usdt" data-i18n="gramUsdt">GRAM–USDT</button>
+            <button type="button" class="filter-button" data-filter="btc" data-i18n="btc">BTC</button>
+            <button type="button" class="filter-button" data-filter="eth" data-i18n="eth">ETH</button>
           </div>
 
           <label class="sort-field">
             <span data-i18n="sort">Sort</span>
             <select id="sortSelect">
               <option value="tvl" data-i18n="sortTvl">TVL: high to low</option>
-              <option value="apy" data-i18n="sortApy">Yield: high to low</option>
+              <option value="average" data-i18n="sortAverage">7d average: high to low</option>
+              <option value="current" data-i18n="sortCurrent">Current yield: high to low</option>
               <option value="protocol" data-i18n="sortProtocol">Protocol: A–Z</option>
             </select>
           </label>
@@ -104,69 +86,47 @@
                 <th data-i18n="protocol">Protocol</th>
                 <th data-i18n="product">Product / pool</th>
                 <th data-i18n="asset">Asset</th>
-                <th data-i18n="yield">Yield</th>
+                <th data-i18n="current">Current</th>
+                <th data-i18n="average7d">7d average</th>
                 <th>TVL</th>
-                <th data-i18n="data">Data</th>
+                <th>UR</th>
+                <th data-i18n="data">Updated</th>
                 <th><span class="sr-only" data-i18n="open">Open</span></th>
               </tr>
             </thead>
             <tbody id="marketRows">
-              <tr class="loading-row">
-                <td colspan="7" data-i18n="loading">Loading market data…</td>
-              </tr>
+              <tr class="loading-row"><td colspan="9" data-i18n="loading">Loading market data…</td></tr>
             </tbody>
           </table>
         </div>
 
         <div class="empty-state" id="emptyState" hidden>
           <strong data-i18n="emptyTitle">Nothing found</strong>
-          <p data-i18n="emptyText">Try another search or category.</p>
+          <p data-i18n="emptyText">Try another search or asset category.</p>
         </div>
-      </section>
-
-      <section class="protocol-list" aria-labelledby="coverageTitle">
-        <div class="section-heading compact">
-          <div>
-            <p class="eyebrow" data-i18n="coverage">Coverage</p>
-            <h2 id="coverageTitle" data-i18n="coverageTitle">The 15 protocols in this pilot</h2>
-          </div>
-        </div>
-        <div class="protocol-grid" id="protocolGrid"></div>
       </section>
     </main>
 
     <footer>
-      <p data-i18n="disclaimer">
-        Information only. Yield can change and DeFi involves smart-contract, liquidity and market risks.
-      </p>
+      <p data-i18n="disclaimer">Information only. Yield, incentives and TVL can change. DeFi involves smart-contract, liquidity, market and counterparty risks.</p>
       <a href="https://github.com/Freebielife/ton-defi-believers" target="_blank" rel="noreferrer">GitHub</a>
     </footer>
 
+    <template id="categoryTemplate">
+      <tr class="category-row"><td colspan="9"><span class="category-name"></span><span class="category-count"></span></td></tr>
+    </template>
+
     <template id="rowTemplate">
-      <tr>
-        <td data-label="Protocol">
-          <div class="protocol-cell">
-            <span class="protocol-icon" aria-hidden="true"></span>
-            <div>
-              <strong class="protocol-name"></strong>
-              <small class="opportunity-type"></small>
-            </div>
-          </div>
-        </td>
+      <tr class="opportunity-row">
+        <td data-label="Protocol"><div class="protocol-cell"><span class="protocol-icon" aria-hidden="true"></span><div><strong class="protocol-name"></strong><small class="opportunity-type"></small></div></div></td>
         <td data-label="Product / pool"><strong class="product-name"></strong></td>
         <td data-label="Asset"><span class="asset-pill"></span></td>
-        <td data-label="Yield" class="yield-cell">
-          <strong class="apy-value"></strong>
-          <small class="yield-note" hidden></small>
-        </td>
-        <td data-label="TVL"><span class="tvl-value"></span></td>
-        <td data-label="Data" class="source-cell"><span class="source-badge"></span><small class="source-detail"></small></td>
-        <td class="action-cell">
-          <a class="open-link" target="_blank" rel="noopener noreferrer" aria-label="Open protocol">
-            <span class="open-link-label">Open</span>
-            <span class="open-link-arrow" aria-hidden="true">↗</span>
-          </a>
-        </td>
+        <td data-label="Current" class="yield-cell"><strong class="current-value"></strong><small class="yield-note" hidden></small></td>
+        <td data-label="7d average"><strong class="average-value"></strong></td>
+        <td data-label="TVL"><span class="tvl-wrap"><span class="tvl-value"></span></span></td>
+        <td data-label="UR"><span class="ur-value"></span></td>
+        <td data-label="Updated"><span class="updated-value"></span></td>
+        <td class="action-cell"><a class="open-link" target="_blank" rel="noopener noreferrer"><span class="open-link-label">Open</span><span class="open-link-arrow" aria-hidden="true">↗</span></a></td>
       </tr>
     </template>
   </body>

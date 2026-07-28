@@ -3,57 +3,55 @@ const state = {
   filter: "all",
   search: "",
   sort: "tvl",
-  protocols: [],
   opportunities: [],
+  protocols: [],
+  categories: [],
   dataset: null,
 };
 
 const translations = {
   en: {
-    pilot: "Pilot version · 15 selected protocols",
-    title: "A quick view of TON DeFi",
-    subtitle: "Compare selected staking, lending, liquidity and vault opportunities without opening many different apps.",
+    pilot: "Market catalog · daily snapshot",
+    title: "TON DeFi market at a glance",
+    subtitle: "Current yield, 7-day average and TVL for concrete TON DeFi products — grouped by asset, not ranked as investment advice.",
+    marketTvl: "Market TVL",
     protocols: "Protocols",
     opportunities: "Opportunities",
-    snapshot: "Dataset snapshot",
-    notice: "Values published by official sources are shown even when they are variable, expected or available only as a dated snapshot. Each such value is clearly marked.",
-    selectedMarket: "Selected market",
-    marketTitle: "TON DeFi opportunities",
+    snapshot: "Snapshot",
+    noticePrefix: "Data snapshot:",
+    notice: "values change and are not guaranteed. Low TVL means less than $10K. The default order is by TVL, not by the highest yield.",
+    market: "Market catalog",
+    marketTitle: "Yield opportunities",
     searchLabel: "Search",
-    searchPlaceholder: "Search protocol, asset or pool",
-    all: "All",
-    staking: "Staking",
-    lending: "Lending",
-    liquidity: "Liquidity",
-    vaults: "Vaults",
+    searchPlaceholder: "Search protocol, asset or product",
+    all: "All assets",
+    gram: "GRAM",
+    stablecoins: "Stablecoins",
+    gramUsdt: "GRAM–USDT",
+    btc: "BTC",
+    eth: "ETH",
     sort: "Sort",
     sortTvl: "TVL: high to low",
-    sortApy: "Yield: high to low",
+    sortAverage: "7d average: high to low",
+    sortCurrent: "Current yield: high to low",
     sortProtocol: "Protocol: A–Z",
     protocol: "Protocol",
     product: "Product / pool",
     asset: "Asset",
-    data: "Data",
+    current: "Current",
+    average7d: "7d average",
+    data: "Updated",
     open: "Open",
     loading: "Loading market data…",
+    unavailable: "Data unavailable",
     emptyTitle: "Nothing found",
-    emptyText: "Try another search or category.",
-    coverage: "Coverage",
-    coverageTitle: "The 15 protocols in this pilot",
-    disclaimer: "Information only. Yield can change and DeFi involves smart-contract, liquidity and market risks.",
-    live: "API",
-    snapshotLabel: "Snapshot",
-    unavailable: "Unavailable",
-    noData: "No verified opportunity available",
-    available: "opportunities",
+    emptyText: "Try another search or asset category.",
     result: "results",
     oneResult: "result",
-    updated: "Updated",
-    notVerified: "Manual snapshot",
-    verified: "Verified",
-    upTo: "Up to",
-    yield: "Yield",
-    unknownDate: "Unknown",
+    lowTvl: "Low TVL",
+    noUr: "—",
+    source: "Source",
+    disclaimer: "Information only. Yield, incentives and TVL can change. DeFi involves smart-contract, liquidity, market and counterparty risks.",
     type: {
       "liquid-staking": "Liquid staking",
       staking: "Staking",
@@ -64,50 +62,47 @@ const translations = {
     },
   },
   ru: {
-    pilot: "Пилотная версия · 15 выбранных протоколов",
-    title: "Быстрый обзор DeFi в TON",
-    subtitle: "Сравните выбранные возможности стейкинга, лендинга, пулов ликвидности и хранилищ без перехода между множеством приложений.",
+    pilot: "Каталог рынка · ежедневный снимок",
+    title: "Рынок TON DeFi одним взглядом",
+    subtitle: "Текущая доходность, среднее за 7 дней и TVL конкретных продуктов TON DeFi — с группировкой по активам, без выдачи максимального APY за лучший вариант.",
+    marketTvl: "TVL рынка",
     protocols: "Протоколов",
     opportunities: "Возможностей",
-    snapshot: "Снимок данных",
-    notice: "Показываем значения из официальных источников, даже если ставка переменная, ожидаемая или доступна только как датированный снимок. Такие значения всегда отмечены пояснением.",
-    selectedMarket: "Выбранный рынок",
-    marketTitle: "Возможности TON DeFi",
+    snapshot: "Снимок",
+    noticePrefix: "Снимок данных:",
+    notice: "значения меняются и не гарантированы. Низкий TVL — менее $10 тыс. По умолчанию список отсортирован по TVL, а не по максимальной доходности.",
+    market: "Каталог рынка",
+    marketTitle: "Доходные возможности",
     searchLabel: "Поиск",
-    searchPlaceholder: "Протокол, актив или пул",
-    all: "Все",
-    staking: "Стейкинг",
-    lending: "Лендинг",
-    liquidity: "Ликвидность",
-    vaults: "Хранилища",
+    searchPlaceholder: "Протокол, актив или продукт",
+    all: "Все активы",
+    gram: "GRAM",
+    stablecoins: "Стейблкоины",
+    gramUsdt: "GRAM–USDT",
+    btc: "BTC",
+    eth: "ETH",
     sort: "Сортировка",
     sortTvl: "TVL: по убыванию",
-    sortApy: "Доходность: по убыванию",
+    sortAverage: "Среднее за 7 дней: по убыванию",
+    sortCurrent: "Текущая доходность: по убыванию",
     sortProtocol: "Протокол: А–Я",
     protocol: "Протокол",
     product: "Продукт / пул",
     asset: "Актив",
-    data: "Данные",
+    current: "Сейчас",
+    average7d: "Среднее 7д",
+    data: "Обновлено",
     open: "Открыть",
     loading: "Загрузка данных…",
+    unavailable: "Данные недоступны",
     emptyTitle: "Ничего не найдено",
-    emptyText: "Измените запрос или категорию.",
-    coverage: "Охват",
-    coverageTitle: "15 протоколов пилотной версии",
-    disclaimer: "Только для ознакомления. Доходность меняется, а DeFi связан с рисками смарт-контрактов, ликвидности и рынка.",
-    live: "API",
-    snapshotLabel: "Снимок",
-    unavailable: "Нет данных",
-    noData: "Нет проверенной доходной возможности",
-    available: "возможностей",
+    emptyText: "Измените запрос или категорию активов.",
     result: "результатов",
     oneResult: "результат",
-    updated: "Обновлено",
-    notVerified: "Ручной снимок",
-    verified: "Проверено",
-    upTo: "до",
-    yield: "Доходность",
-    unknownDate: "Неизвестно",
+    lowTvl: "Низкий TVL",
+    noUr: "—",
+    source: "Источник",
+    disclaimer: "Только для ознакомления. Доходность, награды и TVL меняются. DeFi связан с рисками смарт-контрактов, ликвидности, рынка и контрагентов.",
     type: {
       "liquid-staking": "Ликвидный стейкинг",
       staking: "Стейкинг",
@@ -126,12 +121,15 @@ const elements = {
   sortSelect: document.querySelector("#sortSelect"),
   marketRows: document.querySelector("#marketRows"),
   rowTemplate: document.querySelector("#rowTemplate"),
-  protocolGrid: document.querySelector("#protocolGrid"),
+  categoryTemplate: document.querySelector("#categoryTemplate"),
   protocolCount: document.querySelector("#protocolCount"),
   opportunityCount: document.querySelector("#opportunityCount"),
+  marketTvl: document.querySelector("#marketTvl"),
   lastUpdated: document.querySelector("#lastUpdated"),
   resultCount: document.querySelector("#resultCount"),
   emptyState: document.querySelector("#emptyState"),
+  tableShell: document.querySelector(".table-shell"),
+  sourceLink: document.querySelector("#sourceLink"),
 };
 
 function text(key) {
@@ -146,53 +144,6 @@ function normalize(value) {
   return String(value ?? "").trim().toLowerCase();
 }
 
-function protocolKey(value) {
-  return normalize(value).replace(/[^a-z0-9]+/g, "");
-}
-
-function formatMoney(value) {
-  if (!Number.isFinite(value) || value <= 0) return "—";
-  return new Intl.NumberFormat(state.language === "ru" ? "ru-RU" : "en-US", {
-    style: "currency",
-    currency: "USD",
-    notation: "compact",
-    maximumFractionDigits: value >= 1_000_000 ? 1 : 0,
-  }).format(value);
-}
-
-function formatYield(opportunity) {
-  const apy = opportunity?.apy ?? {};
-  const value = apy.current;
-  if (!Number.isFinite(value)) {
-    return apy.display?.[state.language] || apy.display?.en || "—";
-  }
-  const metric = String(apy.metric || "apy").toUpperCase();
-  const number = value.toFixed(2).replace(/\.00$/, "").replace(/(\.\d)0$/, "$1");
-  const prefix = apy.isMaximum ? `${text("upTo")} ` : apy.isApproximate ? "≈" : "";
-  return `${prefix}${number}% ${metric}`;
-}
-
-function formatYieldNote(opportunity) {
-  const apy = opportunity?.apy ?? {};
-  return apy.note?.[state.language] || apy.note?.en || "";
-}
-
-function verificationNote(opportunity) {
-  const note = opportunity?.verification?.note;
-  return note?.[state.language] || note?.en || "";
-}
-
-function formatDate(value, short = false) {
-  if (!value) return text("unknownDate");
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return text("unknownDate");
-  return new Intl.DateTimeFormat(state.language === "ru" ? "ru-RU" : "en-GB", {
-    day: "2-digit",
-    month: short ? "short" : "long",
-    year: short ? undefined : "numeric",
-  }).format(date);
-}
-
 function initials(name) {
   return String(name)
     .split(/\s|\./)
@@ -203,178 +154,153 @@ function initials(name) {
     .toUpperCase();
 }
 
-function categoryFor(type) {
-  if (["liquid-staking", "staking"].includes(type)) return "staking";
-  if (type === "lending") return "lending";
-  if (type === "liquidity-pool") return "liquidity";
-  if (["vault", "yield-token"].includes(type)) return "vault";
-  return "other";
+function formatPercent(value, digits = 1) {
+  if (!Number.isFinite(value)) return "—";
+  return `${new Intl.NumberFormat(state.language === "ru" ? "ru-RU" : "en-US", {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: digits,
+  }).format(value)}%`;
 }
 
-function getSource(opportunity) {
-  if (!opportunity) {
-    return { label: text("unavailable"), className: "is-unavailable", detail: text("noData") };
-  }
-
-  const source = opportunity.source ?? {};
-  const status = opportunity.status ?? {};
-  if (status.sourceError || status.stale) {
-    return { label: text("unavailable"), className: "is-unavailable", detail: text("unavailable") };
-  }
-
-  if (["api", "official-api", "onchain"].includes(source.type) && source.lastChecked) {
-    return {
-      label: text("live"),
-      className: "is-live",
-      detail: `${text("updated")} ${formatDate(source.lastChecked, true)}`,
-    };
-  }
-
-  if (["official-page", "official-announcement", "official-product"].includes(source.type)) {
-    return {
-      label: text("verified"),
-      className: "is-verified",
-      detail: source.lastChecked
-        ? `${text("updated")} ${formatDate(source.lastChecked, true)}`
-        : text("verified"),
-    };
-  }
-
-  return {
-    label: text("snapshotLabel"),
-    className: "is-snapshot",
-    detail: text("notVerified"),
-  };
+function formatMoney(value) {
+  if (!Number.isFinite(value) || value < 0) return "—";
+  return new Intl.NumberFormat(state.language === "ru" ? "ru-RU" : "en-US", {
+    style: "currency",
+    currency: "USD",
+    notation: "compact",
+    maximumFractionDigits: value >= 1_000_000 ? 1 : value >= 10_000 ? 0 : 1,
+  }).format(value);
 }
 
-function buildEntries() {
-  const opportunityMap = new Map();
-  for (const opportunity of state.opportunities) {
-    const key = protocolKey(opportunity.protocol);
-    if (!opportunityMap.has(key)) opportunityMap.set(key, []);
-    opportunityMap.get(key).push(opportunity);
-  }
-
-  const entries = [];
-  for (const protocol of state.protocols) {
-    const opportunities = opportunityMap.get(protocolKey(protocol.name)) ?? [];
-    if (opportunities.length === 0) {
-      entries.push({ protocol, opportunity: null, category: "all" });
-      continue;
-    }
-
-    for (const opportunity of opportunities) {
-      entries.push({ protocol, opportunity, category: categoryFor(opportunity.type) });
-    }
-  }
-  return entries;
+function formatDate(value, withTime = false) {
+  if (!value) return "—";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "—";
+  return new Intl.DateTimeFormat(state.language === "ru" ? "ru-RU" : "en-GB", {
+    day: "2-digit",
+    month: "short",
+    ...(withTime ? { hour: "2-digit", minute: "2-digit", hour12: false, timeZone: "UTC" } : {}),
+  }).format(date);
 }
 
-function filteredEntries() {
+function categoryLabel(id) {
+  const category = state.categories.find((item) => item.id === id);
+  return category?.label?.[state.language] || category?.label?.en || id;
+}
+
+function sorted(items) {
+  return [...items].sort((a, b) => {
+    if (state.sort === "average") return (b.apy?.average7d ?? -1) - (a.apy?.average7d ?? -1);
+    if (state.sort === "current") return (b.apy?.current ?? -1) - (a.apy?.current ?? -1);
+    if (state.sort === "protocol") return a.protocol.localeCompare(b.protocol) || a.product.localeCompare(b.product);
+    return (b.tvlUsd ?? -1) - (a.tvlUsd ?? -1);
+  });
+}
+
+function filteredOpportunities() {
   const query = normalize(state.search);
-  const filtered = buildEntries().filter(({ protocol, opportunity, category }) => {
-    const matchesFilter = state.filter === "all" || category === state.filter;
-    const haystack = [protocol.name, opportunity?.product, opportunity?.asset, opportunity?.type]
-      .map(normalize)
-      .join(" ");
+  return state.opportunities.filter((item) => {
+    const matchesFilter = state.filter === "all" || item.category === state.filter;
+    const haystack = [item.protocol, item.product, item.asset, typeText(item.type)].map(normalize).join(" ");
     return matchesFilter && (!query || haystack.includes(query));
   });
+}
 
-  return filtered.sort((a, b) => {
-    if (state.sort === "apy") {
-      return (b.opportunity?.apy?.current ?? -1) - (a.opportunity?.apy?.current ?? -1);
-    }
-    if (state.sort === "protocol") {
-      return a.protocol.name.localeCompare(b.protocol.name);
-    }
-    return (b.opportunity?.tvlUsd ?? -1) - (a.opportunity?.tvlUsd ?? -1);
+function trendSymbol(item) {
+  if (item.apy?.trend === "up") return "↑";
+  if (item.apy?.trend === "down") return "↓";
+  return "";
+}
+
+function renderRow(item) {
+  const row = elements.rowTemplate.content.firstElementChild.cloneNode(true);
+  const link = item.links?.app || item.links?.official;
+
+  row.querySelector(".protocol-icon").textContent = initials(item.protocol);
+  row.querySelector(".protocol-name").textContent = item.protocol;
+  row.querySelector(".opportunity-type").textContent = typeText(item.type);
+  row.querySelector(".product-name").textContent = item.product;
+  row.querySelector(".asset-pill").textContent = item.asset || "—";
+
+  const current = row.querySelector(".current-value");
+  current.textContent = `${formatPercent(item.apy?.current, 2)} ${trendSymbol(item)}`.trim();
+  current.classList.toggle("is-up", item.apy?.trend === "up");
+  current.classList.toggle("is-down", item.apy?.trend === "down");
+
+  const note = row.querySelector(".yield-note");
+  const noteText = item.apy?.note?.[state.language] || item.apy?.note?.en || "";
+  note.textContent = noteText;
+  note.hidden = !noteText;
+
+  row.querySelector(".average-value").textContent = formatPercent(item.apy?.average7d, 2);
+
+  const tvlWrap = row.querySelector(".tvl-wrap");
+  row.querySelector(".tvl-value").textContent = formatMoney(item.tvlUsd);
+  if (item.status?.lowTvl) {
+    const badge = document.createElement("span");
+    badge.className = "low-tvl-badge";
+    badge.textContent = text("lowTvl");
+    tvlWrap.append(badge);
+  }
+
+  const ur = row.querySelector(".ur-value");
+  ur.textContent = Number.isFinite(item.utilizationRate) ? formatPercent(item.utilizationRate, 1) : text("noUr");
+  if (Number.isFinite(item.utilizationRate) && item.utilizationRate >= 95) ur.classList.add("is-hot");
+
+  row.querySelector(".updated-value").textContent = formatDate(item.source?.lastChecked, true);
+
+  const action = row.querySelector(".open-link");
+  action.querySelector(".open-link-label").textContent = text("open");
+  action.setAttribute("aria-label", `${text("open")}: ${item.protocol} — ${item.product}`);
+  if (link) action.href = link;
+  else {
+    action.removeAttribute("href");
+    action.classList.add("is-disabled");
+    action.setAttribute("aria-disabled", "true");
+  }
+
+  const labels = [text("protocol"), text("product"), text("asset"), text("current"), text("average7d"), "TVL", "UR", text("data")];
+  row.querySelectorAll("td").forEach((cell, index) => {
+    if (labels[index]) cell.dataset.label = labels[index];
   });
+  return row;
 }
 
 function renderRows() {
-  const entries = filteredEntries();
+  const items = filteredOpportunities();
   elements.marketRows.replaceChildren();
 
-  for (const { protocol, opportunity } of entries) {
-    const row = elements.rowTemplate.content.firstElementChild.cloneNode(true);
-    const source = getSource(opportunity);
-    const link = opportunity?.links?.app || opportunity?.links?.official || protocol.links?.app || protocol.links?.website;
+  if (items.length) {
+    const order = state.dataset?.settings?.categoryOrder ?? ["gram", "stablecoins", "gram-usdt", "btc", "eth"];
+    const categories = state.filter === "all"
+      ? order.filter((category) => items.some((item) => item.category === category))
+      : [state.filter];
 
-    row.querySelector(".protocol-icon").textContent = initials(protocol.name);
-    row.querySelector(".protocol-name").textContent = protocol.name;
-    row.querySelector(".opportunity-type").textContent = opportunity ? typeText(opportunity.type) : text("unavailable");
-    row.querySelector(".product-name").textContent = opportunity?.product || text("noData");
-    row.querySelector(".asset-pill").textContent = opportunity?.asset || "—";
-
-    const yieldCell = row.querySelector(".yield-cell");
-    const apy = row.querySelector(".apy-value");
-    const yieldNote = row.querySelector(".yield-note");
-    apy.textContent = formatYield(opportunity);
-    const visibleYieldNote = formatYieldNote(opportunity) || verificationNote(opportunity);
-    yieldNote.textContent = visibleYieldNote;
-    yieldNote.hidden = !visibleYieldNote;
-    yieldCell.title = verificationNote(opportunity);
-    if (!opportunity || (!Number.isFinite(opportunity?.apy?.current) && !opportunity?.apy?.display)) {
-      apy.classList.add("is-muted");
+    for (const category of categories) {
+      const group = sorted(items.filter((item) => item.category === category));
+      if (!group.length) continue;
+      const categoryRow = elements.categoryTemplate.content.firstElementChild.cloneNode(true);
+      categoryRow.querySelector(".category-name").textContent = categoryLabel(category);
+      categoryRow.querySelector(".category-count").textContent = String(group.length);
+      elements.marketRows.append(categoryRow);
+      group.forEach((item) => elements.marketRows.append(renderRow(item)));
     }
-
-    const tvl = row.querySelector(".tvl-value");
-    tvl.textContent = formatMoney(opportunity?.tvlUsd);
-    if (!opportunity || !Number.isFinite(opportunity?.tvlUsd)) tvl.classList.add("is-muted");
-
-    const badge = row.querySelector(".source-badge");
-    badge.textContent = source.label;
-    badge.classList.add(source.className);
-    badge.title = source.detail;
-
-    const sourceDetail = row.querySelector(".source-detail");
-    sourceDetail.textContent = source.detail;
-    sourceDetail.hidden = !source.detail;
-
-    const action = row.querySelector(".open-link");
-    const actionLabel = action.querySelector(".open-link-label");
-    actionLabel.textContent = text("open");
-    action.setAttribute("aria-label", `${text("open")}: ${protocol.name}`);
-    if (link) {
-      action.href = link;
-    } else {
-      action.removeAttribute("href");
-      action.classList.add("is-disabled");
-      action.setAttribute("aria-disabled", "true");
-    }
-
-    const labels = [text("protocol"), text("product"), text("asset"), text("yield"), "TVL", text("data")];
-    row.querySelectorAll("td").forEach((cell, index) => {
-      if (labels[index]) cell.dataset.label = labels[index];
-    });
-
-    elements.marketRows.append(row);
   }
 
-  const countLabel = entries.length === 1 ? text("oneResult") : text("result");
-  elements.resultCount.textContent = `${entries.length} ${countLabel}`;
-  elements.emptyState.hidden = entries.length > 0;
-  document.querySelector(".table-shell").hidden = entries.length === 0;
+  const countLabel = items.length === 1 ? text("oneResult") : text("result");
+  elements.resultCount.textContent = `${items.length} ${countLabel}`;
+  elements.emptyState.hidden = items.length > 0;
+  elements.tableShell.hidden = items.length === 0;
 }
 
-function renderProtocolGrid() {
-  elements.protocolGrid.replaceChildren();
-  const entries = buildEntries();
-
-  for (const protocol of state.protocols) {
-    const count = entries.filter((entry) => entry.protocol.id === protocol.id && entry.opportunity).length;
-    const card = document.createElement("article");
-    card.className = "protocol-card";
-    card.innerHTML = `
-      <div class="protocol-card-top">
-        <span class="protocol-icon" aria-hidden="true">${initials(protocol.name)}</span>
-        <span class="protocol-status ${count ? "is-available" : ""}">${count ? `${count} ${text("available")}` : text("unavailable")}</span>
-      </div>
-      <h3>${protocol.name}</h3>
-      <p>${protocol.description?.[state.language] || protocol.description?.en || ""}</p>
-    `;
-    elements.protocolGrid.append(card);
-  }
+function updateSummary() {
+  const snapshot = state.dataset?.snapshot ?? {};
+  elements.marketTvl.textContent = formatMoney(snapshot.marketTvlUsd);
+  elements.protocolCount.textContent = state.protocols.length;
+  elements.opportunityCount.textContent = state.opportunities.length;
+  elements.lastUpdated.textContent = formatDate(snapshot.publishedAt || state.dataset?.updatedAt, true);
+  elements.sourceLink.href = snapshot.sourceUrl || "https://t.me/ton_yields_daily";
+  elements.sourceLink.textContent = snapshot.source || "TON Yields Daily";
 }
 
 function applyTranslations() {
@@ -385,43 +311,26 @@ function applyTranslations() {
   });
   elements.searchInput.placeholder = text("searchPlaceholder");
   elements.languageButton.textContent = state.language === "en" ? "RU" : "EN";
-  renderRows();
-  renderProtocolGrid();
   updateSummary();
-}
-
-function updateSummary() {
-  elements.protocolCount.textContent = state.protocols.length;
-  elements.opportunityCount.textContent = buildEntries().filter((entry) => entry.opportunity).length;
-  const date = state.dataset?.publishedAt || state.dataset?.updatedAt || state.dataset?.normalizedAt || state.dataset?.snapshot?.importedAt;
-  elements.lastUpdated.textContent = formatDate(date, true);
+  renderRows();
 }
 
 async function loadData() {
   try {
-    const [protocolResponse, opportunityResponse] = await Promise.all([
-      fetch("./data/protocols.json", { cache: "no-store" }),
-      fetch("./data/published/opportunities.json", { cache: "no-store" }),
-    ]);
-
-    if (!protocolResponse.ok || !opportunityResponse.ok) {
-      throw new Error("Data files are unavailable");
-    }
-
-    const protocolData = await protocolResponse.json();
-    const opportunityData = await opportunityResponse.json();
-    state.protocols = (protocolData.protocols ?? []).filter(
-      (protocol) => protocol.includedInV1 === true || protocol.tier === "core",
-    );
-    state.opportunities = (opportunityData.opportunities ?? []).filter((opportunity) => opportunity.status?.active !== false);
-    state.dataset = opportunityData;
-
+    const response = await fetch("./data/market-catalog.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const document = await response.json();
+    state.dataset = document;
+    state.opportunities = (document.opportunities ?? []).filter((item) => item.status?.active !== false);
+    state.protocols = document.protocols ?? [];
+    state.categories = document.categories ?? [];
+    state.sort = document.settings?.defaultSort || "tvl";
+    elements.sortSelect.value = state.sort;
     updateSummary();
     renderRows();
-    renderProtocolGrid();
   } catch (error) {
     console.error(error);
-    elements.marketRows.innerHTML = `<tr class="loading-row"><td colspan="7">${text("unavailable")}</td></tr>`;
+    elements.marketRows.innerHTML = `<tr class="loading-row"><td colspan="9">${text("unavailable")}</td></tr>`;
     elements.resultCount.textContent = "";
   }
 }

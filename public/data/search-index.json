@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-28T20:36:03.847Z",
+  "generatedAt": "2026-07-28T19:41:54.261Z",
   "count": 15,
   "facets": {
     "protocols": [
@@ -48,6 +48,7 @@
       "yield-token"
     ],
     "risks": [
+      "high",
       "low",
       "medium"
     ]
@@ -117,16 +118,16 @@
       "asset": "USDe–tsUSDe",
       "category": "stablecoins",
       "type": "liquidity-pool",
-      "apy": 0.1467303158556429,
-      "tvlUsd": 276851.7054947583,
-      "yieldScore": 46,
-      "confidence": 100,
+      "apy": 0.11922537340736117,
+      "tvlUsd": null,
+      "yieldScore": 37,
+      "confidence": 90,
       "risk": "medium",
       "links": {
         "official": "https://ston.fi/",
         "app": "https://app.ston.fi/pools/EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5"
       },
-      "searchText": "ston fi usde tsusde weighted stable ston fi usde tsusde pool usde tsusde stablecoins liquidity pool medium a impermanent loss or lp risk moderate tvl",
+      "searchText": "ston fi usde tsusde weighted stable ston fi usde tsusde pool usde tsusde stablecoins liquidity pool medium a impermanent loss or lp risk unknown tvl",
       "terms": [
         "ston fi usde tsusde weighted stable",
         "ston fi",
@@ -137,7 +138,7 @@
         "medium",
         "a",
         "impermanent loss or lp risk",
-        "moderate tvl"
+        "unknown tvl"
       ]
     },
     {
@@ -147,16 +148,16 @@
       "asset": "TON–USDT",
       "category": "liquidity",
       "type": "liquidity-pool",
-      "apy": 0,
-      "tvlUsd": 655871.499796,
-      "yieldScore": 47,
-      "confidence": 100,
-      "risk": "medium",
+      "apy": null,
+      "tvlUsd": null,
+      "yieldScore": 26,
+      "confidence": 60,
+      "risk": "high",
       "links": {
         "official": "https://dedust.io/",
         "app": "https://app.dedust.io/pools/EQA-X_yo3fzzbDbJ_0bzFWKqtRuZFIRa1sJsveZJ1YpViO3r"
       },
-      "searchText": "dedust liquidity pools dedust ton usdt pool ton usdt liquidity liquidity pool medium a impermanent loss or lp risk moderate tvl",
+      "searchText": "dedust liquidity pools dedust ton usdt pool ton usdt liquidity liquidity pool high c impermanent loss or lp risk unknown tvl stale data",
       "terms": [
         "dedust liquidity pools",
         "dedust",
@@ -164,10 +165,11 @@
         "ton usdt",
         "liquidity",
         "liquidity pool",
-        "medium",
-        "a",
+        "high",
+        "c",
         "impermanent loss or lp risk",
-        "moderate tvl"
+        "unknown tvl",
+        "stale data"
       ]
     },
     {

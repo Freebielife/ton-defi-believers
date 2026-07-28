@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-28T20:36:03.006Z",
+  "generatedAt": "2026-07-28T19:41:52.496Z",
   "methodology": {
     "confidence": "Score from source automation, freshness, metric availability, contract identification and error flags.",
     "risk": "Heuristic information-quality and product-structure indicator; not investment advice.",
@@ -8,10 +8,11 @@
   },
   "summary": {
     "opportunities": 15,
-    "averageConfidence": 56,
+    "averageConfidence": 52,
     "riskLevels": {
       "low": 11,
-      "medium": 4
+      "medium": 3,
+      "high": 1
     },
     "automaticSources": 2,
     "manualSources": 0
@@ -79,19 +80,18 @@
       "protocol": "STON.fi",
       "metrics": {
         "yield": {
-          "value": 0.1467303158556429,
+          "value": 0.11922537340736117,
           "metric": "apy",
           "origin": "protocol-reported-apy",
-          "apyEquivalent": 0.1467303158556429
+          "apyEquivalent": 0.11922537340736117
         },
-        "tvlUsd": 276851.7054947583,
+        "tvlUsd": null,
         "confidence": {
-          "score": 100,
+          "score": 90,
           "grade": "A",
           "reasons": [
             "automatic-source",
             "fresh-within-6h",
-            "tvl-available",
             "yield-available",
             "contract-or-pool-identified"
           ]
@@ -101,7 +101,7 @@
           "level": "medium",
           "flags": [
             "impermanent-loss-or-lp-risk",
-            "moderate-tvl"
+            "unknown-tvl"
           ]
         }
       }
@@ -111,29 +111,29 @@
       "protocol": "DeDust",
       "metrics": {
         "yield": {
-          "value": 0,
+          "value": null,
           "metric": "apr",
           "origin": "protocol-reported-apr",
-          "apyEquivalent": 0
+          "apyEquivalent": null
         },
-        "tvlUsd": 655871.499796,
+        "tvlUsd": null,
         "confidence": {
-          "score": 100,
-          "grade": "A",
+          "score": 60,
+          "grade": "C",
           "reasons": [
             "automatic-source",
             "fresh-within-6h",
-            "tvl-available",
-            "yield-available",
-            "contract-or-pool-identified"
+            "contract-or-pool-identified",
+            "marked-stale"
           ]
         },
         "risk": {
-          "score": 35,
-          "level": "medium",
+          "score": 50,
+          "level": "high",
           "flags": [
             "impermanent-loss-or-lp-risk",
-            "moderate-tvl"
+            "unknown-tvl",
+            "stale-data"
           ]
         }
       }

@@ -14,6 +14,7 @@ const files = [
   "stats.json",
   "history.json",
   "opportunities.json",
+  "market-catalog.json",
   "integration-status.json",
   "source-audit.json",
   "metrics.json",
