@@ -2222,7 +2222,7 @@
       "product": "USDe-tsUSDe (weighted_stable)",
       "type": "liquidity-pool",
       "apy": {
-        "current": 0.11874314484339177,
+        "current": 0.11859120160218062,
         "average7d": 0.4,
         "base": null,
         "rewards": null,
@@ -2239,7 +2239,7 @@
         "type": "api",
         "provider": "STON.fi DEX API",
         "url": "https://api.ston.fi/v1/pools",
-        "lastChecked": "2026-07-28T00:12:39.311Z",
+        "lastChecked": "2026-07-28T03:39:48.249Z",
         "importedAt": "2026-07-25T18:02:07Z",
         "origin": "automatic collector"
       },
@@ -2261,10 +2261,10 @@
       },
       "metrics": {
         "yield": {
-          "value": 0.11874314484339177,
+          "value": 0.11859120160218062,
           "metric": "apy",
           "origin": "protocol-reported-apy",
-          "apyEquivalent": 0.11874314484339177
+          "apyEquivalent": 0.11859120160218062
         },
         "tvlUsd": 276900,
         "confidence": {
@@ -2300,19 +2300,19 @@
           "1d": {
             "available": true,
             "referenceDate": "2026-07-26",
-            "apyChangePoints": 0.059946717397951765,
+            "apyChangePoints": 0.059794774156740615,
             "tvlChangePercent": 0
           },
           "7d": {
             "available": true,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": -0.25235790045274875,
+            "apyChangePoints": -0.2525098436939599,
             "tvlChangePercent": 0
           },
           "30d": {
             "available": true,
             "referenceDate": "2026-07-25",
-            "apyChangePoints": -0.25235790045274875,
+            "apyChangePoints": -0.2525098436939599,
             "tvlChangePercent": 0
           }
         }
@@ -2529,7 +2529,7 @@
         "type": "api",
         "provider": "STON.fi DEX API",
         "url": "https://api.ston.fi/v1/pools",
-        "lastChecked": "2026-07-28T00:12:39.311Z",
+        "lastChecked": "2026-07-28T03:39:48.249Z",
         "importedAt": "2026-07-25T18:02:07Z",
         "origin": "automatic collector"
       },
@@ -2888,7 +2888,7 @@
       }
     }
   ],
-  "updatedAt": "2026-07-28T00:12:47.353Z",
-  "normalizedAt": "2026-07-28T00:12:47.535Z",
-  "insightsGeneratedAt": "2026-07-28T00:12:48.277Z"
+  "updatedAt": "2026-07-28T03:39:55.253Z",
+  "normalizedAt": "2026-07-28T03:39:55.432Z",
+  "insightsGeneratedAt": "2026-07-28T03:39:56.148Z"
 }
