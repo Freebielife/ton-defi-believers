@@ -1,80 +1,44 @@
 {
-  "generatedAt": "2026-07-28T14:44:33.766Z",
-  "assetsReceived": 37804,
-  "v1PoolsReceived": 18819,
-  "v2PoolsReceived": 47095,
-  "uniquePoolsReceived": 47095,
-  "farmsReceived": 6,
-  "resolvedPoolSymbols": 40428,
+  "generatedAt": "2026-07-28T20:21:48.873Z",
+  "mode": "exact-pool-endpoint",
   "opportunities": [
     {
-      "opportunityId": "ston-fi-gram-tston-tston",
-      "mode": "automatic-discovery",
-      "expectedSymbols": [
-        "GRAM",
-        "tsTON"
-      ],
-      "selected": null,
-      "candidates": []
-    },
-    {
       "opportunityId": "ston-fi-usde-tsusde-weighted-stable",
-      "mode": "configured-address",
-      "configuredAddress": "EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
-      "assetValidationPassed": true,
+      "endpoint": "https://api.ston.fi/v1/pools/EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
       "selected": "EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
-      "candidates": [
-        {
-          "address": "EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
-          "assetAddresses": [
-            "EQAIb6KmdfdDR7CN1GBqVJuP25iCnLKCvBlJ07Evuu2dzP5f",
-            "EQDQ5UUyPHrLcQJlPAczd_fjxn8SLrlNQwolBznxCdSlfQwr"
-          ],
-          "symbols": [
-            "USDE",
-            "TSUSDE"
-          ],
-          "poolType": null,
-          "dexVersion": "v2",
-          "tvlUsd": null,
-          "yieldRate": 0.11922537340736117,
-          "yieldMetric": "apy",
-          "routerAddress": "EQAGV9vw11tKW2QOCYCXEmIdyufM3p5CfcgHcY9NiiBLfZGH"
+      "candidate": {
+        "address": "EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
+        "assetAddresses": [
+          "EQAIb6KmdfdDR7CN1GBqVJuP25iCnLKCvBlJ07Evuu2dzP5f",
+          "EQDQ5UUyPHrLcQJlPAczd_fjxn8SLrlNQwolBznxCdSlfQwr"
+        ],
+        "symbols": [
+          "USDE",
+          "TSUSDE"
+        ],
+        "poolType": null,
+        "dexVersion": "v2",
+        "tvlUsd": 276837.3009810953,
+        "yieldRate": 0.1467303158556429,
+        "yieldMetric": "apy",
+        "yieldPeriod": "7d",
+        "yieldPeriods": {
+          "apy1d": 0.041226897608659385,
+          "apy7d": 0.1467303158556429,
+          "apy30d": 0.38091820510757957,
+          "underlyingApr": 2.9135053833801656
+        },
+        "volume24hUsd": 733.7910959306435,
+        "rawReserves": [
+          "75386452069",
+          "155177594415"
+        ],
+        "routerAddress": "EQAGV9vw11tKW2QOCYCXEmIdyufM3p5CfcgHcY9NiiBLfZGH",
+        "onchain": {
+          "status": "unavailable",
+          "message": "TON RPC returned HTTP 404"
         }
-      ]
-    },
-    {
-      "opportunityId": "ston-fi-usdt-gram-pool-1",
-      "mode": "configured-address",
-      "configuredAddress": "EQCeDLEujBcoyx-DONITJOue5Jj_whqP9jEtFfz6CXrgY33_",
-      "assetValidationPassed": true,
-      "selected": "EQCeDLEujBcoyx-DONITJOue5Jj_whqP9jEtFfz6CXrgY33_",
-      "candidates": [
-        {
-          "address": "EQCeDLEujBcoyx-DONITJOue5Jj_whqP9jEtFfz6CXrgY33_",
-          "assetAddresses": [
-            "EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs",
-            "EQCcM1Qa7_STSnOSev23Gj5cLJB4wALUCYuuppdOVtSSBuUm"
-          ],
-          "symbols": [
-            "USD",
-            "GRAM"
-          ],
-          "poolType": null,
-          "dexVersion": "v2",
-          "tvlUsd": null,
-          "yieldRate": 0,
-          "yieldMetric": "apy",
-          "routerAddress": "EQCS4UEa5UaJLzOyyKieqQOQ2P9M-7kXpkO5HnP3Bv250cN3"
-        }
-      ]
-    },
-    {
-      "opportunityId": "ston-fi-usdt-gram-pool-2",
-      "mode": "disabled",
-      "reason": "Найден только один подходящий пул; дублирование запрещено.",
-      "selected": null,
-      "candidates": []
+      }
     }
   ]
 }

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.1",
+  "generatedAt": "2026-07-28T20:21:48.873Z",
+  "source": {
+    "provider": "STON.fi official API",
+    "mode": "exact-pool-endpoint"
+  },
+  "pools": [
+    {
+      "opportunityId": "ston-fi-usde-tsusde-weighted-stable",
+      "endpoint": "https://api.ston.fi/v1/pools/EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
+      "selected": "EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
+      "candidate": {
+        "address": "EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
+        "assetAddresses": [
+          "EQAIb6KmdfdDR7CN1GBqVJuP25iCnLKCvBlJ07Evuu2dzP5f",
+          "EQDQ5UUyPHrLcQJlPAczd_fjxn8SLrlNQwolBznxCdSlfQwr"
+        ],
+        "symbols": [
+          "USDE",
+          "TSUSDE"
+        ],
+        "poolType": null,
+        "dexVersion": "v2",
+        "tvlUsd": 276837.3009810953,
+        "yieldRate": 0.1467303158556429,
+        "yieldMetric": "apy",
+        "yieldPeriod": "7d",
+        "yieldPeriods": {
+          "apy1d": 0.041226897608659385,
+          "apy7d": 0.1467303158556429,
+          "apy30d": 0.38091820510757957,
+          "underlyingApr": 2.9135053833801656
+        },
+        "volume24hUsd": 733.7910959306435,
+        "rawReserves": [
+          "75386452069",
+          "155177594415"
+        ],
+        "routerAddress": "EQAGV9vw11tKW2QOCYCXEmIdyufM3p5CfcgHcY9NiiBLfZGH",
+        "onchain": {
+          "status": "unavailable",
+          "message": "TON RPC returned HTTP 404"
+        }
+      }
+    }
+  ]
+}
