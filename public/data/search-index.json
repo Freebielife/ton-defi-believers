@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-29T17:40:46.865Z",
+  "generatedAt": "2026-07-29T19:46:37.827Z",
   "count": 15,
   "facets": {
     "protocols": [
@@ -62,8 +62,8 @@
       "type": "liquid-staking",
       "apy": 20.37,
       "tvlUsd": null,
-      "yieldScore": 55,
-      "confidence": 42,
+      "yieldScore": 53,
+      "confidence": 35,
       "risk": "low",
       "links": {
         "official": "https://tonstakers.com/",
@@ -90,8 +90,8 @@
       "type": "lending",
       "apy": 10.04,
       "tvlUsd": null,
-      "yieldScore": 44,
-      "confidence": 42,
+      "yieldScore": 42,
+      "confidence": 35,
       "risk": "medium",
       "links": {
         "official": "https://evaa.finance/",
@@ -118,7 +118,7 @@
       "category": "stablecoins",
       "type": "liquidity-pool",
       "apy": 0.23698819164160884,
-      "tvlUsd": 276761.97131081915,
+      "tvlUsd": 276809.32251464657,
       "yieldScore": 46,
       "confidence": 100,
       "risk": "medium",
@@ -148,7 +148,7 @@
       "category": "liquidity",
       "type": "liquidity-pool",
       "apy": 0,
-      "tvlUsd": 658354.212848,
+      "tvlUsd": 659212.873246,
       "yieldScore": 47,
       "confidence": 100,
       "risk": "medium",
@@ -179,8 +179,8 @@
       "type": "liquid-staking",
       "apy": 17.5,
       "tvlUsd": null,
-      "yieldScore": 53,
-      "confidence": 42,
+      "yieldScore": 51,
+      "confidence": 35,
       "risk": "low",
       "links": {
         "official": "https://hipo.finance/",
@@ -207,8 +207,8 @@
       "type": "liquid-staking",
       "apy": 3.41,
       "tvlUsd": null,
-      "yieldScore": 35,
-      "confidence": 42,
+      "yieldScore": 33,
+      "confidence": 35,
       "risk": "low",
       "links": {
         "official": "https://bemo.fi/",
@@ -235,8 +235,8 @@
       "type": "vault",
       "apy": 4.1,
       "tvlUsd": null,
-      "yieldScore": 36,
-      "confidence": 42,
+      "yieldScore": 34,
+      "confidence": 35,
       "risk": "low",
       "links": {
         "official": "https://affluent.org/",
@@ -264,8 +264,8 @@
       "type": "vault",
       "apy": 4.289195885693453,
       "tvlUsd": null,
-      "yieldScore": 37,
-      "confidence": 42,
+      "yieldScore": 35,
+      "confidence": 35,
       "risk": "low",
       "links": {
         "official": "https://storm.tg/",
@@ -293,8 +293,8 @@
       "type": "yield-token",
       "apy": 3.84,
       "tvlUsd": null,
-      "yieldScore": 37,
-      "confidence": 47,
+      "yieldScore": 35,
+      "confidence": 40,
       "risk": "low",
       "links": {
         "official": "https://ethena.fi/",
@@ -322,8 +322,8 @@
       "type": "vault",
       "apy": 18,
       "tvlUsd": null,
-      "yieldScore": 53,
-      "confidence": 42,
+      "yieldScore": 51,
+      "confidence": 35,
       "risk": "low",
       "links": {
         "official": "https://wallet.tg/",
@@ -351,14 +351,14 @@
       "type": "liquidity-pool",
       "apy": null,
       "tvlUsd": null,
-      "yieldScore": 19,
-      "confidence": 32,
+      "yieldScore": 17,
+      "confidence": 25,
       "risk": "medium",
       "links": {
         "official": "https://tonco.io/",
         "app": "https://app.tonco.io/#/explore"
       },
-      "searchText": "tonco concentrated liquidity tonco concentrated liquidity pools gram usdt others liquidity liquidity pool medium d impermanent loss or lp risk unknown tvl",
+      "searchText": "tonco concentrated liquidity tonco concentrated liquidity pools gram usdt others liquidity liquidity pool medium e impermanent loss or lp risk unknown tvl",
       "terms": [
         "tonco concentrated liquidity",
         "tonco",
@@ -367,7 +367,7 @@
         "liquidity",
         "liquidity pool",
         "medium",
-        "d",
+        "e",
         "impermanent loss or lp risk",
         "unknown tvl"
       ]
@@ -381,14 +381,14 @@
       "type": "vault",
       "apy": null,
       "tvlUsd": null,
-      "yieldScore": 23,
-      "confidence": 32,
+      "yieldScore": 21,
+      "confidence": 25,
       "risk": "low",
       "links": {
         "official": "https://tradoor.io/",
         "app": "https://app.tradoor.io/"
       },
-      "searchText": "tradoor usdt liquidity pool tradoor perps usdt liquidity pool usdt vault low d unknown tvl",
+      "searchText": "tradoor usdt liquidity pool tradoor perps usdt liquidity pool usdt vault low e unknown tvl",
       "terms": [
         "tradoor usdt liquidity pool",
         "tradoor",
@@ -396,7 +396,7 @@
         "usdt",
         "vault",
         "low",
-        "d",
+        "e",
         "unknown tvl"
       ]
     },
@@ -409,8 +409,8 @@
       "type": "yield-token",
       "apy": 12.72,
       "tvlUsd": null,
-      "yieldScore": 49,
-      "confidence": 42,
+      "yieldScore": 47,
+      "confidence": 35,
       "risk": "low",
       "links": {
         "official": "https://torch.finance/",
@@ -438,8 +438,8 @@
       "type": "staking",
       "apy": 19.680532641314596,
       "tvlUsd": null,
-      "yieldScore": 54,
-      "confidence": 42,
+      "yieldScore": 52,
+      "confidence": 35,
       "risk": "low",
       "links": {
         "official": "https://jvault.xyz/",
@@ -466,8 +466,8 @@
       "type": "staking",
       "apy": 21,
       "tvlUsd": null,
-      "yieldScore": 55,
-      "confidence": 42,
+      "yieldScore": 53,
+      "confidence": 35,
       "risk": "low",
       "links": {
         "official": "https://stakee.org/",

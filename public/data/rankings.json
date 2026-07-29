@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-29T17:40:46.754Z",
+  "generatedAt": "2026-07-29T19:46:37.677Z",
   "methodology": "Yield Score combines diminishing-return yield attractiveness, confidence, TVL depth and inverse risk. It is informational, not investment advice.",
   "opportunities": [
     {
@@ -8,11 +8,11 @@
       "id": "tonstakers-liquid-staking",
       "protocol": "Tonstakers",
       "product": "GRAM → tsTON",
-      "score": 55,
+      "score": 53,
       "grade": "C",
       "apy": 20.37,
       "tvlUsd": null,
-      "confidence": 42,
+      "confidence": 35,
       "risk": "low"
     },
     {
@@ -20,11 +20,11 @@
       "id": "stakee-gram-staking",
       "protocol": "Stakee",
       "product": "GRAM staking",
-      "score": 55,
+      "score": 53,
       "grade": "C",
       "apy": 21,
       "tvlUsd": null,
-      "confidence": 42,
+      "confidence": 35,
       "risk": "low"
     },
     {
@@ -32,11 +32,11 @@
       "id": "jvault-storm-staking",
       "protocol": "JVault",
       "product": "STORM staking pool",
-      "score": 54,
+      "score": 52,
       "grade": "C",
       "apy": 19.680532641314596,
       "tvlUsd": null,
-      "confidence": 42,
+      "confidence": 35,
       "risk": "low"
     },
     {
@@ -44,11 +44,11 @@
       "id": "hipo-liquid-staking",
       "protocol": "Hipo",
       "product": "GRAM → hGRAM",
-      "score": 53,
+      "score": 51,
       "grade": "C",
       "apy": 17.5,
       "tvlUsd": null,
-      "confidence": 42,
+      "confidence": 35,
       "risk": "low"
     },
     {
@@ -56,36 +56,36 @@
       "id": "telegram-wallet-re7-usdt-earn",
       "protocol": "Telegram Wallet",
       "product": "USDT Earn · Re7 Labs",
-      "score": 53,
+      "score": 51,
       "grade": "C",
       "apy": 18,
       "tvlUsd": null,
-      "confidence": 42,
+      "confidence": 35,
       "risk": "low"
     },
     {
       "rank": 6,
-      "id": "torch-tgusd-staking",
-      "protocol": "Torch Finance",
-      "product": "tgUSD staking",
-      "score": 49,
-      "grade": "D",
-      "apy": 12.72,
-      "tvlUsd": null,
-      "confidence": 42,
-      "risk": "low"
-    },
-    {
-      "rank": 7,
       "id": "dedust-liquidity-pools",
       "protocol": "DeDust",
       "product": "TON–USDT pool",
       "score": 47,
       "grade": "D",
       "apy": 0,
-      "tvlUsd": 658354.212848,
+      "tvlUsd": 659212.873246,
       "confidence": 100,
       "risk": "medium"
+    },
+    {
+      "rank": 7,
+      "id": "torch-tgusd-staking",
+      "protocol": "Torch Finance",
+      "product": "tgUSD staking",
+      "score": 47,
+      "grade": "D",
+      "apy": 12.72,
+      "tvlUsd": null,
+      "confidence": 35,
+      "risk": "low"
     },
     {
       "rank": 8,
@@ -95,7 +95,7 @@
       "score": 46,
       "grade": "D",
       "apy": 0.23698819164160884,
-      "tvlUsd": 276761.97131081915,
+      "tvlUsd": 276809.32251464657,
       "confidence": 100,
       "risk": "medium"
     },
@@ -104,11 +104,11 @@
       "id": "evaa-supply-markets",
       "protocol": "EVAA",
       "product": "tsUSDe supply · Main Pool",
-      "score": 44,
+      "score": 42,
       "grade": "D",
       "apy": 10.04,
       "tvlUsd": null,
-      "confidence": 42,
+      "confidence": 35,
       "risk": "medium"
     },
     {
@@ -116,11 +116,11 @@
       "id": "storm-trade-usdt",
       "protocol": "Storm Trade",
       "product": "USDT liquidity vault",
-      "score": 37,
+      "score": 35,
       "grade": "D",
       "apy": 4.289195885693453,
       "tvlUsd": null,
-      "confidence": 42,
+      "confidence": 35,
       "risk": "low"
     },
     {
@@ -128,11 +128,11 @@
       "id": "ethena-tsusde",
       "protocol": "Ethena",
       "product": "tsUSDe on TON",
-      "score": 37,
+      "score": 35,
       "grade": "D",
       "apy": 3.84,
       "tvlUsd": null,
-      "confidence": 47,
+      "confidence": 40,
       "risk": "low"
     },
     {
@@ -140,11 +140,11 @@
       "id": "affluent-usdt-lending-vault",
       "protocol": "Affluent",
       "product": "USDT Lending Vault",
-      "score": 36,
-      "grade": "D",
+      "score": 34,
+      "grade": "E",
       "apy": 4.1,
       "tvlUsd": null,
-      "confidence": 42,
+      "confidence": 35,
       "risk": "low"
     },
     {
@@ -152,11 +152,11 @@
       "id": "bemo-liquid-staking",
       "protocol": "Bemo",
       "product": "GRAM → bmGRAM",
-      "score": 35,
-      "grade": "D",
+      "score": 33,
+      "grade": "E",
       "apy": 3.41,
       "tvlUsd": null,
-      "confidence": 42,
+      "confidence": 35,
       "risk": "low"
     },
     {
@@ -164,11 +164,11 @@
       "id": "tradoor-usdt-liquidity-pool",
       "protocol": "Tradoor",
       "product": "Perps USDT liquidity pool",
-      "score": 23,
+      "score": 21,
       "grade": "E",
       "apy": null,
       "tvlUsd": null,
-      "confidence": 32,
+      "confidence": 25,
       "risk": "low"
     },
     {
@@ -176,11 +176,11 @@
       "id": "tonco-concentrated-liquidity",
       "protocol": "TONCO",
       "product": "Concentrated liquidity pools",
-      "score": 19,
+      "score": 17,
       "grade": "E",
       "apy": null,
       "tvlUsd": null,
-      "confidence": 32,
+      "confidence": 25,
       "risk": "medium"
     }
   ]
