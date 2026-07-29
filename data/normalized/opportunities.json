@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2",
-  "updatedAt": "2026-07-29T00:11:02.543Z",
+  "updatedAt": "2026-07-29T03:43:42.997Z",
   "snapshot": {
     "name": "expanded-market-v5",
     "verifiedAt": "2026-07-28T18:37:01Z",
@@ -73,10 +73,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 42,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "fresh-within-24h",
             "yield-available"
           ]
         },
@@ -88,11 +88,11 @@
           ]
         },
         "yieldScore": {
-          "score": 57,
+          "score": 55,
           "grade": "C",
           "components": {
             "yield": 28.59,
-            "confidence": 15,
+            "confidence": 12.6,
             "tvl": 0,
             "risk": 13.5
           }
@@ -178,10 +178,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 42,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "fresh-within-24h",
             "yield-available"
           ]
         },
@@ -194,11 +194,11 @@
           ]
         },
         "yieldScore": {
-          "score": 46,
+          "score": 44,
           "grade": "D",
           "components": {
             "yield": 19.84,
-            "confidence": 15,
+            "confidence": 12.6,
             "tvl": 0,
             "risk": 11.25
           }
@@ -242,13 +242,13 @@
         "isMaximum": false,
         "isApproximate": false,
         "qualifier": "official-api-7d",
-        "observedAt": "2026-07-29T00:10:58.076Z",
+        "observedAt": "2026-07-29T03:43:39.723Z",
         "note": {
           "ru": "APY за последние 7 дней",
           "en": "APY over the last 7 days"
         }
       },
-      "tvlUsd": 276710.63946281164,
+      "tvlUsd": 276723.65222809155,
       "utilizationRate": null,
       "links": {
         "official": "https://ston.fi/",
@@ -258,7 +258,7 @@
         "type": "api",
         "provider": "STON.fi official API",
         "url": "https://api.ston.fi/v1/pools/EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
-        "lastChecked": "2026-07-29T00:10:58.076Z",
+        "lastChecked": "2026-07-29T03:43:39.723Z",
         "origin": "automatic collector"
       },
       "status": {
@@ -269,7 +269,7 @@
         "requiresDisambiguation": false
       },
       "verification": {
-        "verifiedAt": "2026-07-29T00:10:58.076Z",
+        "verifiedAt": "2026-07-29T03:43:39.723Z",
         "note": {
           "ru": "Доходность взята из официального API STON.fi (7d период). TVL — поле lp_total_supply_usd. Резервы: on-chain проверка временно недоступна.",
           "en": "Yield comes from the official STON.fi API (7d period). TVL uses lp_total_supply_usd. Reserves: on-chain check temporarily unavailable."
@@ -280,9 +280,9 @@
         "metricPeriod": "7d",
         "apy1d": 0.6601889956463491,
         "apy7d": 0.23675613063442064,
-        "apy30d": 0.4117759928405536,
+        "apy30d": 0.4118239564004515,
         "underlyingApr": 2.9658841411819825,
-        "volume24hUsd": 12462.693439653616,
+        "volume24hUsd": 12463.279517965604,
         "dexVersion": "v2",
         "assetAddresses": [
           "EQAIb6KmdfdDR7CN1GBqVJuP25iCnLKCvBlJ07Evuu2dzP5f",
@@ -301,7 +301,7 @@
           "origin": "protocol-reported-apy",
           "apyEquivalent": 0.23675613063442064
         },
-        "tvlUsd": 276710.63946281164,
+        "tvlUsd": 276723.65222809155,
         "confidence": {
           "score": 100,
           "grade": "A",
@@ -336,19 +336,19 @@
             "available": true,
             "referenceDate": "2026-07-27",
             "apyChangePoints": 0.11801298579102887,
-            "tvlChangePercent": -0.06838589280908648
+            "tvlChangePercent": -0.06368644705974995
           },
           "7d": {
             "available": true,
             "referenceDate": "2026-07-25",
             "apyChangePoints": -0.13434491466171988,
-            "tvlChangePercent": -0.06838589280908648
+            "tvlChangePercent": -0.06368644705974995
           },
           "30d": {
             "available": true,
             "referenceDate": "2026-07-25",
             "apyChangePoints": -0.13434491466171988,
-            "tvlChangePercent": -0.06838589280908648
+            "tvlChangePercent": -0.06368644705974995
           }
         }
       }
@@ -368,7 +368,7 @@
         "direction": null,
         "metric": "apr",
         "qualifier": "calculated-fee-apr-7d",
-        "observedAt": "2026-07-29T00:10:58.966Z",
+        "observedAt": "2026-07-29T03:43:40.322Z",
         "note": {
           "ru": "Расчётный fee APR за 7 дней",
           "en": "Calculated 7-day fee APR"
@@ -376,7 +376,7 @@
         "isMaximum": false,
         "isApproximate": true
       },
-      "tvlUsd": 654713.978094,
+      "tvlUsd": 655507.748178,
       "utilizationRate": null,
       "links": {
         "official": "https://dedust.io/",
@@ -386,7 +386,7 @@
         "type": "api",
         "provider": "DeDust official API + TON blockchain",
         "url": "https://api.dedust.io/v2/pools/EQA-X_yo3fzzbDbJ_0bzFWKqtRuZFIRa1sJsveZJ1YpViO3r/trades",
-        "lastChecked": "2026-07-29T00:10:58.966Z",
+        "lastChecked": "2026-07-29T03:43:40.322Z",
         "origin": "automatic collector"
       },
       "status": {
@@ -397,7 +397,7 @@
         "requiresDisambiguation": false
       },
       "verification": {
-        "verifiedAt": "2026-07-29T00:10:58.966Z",
+        "verifiedAt": "2026-07-29T03:43:40.322Z",
         "note": {
           "ru": "Пул TON/USDT закреплён по адресу. APR рассчитан по фактическим сделкам за 7 дней и доле LP 80%. TVL рассчитан по резервам пула (приближённо). Резервы: on-chain проверка временно недоступна.",
           "en": "The TON/USDT pool is locked by address. APR is calculated from actual 7-day trades and the 80% LP fee share. TVL is calculated from pool reserves (approximate). Reserves: on-chain check temporarily unavailable."
@@ -410,7 +410,7 @@
           "origin": "protocol-reported-apr",
           "apyEquivalent": 0
         },
-        "tvlUsd": 654713.978094,
+        "tvlUsd": 655507.748178,
         "confidence": {
           "score": 100,
           "grade": "A",
@@ -436,7 +436,7 @@
           "components": {
             "yield": 0,
             "confidence": 30,
-            "tvl": 7.26,
+            "tvl": 7.27,
             "risk": 9.75
           }
         },
@@ -473,7 +473,7 @@
         "tradesWindow": {
           "trades": [],
           "complete": true,
-          "cutoff": "2026-07-22T00:11:02.041Z",
+          "cutoff": "2026-07-22T03:43:42.272Z",
           "newestAt": null,
           "oldestAt": null
         },
@@ -482,8 +482,8 @@
           "EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs"
         ],
         "reserves": [
-          "198286378720513",
-          "327356989047"
+          "198063206248677",
+          "327753874089"
         ],
         "tvlMethod": "balanced-pool-stable-side",
         "tvlApproximate": true,
@@ -552,10 +552,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 42,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "fresh-within-24h",
             "yield-available"
           ]
         },
@@ -567,11 +567,11 @@
           ]
         },
         "yieldScore": {
-          "score": 55,
+          "score": 53,
           "grade": "C",
           "components": {
             "yield": 26.86,
-            "confidence": 15,
+            "confidence": 12.6,
             "tvl": 0,
             "risk": 13.5
           }
@@ -657,10 +657,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 42,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "fresh-within-24h",
             "yield-available"
           ]
         },
@@ -672,11 +672,11 @@
           ]
         },
         "yieldScore": {
-          "score": 37,
+          "score": 35,
           "grade": "D",
           "components": {
             "yield": 8.66,
-            "confidence": 15,
+            "confidence": 12.6,
             "tvl": 0,
             "risk": 13.5
           }
@@ -762,10 +762,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 42,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "fresh-within-24h",
             "yield-available"
           ]
         },
@@ -777,11 +777,11 @@
           ]
         },
         "yieldScore": {
-          "score": 39,
+          "score": 36,
           "grade": "D",
           "components": {
             "yield": 10.13,
-            "confidence": 15,
+            "confidence": 12.6,
             "tvl": 0,
             "risk": 13.5
           }
@@ -867,10 +867,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 42,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "fresh-within-24h",
             "yield-available"
           ]
         },
@@ -882,11 +882,11 @@
           ]
         },
         "yieldScore": {
-          "score": 39,
+          "score": 37,
           "grade": "D",
           "components": {
             "yield": 10.52,
-            "confidence": 15,
+            "confidence": 12.6,
             "tvl": 0,
             "risk": 13.5
           }
@@ -973,10 +973,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 55,
-          "grade": "C",
+          "score": 47,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "fresh-within-24h",
             "yield-available",
             "contract-or-pool-identified"
           ]
@@ -989,11 +989,11 @@
           ]
         },
         "yieldScore": {
-          "score": 40,
+          "score": 37,
           "grade": "D",
           "components": {
             "yield": 9.58,
-            "confidence": 16.5,
+            "confidence": 14.1,
             "tvl": 0,
             "risk": 13.5
           }
@@ -1079,10 +1079,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 42,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "fresh-within-24h",
             "yield-available"
           ]
         },
@@ -1094,11 +1094,11 @@
           ]
         },
         "yieldScore": {
-          "score": 56,
+          "score": 53,
           "grade": "C",
           "components": {
             "yield": 27.19,
-            "confidence": 15,
+            "confidence": 12.6,
             "tvl": 0,
             "risk": 13.5
           }
@@ -1188,10 +1188,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 40,
+          "score": 32,
           "grade": "D",
           "reasons": [
-            "fresh-within-6h"
+            "fresh-within-24h"
           ]
         },
         "risk": {
@@ -1203,11 +1203,11 @@
           ]
         },
         "yieldScore": {
-          "score": 22,
+          "score": 19,
           "grade": "E",
           "components": {
             "yield": 0,
-            "confidence": 12,
+            "confidence": 9.6,
             "tvl": 0,
             "risk": 9.75
           }
@@ -1297,10 +1297,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 40,
+          "score": 32,
           "grade": "D",
           "reasons": [
-            "fresh-within-6h"
+            "fresh-within-24h"
           ]
         },
         "risk": {
@@ -1311,11 +1311,11 @@
           ]
         },
         "yieldScore": {
-          "score": 26,
+          "score": 23,
           "grade": "E",
           "components": {
             "yield": 0,
-            "confidence": 12,
+            "confidence": 9.6,
             "tvl": 0,
             "risk": 13.5
           }
@@ -1401,10 +1401,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 42,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "fresh-within-24h",
             "yield-available"
           ]
         },
@@ -1416,11 +1416,11 @@
           ]
         },
         "yieldScore": {
-          "score": 51,
-          "grade": "C",
+          "score": 49,
+          "grade": "D",
           "components": {
             "yield": 22.87,
-            "confidence": 15,
+            "confidence": 12.6,
             "tvl": 0,
             "risk": 13.5
           }
@@ -1506,10 +1506,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 42,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "fresh-within-24h",
             "yield-available"
           ]
         },
@@ -1521,11 +1521,11 @@
           ]
         },
         "yieldScore": {
-          "score": 57,
+          "score": 54,
           "grade": "C",
           "components": {
             "yield": 28.21,
-            "confidence": 15,
+            "confidence": 12.6,
             "tvl": 0,
             "risk": 13.5
           }
@@ -1611,10 +1611,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 42,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "fresh-within-24h",
             "yield-available"
           ]
         },
@@ -1626,11 +1626,11 @@
           ]
         },
         "yieldScore": {
-          "score": 57,
+          "score": 55,
           "grade": "C",
           "components": {
             "yield": 28.92,
-            "confidence": 15,
+            "confidence": 12.6,
             "tvl": 0,
             "risk": 13.5
           }
@@ -1658,6 +1658,6 @@
       }
     }
   ],
-  "normalizedAt": "2026-07-29T00:11:02.709Z",
-  "insightsGeneratedAt": "2026-07-29T00:11:03.398Z"
+  "normalizedAt": "2026-07-29T03:43:43.161Z",
+  "insightsGeneratedAt": "2026-07-29T03:43:43.835Z"
 }

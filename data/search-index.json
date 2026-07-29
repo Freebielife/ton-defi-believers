@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-29T00:11:03.547Z",
+  "generatedAt": "2026-07-29T03:43:43.986Z",
   "count": 15,
   "facets": {
     "protocols": [
@@ -62,14 +62,14 @@
       "type": "liquid-staking",
       "apy": 20.37,
       "tvlUsd": null,
-      "yieldScore": 57,
-      "confidence": 50,
+      "yieldScore": 55,
+      "confidence": 42,
       "risk": "low",
       "links": {
         "official": "https://tonstakers.com/",
         "app": "https://app.tonstakers.com/"
       },
-      "searchText": "tonstakers liquid staking tonstakers gram tston gram liquid staking low c unknown tvl",
+      "searchText": "tonstakers liquid staking tonstakers gram tston gram liquid staking low d unknown tvl",
       "terms": [
         "tonstakers liquid staking",
         "tonstakers",
@@ -77,7 +77,7 @@
         "gram",
         "liquid staking",
         "low",
-        "c",
+        "d",
         "unknown tvl"
       ]
     },
@@ -90,14 +90,14 @@
       "type": "lending",
       "apy": 10.04,
       "tvlUsd": null,
-      "yieldScore": 46,
-      "confidence": 50,
+      "yieldScore": 44,
+      "confidence": 42,
       "risk": "medium",
       "links": {
         "official": "https://evaa.finance/",
         "app": "https://app.evaa.finance/"
       },
-      "searchText": "evaa supply markets evaa tsusde supply main pool tsusde lending medium c liquidation or utilization risk unknown tvl",
+      "searchText": "evaa supply markets evaa tsusde supply main pool tsusde lending medium d liquidation or utilization risk unknown tvl",
       "terms": [
         "evaa supply markets",
         "evaa",
@@ -105,7 +105,7 @@
         "tsusde",
         "lending",
         "medium",
-        "c",
+        "d",
         "liquidation or utilization risk",
         "unknown tvl"
       ]
@@ -118,7 +118,7 @@
       "category": "stablecoins",
       "type": "liquidity-pool",
       "apy": 0.23675613063442064,
-      "tvlUsd": 276710.63946281164,
+      "tvlUsd": 276723.65222809155,
       "yieldScore": 46,
       "confidence": 100,
       "risk": "medium",
@@ -148,7 +148,7 @@
       "category": "liquidity",
       "type": "liquidity-pool",
       "apy": 0,
-      "tvlUsd": 654713.978094,
+      "tvlUsd": 655507.748178,
       "yieldScore": 47,
       "confidence": 100,
       "risk": "medium",
@@ -179,14 +179,14 @@
       "type": "liquid-staking",
       "apy": 17.5,
       "tvlUsd": null,
-      "yieldScore": 55,
-      "confidence": 50,
+      "yieldScore": 53,
+      "confidence": 42,
       "risk": "low",
       "links": {
         "official": "https://hipo.finance/",
         "app": "https://hipo.finance/app/"
       },
-      "searchText": "hipo liquid staking hipo gram hgram gram liquid staking low c unknown tvl",
+      "searchText": "hipo liquid staking hipo gram hgram gram liquid staking low d unknown tvl",
       "terms": [
         "hipo liquid staking",
         "hipo",
@@ -194,7 +194,7 @@
         "gram",
         "liquid staking",
         "low",
-        "c",
+        "d",
         "unknown tvl"
       ]
     },
@@ -207,14 +207,14 @@
       "type": "liquid-staking",
       "apy": 3.41,
       "tvlUsd": null,
-      "yieldScore": 37,
-      "confidence": 50,
+      "yieldScore": 35,
+      "confidence": 42,
       "risk": "low",
       "links": {
         "official": "https://bemo.fi/",
         "app": "https://app.bemo.fi/"
       },
-      "searchText": "bemo liquid staking bemo gram bmgram gram liquid staking low c unknown tvl",
+      "searchText": "bemo liquid staking bemo gram bmgram gram liquid staking low d unknown tvl",
       "terms": [
         "bemo liquid staking",
         "bemo",
@@ -222,7 +222,7 @@
         "gram",
         "liquid staking",
         "low",
-        "c",
+        "d",
         "unknown tvl"
       ]
     },
@@ -235,14 +235,14 @@
       "type": "vault",
       "apy": 4.1,
       "tvlUsd": null,
-      "yieldScore": 39,
-      "confidence": 50,
+      "yieldScore": 36,
+      "confidence": 42,
       "risk": "low",
       "links": {
         "official": "https://affluent.org/",
         "app": "https://app.affluent.org/earn/EQAGtgnr1G0XDilGURcOB3pUhl-Lo__J-TaJP0K4ey8cuSaW"
       },
-      "searchText": "affluent usdt lending vault affluent usdt lending vault usdt stablecoins vault low c unknown tvl",
+      "searchText": "affluent usdt lending vault affluent usdt lending vault usdt stablecoins vault low d unknown tvl",
       "terms": [
         "affluent usdt lending vault",
         "affluent",
@@ -251,7 +251,7 @@
         "stablecoins",
         "vault",
         "low",
-        "c",
+        "d",
         "unknown tvl"
       ]
     },
@@ -264,14 +264,14 @@
       "type": "vault",
       "apy": 4.289195885693453,
       "tvlUsd": null,
-      "yieldScore": 39,
-      "confidence": 50,
+      "yieldScore": 37,
+      "confidence": 42,
       "risk": "low",
       "links": {
         "official": "https://storm.tg/",
         "app": "https://app.storm.tg/vault/USDT"
       },
-      "searchText": "storm trade usdt storm trade usdt liquidity vault usdt stablecoins vault low c unknown tvl",
+      "searchText": "storm trade usdt storm trade usdt liquidity vault usdt stablecoins vault low d unknown tvl",
       "terms": [
         "storm trade usdt",
         "storm trade",
@@ -280,7 +280,7 @@
         "stablecoins",
         "vault",
         "low",
-        "c",
+        "d",
         "unknown tvl"
       ]
     },
@@ -293,14 +293,14 @@
       "type": "yield-token",
       "apy": 3.84,
       "tvlUsd": null,
-      "yieldScore": 40,
-      "confidence": 55,
+      "yieldScore": 37,
+      "confidence": 47,
       "risk": "low",
       "links": {
         "official": "https://ethena.fi/",
         "app": "https://app.ethena.fi/earn/ton"
       },
-      "searchText": "ethena tsusde ethena tsusde on ton tsusde stablecoins yield token low c unknown tvl",
+      "searchText": "ethena tsusde ethena tsusde on ton tsusde stablecoins yield token low d unknown tvl",
       "terms": [
         "ethena tsusde",
         "ethena",
@@ -309,7 +309,7 @@
         "stablecoins",
         "yield token",
         "low",
-        "c",
+        "d",
         "unknown tvl"
       ]
     },
@@ -322,14 +322,14 @@
       "type": "vault",
       "apy": 18,
       "tvlUsd": null,
-      "yieldScore": 56,
-      "confidence": 50,
+      "yieldScore": 53,
+      "confidence": 42,
       "risk": "low",
       "links": {
         "official": "https://wallet.tg/",
         "app": "https://t.me/wallet"
       },
-      "searchText": "telegram wallet re7 usdt earn telegram wallet usdt earn re7 labs usdt stablecoins vault low c unknown tvl",
+      "searchText": "telegram wallet re7 usdt earn telegram wallet usdt earn re7 labs usdt stablecoins vault low d unknown tvl",
       "terms": [
         "telegram wallet re7 usdt earn",
         "telegram wallet",
@@ -338,7 +338,7 @@
         "stablecoins",
         "vault",
         "low",
-        "c",
+        "d",
         "unknown tvl"
       ]
     },
@@ -351,8 +351,8 @@
       "type": "liquidity-pool",
       "apy": null,
       "tvlUsd": null,
-      "yieldScore": 22,
-      "confidence": 40,
+      "yieldScore": 19,
+      "confidence": 32,
       "risk": "medium",
       "links": {
         "official": "https://tonco.io/",
@@ -381,8 +381,8 @@
       "type": "vault",
       "apy": null,
       "tvlUsd": null,
-      "yieldScore": 26,
-      "confidence": 40,
+      "yieldScore": 23,
+      "confidence": 32,
       "risk": "low",
       "links": {
         "official": "https://tradoor.io/",
@@ -409,14 +409,14 @@
       "type": "yield-token",
       "apy": 12.72,
       "tvlUsd": null,
-      "yieldScore": 51,
-      "confidence": 50,
+      "yieldScore": 49,
+      "confidence": 42,
       "risk": "low",
       "links": {
         "official": "https://torch.finance/",
         "app": "https://t.me/tgusd_official_bot/app"
       },
-      "searchText": "torch tgusd staking torch finance tgusd staking tgusd stgusd stablecoin yield token low c unknown tvl",
+      "searchText": "torch tgusd staking torch finance tgusd staking tgusd stgusd stablecoin yield token low d unknown tvl",
       "terms": [
         "torch tgusd staking",
         "torch finance",
@@ -425,7 +425,7 @@
         "stablecoin",
         "yield token",
         "low",
-        "c",
+        "d",
         "unknown tvl"
       ]
     },
@@ -438,14 +438,14 @@
       "type": "staking",
       "apy": 19.680532641314596,
       "tvlUsd": null,
-      "yieldScore": 57,
-      "confidence": 50,
+      "yieldScore": 54,
+      "confidence": 42,
       "risk": "low",
       "links": {
         "official": "https://jvault.xyz/",
         "app": "https://jvault.xyz/staking/v2/"
       },
-      "searchText": "jvault storm staking jvault storm staking pool storm staking low c unknown tvl",
+      "searchText": "jvault storm staking jvault storm staking pool storm staking low d unknown tvl",
       "terms": [
         "jvault storm staking",
         "jvault",
@@ -453,7 +453,7 @@
         "storm",
         "staking",
         "low",
-        "c",
+        "d",
         "unknown tvl"
       ]
     },
@@ -466,14 +466,14 @@
       "type": "staking",
       "apy": 21,
       "tvlUsd": null,
-      "yieldScore": 57,
-      "confidence": 50,
+      "yieldScore": 55,
+      "confidence": 42,
       "risk": "low",
       "links": {
         "official": "https://stakee.org/",
         "app": "https://app.stakee.org/"
       },
-      "searchText": "stakee gram staking stakee gram staking gram staking low c unknown tvl",
+      "searchText": "stakee gram staking stakee gram staking gram staking low d unknown tvl",
       "terms": [
         "stakee gram staking",
         "stakee",
@@ -481,7 +481,7 @@
         "gram",
         "staking",
         "low",
-        "c",
+        "d",
         "unknown tvl"
       ]
     }
