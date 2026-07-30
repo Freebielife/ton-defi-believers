@@ -1,19 +1,19 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-30T09:44:32.995Z",
+  "generatedAt": "2026-07-30T12:05:23.934Z",
   "scope": "core",
   "metrics": {
     "protocolsTracked": 15,
     "opportunitiesTracked": 15,
-    "coveredTvlUsd": 933068.1527050653,
-    "averageApy": 10.357429421738791
+    "coveredTvlUsd": 928696.1763893121,
+    "averageApy": 10.357418850385464
   },
   "leaders": {
     "largestOpportunity": {
       "id": "dedust-liquidity-pools",
       "protocol": "DeDust",
       "product": "TON–USDT pool",
-      "tvlUsd": 656336.545042
+      "tvlUsd": 651947.12347
     },
     "highestDisplayedApy": {
       "id": "stakee-gram-staking",
