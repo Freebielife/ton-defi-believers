@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-31T17:54:39.431Z",
+  "generatedAt": "2026-07-31T19:55:06.779Z",
   "methodology": {
     "confidence": "Score from source automation, freshness, metric availability, contract identification and error flags.",
     "risk": "Heuristic information-quality and product-structure indicator; not investment advice.",
@@ -8,7 +8,7 @@
   },
   "summary": {
     "opportunities": 15,
-    "averageConfidence": 43,
+    "averageConfidence": 38,
     "riskLevels": {
       "low": 11,
       "medium": 4
@@ -29,10 +29,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 35,
+          "score": 30,
           "grade": "D",
           "reasons": [
-            "fresh-within-72h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
@@ -57,10 +57,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 35,
+          "score": 30,
           "grade": "D",
           "reasons": [
-            "fresh-within-72h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
@@ -84,7 +84,7 @@
           "origin": "protocol-reported-apy",
           "apyEquivalent": 0.196817387851822
         },
-        "tvlUsd": 276819.2024877367,
+        "tvlUsd": 276783.47955740866,
         "confidence": {
           "score": 100,
           "grade": "A",
@@ -116,7 +116,7 @@
           "origin": "protocol-reported-apr",
           "apyEquivalent": 0
         },
-        "tvlUsd": 653315.826618,
+        "tvlUsd": 653052.978394,
         "confidence": {
           "score": 100,
           "grade": "A",
@@ -150,10 +150,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 35,
+          "score": 30,
           "grade": "D",
           "reasons": [
-            "fresh-within-72h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
@@ -178,10 +178,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 35,
+          "score": 30,
           "grade": "D",
           "reasons": [
-            "fresh-within-72h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
@@ -206,10 +206,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 35,
+          "score": 30,
           "grade": "D",
           "reasons": [
-            "fresh-within-72h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
@@ -234,10 +234,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 35,
+          "score": 30,
           "grade": "D",
           "reasons": [
-            "fresh-within-72h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
@@ -262,10 +262,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 40,
+          "score": 35,
           "grade": "D",
           "reasons": [
-            "fresh-within-72h",
+            "old-or-undated-source",
             "yield-available",
             "contract-or-pool-identified"
           ]
@@ -291,10 +291,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 35,
+          "score": 30,
           "grade": "D",
           "reasons": [
-            "fresh-within-72h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
@@ -319,10 +319,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 25,
+          "score": 20,
           "grade": "E",
           "reasons": [
-            "fresh-within-72h"
+            "old-or-undated-source"
           ]
         },
         "risk": {
@@ -347,10 +347,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 25,
+          "score": 20,
           "grade": "E",
           "reasons": [
-            "fresh-within-72h"
+            "old-or-undated-source"
           ]
         },
         "risk": {
@@ -374,10 +374,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 35,
+          "score": 30,
           "grade": "D",
           "reasons": [
-            "fresh-within-72h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
@@ -402,10 +402,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 35,
+          "score": 30,
           "grade": "D",
           "reasons": [
-            "fresh-within-72h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
@@ -430,10 +430,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 35,
+          "score": 30,
           "grade": "D",
           "reasons": [
-            "fresh-within-72h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
