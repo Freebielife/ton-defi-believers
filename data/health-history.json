@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-08-01T00:15:07.319Z",
+  "updatedAt": "2026-08-01T03:55:39.862Z",
   "limit": 168,
   "entries": [
     {
@@ -4925,6 +4925,75 @@
           "status": "degraded",
           "sourceStatus": "integration-ready",
           "durationMs": 0,
+          "items": 1
+        },
+        "evaa": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "hipo": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "bemo": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "affluent": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "storm": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "ethena": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "telegram-wallet": {
+          "status": "degraded",
+          "sourceStatus": "manual-until-public-source",
+          "durationMs": 0,
+          "items": 1
+        }
+      }
+    },
+    {
+      "generatedAt": "2026-08-01T03:55:39.862Z",
+      "status": "degraded",
+      "buildQuality": 56,
+      "durationMs": 5236,
+      "publishedFreshData": true,
+      "protocols": {
+        "stonfi": {
+          "status": "ok",
+          "sourceStatus": "ok",
+          "durationMs": 991,
+          "items": 1
+        },
+        "dedust": {
+          "status": "ok",
+          "sourceStatus": "ok",
+          "durationMs": 4242,
+          "items": 1
+        },
+        "tonstakers": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 1,
           "items": 1
         },
         "evaa": {
