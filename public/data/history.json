@@ -486,7 +486,7 @@
     },
     {
       "date": "2026-07-28",
-      "capturedAt": "2026-07-28T19:41:53.640Z",
+      "capturedAt": "2026-07-28T22:18:15.821Z",
       "opportunities": [
         {
           "id": "tonstakers-liquid-staking",
@@ -500,13 +500,418 @@
         },
         {
           "id": "ston-fi-usde-tsusde-weighted-stable",
-          "apy": 0.11922537340736117,
-          "tvlUsd": 0
+          "apy": 0.23675613063442064,
+          "tvlUsd": 276730.5739117511
         },
         {
           "id": "dedust-liquidity-pools",
           "apy": 0,
+          "tvlUsd": 654671.84832
+        },
+        {
+          "id": "hipo-liquid-staking",
+          "apy": 17.5,
           "tvlUsd": 0
+        },
+        {
+          "id": "bemo-liquid-staking",
+          "apy": 3.41,
+          "tvlUsd": 0
+        },
+        {
+          "id": "affluent-usdt-lending-vault",
+          "apy": 4.1,
+          "tvlUsd": 0
+        },
+        {
+          "id": "storm-trade-usdt",
+          "apy": 4.2,
+          "tvlUsd": 0
+        },
+        {
+          "id": "ethena-tsusde",
+          "apy": 3.84,
+          "tvlUsd": 0
+        },
+        {
+          "id": "telegram-wallet-re7-usdt-earn",
+          "apy": 18,
+          "tvlUsd": 0
+        },
+        {
+          "id": "tonco-concentrated-liquidity",
+          "apy": 0,
+          "tvlUsd": 0
+        },
+        {
+          "id": "tradoor-usdt-liquidity-pool",
+          "apy": 0,
+          "tvlUsd": 0
+        },
+        {
+          "id": "torch-tgusd-staking",
+          "apy": 12.72,
+          "tvlUsd": 0
+        },
+        {
+          "id": "jvault-storm-staking",
+          "apy": 17.97,
+          "tvlUsd": 0
+        },
+        {
+          "id": "stakee-gram-staking",
+          "apy": 21,
+          "tvlUsd": 0
+        }
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "capturedAt": "2026-07-29T23:26:40.822Z",
+      "opportunities": [
+        {
+          "id": "tonstakers-liquid-staking",
+          "apy": 20.37,
+          "tvlUsd": 0
+        },
+        {
+          "id": "evaa-supply-markets",
+          "apy": 10.04,
+          "tvlUsd": 0
+        },
+        {
+          "id": "ston-fi-usde-tsusde-weighted-stable",
+          "apy": 0.23698819164160884,
+          "tvlUsd": 276731.78837972454
+        },
+        {
+          "id": "dedust-liquidity-pools",
+          "apy": 0,
+          "tvlUsd": 657743.64766
+        },
+        {
+          "id": "hipo-liquid-staking",
+          "apy": 17.5,
+          "tvlUsd": 0
+        },
+        {
+          "id": "bemo-liquid-staking",
+          "apy": 3.41,
+          "tvlUsd": 0
+        },
+        {
+          "id": "affluent-usdt-lending-vault",
+          "apy": 4.1,
+          "tvlUsd": 0
+        },
+        {
+          "id": "storm-trade-usdt",
+          "apy": 4.2,
+          "tvlUsd": 0
+        },
+        {
+          "id": "ethena-tsusde",
+          "apy": 3.84,
+          "tvlUsd": 0
+        },
+        {
+          "id": "telegram-wallet-re7-usdt-earn",
+          "apy": 18,
+          "tvlUsd": 0
+        },
+        {
+          "id": "tonco-concentrated-liquidity",
+          "apy": 0,
+          "tvlUsd": 0
+        },
+        {
+          "id": "tradoor-usdt-liquidity-pool",
+          "apy": 0,
+          "tvlUsd": 0
+        },
+        {
+          "id": "torch-tgusd-staking",
+          "apy": 12.72,
+          "tvlUsd": 0
+        },
+        {
+          "id": "jvault-storm-staking",
+          "apy": 17.97,
+          "tvlUsd": 0
+        },
+        {
+          "id": "stakee-gram-staking",
+          "apy": 21,
+          "tvlUsd": 0
+        }
+      ]
+    },
+    {
+      "date": "2026-07-30",
+      "capturedAt": "2026-07-30T22:29:09.194Z",
+      "opportunities": [
+        {
+          "id": "tonstakers-liquid-staking",
+          "apy": 20.37,
+          "tvlUsd": 0
+        },
+        {
+          "id": "evaa-supply-markets",
+          "apy": 10.04,
+          "tvlUsd": 0
+        },
+        {
+          "id": "ston-fi-usde-tsusde-weighted-stable",
+          "apy": 0.1738513437621801,
+          "tvlUsd": 276840.9945408181
+        },
+        {
+          "id": "dedust-liquidity-pools",
+          "apy": 0,
+          "tvlUsd": 651216.31573
+        },
+        {
+          "id": "hipo-liquid-staking",
+          "apy": 17.5,
+          "tvlUsd": 0
+        },
+        {
+          "id": "bemo-liquid-staking",
+          "apy": 3.41,
+          "tvlUsd": 0
+        },
+        {
+          "id": "affluent-usdt-lending-vault",
+          "apy": 4.1,
+          "tvlUsd": 0
+        },
+        {
+          "id": "storm-trade-usdt",
+          "apy": 4.2,
+          "tvlUsd": 0
+        },
+        {
+          "id": "ethena-tsusde",
+          "apy": 3.84,
+          "tvlUsd": 0
+        },
+        {
+          "id": "telegram-wallet-re7-usdt-earn",
+          "apy": 18,
+          "tvlUsd": 0
+        },
+        {
+          "id": "tonco-concentrated-liquidity",
+          "apy": 0,
+          "tvlUsd": 0
+        },
+        {
+          "id": "tradoor-usdt-liquidity-pool",
+          "apy": 0,
+          "tvlUsd": 0
+        },
+        {
+          "id": "torch-tgusd-staking",
+          "apy": 12.72,
+          "tvlUsd": 0
+        },
+        {
+          "id": "jvault-storm-staking",
+          "apy": 17.97,
+          "tvlUsd": 0
+        },
+        {
+          "id": "stakee-gram-staking",
+          "apy": 21,
+          "tvlUsd": 0
+        }
+      ]
+    },
+    {
+      "date": "2026-07-31",
+      "capturedAt": "2026-07-31T23:17:04.541Z",
+      "opportunities": [
+        {
+          "id": "tonstakers-liquid-staking",
+          "apy": 20.37,
+          "tvlUsd": 0
+        },
+        {
+          "id": "evaa-supply-markets",
+          "apy": 10.04,
+          "tvlUsd": 0
+        },
+        {
+          "id": "ston-fi-usde-tsusde-weighted-stable",
+          "apy": 0.19606357397778623,
+          "tvlUsd": 276814.4948147477
+        },
+        {
+          "id": "dedust-liquidity-pools",
+          "apy": 0,
+          "tvlUsd": 650200.216632
+        },
+        {
+          "id": "hipo-liquid-staking",
+          "apy": 17.5,
+          "tvlUsd": 0
+        },
+        {
+          "id": "bemo-liquid-staking",
+          "apy": 3.41,
+          "tvlUsd": 0
+        },
+        {
+          "id": "affluent-usdt-lending-vault",
+          "apy": 4.1,
+          "tvlUsd": 0
+        },
+        {
+          "id": "storm-trade-usdt",
+          "apy": 4.2,
+          "tvlUsd": 0
+        },
+        {
+          "id": "ethena-tsusde",
+          "apy": 3.84,
+          "tvlUsd": 0
+        },
+        {
+          "id": "telegram-wallet-re7-usdt-earn",
+          "apy": 18,
+          "tvlUsd": 0
+        },
+        {
+          "id": "tonco-concentrated-liquidity",
+          "apy": 0,
+          "tvlUsd": 0
+        },
+        {
+          "id": "tradoor-usdt-liquidity-pool",
+          "apy": 0,
+          "tvlUsd": 0
+        },
+        {
+          "id": "torch-tgusd-staking",
+          "apy": 12.72,
+          "tvlUsd": 0
+        },
+        {
+          "id": "jvault-storm-staking",
+          "apy": 17.97,
+          "tvlUsd": 0
+        },
+        {
+          "id": "stakee-gram-staking",
+          "apy": 21,
+          "tvlUsd": 0
+        }
+      ]
+    },
+    {
+      "date": "2026-08-01",
+      "capturedAt": "2026-08-01T23:14:07.976Z",
+      "opportunities": [
+        {
+          "id": "tonstakers-liquid-staking",
+          "apy": 20.37,
+          "tvlUsd": 0
+        },
+        {
+          "id": "evaa-supply-markets",
+          "apy": 10.04,
+          "tvlUsd": 0
+        },
+        {
+          "id": "ston-fi-usde-tsusde-weighted-stable",
+          "apy": 0.2025005167192649,
+          "tvlUsd": 276510.10353786754
+        },
+        {
+          "id": "dedust-liquidity-pools",
+          "apy": 0,
+          "tvlUsd": 645981.719864
+        },
+        {
+          "id": "hipo-liquid-staking",
+          "apy": 17.5,
+          "tvlUsd": 0
+        },
+        {
+          "id": "bemo-liquid-staking",
+          "apy": 3.41,
+          "tvlUsd": 0
+        },
+        {
+          "id": "affluent-usdt-lending-vault",
+          "apy": 4.1,
+          "tvlUsd": 0
+        },
+        {
+          "id": "storm-trade-usdt",
+          "apy": 4.2,
+          "tvlUsd": 0
+        },
+        {
+          "id": "ethena-tsusde",
+          "apy": 3.84,
+          "tvlUsd": 0
+        },
+        {
+          "id": "telegram-wallet-re7-usdt-earn",
+          "apy": 18,
+          "tvlUsd": 0
+        },
+        {
+          "id": "tonco-concentrated-liquidity",
+          "apy": 0,
+          "tvlUsd": 0
+        },
+        {
+          "id": "tradoor-usdt-liquidity-pool",
+          "apy": 0,
+          "tvlUsd": 0
+        },
+        {
+          "id": "torch-tgusd-staking",
+          "apy": 12.72,
+          "tvlUsd": 0
+        },
+        {
+          "id": "jvault-storm-staking",
+          "apy": 17.97,
+          "tvlUsd": 0
+        },
+        {
+          "id": "stakee-gram-staking",
+          "apy": 21,
+          "tvlUsd": 0
+        }
+      ]
+    },
+    {
+      "date": "2026-08-02",
+      "capturedAt": "2026-08-02T13:59:13.020Z",
+      "opportunities": [
+        {
+          "id": "tonstakers-liquid-staking",
+          "apy": 20.37,
+          "tvlUsd": 0
+        },
+        {
+          "id": "evaa-supply-markets",
+          "apy": 10.04,
+          "tvlUsd": 0
+        },
+        {
+          "id": "ston-fi-usde-tsusde-weighted-stable",
+          "apy": 0.20195901671538063,
+          "tvlUsd": 276468.8781737184
+        },
+        {
+          "id": "dedust-liquidity-pools",
+          "apy": 0,
+          "tvlUsd": 644189.289592
         },
         {
           "id": "hipo-liquid-staking",
@@ -566,5 +971,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-07-28T19:41:53.648Z"
+  "updatedAt": "2026-08-02T13:59:13.028Z"
 }
