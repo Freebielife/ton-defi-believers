@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-28T19:41:52.496Z",
+  "generatedAt": "2026-08-02T16:49:41.740Z",
   "methodology": {
     "confidence": "Score from source automation, freshness, metric availability, contract identification and error flags.",
     "risk": "Heuristic information-quality and product-structure indicator; not investment advice.",
@@ -8,11 +8,10 @@
   },
   "summary": {
     "opportunities": 15,
-    "averageConfidence": 52,
+    "averageConfidence": 38,
     "riskLevels": {
       "low": 11,
-      "medium": 3,
-      "high": 1
+      "medium": 4
     },
     "automaticSources": 2,
     "manualSources": 0
@@ -30,10 +29,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 30,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
@@ -58,10 +57,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 30,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
@@ -80,18 +79,19 @@
       "protocol": "STON.fi",
       "metrics": {
         "yield": {
-          "value": 0.11922537340736117,
+          "value": 0.20196957814915578,
           "metric": "apy",
           "origin": "protocol-reported-apy",
-          "apyEquivalent": 0.11922537340736117
+          "apyEquivalent": 0.20196957814915578
         },
-        "tvlUsd": null,
+        "tvlUsd": 276460.3749589938,
         "confidence": {
-          "score": 90,
+          "score": 100,
           "grade": "A",
           "reasons": [
             "automatic-source",
             "fresh-within-6h",
+            "tvl-available",
             "yield-available",
             "contract-or-pool-identified"
           ]
@@ -101,7 +101,7 @@
           "level": "medium",
           "flags": [
             "impermanent-loss-or-lp-risk",
-            "unknown-tvl"
+            "moderate-tvl"
           ]
         }
       }
@@ -111,29 +111,29 @@
       "protocol": "DeDust",
       "metrics": {
         "yield": {
-          "value": null,
+          "value": 0,
           "metric": "apr",
           "origin": "protocol-reported-apr",
-          "apyEquivalent": null
+          "apyEquivalent": 0
         },
-        "tvlUsd": null,
+        "tvlUsd": 643881.48007,
         "confidence": {
-          "score": 60,
-          "grade": "C",
+          "score": 100,
+          "grade": "A",
           "reasons": [
             "automatic-source",
             "fresh-within-6h",
-            "contract-or-pool-identified",
-            "marked-stale"
+            "tvl-available",
+            "yield-available",
+            "contract-or-pool-identified"
           ]
         },
         "risk": {
-          "score": 50,
-          "level": "high",
+          "score": 35,
+          "level": "medium",
           "flags": [
             "impermanent-loss-or-lp-risk",
-            "unknown-tvl",
-            "stale-data"
+            "moderate-tvl"
           ]
         }
       }
@@ -150,10 +150,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 30,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
@@ -178,10 +178,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 30,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
@@ -206,10 +206,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 30,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
@@ -234,10 +234,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 30,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
@@ -262,10 +262,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 55,
-          "grade": "C",
+          "score": 35,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "old-or-undated-source",
             "yield-available",
             "contract-or-pool-identified"
           ]
@@ -291,10 +291,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 30,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
@@ -319,10 +319,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 40,
-          "grade": "D",
+          "score": 20,
+          "grade": "E",
           "reasons": [
-            "fresh-within-6h"
+            "old-or-undated-source"
           ]
         },
         "risk": {
@@ -347,10 +347,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 40,
-          "grade": "D",
+          "score": 20,
+          "grade": "E",
           "reasons": [
-            "fresh-within-6h"
+            "old-or-undated-source"
           ]
         },
         "risk": {
@@ -374,10 +374,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 30,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
@@ -402,10 +402,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 30,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
@@ -430,10 +430,10 @@
         },
         "tvlUsd": null,
         "confidence": {
-          "score": 50,
-          "grade": "C",
+          "score": 30,
+          "grade": "D",
           "reasons": [
-            "fresh-within-6h",
+            "old-or-undated-source",
             "yield-available"
           ]
         },
