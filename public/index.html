@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Current TON DeFi yields, 7-day averages and TVL grouped by asset." />
+    <meta name="description" content="TON DeFi yield opportunities with current rates, 7-day averages, TVL and direct protocol links." />
     <meta name="theme-color" content="#07111f" />
+    <meta name="referrer" content="no-referrer" />
     <title>TON DeFi Believers</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./styles.css" />
@@ -25,22 +26,30 @@
     <main>
       <section class="hero" aria-labelledby="pageTitle">
         <div class="hero-copy">
-          <p class="eyebrow" data-i18n="pilot">Market catalog · daily snapshot</p>
+          <p class="eyebrow" data-i18n="pilot">TON DeFi market catalog</p>
           <h1 id="pageTitle" data-i18n="title">TON DeFi market at a glance</h1>
-          <p class="hero-text" data-i18n="subtitle">Current yield, 7-day average and TVL for concrete TON DeFi products — grouped by asset, not ranked as investment advice.</p>
+          <p class="hero-text" data-i18n="subtitle">Current yield, 7-day average and TVL for concrete TON DeFi products — grouped by asset and ordered by liquidity by default.</p>
         </div>
 
         <div class="summary" aria-label="Market summary">
-          <article><span id="marketTvl">—</span><small data-i18n="marketTvl">Market TVL</small></article>
           <article><span id="opportunityCount">—</span><small data-i18n="opportunities">Opportunities</small></article>
           <article><span id="protocolCount">—</span><small data-i18n="protocols">Protocols</small></article>
+          <article><span id="lowTvlCount">—</span><small data-i18n="lowTvlSummary">Low TVL</small></article>
           <article><span id="lastUpdated">—</span><small data-i18n="snapshot">Snapshot</small></article>
         </div>
       </section>
 
-      <section class="notice" aria-label="Data notice">
-        <span class="notice-dot" aria-hidden="true"></span>
-        <p><strong data-i18n="noticePrefix">Data snapshot:</strong> <a id="sourceLink" target="_blank" rel="noreferrer">TON Yields Daily</a> — <span data-i18n="notice">values change and are not guaranteed. Low TVL means less than $10K. The default order is by TVL, not by the highest yield.</span></p>
+      <section class="data-partnership" aria-label="How data is formed">
+        <div class="partnership-mark" aria-hidden="true">↔</div>
+        <div class="partnership-copy">
+          <div class="partnership-heading">
+            <strong data-i18n="dataModelTitle">How the data is formed</strong>
+            <a id="sourceLink" target="_blank" rel="noreferrer">TON Yields Daily</a>
+            <span id="freshnessBadge" class="freshness-badge" aria-live="polite">Checking freshness…</span>
+          </div>
+          <p data-i18n="dataModelText">TON DeFi Believers brings protocol data into one catalog. Official sources and APIs are used where available, while TON Yields Daily supports daily market monitoring and cross-checking.</p>
+          <small data-i18n="dataModelNote">TON Yields Daily is not presented as the only source of yield data. Source and verification time are preserved for every opportunity.</small>
+        </div>
       </section>
 
       <section class="market" aria-labelledby="marketTitle">
@@ -86,16 +95,14 @@
                 <th data-i18n="protocol">Protocol</th>
                 <th data-i18n="product">Product / pool</th>
                 <th data-i18n="asset">Asset</th>
-                <th data-i18n="current">Current</th>
-                <th data-i18n="average7d">7d average</th>
+                <th data-i18n="yield">Yield</th>
                 <th>TVL</th>
-                <th>UR</th>
                 <th data-i18n="data">Updated</th>
                 <th><span class="sr-only" data-i18n="open">Open</span></th>
               </tr>
             </thead>
             <tbody id="marketRows">
-              <tr class="loading-row"><td colspan="9" data-i18n="loading">Loading market data…</td></tr>
+              <tr class="loading-row"><td colspan="7" data-i18n="loading">Loading market data…</td></tr>
             </tbody>
           </table>
         </div>
@@ -113,7 +120,7 @@
     </footer>
 
     <template id="categoryTemplate">
-      <tr class="category-row"><td colspan="9"><span class="category-name"></span><span class="category-count"></span></td></tr>
+      <tr class="category-row"><td colspan="7"><span class="category-name"></span><span class="category-count"></span></td></tr>
     </template>
 
     <template id="rowTemplate">
@@ -121,10 +128,12 @@
         <td data-label="Protocol"><div class="protocol-cell"><span class="protocol-icon" aria-hidden="true"></span><div><strong class="protocol-name"></strong><small class="opportunity-type"></small></div></div></td>
         <td data-label="Product / pool"><strong class="product-name"></strong></td>
         <td data-label="Asset"><span class="asset-pill"></span></td>
-        <td data-label="Current" class="yield-cell"><strong class="current-value"></strong><small class="yield-note" hidden></small></td>
-        <td data-label="7d average"><strong class="average-value"></strong></td>
+        <td data-label="Yield" class="yield-cell">
+          <div class="yield-primary"><strong class="current-value"></strong><span class="metric-label"></span></div>
+          <div class="yield-secondary"><span class="average-value"></span><span class="ur-chip" hidden></span></div>
+          <small class="yield-note" hidden></small>
+        </td>
         <td data-label="TVL"><span class="tvl-wrap"><span class="tvl-value"></span></span></td>
-        <td data-label="UR"><span class="ur-value"></span></td>
         <td data-label="Updated"><span class="updated-value"></span></td>
         <td class="action-cell"><a class="open-link" target="_blank" rel="noopener noreferrer"><span class="open-link-label">Open</span><span class="open-link-arrow" aria-hidden="true">↗</span></a></td>
       </tr>

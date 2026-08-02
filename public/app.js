@@ -1,5 +1,11 @@
+const savedLanguage = (() => {
+  try { return localStorage.getItem("tdb-language"); } catch { return null; }
+})();
+
 const state = {
-  language: "en",
+  language: savedLanguage === "ru" || savedLanguage === "en"
+    ? savedLanguage
+    : (navigator.language?.toLowerCase().startsWith("ru") ? "ru" : "en"),
   filter: "all",
   search: "",
   sort: "tvl",
@@ -11,15 +17,16 @@ const state = {
 
 const translations = {
   en: {
-    pilot: "Market catalog · daily snapshot",
+    pilot: "TON DeFi market catalog",
     title: "TON DeFi market at a glance",
-    subtitle: "Current yield, 7-day average and TVL for concrete TON DeFi products — grouped by asset, not ranked as investment advice.",
-    marketTvl: "Market TVL",
+    subtitle: "Current yield, 7-day average and TVL for concrete TON DeFi products — grouped by asset and ordered by liquidity by default.",
     protocols: "Protocols",
     opportunities: "Opportunities",
+    lowTvlSummary: "Low TVL",
     snapshot: "Snapshot",
-    noticePrefix: "Data snapshot:",
-    notice: "values change and are not guaranteed. Low TVL means less than $10K. The default order is by TVL, not by the highest yield.",
+    dataModelTitle: "How the data is formed",
+    dataModelText: "TON DeFi Believers brings protocol data into one catalog. Official sources and APIs are used where available, while TON Yields Daily supports daily market monitoring and cross-checking.",
+    dataModelNote: "TON Yields Daily is not presented as the only source of yield data. Source and verification time are preserved for every opportunity.",
     market: "Market catalog",
     marketTitle: "Yield opportunities",
     searchLabel: "Search",
@@ -38,8 +45,11 @@ const translations = {
     protocol: "Protocol",
     product: "Product / pool",
     asset: "Asset",
+    yield: "Yield",
     current: "Current",
     average7d: "7d average",
+    averageShort: "7d",
+    utilization: "UR",
     data: "Updated",
     open: "Open",
     loading: "Loading market data…",
@@ -49,8 +59,12 @@ const translations = {
     result: "results",
     oneResult: "result",
     lowTvl: "Low TVL",
-    noUr: "—",
-    source: "Source",
+    freshnessChecking: "Checking freshness…",
+    freshnessFresh: "Fresh snapshot",
+    freshnessWarning: "Data may be outdated",
+    freshnessStale: "Outdated snapshot",
+    ageHours: "{value}h old",
+    ageDays: "{value}d old",
     disclaimer: "Information only. Yield, incentives and TVL can change. DeFi involves smart-contract, liquidity, market and counterparty risks.",
     type: {
       "liquid-staking": "Liquid staking",
@@ -62,15 +76,16 @@ const translations = {
     },
   },
   ru: {
-    pilot: "Каталог рынка · ежедневный снимок",
+    pilot: "Каталог рынка TON DeFi",
     title: "Рынок TON DeFi одним взглядом",
-    subtitle: "Текущая доходность, среднее за 7 дней и TVL конкретных продуктов TON DeFi — с группировкой по активам, без выдачи максимального APY за лучший вариант.",
-    marketTvl: "TVL рынка",
+    subtitle: "Текущая доходность, среднее за 7 дней и TVL конкретных продуктов TON DeFi — с группировкой по активам и сортировкой по ликвидности по умолчанию.",
     protocols: "Протоколов",
     opportunities: "Возможностей",
+    lowTvlSummary: "Низкий TVL",
     snapshot: "Снимок",
-    noticePrefix: "Снимок данных:",
-    notice: "значения меняются и не гарантированы. Низкий TVL — менее $10 тыс. По умолчанию список отсортирован по TVL, а не по максимальной доходности.",
+    dataModelTitle: "Как формируются данные",
+    dataModelText: "TON DeFi Believers объединяет данные протоколов в одном каталоге. Официальные источники и API используются по мере доступности, а TON Yields Daily помогает с ежедневным мониторингом и сверкой рынка.",
+    dataModelNote: "TON Yields Daily не является единственным источником доходности. Для каждой возможности сохраняются источник и время проверки.",
     market: "Каталог рынка",
     marketTitle: "Доходные возможности",
     searchLabel: "Поиск",
@@ -89,8 +104,11 @@ const translations = {
     protocol: "Протокол",
     product: "Продукт / пул",
     asset: "Актив",
+    yield: "Доходность",
     current: "Сейчас",
     average7d: "Среднее 7д",
+    averageShort: "7 дней",
+    utilization: "UR",
     data: "Обновлено",
     open: "Открыть",
     loading: "Загрузка данных…",
@@ -100,8 +118,12 @@ const translations = {
     result: "результатов",
     oneResult: "результат",
     lowTvl: "Низкий TVL",
-    noUr: "—",
-    source: "Источник",
+    freshnessChecking: "Проверка актуальности…",
+    freshnessFresh: "Актуальный снимок",
+    freshnessWarning: "Данные могут быть устаревшими",
+    freshnessStale: "Устаревший снимок",
+    ageHours: "{value} ч назад",
+    ageDays: "{value} дн. назад",
     disclaimer: "Только для ознакомления. Доходность, награды и TVL меняются. DeFi связан с рисками смарт-контрактов, ликвидности, рынка и контрагентов.",
     type: {
       "liquid-staking": "Ликвидный стейкинг",
@@ -124,12 +146,13 @@ const elements = {
   categoryTemplate: document.querySelector("#categoryTemplate"),
   protocolCount: document.querySelector("#protocolCount"),
   opportunityCount: document.querySelector("#opportunityCount"),
-  marketTvl: document.querySelector("#marketTvl"),
+  lowTvlCount: document.querySelector("#lowTvlCount"),
   lastUpdated: document.querySelector("#lastUpdated"),
   resultCount: document.querySelector("#resultCount"),
   emptyState: document.querySelector("#emptyState"),
   tableShell: document.querySelector(".table-shell"),
   sourceLink: document.querySelector("#sourceLink"),
+  freshnessBadge: document.querySelector("#freshnessBadge"),
 };
 
 function text(key) {
@@ -183,6 +206,30 @@ function formatDate(value, withTime = false) {
   }).format(date);
 }
 
+function hoursSince(value) {
+  if (!value) return null;
+  const time = new Date(value).getTime();
+  if (!Number.isFinite(time)) return null;
+  return Math.max(0, (Date.now() - time) / 3_600_000);
+}
+
+function ageText(hours) {
+  if (!Number.isFinite(hours)) return "";
+  if (hours < 48) return text("ageHours").replace("{value}", String(Math.max(1, Math.round(hours))));
+  return text("ageDays").replace("{value}", String(Math.max(2, Math.floor(hours / 24))));
+}
+
+function freshnessInfo(value) {
+  const hours = hoursSince(value);
+  const policy = state.dataset?.settings?.freshness ?? {};
+  const freshHours = Number.isFinite(policy.freshHours) ? policy.freshHours : 24;
+  const warningHours = Number.isFinite(policy.warningHours) ? policy.warningHours : 48;
+  if (!Number.isFinite(hours)) return { level: "unknown", label: text("freshnessChecking"), hours };
+  if (hours <= freshHours) return { level: "fresh", label: text("freshnessFresh"), hours };
+  if (hours <= warningHours) return { level: "warning", label: text("freshnessWarning"), hours };
+  return { level: "stale", label: text("freshnessStale"), hours };
+}
+
 function categoryLabel(id) {
   const category = state.categories.find((item) => item.id === id);
   return category?.label?.[state.language] || category?.label?.en || id;
@@ -224,15 +271,22 @@ function renderRow(item) {
 
   const current = row.querySelector(".current-value");
   current.textContent = `${formatPercent(item.apy?.current, 2)} ${trendSymbol(item)}`.trim();
-  current.classList.toggle("is-up", item.apy?.trend === "up");
   current.classList.toggle("is-down", item.apy?.trend === "down");
+
+  row.querySelector(".metric-label").textContent = String(item.apy?.metric || "apy").toUpperCase();
+  row.querySelector(".average-value").textContent = `${text("averageShort")}: ${formatPercent(item.apy?.average7d, 2)}`;
+
+  const urChip = row.querySelector(".ur-chip");
+  if (Number.isFinite(item.utilizationRate)) {
+    urChip.hidden = false;
+    urChip.textContent = `${text("utilization")} ${formatPercent(item.utilizationRate, 1)}`;
+    urChip.classList.toggle("is-hot", item.utilizationRate >= 95);
+  }
 
   const note = row.querySelector(".yield-note");
   const noteText = item.apy?.note?.[state.language] || item.apy?.note?.en || "";
   note.textContent = noteText;
   note.hidden = !noteText;
-
-  row.querySelector(".average-value").textContent = formatPercent(item.apy?.average7d, 2);
 
   const tvlWrap = row.querySelector(".tvl-wrap");
   row.querySelector(".tvl-value").textContent = formatMoney(item.tvlUsd);
@@ -243,11 +297,12 @@ function renderRow(item) {
     tvlWrap.append(badge);
   }
 
-  const ur = row.querySelector(".ur-value");
-  ur.textContent = Number.isFinite(item.utilizationRate) ? formatPercent(item.utilizationRate, 1) : text("noUr");
-  if (Number.isFinite(item.utilizationRate) && item.utilizationRate >= 95) ur.classList.add("is-hot");
-
-  row.querySelector(".updated-value").textContent = formatDate(item.source?.lastChecked, true);
+  const updated = row.querySelector(".updated-value");
+  updated.textContent = formatDate(item.source?.lastChecked, true);
+  const itemFreshness = freshnessInfo(item.source?.lastChecked);
+  updated.classList.toggle("is-warning", itemFreshness.level === "warning");
+  updated.classList.toggle("is-stale", itemFreshness.level === "stale");
+  updated.title = `${itemFreshness.label}${ageText(itemFreshness.hours) ? ` · ${ageText(itemFreshness.hours)}` : ""}`;
 
   const action = row.querySelector(".open-link");
   action.querySelector(".open-link-label").textContent = text("open");
@@ -259,7 +314,7 @@ function renderRow(item) {
     action.setAttribute("aria-disabled", "true");
   }
 
-  const labels = [text("protocol"), text("product"), text("asset"), text("current"), text("average7d"), "TVL", "UR", text("data")];
+  const labels = [text("protocol"), text("product"), text("asset"), text("yield"), "TVL", text("data")];
   row.querySelectorAll("td").forEach((cell, index) => {
     if (labels[index]) cell.dataset.label = labels[index];
   });
@@ -295,12 +350,18 @@ function renderRows() {
 
 function updateSummary() {
   const snapshot = state.dataset?.snapshot ?? {};
-  elements.marketTvl.textContent = formatMoney(snapshot.marketTvlUsd);
   elements.protocolCount.textContent = state.protocols.length;
   elements.opportunityCount.textContent = state.opportunities.length;
+  elements.lowTvlCount.textContent = state.opportunities.filter((item) => item.status?.lowTvl).length;
   elements.lastUpdated.textContent = formatDate(snapshot.publishedAt || state.dataset?.updatedAt, true);
   elements.sourceLink.href = snapshot.sourceUrl || "https://t.me/ton_yields_daily";
   elements.sourceLink.textContent = snapshot.source || "TON Yields Daily";
+
+  const freshness = freshnessInfo(snapshot.publishedAt || state.dataset?.updatedAt);
+  const age = ageText(freshness.hours);
+  elements.freshnessBadge.textContent = `${freshness.label}${age ? ` · ${age}` : ""}`;
+  elements.freshnessBadge.className = `freshness-badge is-${freshness.level}`;
+  elements.freshnessBadge.title = snapshot.publishedAt || state.dataset?.updatedAt || "";
 }
 
 function applyTranslations() {
@@ -326,17 +387,17 @@ async function loadData() {
     state.categories = document.categories ?? [];
     state.sort = document.settings?.defaultSort || "tvl";
     elements.sortSelect.value = state.sort;
-    updateSummary();
-    renderRows();
+    applyTranslations();
   } catch (error) {
     console.error(error);
-    elements.marketRows.innerHTML = `<tr class="loading-row"><td colspan="9">${text("unavailable")}</td></tr>`;
+    elements.marketRows.innerHTML = `<tr class="loading-row"><td colspan="7">${text("unavailable")}</td></tr>`;
     elements.resultCount.textContent = "";
   }
 }
 
 elements.languageButton.addEventListener("click", () => {
   state.language = state.language === "en" ? "ru" : "en";
+  try { localStorage.setItem("tdb-language", state.language); } catch { /* no-op */ }
   applyTranslations();
 });
 

@@ -16,7 +16,7 @@ const protocolLinks = {
   "Storm Trade": { official: "https://storm.tg/", app: "https://app.storm.tg/" },
   "EVAA": { official: "https://evaa.finance/", app: "https://t.me/EvaaAppBot" },
   "STON.fi": { official: "https://ston.fi/", app: "https://app.ston.fi/pools" },
-  "GTC": { official: "https://giftcredit.app/", app: "https://t.me/GiftToCreditBot/app?startapp=ref_NcB5ZyHKtq" },
+  "GTC": { official: "https://giftcredit.app/", app: "https://t.me/GiftToCreditBot/app" },
   "Morpho": { official: "https://morpho.org/", app: "https://t.me/MorphoOrgBot" },
   "Ethena": { official: "https://ethena.fi/", app: "https://app.ethena.fi/earn/ton" },
   "Telegram Wallet": { official: "https://wallet.tg/", app: "https://t.me/wallet" },
