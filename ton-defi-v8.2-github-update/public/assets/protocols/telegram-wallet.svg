@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Telegram Wallet">
+  <defs><linearGradient id="g" x1="8" y1="5" x2="58" y2="61" gradientUnits="userSpaceOnUse"><stop stop-color="#55b8ff"/><stop offset="1" stop-color="#1d78d7"/></linearGradient></defs>
+  <rect x="2" y="2" width="60" height="60" rx="18" fill="url(#g)"/>
+  <path d="m11 30 42-17-8 39-14-11-8 8 2-13 20-16-25 13-9-3Z" fill="white"/><path d="m25 36 6 5 14-21" fill="none" stroke="#77c9ff" stroke-width="3" stroke-linecap="round"/>
+</svg>

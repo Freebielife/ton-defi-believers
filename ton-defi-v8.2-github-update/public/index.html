@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="TON DeFi yield opportunities with current rates, 7-day averages, TVL and direct protocol links." />
+    <meta name="theme-color" content="#07111f" />
+    <meta name="referrer" content="no-referrer" />
+    <title>TON DeFi Believers</title>
+    <link rel="icon" href="./assets/brand/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="TON DeFi Believers home">
+        <span class="brand-mark" aria-hidden="true"><img src="./assets/brand/ton-defi-believers.png" alt="" /></span>
+        <span>
+          <strong>TON DeFi Believers</strong>
+          <small>The Home of TON DeFi Yields</small>
+        </span>
+      </a>
+      <button class="language-button" id="languageButton" type="button" aria-label="Switch language">RU</button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="pageTitle">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="pilot">TON DeFi market catalog</p>
+          <h1 id="pageTitle" data-i18n="title">TON DeFi market at a glance</h1>
+          <p class="hero-text" data-i18n="subtitle">Current yield, 7-day average and TVL for concrete TON DeFi products — grouped by asset and ordered by liquidity by default.</p>
+        </div>
+
+        <img class="hero-brand-art" src="./assets/brand/ton-defi-believers.png" alt="" aria-hidden="true" />
+
+        <div class="summary" aria-label="Market summary">
+          <article><span id="opportunityCount">—</span><small data-i18n="opportunities">Opportunities</small></article>
+          <article><span id="protocolCount">—</span><small data-i18n="protocols">Protocols</small></article>
+          <article><span id="lowTvlCount">—</span><small data-i18n="lowTvlSummary">Low TVL</small></article>
+          <article><span id="lastUpdated">—</span><small data-i18n="snapshot">Snapshot</small></article>
+        </div>
+      </section>
+
+      <section class="data-partnership" aria-label="How data is formed">
+        <div class="partnership-mark" aria-hidden="true">↔</div>
+        <div class="partnership-copy">
+          <div class="partnership-heading">
+            <strong data-i18n="dataModelTitle">How the data is formed</strong>
+            <a id="sourceLink" target="_blank" rel="noreferrer">TON Yields Daily</a>
+            <span id="freshnessBadge" class="freshness-badge" aria-live="polite">Checking freshness…</span>
+            <span class="refresh-badge" data-i18n="hourlyChecks">Hourly checks</span>
+          </div>
+          <p data-i18n="dataModelText">TON DeFi Believers brings protocol data into one catalog. Official sources and APIs are used where available, while TON Yields Daily supports daily market monitoring and cross-checking.</p>
+          <small data-i18n="dataModelNote">TON Yields Daily is not presented as the only source of yield data. Source and verification time are preserved for every opportunity.</small>
+        </div>
+      </section>
+
+      <section class="market" aria-labelledby="marketTitle">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="market">Market catalog</p>
+            <h2 id="marketTitle" data-i18n="marketTitle">Yield opportunities</h2>
+          </div>
+          <p class="result-count" id="resultCount" aria-live="polite"></p>
+        </div>
+
+        <div class="controls">
+          <label class="search-field">
+            <span class="sr-only" data-i18n="searchLabel">Search</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" /></svg>
+            <input id="searchInput" type="search" autocomplete="off" placeholder="Search protocol, asset or product" />
+          </label>
+
+          <div class="filters" id="filters" aria-label="Asset filters">
+            <button type="button" class="filter-button is-active" data-filter="all" data-i18n="all">All assets</button>
+            <button type="button" class="filter-button" data-filter="gram" data-i18n="gram">GRAM</button>
+            <button type="button" class="filter-button" data-filter="stablecoins" data-i18n="stablecoins">Stablecoins</button>
+            <button type="button" class="filter-button" data-filter="gram-usdt" data-i18n="gramUsdt">GRAM–USDT</button>
+            <button type="button" class="filter-button" data-filter="btc" data-i18n="btc">BTC</button>
+            <button type="button" class="filter-button" data-filter="eth" data-i18n="eth">ETH</button>
+          </div>
+
+          <label class="sort-field">
+            <span data-i18n="sort">Sort</span>
+            <select id="sortSelect">
+              <option value="tvl" data-i18n="sortTvl">TVL: high to low</option>
+              <option value="average" data-i18n="sortAverage">7d average: high to low</option>
+              <option value="current" data-i18n="sortCurrent">Current yield: high to low</option>
+              <option value="protocol" data-i18n="sortProtocol">Protocol: A–Z</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="table-shell">
+          <table>
+            <thead>
+              <tr>
+                <th data-i18n="protocol">Protocol</th>
+                <th data-i18n="product">Product / pool</th>
+                <th data-i18n="asset">Asset</th>
+                <th data-i18n="yield">Yield</th>
+                <th>TVL</th>
+                <th data-i18n="data">Updated</th>
+              </tr>
+            </thead>
+            <tbody id="marketRows">
+              <tr class="loading-row"><td colspan="6" data-i18n="loading">Loading market data…</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <strong data-i18n="emptyTitle">Nothing found</strong>
+          <p data-i18n="emptyText">Try another search or asset category.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p data-i18n="disclaimer">Information only. Yield, incentives and TVL can change. DeFi involves smart-contract, liquidity, market and counterparty risks.</p>
+      <a href="https://github.com/Freebielife/ton-defi-believers" target="_blank" rel="noreferrer">GitHub</a>
+    </footer>
+
+    <template id="categoryTemplate">
+      <tr class="category-row"><td colspan="6"><span class="category-name"></span><span class="category-count"></span></td></tr>
+    </template>
+
+    <template id="rowTemplate">
+      <tr class="opportunity-row">
+        <td data-label="Protocol">
+          <a class="protocol-link" target="_blank" rel="noopener noreferrer">
+            <span class="protocol-icon" aria-hidden="true"><img class="protocol-logo" alt="" /></span>
+            <span class="protocol-copy"><strong class="protocol-name"></strong><small class="opportunity-type"></small></span>
+            <span class="protocol-link-arrow" aria-hidden="true">↗</span>
+          </a>
+        </td>
+        <td data-label="Product / pool"><strong class="product-name"></strong></td>
+        <td data-label="Asset"><span class="asset-pill"></span></td>
+        <td data-label="Yield" class="yield-cell">
+          <div class="yield-primary"><strong class="current-value"></strong><span class="metric-label"></span></div>
+          <div class="yield-secondary"><span class="average-value"></span><span class="ur-chip" hidden></span></div>
+          <small class="yield-note" hidden></small>
+        </td>
+        <td data-label="TVL"><span class="tvl-wrap"><span class="tvl-value"></span></span></td>
+        <td data-label="Updated"><span class="updated-value"></span></td>
+      </tr>
+    </template>
+  </body>
+</html>
