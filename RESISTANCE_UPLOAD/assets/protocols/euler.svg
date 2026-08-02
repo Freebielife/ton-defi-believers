@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Euler">
+  <defs><linearGradient id="g" x1="8" y1="5" x2="58" y2="61" gradientUnits="userSpaceOnUse"><stop stop-color="#2ae5b9"/><stop offset="1" stop-color="#075b56"/></linearGradient></defs>
+  <rect x="2" y="2" width="60" height="60" rx="18" fill="url(#g)"/>
+  <g stroke="white" stroke-width="7" stroke-linecap="round"><path d="M17 22h29"/><path d="M14 32h29"/><path d="M18 42h29"/></g>
+</svg>

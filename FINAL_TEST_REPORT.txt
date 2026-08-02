@@ -1,0 +1,34 @@
+TON DeFi Believers v8.2 Final — verification report
+Generated: 2026-08-02
+
+PASSED:
+- JavaScript syntax check
+- TON Yields Daily parser tests
+- STON.fi adapter fixture tests
+- STON.fi exact asset-address tests
+- DeDust adapter fixture tests
+- TON RPC stack parsing tests
+- Metrics Engine tests
+- Yield Score and trend tests
+- Health Monitor tests
+- Release check
+- Referral-link scan
+- public and RESISTANCE_UPLOAD byte-for-byte match
+
+Static package:
+- 22 files
+- approximately 163 KB unpacked
+- index.html is in the root
+- under the Resistance Tools limit of 25 files
+
+Automation:
+- Node.js 24
+- actions/checkout@v6
+- actions/setup-node@v6
+- refresh on relevant code push
+- hourly schedule at minute 17
+
+Important:
+The bundled fallback snapshot is dated 2026-07-28. After pushing this release,
+Update DeFi data starts automatically and should replace it with the latest
+available successful snapshot. Pull origin before selecting RESISTANCE_UPLOAD.

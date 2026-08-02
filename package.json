@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=20"
+    "node": ">=24"
   },
   "scripts": {
     "collect": "node collector/collect.mjs",
@@ -17,12 +17,13 @@
     "integration:status": "node collector/generate-integration-status.mjs",
     "sync:public": "node scripts/sync-public-data.mjs",
     "release:check": "node scripts/release-check.mjs",
-    "build": "npm run build:data && npm run sync:public && npm run release:check",
+    "build": "npm run build:data && npm run sync:public && npm run sync:resistance && npm run release:check",
     "test:adapters": "node collector/tests/ton-yields-daily.test.mjs && node collector/tests/stonfi.test.mjs && node collector/tests/dedust.test.mjs && node collector/tests/ton-rpc.test.mjs && node collector/tests/metrics.test.mjs && node collector/tests/score.test.mjs && node collector/tests/health-monitor.test.mjs",
     "test:health": "node collector/tests/health-monitor.test.mjs",
     "metrics": "node collector/build-metrics.mjs",
     "insights": "node collector/build-insights.mjs",
     "search:index": "node collector/build-search-index.mjs",
-    "market:import": "node collector/import-ton-yields-daily.mjs"
+    "market:import": "node collector/import-ton-yields-daily.mjs",
+    "sync:resistance": "node scripts/prepare-resistance.mjs"
   }
 }

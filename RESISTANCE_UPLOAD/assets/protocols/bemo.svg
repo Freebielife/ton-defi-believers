@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Bemo">
+  <defs><linearGradient id="g" x1="8" y1="5" x2="58" y2="61" gradientUnits="userSpaceOnUse"><stop stop-color="#ffcf70"/><stop offset="1" stop-color="#f06a3a"/></linearGradient></defs>
+  <rect x="2" y="2" width="60" height="60" rx="18" fill="url(#g)"/>
+  <path d="M20 15h15c9 0 14 4 14 11 0 4-2 7-6 9 5 1 8 5 8 10 0 8-6 12-16 12H20V15Zm10 9v8h6c3 0 5-1 5-4s-2-4-5-4h-6Zm0 16v9h7c4 0 6-1 6-4s-2-5-6-5h-7Z" fill="white"/>
+</svg>
