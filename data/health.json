@@ -1,48 +1,48 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-02T15:29:42.390Z",
+  "generatedAt": "2026-07-28T19:41:52.230Z",
   "run": {
-    "startedAt": "2026-08-02T15:29:37.967Z",
-    "finishedAt": "2026-08-02T15:29:42.390Z",
-    "durationMs": 4423,
-    "publishedFreshData": true,
-    "previousSnapshotUpdatedAt": "2026-08-02T14:48:34.448Z"
+    "startedAt": "2026-07-28T19:41:37.243Z",
+    "finishedAt": "2026-07-28T19:41:52.230Z",
+    "durationMs": 14987,
+    "publishedFreshData": false,
+    "previousSnapshotUpdatedAt": "2026-07-28T18:37:01Z"
   },
   "status": "degraded",
-  "buildQuality": 56,
+  "buildQuality": 36,
   "summary": {
     "total": 10,
-    "healthy": 2,
+    "healthy": 0,
     "partial": 0,
     "degraded": 8,
-    "errors": 0,
+    "errors": 2,
     "disabled": 0,
-    "averageDurationMs": 442
+    "averageDurationMs": 1498
   },
   "protocols": [
     {
       "adapter": "stonfi",
       "protocol": "stonfi",
-      "status": "ok",
-      "sourceStatus": "ok",
-      "durationMs": 1050,
-      "items": 1,
-      "updated": 1,
+      "status": "error",
+      "sourceStatus": "error",
+      "durationMs": 7709,
+      "items": 0,
+      "updated": 0,
       "unresolved": 0,
-      "retainedPreviousData": false,
-      "message": null
+      "retainedPreviousData": true,
+      "message": "fetch failed"
     },
     {
       "adapter": "dedust",
       "protocol": "dedust",
-      "status": "ok",
-      "sourceStatus": "ok",
-      "durationMs": 3370,
-      "items": 1,
-      "updated": 1,
+      "status": "error",
+      "sourceStatus": "error",
+      "durationMs": 7274,
+      "items": 0,
+      "updated": 0,
       "unresolved": 0,
-      "retainedPreviousData": false,
-      "message": null
+      "retainedPreviousData": true,
+      "message": "fetch failed"
     },
     {
       "adapter": "tonstakers",

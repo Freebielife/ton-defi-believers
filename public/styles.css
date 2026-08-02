@@ -1,9 +1,9 @@
 :root {
   color-scheme: dark;
   --background: #07111f;
-  --surface: #0c1828;
-  --surface-strong: #101f32;
-  --surface-soft: #091523;
+  --surface: rgba(12, 24, 40, 0.90);
+  --surface-strong: rgba(16, 31, 50, 0.92);
+  --surface-soft: rgba(9, 21, 35, 0.80);
   --border: rgba(170, 199, 230, 0.13);
   --border-strong: rgba(170, 199, 230, 0.22);
   --text: #f3f8fd;
@@ -373,10 +373,7 @@ tbody tr.opportunity-row:hover { background: rgba(44, 165, 224, 0.035); }
   font-size: 8px;
 }
 
-.protocol-cell { display: flex; align-items: center; gap: 10px; min-width: 140px; }
-.protocol-icon { width: 32px; height: 32px; border-radius: 9px; font-size: 11px; }
-.protocol-name, .product-name { font-size: 12px; }
-.protocol-cell small { display: block; margin-top: 1px; color: var(--muted); font-size: 9px; }
+.product-name { font-size: 12px; }
 .product-name { color: #dbe8f4; }
 .asset-pill {
   display: inline-flex;
@@ -608,4 +605,269 @@ footer a { color: #9ddfff; text-decoration: none; }
   .summary article:nth-child(even) { border-left: 1px solid var(--border); }
   .filter-button { padding-inline: 9px; }
   .opportunity-row td:nth-child(2) { padding-right: 6px; }
+}
+
+/* v8.2 visual layer: richer palette, local brand art and direct protocol links. */
+:root {
+  --violet: #8f75ff;
+  --mint: #49e2ba;
+  --cyan: #4dc8ff;
+  --rose: #f07bc3;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 4%, rgba(77, 200, 255, 0.17), transparent 30rem),
+    radial-gradient(circle at 91% 28%, rgba(143, 117, 255, 0.14), transparent 33rem),
+    radial-gradient(circle at 28% 74%, rgba(73, 226, 186, 0.10), transparent 36rem),
+    linear-gradient(180deg, #061321 0%, #11152f 34%, #092b35 69%, #07111f 100%);
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.014) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,.52), transparent 88%);
+}
+
+.site-header {
+  min-height: 80px;
+}
+
+.brand-mark {
+  overflow: hidden;
+  width: 44px;
+  height: 44px;
+  border-color: rgba(77, 200, 255, .35);
+  border-radius: 14px;
+  background: linear-gradient(145deg, rgba(77, 200, 255, .19), rgba(143, 117, 255, .11));
+  box-shadow: 0 10px 30px rgba(35, 145, 214, .17);
+}
+.brand-mark img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+.brand:hover .brand-mark {
+  border-color: rgba(77, 200, 255, .7);
+  transform: translateY(-1px);
+}
+.brand-mark { transition: border-color .18s ease, transform .18s ease; }
+
+.language-button,
+.search-field input,
+.sort-field select,
+.filters {
+  background: rgba(10, 23, 39, .78);
+  backdrop-filter: blur(14px);
+}
+
+.hero {
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 86% 30%, rgba(143, 117, 255, .17), transparent 24rem),
+    linear-gradient(118deg, rgba(77, 200, 255, .14), rgba(73, 226, 186, .045) 48%, rgba(143, 117, 255, .075)),
+    rgba(9, 22, 38, .84);
+  border-color: rgba(157, 208, 238, .18);
+}
+.hero::after {
+  border-color: rgba(143, 117, 255, .18);
+  box-shadow: 0 0 0 36px rgba(77, 200, 255, .025), 0 0 0 78px rgba(143, 117, 255, .018);
+}
+.hero-brand-art {
+  position: absolute;
+  z-index: 0;
+  right: 31%;
+  bottom: -58px;
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  opacity: .055;
+  filter: saturate(1.25);
+  pointer-events: none;
+  transform: rotate(-7deg);
+}
+.hero-copy,
+.summary { position: relative; z-index: 1; }
+
+h1 {
+  background: linear-gradient(105deg, #ffffff 18%, #a9e7ff 55%, #c8bfff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.eyebrow { color: #7bd7ff; }
+
+.summary {
+  border-color: rgba(154, 204, 236, .18);
+  background: rgba(5, 13, 24, .52);
+}
+.summary article:nth-child(1) span { color: #8be0ff; }
+.summary article:nth-child(2) span { color: #c1b4ff; }
+.summary article:nth-child(3) span { color: #ffd37f; }
+.summary article:nth-child(4) span { color: #7ae2c0; }
+
+.data-partnership {
+  border-color: rgba(143, 117, 255, .22);
+  background: linear-gradient(110deg, rgba(77, 200, 255, .075), rgba(143, 117, 255, .075), rgba(73, 226, 186, .035));
+}
+.partnership-mark {
+  border-color: rgba(143, 117, 255, .32);
+  background: rgba(143, 117, 255, .10);
+  color: #c8bfff;
+}
+.partnership-heading a { color: #89dcff; }
+
+.table-shell {
+  border-color: rgba(166, 207, 234, .16);
+  background: rgba(7, 18, 31, .75);
+  box-shadow: 0 20px 60px rgba(0,0,0,.18);
+  backdrop-filter: blur(14px);
+}
+table { min-width: 850px; }
+th { background: rgba(12, 27, 45, .97); }
+tbody tr.opportunity-row {
+  --row-accent: 77, 200, 255;
+}
+tbody tr.opportunity-row[data-category="stablecoins"] { --row-accent: 73, 226, 186; }
+tbody tr.opportunity-row[data-category="gram-usdt"] { --row-accent: 143, 117, 255; }
+tbody tr.opportunity-row[data-category="btc"] { --row-accent: 244, 191, 91; }
+tbody tr.opportunity-row[data-category="eth"] { --row-accent: 240, 123, 195; }
+tbody tr.opportunity-row:hover { background: rgba(var(--row-accent), .055); }
+
+.category-row td {
+  background: rgba(11, 32, 51, .97);
+  box-shadow: inset 3px 0 0 rgba(77, 200, 255, .72), 0 1px 0 var(--border);
+}
+.category-row[data-category="stablecoins"] td { color: #8cf0d0; box-shadow: inset 3px 0 0 rgba(73, 226, 186, .72), 0 1px 0 var(--border); }
+.category-row[data-category="gram-usdt"] td { color: #c8bfff; box-shadow: inset 3px 0 0 rgba(143, 117, 255, .72), 0 1px 0 var(--border); }
+.category-row[data-category="btc"] td { color: #ffd98e; box-shadow: inset 3px 0 0 rgba(244, 191, 91, .76), 0 1px 0 var(--border); }
+.category-row[data-category="eth"] td { color: #f3a7d6; box-shadow: inset 3px 0 0 rgba(240, 123, 195, .7), 0 1px 0 var(--border); }
+
+.protocol-link {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  min-width: 154px;
+  border-radius: 11px;
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+.protocol-link:hover .protocol-name,
+.protocol-link:focus-visible .protocol-name { color: #8edfff; }
+.protocol-link:hover .protocol-icon,
+.protocol-link:focus-visible .protocol-icon {
+  border-color: rgba(var(--row-accent), .66);
+  box-shadow: 0 8px 24px rgba(var(--row-accent), .17);
+  transform: translateY(-1px);
+}
+.protocol-link:focus-visible { box-shadow: 0 0 0 3px rgba(77, 200, 255, .12); }
+.protocol-link.is-disabled { pointer-events: none; opacity: .65; }
+.protocol-icon {
+  overflow: hidden;
+  width: 36px;
+  height: 36px;
+  padding: 4px;
+  border-color: rgba(var(--row-accent), .28);
+  border-radius: 11px;
+  background: linear-gradient(145deg, rgba(var(--row-accent), .14), rgba(8, 18, 30, .62));
+  transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+.protocol-logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.protocol-copy { min-width: 0; }
+.protocol-name {
+  display: block;
+  overflow: hidden;
+  color: #eef7ff;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: color .18s ease;
+}
+.protocol-copy small { display: block; margin-top: 1px; color: var(--muted); font-size: 9px; }
+.protocol-link-arrow {
+  color: rgba(var(--row-accent), .82);
+  font-size: 11px;
+  opacity: .68;
+  transition: transform .18s ease, opacity .18s ease;
+}
+.protocol-link:hover .protocol-link-arrow { opacity: 1; transform: translate(1px, -1px); }
+
+.opportunity-row[data-category="stablecoins"] .asset-pill { background: rgba(73, 226, 186, .09); color: #9aefd6; }
+.opportunity-row[data-category="gram-usdt"] .asset-pill { background: rgba(143, 117, 255, .10); color: #c8bfff; }
+.opportunity-row[data-category="btc"] .asset-pill { background: rgba(244, 191, 91, .10); color: #ffd98e; }
+.opportunity-row[data-category="eth"] .asset-pill { background: rgba(240, 123, 195, .10); color: #f1a8d5; }
+
+.current-value { color: #73e3bd; }
+.current-value.is-down { color: #ffd078; }
+
+/* The protocol itself is now the only project link; the redundant action column is gone. */
+.action-cell,
+.open-link { display: none !important; }
+
+@media (max-width: 1020px) {
+  .hero-brand-art { right: 5%; bottom: -65px; }
+}
+
+@media (max-width: 760px) {
+  body { background-attachment: scroll; }
+  .site-header { min-height: 68px; }
+  .brand-mark { width: 40px; height: 40px; border-radius: 13px; }
+  .brand-mark img { width: 35px; height: 35px; }
+  .hero-brand-art { right: -44px; bottom: -50px; width: 190px; height: 190px; opacity: .045; }
+
+  tbody tr.opportunity-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "protocol protocol"
+      "product asset"
+      "yield yield"
+      "tvl tvl";
+    background: linear-gradient(145deg, rgba(var(--row-accent), .035), rgba(10, 23, 39, .9));
+    box-shadow: inset 3px 0 0 rgba(var(--row-accent), .4);
+  }
+  .opportunity-row td:nth-child(1) { grid-area: protocol; }
+  .opportunity-row td:nth-child(2) { grid-area: product; }
+  .opportunity-row td:nth-child(3) { grid-area: asset; }
+  .opportunity-row td:nth-child(4) { grid-area: yield; }
+  .opportunity-row td:nth-child(5) { grid-area: tvl; }
+  .opportunity-row td:nth-child(6) { display: none; }
+  .protocol-link { grid-template-columns: 40px minmax(0,1fr) auto; min-width: 0; }
+  .protocol-icon { width: 40px; height: 40px; }
+  .protocol-name { font-size: 13px; }
+  .protocol-link-arrow { font-size: 14px; opacity: .9; }
+}
+.refresh-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 3px 8px;
+  border: 1px solid rgba(143, 117, 255, .25);
+  border-radius: 999px;
+  background: rgba(143, 117, 255, .07);
+  color: #c8bfff;
+  font-size: 9px;
+  font-weight: 740;
+  line-height: 1.2;
+}
+@media (max-width: 760px) {
+  html, body { max-width: 100%; overflow-x: hidden; }
+  table { min-width: 0; }
+  .table-shell, .market, .controls, .filters { max-width: 100%; }
 }

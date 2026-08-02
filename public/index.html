@@ -7,14 +7,14 @@
     <meta name="theme-color" content="#07111f" />
     <meta name="referrer" content="no-referrer" />
     <title>TON DeFi Believers</title>
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./assets/brand/favicon.png" type="image/png" />
     <link rel="stylesheet" href="./styles.css" />
     <script src="./app.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="./" aria-label="TON DeFi Believers home">
-        <span class="brand-mark" aria-hidden="true">T</span>
+        <span class="brand-mark" aria-hidden="true"><img src="./assets/brand/ton-defi-believers.png" alt="" /></span>
         <span>
           <strong>TON DeFi Believers</strong>
           <small>The Home of TON DeFi Yields</small>
@@ -31,6 +31,8 @@
           <p class="hero-text" data-i18n="subtitle">Current yield, 7-day average and TVL for concrete TON DeFi products — grouped by asset and ordered by liquidity by default.</p>
         </div>
 
+        <img class="hero-brand-art" src="./assets/brand/ton-defi-believers.png" alt="" aria-hidden="true" />
+
         <div class="summary" aria-label="Market summary">
           <article><span id="opportunityCount">—</span><small data-i18n="opportunities">Opportunities</small></article>
           <article><span id="protocolCount">—</span><small data-i18n="protocols">Protocols</small></article>
@@ -46,6 +48,7 @@
             <strong data-i18n="dataModelTitle">How the data is formed</strong>
             <a id="sourceLink" target="_blank" rel="noreferrer">TON Yields Daily</a>
             <span id="freshnessBadge" class="freshness-badge" aria-live="polite">Checking freshness…</span>
+            <span class="refresh-badge" data-i18n="hourlyChecks">Hourly checks</span>
           </div>
           <p data-i18n="dataModelText">TON DeFi Believers brings protocol data into one catalog. Official sources and APIs are used where available, while TON Yields Daily supports daily market monitoring and cross-checking.</p>
           <small data-i18n="dataModelNote">TON Yields Daily is not presented as the only source of yield data. Source and verification time are preserved for every opportunity.</small>
@@ -98,11 +101,10 @@
                 <th data-i18n="yield">Yield</th>
                 <th>TVL</th>
                 <th data-i18n="data">Updated</th>
-                <th><span class="sr-only" data-i18n="open">Open</span></th>
               </tr>
             </thead>
             <tbody id="marketRows">
-              <tr class="loading-row"><td colspan="7" data-i18n="loading">Loading market data…</td></tr>
+              <tr class="loading-row"><td colspan="6" data-i18n="loading">Loading market data…</td></tr>
             </tbody>
           </table>
         </div>
@@ -120,12 +122,18 @@
     </footer>
 
     <template id="categoryTemplate">
-      <tr class="category-row"><td colspan="7"><span class="category-name"></span><span class="category-count"></span></td></tr>
+      <tr class="category-row"><td colspan="6"><span class="category-name"></span><span class="category-count"></span></td></tr>
     </template>
 
     <template id="rowTemplate">
       <tr class="opportunity-row">
-        <td data-label="Protocol"><div class="protocol-cell"><span class="protocol-icon" aria-hidden="true"></span><div><strong class="protocol-name"></strong><small class="opportunity-type"></small></div></div></td>
+        <td data-label="Protocol">
+          <a class="protocol-link" target="_blank" rel="noopener noreferrer">
+            <span class="protocol-icon" aria-hidden="true"><img class="protocol-logo" alt="" /></span>
+            <span class="protocol-copy"><strong class="protocol-name"></strong><small class="opportunity-type"></small></span>
+            <span class="protocol-link-arrow" aria-hidden="true">↗</span>
+          </a>
+        </td>
         <td data-label="Product / pool"><strong class="product-name"></strong></td>
         <td data-label="Asset"><span class="asset-pill"></span></td>
         <td data-label="Yield" class="yield-cell">
@@ -135,7 +143,6 @@
         </td>
         <td data-label="TVL"><span class="tvl-wrap"><span class="tvl-value"></span></span></td>
         <td data-label="Updated"><span class="updated-value"></span></td>
-        <td class="action-cell"><a class="open-link" target="_blank" rel="noopener noreferrer"><span class="open-link-label">Open</span><span class="open-link-arrow" aria-hidden="true">↗</span></a></td>
       </tr>
     </template>
   </body>

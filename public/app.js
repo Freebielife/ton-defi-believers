@@ -15,6 +15,25 @@ const state = {
   dataset: null,
 };
 
+
+const protocolIconMap = {
+  "Tonstakers": "./assets/protocols/tonstakers.svg",
+  "Stakee": "./assets/protocols/stakee.svg",
+  "Hipo": "./assets/protocols/hipo.svg",
+  "Bemo": "./assets/protocols/bemo.svg",
+  "KTON": "./assets/protocols/kton.svg",
+  "Affluent": "./assets/protocols/affluent.svg",
+  "Storm Trade": "./assets/protocols/storm-trade.svg",
+  "EVAA": "./assets/protocols/evaa.svg",
+  "STON.fi": "./assets/protocols/stonfi.svg",
+  "GTC": "./assets/protocols/gtc.svg",
+  "Morpho": "./assets/protocols/morpho.svg",
+  "Ethena": "./assets/protocols/ethena.svg",
+  "Telegram Wallet": "./assets/protocols/telegram-wallet.svg",
+  "Euler": "./assets/protocols/euler.svg",
+  "DeDust": "./assets/protocols/dedust.svg",
+};
+
 const translations = {
   en: {
     pilot: "TON DeFi market catalog",
@@ -52,6 +71,7 @@ const translations = {
     utilization: "UR",
     data: "Updated",
     open: "Open",
+    visitProtocol: "Open protocol",
     loading: "Loading market data…",
     unavailable: "Data unavailable",
     emptyTitle: "Nothing found",
@@ -59,6 +79,7 @@ const translations = {
     result: "results",
     oneResult: "result",
     lowTvl: "Low TVL",
+    hourlyChecks: "Hourly checks",
     freshnessChecking: "Checking freshness…",
     freshnessFresh: "Fresh snapshot",
     freshnessWarning: "Data may be outdated",
@@ -111,6 +132,7 @@ const translations = {
     utilization: "UR",
     data: "Обновлено",
     open: "Открыть",
+    visitProtocol: "Открыть протокол",
     loading: "Загрузка данных…",
     unavailable: "Данные недоступны",
     emptyTitle: "Ничего не найдено",
@@ -118,6 +140,7 @@ const translations = {
     result: "результатов",
     oneResult: "результат",
     lowTvl: "Низкий TVL",
+    hourlyChecks: "Проверка каждый час",
     freshnessChecking: "Проверка актуальности…",
     freshnessFresh: "Актуальный снимок",
     freshnessWarning: "Данные могут быть устаревшими",
@@ -263,9 +286,24 @@ function renderRow(item) {
   const row = elements.rowTemplate.content.firstElementChild.cloneNode(true);
   const link = item.links?.app || item.links?.official;
 
-  row.querySelector(".protocol-icon").textContent = initials(item.protocol);
+  row.dataset.category = item.category || "other";
+  const protocolLink = row.querySelector(".protocol-link");
+  const logo = row.querySelector(".protocol-logo");
+  const iconUrl = protocolIconMap[item.protocol];
+  logo.src = iconUrl || "./assets/brand/favicon.png";
+  logo.addEventListener("error", () => {
+    logo.src = "./assets/brand/favicon.png";
+  }, { once: true });
   row.querySelector(".protocol-name").textContent = item.protocol;
   row.querySelector(".opportunity-type").textContent = typeText(item.type);
+  protocolLink.setAttribute("aria-label", `${text("visitProtocol")}: ${item.protocol}`);
+  protocolLink.title = `${text("visitProtocol")}: ${item.protocol}`;
+  if (link) protocolLink.href = link;
+  else {
+    protocolLink.removeAttribute("href");
+    protocolLink.classList.add("is-disabled");
+    protocolLink.setAttribute("aria-disabled", "true");
+  }
   row.querySelector(".product-name").textContent = item.product;
   row.querySelector(".asset-pill").textContent = item.asset || "—";
 
@@ -304,16 +342,6 @@ function renderRow(item) {
   updated.classList.toggle("is-stale", itemFreshness.level === "stale");
   updated.title = `${itemFreshness.label}${ageText(itemFreshness.hours) ? ` · ${ageText(itemFreshness.hours)}` : ""}`;
 
-  const action = row.querySelector(".open-link");
-  action.querySelector(".open-link-label").textContent = text("open");
-  action.setAttribute("aria-label", `${text("open")}: ${item.protocol} — ${item.product}`);
-  if (link) action.href = link;
-  else {
-    action.removeAttribute("href");
-    action.classList.add("is-disabled");
-    action.setAttribute("aria-disabled", "true");
-  }
-
   const labels = [text("protocol"), text("product"), text("asset"), text("yield"), "TVL", text("data")];
   row.querySelectorAll("td").forEach((cell, index) => {
     if (labels[index]) cell.dataset.label = labels[index];
@@ -335,6 +363,7 @@ function renderRows() {
       const group = sorted(items.filter((item) => item.category === category));
       if (!group.length) continue;
       const categoryRow = elements.categoryTemplate.content.firstElementChild.cloneNode(true);
+      categoryRow.dataset.category = category;
       categoryRow.querySelector(".category-name").textContent = categoryLabel(category);
       categoryRow.querySelector(".category-count").textContent = String(group.length);
       elements.marketRows.append(categoryRow);
@@ -390,7 +419,7 @@ async function loadData() {
     applyTranslations();
   } catch (error) {
     console.error(error);
-    elements.marketRows.innerHTML = `<tr class="loading-row"><td colspan="7">${text("unavailable")}</td></tr>`;
+    elements.marketRows.innerHTML = `<tr class="loading-row"><td colspan="6">${text("unavailable")}</td></tr>`;
     elements.resultCount.textContent = "";
   }
 }
