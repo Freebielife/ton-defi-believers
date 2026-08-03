@@ -1,0 +1,23 @@
+TON DeFi Believers v8.3 — test report
+
+Implemented:
+- GitHub Raw online data source
+- GitHub Pages online data source
+- local TON Storage JSON fallback
+- newest-snapshot selection by publishedAt/updatedAt
+- cache-busting requests
+- request timeout and error fallback
+- 10-minute recheck while open
+- refresh on visibility restore and browser online event
+- visible online/local source indicator
+
+Checks:
+- app.js syntax: PASSED
+- adapter fixture tests: PASSED
+- release check: PASSED
+- Resistance structure: PASSED (index.html in root)
+- Resistance file count: 22
+- referral parameter scan: PASSED
+
+Note:
+The full network build could not be completed in the isolated local environment because external collector endpoints were unavailable. Existing data was preserved. The autonomous browser-side fallback logic does not depend on that local build environment.

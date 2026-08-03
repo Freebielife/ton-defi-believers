@@ -2,6 +2,23 @@ const savedLanguage = (() => {
   try { return localStorage.getItem("tdb-language"); } catch { return null; }
 })();
 
+const DATA_SOURCES = [
+  {
+    id: "github-raw",
+    kind: "online",
+    url: "https://raw.githubusercontent.com/Freebielife/ton-defi-believers/main/public/data/market-catalog.json",
+  },
+  {
+    id: "github-pages",
+    kind: "online",
+    url: "https://freebielife.github.io/ton-defi-believers/data/market-catalog.json",
+  },
+  { id: "local", kind: "local", url: "./data/market-catalog.json" },
+];
+
+const DATA_RECHECK_INTERVAL_MS = 10 * 60 * 1000;
+const DATA_REQUEST_TIMEOUT_MS = 12 * 1000;
+
 const state = {
   language: savedLanguage === "ru" || savedLanguage === "en"
     ? savedLanguage
@@ -13,6 +30,9 @@ const state = {
   protocols: [],
   categories: [],
   dataset: null,
+  dataSource: null,
+  initialized: false,
+  loading: false,
 };
 
 
@@ -79,7 +99,10 @@ const translations = {
     result: "results",
     oneResult: "result",
     lowTvl: "Low TVL",
-    hourlyChecks: "Hourly checks",
+    hourlyChecks: "Source check every hour",
+    onlineData: "Online data",
+    localBackup: "Local backup",
+    dataRefreshing: "Refreshing data…",
     freshnessChecking: "Checking freshness…",
     freshnessFresh: "Fresh snapshot",
     freshnessWarning: "Data may be outdated",
@@ -140,7 +163,10 @@ const translations = {
     result: "результатов",
     oneResult: "результат",
     lowTvl: "Низкий TVL",
-    hourlyChecks: "Проверка каждый час",
+    hourlyChecks: "Проверка источников каждый час",
+    onlineData: "Онлайн-данные",
+    localBackup: "Резервный снимок",
+    dataRefreshing: "Обновление данных…",
     freshnessChecking: "Проверка актуальности…",
     freshnessFresh: "Актуальный снимок",
     freshnessWarning: "Данные могут быть устаревшими",
@@ -176,6 +202,7 @@ const elements = {
   tableShell: document.querySelector(".table-shell"),
   sourceLink: document.querySelector("#sourceLink"),
   freshnessBadge: document.querySelector("#freshnessBadge"),
+  dataSourceBadge: document.querySelector("#dataSourceBadge"),
 };
 
 function text(key) {
@@ -256,6 +283,63 @@ function freshnessInfo(value) {
 function categoryLabel(id) {
   const category = state.categories.find((item) => item.id === id);
   return category?.label?.[state.language] || category?.label?.en || id;
+}
+
+function datasetTimestamp(document) {
+  const value = document?.snapshot?.publishedAt || document?.updatedAt;
+  const timestamp = new Date(value || 0).getTime();
+  return Number.isFinite(timestamp) ? timestamp : 0;
+}
+
+function validateDataset(document) {
+  if (!document || typeof document !== "object") throw new Error("Invalid market document");
+  if (!Array.isArray(document.opportunities) || document.opportunities.length === 0) {
+    throw new Error("Market document has no opportunities");
+  }
+  if (!Array.isArray(document.protocols) || !Array.isArray(document.categories)) {
+    throw new Error("Market document has an invalid catalog structure");
+  }
+  return document;
+}
+
+function withCacheBuster(url) {
+  const separator = url.includes("?") ? "&" : "?";
+  return `${url}${separator}v=${Date.now()}`;
+}
+
+async function fetchDataset(source) {
+  const controller = new AbortController();
+  const timeout = window.setTimeout(() => controller.abort(), DATA_REQUEST_TIMEOUT_MS);
+  try {
+    const response = await fetch(withCacheBuster(source.url), {
+      cache: "no-store",
+      credentials: "omit",
+      referrerPolicy: "no-referrer",
+      signal: controller.signal,
+    });
+    if (!response.ok) throw new Error(`${source.id}: HTTP ${response.status}`);
+    const document = validateDataset(await response.json());
+    return { source, document, timestamp: datasetTimestamp(document) };
+  } finally {
+    window.clearTimeout(timeout);
+  }
+}
+
+async function resolveLatestDataset(sources = DATA_SOURCES) {
+  const results = await Promise.allSettled(sources.map((source) => fetchDataset(source)));
+  const available = results
+    .filter((result) => result.status === "fulfilled")
+    .map((result) => result.value)
+    .sort((a, b) => b.timestamp - a.timestamp || sources.indexOf(a.source) - sources.indexOf(b.source));
+
+  if (!available.length) {
+    const failures = results
+      .filter((result) => result.status === "rejected")
+      .map((result) => result.reason?.message || String(result.reason));
+    throw new Error(failures.join("; ") || "No market data source is available");
+  }
+
+  return available[0];
 }
 
 function sorted(items) {
@@ -386,6 +470,11 @@ function updateSummary() {
   elements.sourceLink.href = snapshot.sourceUrl || "https://t.me/ton_yields_daily";
   elements.sourceLink.textContent = snapshot.source || "TON Yields Daily";
 
+  const isOnline = state.dataSource?.kind === "online";
+  elements.dataSourceBadge.textContent = isOnline ? text("onlineData") : text("localBackup");
+  elements.dataSourceBadge.className = `data-source-badge ${isOnline ? "is-online" : "is-local"}`;
+  elements.dataSourceBadge.title = state.dataSource?.id || "";
+
   const freshness = freshnessInfo(snapshot.publishedAt || state.dataset?.updatedAt);
   const age = ageText(freshness.hours);
   elements.freshnessBadge.textContent = `${freshness.label}${age ? ` · ${age}` : ""}`;
@@ -405,23 +494,72 @@ function applyTranslations() {
   renderRows();
 }
 
-async function loadData() {
-  try {
-    const response = await fetch("./data/market-catalog.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const document = await response.json();
-    state.dataset = document;
-    state.opportunities = (document.opportunities ?? []).filter((item) => item.status?.active !== false);
-    state.protocols = document.protocols ?? [];
-    state.categories = document.categories ?? [];
+function applySelectedDataset(selected, { preserveSort = true } = {}) {
+  const document = selected.document;
+  const previousTimestamp = datasetTimestamp(state.dataset);
+  const nextTimestamp = datasetTimestamp(document);
+  const sourceChanged = state.dataSource?.id !== selected.source.id;
+  const dataChanged = !state.initialized || nextTimestamp !== previousTimestamp;
+
+  state.dataset = document;
+  state.dataSource = selected.source;
+  state.opportunities = (document.opportunities ?? []).filter((item) => item.status?.active !== false);
+  state.protocols = document.protocols ?? [];
+  state.categories = document.categories ?? [];
+
+  if (!state.initialized || !preserveSort) {
     state.sort = document.settings?.defaultSort || "tvl";
     elements.sortSelect.value = state.sort;
-    applyTranslations();
-  } catch (error) {
-    console.error(error);
-    elements.marketRows.innerHTML = `<tr class="loading-row"><td colspan="6">${text("unavailable")}</td></tr>`;
-    elements.resultCount.textContent = "";
   }
+  state.initialized = true;
+
+  if (dataChanged || sourceChanged) applyTranslations();
+  else updateSummary();
+}
+
+async function loadData({ silent = false } = {}) {
+  if (state.loading) return;
+  state.loading = true;
+
+  try {
+    if (!state.initialized) {
+      try {
+        const local = await fetchDataset(DATA_SOURCES.find((source) => source.kind === "local"));
+        applySelectedDataset(local, { preserveSort: false });
+      } catch (localError) {
+        console.warn("Local market backup is unavailable:", localError);
+      }
+    }
+
+    if (!silent && elements.dataSourceBadge) {
+      elements.dataSourceBadge.textContent = text("dataRefreshing");
+      elements.dataSourceBadge.className = "data-source-badge is-loading";
+    }
+
+    const onlineSources = DATA_SOURCES.filter((source) => source.kind === "online");
+    const online = await resolveLatestDataset(onlineSources);
+    const onlineIsNewer = !state.dataset || online.timestamp >= datasetTimestamp(state.dataset);
+    if (onlineIsNewer) applySelectedDataset(online);
+    else updateSummary();
+  } catch (error) {
+    console.warn("Online market data is unavailable; local backup remains active:", error);
+    if (!state.initialized) {
+      elements.marketRows.innerHTML = `<tr class="loading-row"><td colspan="6">${text("unavailable")}</td></tr>`;
+      elements.resultCount.textContent = "";
+    } else {
+      updateSummary();
+    }
+  } finally {
+    state.loading = false;
+  }
+}
+
+function scheduleDataRefresh() {
+  window.setInterval(() => loadData({ silent: true }), DATA_RECHECK_INTERVAL_MS);
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") loadData({ silent: true });
+  });
+  window.addEventListener("online", () => loadData({ silent: true }));
 }
 
 elements.languageButton.addEventListener("click", () => {
@@ -448,4 +586,4 @@ elements.sortSelect.addEventListener("change", (event) => {
   renderRows();
 });
 
-loadData();
+loadData().finally(scheduleDataRefresh);
