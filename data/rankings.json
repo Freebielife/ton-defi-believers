@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-04T21:38:52.805Z",
+  "generatedAt": "2026-08-04T23:19:57.556Z",
   "methodology": "Yield Score combines diminishing-return yield attractiveness, confidence, TVL depth and inverse risk. It is informational, not investment advice.",
   "opportunities": [
     {
@@ -71,7 +71,7 @@
       "score": 47,
       "grade": "D",
       "apy": 0,
-      "tvlUsd": 660769.994208,
+      "tvlUsd": 660313.062458,
       "confidence": 100,
       "risk": "medium"
     },
@@ -82,8 +82,8 @@
       "product": "USDe–tsUSDe pool",
       "score": 46,
       "grade": "D",
-      "apy": 0.18740639587864838,
-      "tvlUsd": 276937.6103054053,
+      "apy": 0.15431499104046065,
+      "tvlUsd": 276918.12637565157,
       "confidence": 100,
       "risk": "medium"
     },
