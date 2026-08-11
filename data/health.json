@@ -1,12 +1,12 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-11T02:29:55.548Z",
+  "generatedAt": "2026-08-11T04:41:53.360Z",
   "run": {
-    "startedAt": "2026-08-11T02:29:50.374Z",
-    "finishedAt": "2026-08-11T02:29:55.548Z",
-    "durationMs": 5174,
+    "startedAt": "2026-08-11T04:41:48.400Z",
+    "finishedAt": "2026-08-11T04:41:53.360Z",
+    "durationMs": 4960,
     "publishedFreshData": true,
-    "previousSnapshotUpdatedAt": "2026-08-10T23:52:37.062Z"
+    "previousSnapshotUpdatedAt": "2026-08-11T02:29:55.548Z"
   },
   "status": "degraded",
   "buildQuality": 56,
@@ -17,7 +17,7 @@
     "degraded": 8,
     "errors": 0,
     "disabled": 0,
-    "averageDurationMs": 517
+    "averageDurationMs": 496
   },
   "protocols": [
     {
@@ -25,7 +25,7 @@
       "protocol": "stonfi",
       "status": "ok",
       "sourceStatus": "ok",
-      "durationMs": 965,
+      "durationMs": 1176,
       "items": 1,
       "updated": 1,
       "unresolved": 0,
@@ -37,7 +37,7 @@
       "protocol": "dedust",
       "status": "ok",
       "sourceStatus": "ok",
-      "durationMs": 4205,
+      "durationMs": 3780,
       "items": 1,
       "updated": 1,
       "unresolved": 0,
@@ -121,7 +121,7 @@
       "protocol": "Ethena",
       "status": "degraded",
       "sourceStatus": "integration-ready",
-      "durationMs": 1,
+      "durationMs": 0,
       "items": 1,
       "updated": 0,
       "unresolved": 0,
