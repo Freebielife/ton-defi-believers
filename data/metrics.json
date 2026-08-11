@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-11T10:15:02.315Z",
+  "generatedAt": "2026-08-11T11:08:27.969Z",
   "methodology": {
     "confidence": "Score from source automation, freshness, metric availability, contract identification and error flags.",
     "risk": "Heuristic information-quality and product-structure indicator; not investment advice.",
@@ -79,12 +79,12 @@
       "protocol": "STON.fi",
       "metrics": {
         "yield": {
-          "value": 0.025675620486989965,
+          "value": 0.023325482206515424,
           "metric": "apy",
           "origin": "protocol-reported-apy",
-          "apyEquivalent": 0.025675620486989965
+          "apyEquivalent": 0.023325482206515424
         },
-        "tvlUsd": 281360.6979724871,
+        "tvlUsd": 281370.82957156666,
         "confidence": {
           "score": 100,
           "grade": "A",
@@ -116,7 +116,7 @@
           "origin": "protocol-reported-apr",
           "apyEquivalent": 0
         },
-        "tvlUsd": 627094.013554,
+        "tvlUsd": 627310.87077,
         "confidence": {
           "score": 100,
           "grade": "A",
