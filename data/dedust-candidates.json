@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-08-16T04:52:16.553Z",
+  "generatedAt": "2026-08-16T05:45:38.207Z",
   "mode": "configured-address",
   "opportunities": [
     {
       "opportunityId": "dedust-liquidity-pools",
       "selected": "EQA-X_yo3fzzbDbJ_0bzFWKqtRuZFIRa1sJsveZJ1YpViO3r",
       "tvl": {
-        "value": 638907.912974,
+        "value": 639263.691606,
         "method": "balanced-pool-stable-side",
         "approximate": true,
-        "assetUsdPrice": 1.570555585493333
+        "assetUsdPrice": 1.5721994994072264
       },
       "volume7dUsd": 0,
       "tradeFeeRate": 0.001,
@@ -20,7 +20,7 @@
       "tradesWindow": {
         "trades": [],
         "complete": true,
-        "cutoff": "2026-08-09T04:52:18.355Z",
+        "cutoff": "2026-08-09T05:45:40.045Z",
         "newestAt": null,
         "oldestAt": null
       },
