@@ -1,12 +1,12 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-19T07:08:35.684Z",
+  "generatedAt": "2026-08-19T07:56:22.106Z",
   "run": {
-    "startedAt": "2026-08-19T07:08:30.250Z",
-    "finishedAt": "2026-08-19T07:08:35.684Z",
-    "durationMs": 5434,
+    "startedAt": "2026-08-19T07:56:18.175Z",
+    "finishedAt": "2026-08-19T07:56:22.106Z",
+    "durationMs": 3931,
     "publishedFreshData": true,
-    "previousSnapshotUpdatedAt": "2026-08-19T05:48:44.165Z"
+    "previousSnapshotUpdatedAt": "2026-08-19T07:08:35.684Z"
   },
   "status": "degraded",
   "buildQuality": 56,
@@ -17,7 +17,7 @@
     "degraded": 8,
     "errors": 0,
     "disabled": 0,
-    "averageDurationMs": 543
+    "averageDurationMs": 393
   },
   "protocols": [
     {
@@ -25,7 +25,7 @@
       "protocol": "stonfi",
       "status": "ok",
       "sourceStatus": "ok",
-      "durationMs": 1196,
+      "durationMs": 781,
       "items": 1,
       "updated": 1,
       "unresolved": 0,
@@ -37,7 +37,7 @@
       "protocol": "dedust",
       "status": "ok",
       "sourceStatus": "ok",
-      "durationMs": 4235,
+      "durationMs": 3147,
       "items": 1,
       "updated": 1,
       "unresolved": 0,
@@ -109,7 +109,7 @@
       "protocol": "Storm Trade",
       "status": "degraded",
       "sourceStatus": "integration-ready",
-      "durationMs": 0,
+      "durationMs": 1,
       "items": 1,
       "updated": 0,
       "unresolved": 0,
