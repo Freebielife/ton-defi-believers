@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-20T01:53:56.579Z",
+  "generatedAt": "2026-08-20T03:11:56.467Z",
   "methodology": {
     "confidence": "Score from source automation, freshness, metric availability, contract identification and error flags.",
     "risk": "Heuristic information-quality and product-structure indicator; not investment advice.",
@@ -84,7 +84,7 @@
           "origin": "protocol-reported-apy",
           "apyEquivalent": 0.44978096089484265
         },
-        "tvlUsd": 280660.4649937714,
+        "tvlUsd": 280633.79718271294,
         "confidence": {
           "score": 100,
           "grade": "A",
@@ -116,7 +116,7 @@
           "origin": "protocol-reported-apr",
           "apyEquivalent": 0
         },
-        "tvlUsd": 634271.143688,
+        "tvlUsd": 635512.065448,
         "confidence": {
           "score": 100,
           "grade": "A",
