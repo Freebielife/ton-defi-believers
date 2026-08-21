@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-08-21T10:50:35.719Z",
+  "generatedAt": "2026-08-21T11:45:06.641Z",
   "source": {
     "provider": "DeDust official API + TON blockchain",
     "url": "https://api.dedust.io/v2/pools"
@@ -77,27 +77,27 @@
           "0"
         ],
         "reserves": [
-          "202427076508587",
-          "317462684482"
+          "202227591671971",
+          "317777656463"
         ],
         "lastPrice": null,
         "totalSupply": "7304758047264",
-        "lt": "87430541000009"
+        "lt": "87435834000005"
       },
       "onchain": {
         "status": "unavailable",
         "message": "TON RPC returned HTTP 404"
       },
       "tvl": {
-        "value": 634925.368964,
+        "value": 635555.312926,
         "method": "balanced-pool-stable-side",
         "approximate": true,
-        "assetUsdPrice": 1.568281723757114
+        "assetUsdPrice": 1.5713862477206388
       },
       "tradesWindow": {
         "trades": [],
         "complete": true,
-        "cutoff": "2026-08-14T10:50:40.096Z",
+        "cutoff": "2026-08-14T11:45:09.383Z",
         "newestAt": null,
         "oldestAt": null
       },
