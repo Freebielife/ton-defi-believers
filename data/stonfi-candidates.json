@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T07:09:58.187Z",
+  "generatedAt": "2026-08-21T07:59:39.070Z",
   "mode": "exact-pool-endpoint",
   "opportunities": [
     {
@@ -18,7 +18,7 @@
         ],
         "poolType": null,
         "dexVersion": "v2",
-        "tvlUsd": 276475.3323415567,
+        "tvlUsd": 276503.2653724922,
         "yieldRate": 0.34789674415209537,
         "yieldMetric": "apy",
         "yieldPeriod": "7d",
@@ -28,7 +28,7 @@
           "apy30d": 0.12812872637414005,
           "underlyingApr": 3.0227517030807927
         },
-        "volume24hUsd": 1819.5569377176014,
+        "volume24hUsd": 1819.740772346896,
         "rawReserves": [
           "67493418108",
           "160678275890"
