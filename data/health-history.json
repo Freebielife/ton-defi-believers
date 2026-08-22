@@ -1,77 +1,8 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-08-22T13:02:55.937Z",
+  "updatedAt": "2026-08-22T13:46:06.989Z",
   "limit": 168,
   "entries": [
-    {
-      "generatedAt": "2026-08-15T04:49:27.114Z",
-      "status": "degraded",
-      "buildQuality": 56,
-      "durationMs": 4718,
-      "publishedFreshData": true,
-      "protocols": {
-        "stonfi": {
-          "status": "ok",
-          "sourceStatus": "ok",
-          "durationMs": 1112,
-          "items": 1
-        },
-        "dedust": {
-          "status": "ok",
-          "sourceStatus": "ok",
-          "durationMs": 3604,
-          "items": 1
-        },
-        "tonstakers": {
-          "status": "degraded",
-          "sourceStatus": "integration-ready",
-          "durationMs": 1,
-          "items": 1
-        },
-        "evaa": {
-          "status": "degraded",
-          "sourceStatus": "integration-ready",
-          "durationMs": 0,
-          "items": 1
-        },
-        "hipo": {
-          "status": "degraded",
-          "sourceStatus": "integration-ready",
-          "durationMs": 0,
-          "items": 1
-        },
-        "bemo": {
-          "status": "degraded",
-          "sourceStatus": "integration-ready",
-          "durationMs": 0,
-          "items": 1
-        },
-        "affluent": {
-          "status": "degraded",
-          "sourceStatus": "integration-ready",
-          "durationMs": 0,
-          "items": 1
-        },
-        "storm": {
-          "status": "degraded",
-          "sourceStatus": "integration-ready",
-          "durationMs": 0,
-          "items": 1
-        },
-        "ethena": {
-          "status": "degraded",
-          "sourceStatus": "integration-ready",
-          "durationMs": 0,
-          "items": 1
-        },
-        "telegram-wallet": {
-          "status": "degraded",
-          "sourceStatus": "manual-until-public-source",
-          "durationMs": 0,
-          "items": 1
-        }
-      }
-    },
     {
       "generatedAt": "2026-08-15T05:44:07.649Z",
       "status": "degraded",
@@ -11549,6 +11480,75 @@
           "status": "degraded",
           "sourceStatus": "integration-ready",
           "durationMs": 1,
+          "items": 1
+        },
+        "evaa": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "hipo": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "bemo": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "affluent": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "storm": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "ethena": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "telegram-wallet": {
+          "status": "degraded",
+          "sourceStatus": "manual-until-public-source",
+          "durationMs": 0,
+          "items": 1
+        }
+      }
+    },
+    {
+      "generatedAt": "2026-08-22T13:46:06.989Z",
+      "status": "degraded",
+      "buildQuality": 56,
+      "durationMs": 3796,
+      "publishedFreshData": true,
+      "protocols": {
+        "stonfi": {
+          "status": "ok",
+          "sourceStatus": "ok",
+          "durationMs": 746,
+          "items": 1
+        },
+        "dedust": {
+          "status": "ok",
+          "sourceStatus": "ok",
+          "durationMs": 3049,
+          "items": 1
+        },
+        "tonstakers": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
           "items": 1
         },
         "evaa": {
