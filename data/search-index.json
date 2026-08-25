@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-25T17:47:48.225Z",
+  "generatedAt": "2026-08-25T19:01:32.936Z",
   "count": 15,
   "facets": {
     "protocols": [
@@ -117,8 +117,8 @@
       "asset": "USDe–tsUSDe",
       "category": "stablecoins",
       "type": "liquidity-pool",
-      "apy": 0.37405607583013933,
-      "tvlUsd": 227267.2114021634,
+      "apy": 0.4176208478828983,
+      "tvlUsd": 227260.55121401526,
       "yieldScore": 46,
       "confidence": 100,
       "risk": "medium",
@@ -148,7 +148,7 @@
       "category": "liquidity",
       "type": "liquidity-pool",
       "apy": 0,
-      "tvlUsd": 676754.460816,
+      "tvlUsd": 676046.03196,
       "yieldScore": 47,
       "confidence": 100,
       "risk": "medium",
