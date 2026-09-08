@@ -1,12 +1,12 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-07T23:32:36.312Z",
+  "generatedAt": "2026-09-08T04:43:07.480Z",
   "run": {
-    "startedAt": "2026-09-07T23:32:32.845Z",
-    "finishedAt": "2026-09-07T23:32:36.312Z",
-    "durationMs": 3467,
+    "startedAt": "2026-09-08T04:43:01.813Z",
+    "finishedAt": "2026-09-08T04:43:07.480Z",
+    "durationMs": 5667,
     "publishedFreshData": true,
-    "previousSnapshotUpdatedAt": "2026-09-07T20:37:00.074Z"
+    "previousSnapshotUpdatedAt": "2026-09-07T23:32:36.312Z"
   },
   "status": "degraded",
   "buildQuality": 56,
@@ -17,7 +17,7 @@
     "degraded": 8,
     "errors": 0,
     "disabled": 0,
-    "averageDurationMs": 347
+    "averageDurationMs": 567
   },
   "protocols": [
     {
@@ -25,7 +25,7 @@
       "protocol": "stonfi",
       "status": "ok",
       "sourceStatus": "ok",
-      "durationMs": 1032,
+      "durationMs": 1302,
       "items": 1,
       "updated": 1,
       "unresolved": 0,
@@ -37,7 +37,7 @@
       "protocol": "dedust",
       "status": "ok",
       "sourceStatus": "ok",
-      "durationMs": 2433,
+      "durationMs": 4364,
       "items": 1,
       "updated": 1,
       "unresolved": 0,
@@ -49,7 +49,7 @@
       "protocol": "Tonstakers",
       "status": "degraded",
       "sourceStatus": "integration-ready",
-      "durationMs": 1,
+      "durationMs": 0,
       "items": 1,
       "updated": 0,
       "unresolved": 0,
