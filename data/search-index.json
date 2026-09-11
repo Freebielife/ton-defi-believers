@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-11T16:34:05.284Z",
+  "generatedAt": "2026-09-11T19:47:43.390Z",
   "count": 15,
   "facets": {
     "protocols": [
@@ -117,8 +117,8 @@
       "asset": "USDe–tsUSDe",
       "category": "stablecoins",
       "type": "liquidity-pool",
-      "apy": 0.15190744895056596,
-      "tvlUsd": 227160.4473555598,
+      "apy": 0.15189905193297676,
+      "tvlUsd": 227157.03887176857,
       "yieldScore": 46,
       "confidence": 100,
       "risk": "medium",
@@ -149,8 +149,8 @@
       "type": "liquidity-pool",
       "apy": 0,
       "tvlUsd": 643029.899102,
-      "yieldScore": 47,
-      "confidence": 100,
+      "yieldScore": 45,
+      "confidence": 92,
       "risk": "medium",
       "links": {
         "official": "https://dedust.io/",

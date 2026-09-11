@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-11T16:34:05.130Z",
+  "generatedAt": "2026-09-11T19:47:43.293Z",
   "methodology": "Yield Score combines diminishing-return yield attractiveness, confidence, TVL depth and inverse risk. It is informational, not investment advice.",
   "opportunities": [
     {
@@ -65,26 +65,26 @@
     },
     {
       "rank": 6,
-      "id": "dedust-liquidity-pools",
-      "protocol": "DeDust",
-      "product": "TON–USDT pool",
-      "score": 47,
-      "grade": "D",
-      "apy": 0,
-      "tvlUsd": 643029.899102,
-      "confidence": 100,
-      "risk": "medium"
-    },
-    {
-      "rank": 7,
       "id": "ston-fi-usde-tsusde-weighted-stable",
       "protocol": "STON.fi",
       "product": "USDe–tsUSDe pool",
       "score": 46,
       "grade": "D",
-      "apy": 0.15190744895056596,
-      "tvlUsd": 227160.4473555598,
+      "apy": 0.15189905193297676,
+      "tvlUsd": 227157.03887176857,
       "confidence": 100,
+      "risk": "medium"
+    },
+    {
+      "rank": 7,
+      "id": "dedust-liquidity-pools",
+      "protocol": "DeDust",
+      "product": "TON–USDT pool",
+      "score": 45,
+      "grade": "D",
+      "apy": 0,
+      "tvlUsd": 643029.899102,
+      "confidence": 92,
       "risk": "medium"
     },
     {
