@@ -1,12 +1,12 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-12T10:52:21.364Z",
+  "generatedAt": "2026-09-12T14:11:43.389Z",
   "run": {
-    "startedAt": "2026-09-12T10:52:17.037Z",
-    "finishedAt": "2026-09-12T10:52:21.364Z",
-    "durationMs": 4327,
+    "startedAt": "2026-09-12T14:11:37.840Z",
+    "finishedAt": "2026-09-12T14:11:43.389Z",
+    "durationMs": 5549,
     "publishedFreshData": true,
-    "previousSnapshotUpdatedAt": "2026-09-12T05:52:07.659Z"
+    "previousSnapshotUpdatedAt": "2026-09-12T10:52:21.364Z"
   },
   "status": "degraded",
   "buildQuality": 56,
@@ -17,7 +17,7 @@
     "degraded": 8,
     "errors": 0,
     "disabled": 0,
-    "averageDurationMs": 433
+    "averageDurationMs": 555
   },
   "protocols": [
     {
@@ -25,7 +25,7 @@
       "protocol": "stonfi",
       "status": "ok",
       "sourceStatus": "ok",
-      "durationMs": 799,
+      "durationMs": 1263,
       "items": 1,
       "updated": 1,
       "unresolved": 0,
@@ -37,7 +37,7 @@
       "protocol": "dedust",
       "status": "ok",
       "sourceStatus": "ok",
-      "durationMs": 3525,
+      "durationMs": 4281,
       "items": 1,
       "updated": 1,
       "unresolved": 0,
@@ -61,7 +61,7 @@
       "protocol": "EVAA",
       "status": "degraded",
       "sourceStatus": "integration-ready",
-      "durationMs": 0,
+      "durationMs": 1,
       "items": 1,
       "updated": 0,
       "unresolved": 0,
@@ -73,7 +73,7 @@
       "protocol": "Hipo",
       "status": "degraded",
       "sourceStatus": "integration-ready",
-      "durationMs": 0,
+      "durationMs": 1,
       "items": 1,
       "updated": 0,
       "unresolved": 0,
