@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-14T19:25:27.369Z",
+  "generatedAt": "2026-09-14T23:10:50.957Z",
   "thresholds": {
     "apyAbsolutePoints": 0.25,
     "tvlPercent": 2
@@ -13,10 +13,10 @@
       "type": "updated",
       "apy": null,
       "tvl": {
-        "before": 622067.563914,
-        "after": 603036.877292,
-        "absolute": -19030.686622000067,
-        "percent": -3.0592636115377063
+        "before": 603036.877292,
+        "after": 615460.611436,
+        "absolute": 12423.734143999987,
+        "percent": 2.060194759529477
       }
     }
   ]
