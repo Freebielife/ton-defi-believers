@@ -1,28 +1,9 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-19T18:04:40.777Z",
+  "generatedAt": "2026-09-19T20:45:19.468Z",
   "thresholds": {
     "apyAbsolutePoints": 0.25,
     "tvlPercent": 2
   },
-  "changes": [
-    {
-      "id": "ston-fi-usde-tsusde-weighted-stable",
-      "protocol": "STON.fi",
-      "product": "USDe–tsUSDe pool",
-      "type": "updated",
-      "apy": {
-        "before": 0.8961620148720659,
-        "after": 0.5570666245708742,
-        "absolute": -0.33909539030119173,
-        "percent": -37.838625680826276
-      },
-      "tvl": {
-        "before": 187249.43471231885,
-        "after": 187254.36358761674,
-        "absolute": 4.928875297890045,
-        "percent": 0.002632251096224955
-      }
-    }
-  ]
+  "changes": []
 }
