@@ -4617,7 +4617,7 @@
     },
     {
       "date": "2026-09-21",
-      "capturedAt": "2026-09-21T01:10:25.561Z",
+      "capturedAt": "2026-09-21T06:25:46.371Z",
       "opportunities": [
         {
           "id": "tonstakers-liquid-staking",
@@ -4631,13 +4631,13 @@
         },
         {
           "id": "ston-fi-usde-tsusde-weighted-stable",
-          "apy": 0.5116591194686627,
-          "tvlUsd": 187287.8079443103
+          "apy": 0.400129933862419,
+          "tvlUsd": 187282.57810754047
         },
         {
           "id": "dedust-liquidity-pools",
           "apy": 0,
-          "tvlUsd": 610972.781984
+          "tvlUsd": 612712.134842
         },
         {
           "id": "hipo-liquid-staking",
@@ -4697,5 +4697,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-09-21T01:10:25.569Z"
+  "updatedAt": "2026-09-21T06:25:46.378Z"
 }
