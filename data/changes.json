@@ -1,23 +1,9 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-25T13:52:42.823Z",
+  "generatedAt": "2026-09-25T18:40:46.280Z",
   "thresholds": {
     "apyAbsolutePoints": 0.25,
     "tvlPercent": 2
   },
-  "changes": [
-    {
-      "id": "dedust-liquidity-pools",
-      "protocol": "DeDust",
-      "product": "TON–USDT pool",
-      "type": "updated",
-      "apy": null,
-      "tvl": {
-        "before": 634807.89644,
-        "after": 659878.9569,
-        "absolute": 25071.06045999995,
-        "percent": 3.9493932889931505
-      }
-    }
-  ]
+  "changes": []
 }
