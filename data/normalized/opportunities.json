@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2",
-  "updatedAt": "2026-09-30T19:25:13.817Z",
+  "updatedAt": "2026-09-30T23:54:09.014Z",
   "snapshot": {
     "name": "expanded-market-v5",
     "verifiedAt": "2026-07-28T18:37:01Z",
@@ -233,8 +233,8 @@
       "product": "USDe–tsUSDe pool",
       "type": "liquidity-pool",
       "apy": {
-        "current": 0.2608628,
-        "average7d": 0.2608628,
+        "current": 0.2566365,
+        "average7d": 0.2566365,
         "base": null,
         "rewards": null,
         "direction": null,
@@ -242,13 +242,13 @@
         "isMaximum": false,
         "isApproximate": false,
         "qualifier": "official-api-7d",
-        "observedAt": "2026-09-30T19:25:09.224Z",
+        "observedAt": "2026-09-30T23:54:03.037Z",
         "note": {
           "ru": "APY за последние 7 дней",
           "en": "APY over the last 7 days"
         }
       },
-      "tvlUsd": 187691.085814903,
+      "tvlUsd": 187717.562410761,
       "utilizationRate": null,
       "links": {
         "official": "https://ston.fi/",
@@ -258,7 +258,7 @@
         "type": "api",
         "provider": "STON.fi official API",
         "url": "https://api.ston.fi/v1/pools/EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
-        "lastChecked": "2026-09-30T19:25:09.224Z",
+        "lastChecked": "2026-09-30T23:54:03.037Z",
         "origin": "automatic collector"
       },
       "status": {
@@ -269,7 +269,7 @@
         "requiresDisambiguation": false
       },
       "verification": {
-        "verifiedAt": "2026-09-30T19:25:09.224Z",
+        "verifiedAt": "2026-09-30T23:54:03.037Z",
         "note": {
           "ru": "Доходность взята из официального API STON.fi (7d период). TVL — поле lp_total_supply_usd. Резервы: on-chain проверка временно недоступна.",
           "en": "Yield comes from the official STON.fi API (7d period). TVL uses lp_total_supply_usd. Reserves: on-chain check temporarily unavailable."
@@ -278,11 +278,11 @@
       "externalId": "EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
       "sourceDetails": {
         "metricPeriod": "7d",
-        "apy1d": 0.6071229,
-        "apy7d": 0.2608628,
-        "apy30d": 0.3718484,
+        "apy1d": 0.5885225,
+        "apy7d": 0.2566365,
+        "apy30d": 0.371255,
         "underlyingApr": 3.3217652,
-        "volume24hUsd": 7803.676884882,
+        "volume24hUsd": 7565.954347895,
         "dexVersion": "v2",
         "assetAddresses": [
           "EQAIb6KmdfdDR7CN1GBqVJuP25iCnLKCvBlJ07Evuu2dzP5f",
@@ -296,12 +296,12 @@
       },
       "metrics": {
         "yield": {
-          "value": 0.2608628,
+          "value": 0.2566365,
           "metric": "apy",
           "origin": "protocol-reported-apy",
-          "apyEquivalent": 0.2608628
+          "apyEquivalent": 0.2566365
         },
-        "tvlUsd": 187691.085814903,
+        "tvlUsd": 187717.562410761,
         "confidence": {
           "score": 100,
           "grade": "A",
@@ -325,7 +325,7 @@
           "score": 46,
           "grade": "D",
           "components": {
-            "yield": 0.75,
+            "yield": 0.74,
             "confidence": 30,
             "tvl": 5.09,
             "risk": 9.75
@@ -335,20 +335,20 @@
           "1d": {
             "available": true,
             "referenceDate": "2026-09-29",
-            "apyChangePoints": 0.08094599999999999,
-            "tvlChangePercent": 0.03611745306541125
+            "apyChangePoints": 0.07671969999999997,
+            "tvlChangePercent": 0.05022902283713604
           },
           "7d": {
             "available": true,
             "referenceDate": "2026-09-23",
-            "apyChangePoints": 0.1742645,
-            "tvlChangePercent": 0.08944274679900042
+            "apyChangePoints": 0.17003819999999997,
+            "tvlChangePercent": 0.1035618388898863
           },
           "30d": {
             "available": true,
             "referenceDate": "2026-08-31",
-            "apyChangePoints": -0.16677588045176633,
-            "tvlChangePercent": -24.21548607661271
+            "apyChangePoints": -0.17100218045176635,
+            "tvlChangePercent": -24.204795553199023
           }
         }
       }
@@ -368,7 +368,7 @@
         "direction": null,
         "metric": "apr",
         "qualifier": "calculated-fee-apr-7d",
-        "observedAt": "2026-09-30T19:25:10.055Z",
+        "observedAt": "2026-09-30T23:54:04.148Z",
         "note": {
           "ru": "Расчётный fee APR за 7 дней",
           "en": "Calculated 7-day fee APR"
@@ -386,7 +386,7 @@
         "type": "api",
         "provider": "DeDust official API + TON blockchain",
         "url": "https://api.dedust.io/v2/pools/EQA-X_yo3fzzbDbJ_0bzFWKqtRuZFIRa1sJsveZJ1YpViO3r/trades",
-        "lastChecked": "2026-09-30T19:25:10.055Z",
+        "lastChecked": "2026-09-30T23:54:04.148Z",
         "origin": "automatic collector"
       },
       "status": {
@@ -397,7 +397,7 @@
         "requiresDisambiguation": false
       },
       "verification": {
-        "verifiedAt": "2026-09-30T19:25:10.055Z",
+        "verifiedAt": "2026-09-30T23:54:04.148Z",
         "note": {
           "ru": "Пул TON/USDT закреплён по адресу. APR рассчитан по фактическим сделкам за 7 дней и доле LP 80%. TVL рассчитан по резервам пула (приближённо). Резервы: on-chain проверка временно недоступна.",
           "en": "The TON/USDT pool is locked by address. APR is calculated from actual 7-day trades and the 80% LP fee share. TVL is calculated from pool reserves (approximate). Reserves: on-chain check temporarily unavailable."
@@ -473,7 +473,7 @@
         "tradesWindow": {
           "trades": [],
           "complete": true,
-          "cutoff": "2026-09-23T19:25:12.877Z",
+          "cutoff": "2026-09-23T23:54:08.367Z",
           "newestAt": null,
           "oldestAt": null
         },
@@ -1658,6 +1658,6 @@
       }
     }
   ],
-  "normalizedAt": "2026-09-30T19:25:13.984Z",
-  "insightsGeneratedAt": "2026-09-30T19:25:14.669Z"
+  "normalizedAt": "2026-09-30T23:54:09.124Z",
+  "insightsGeneratedAt": "2026-09-30T23:54:09.567Z"
 }
