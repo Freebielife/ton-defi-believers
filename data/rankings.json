@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-30T06:47:26.746Z",
+  "generatedAt": "2026-09-30T13:48:48.750Z",
   "methodology": "Yield Score combines diminishing-return yield attractiveness, confidence, TVL depth and inverse risk. It is informational, not investment advice.",
   "opportunities": [
     {
@@ -80,10 +80,10 @@
       "id": "ston-fi-usde-tsusde-weighted-stable",
       "protocol": "STON.fi",
       "product": "USDe–tsUSDe pool",
-      "score": 45,
+      "score": 46,
       "grade": "D",
-      "apy": 0.1774522,
-      "tvlUsd": 187585.149810597,
+      "apy": 0.2440524,
+      "tvlUsd": 187756.870773308,
       "confidence": 100,
       "risk": "medium"
     },
