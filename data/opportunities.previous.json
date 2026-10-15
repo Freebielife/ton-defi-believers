@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2",
-  "updatedAt": "2026-10-15T10:00:12.798Z",
+  "updatedAt": "2026-10-15T15:05:26.793Z",
   "snapshot": {
     "name": "expanded-market-v5",
     "verifiedAt": "2026-07-28T18:37:01Z",
@@ -100,19 +100,19 @@
         "trends": {
           "1d": {
             "available": true,
-            "referenceDate": "2026-10-13",
+            "referenceDate": "2026-10-14",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           },
           "7d": {
             "available": true,
-            "referenceDate": "2026-10-07",
+            "referenceDate": "2026-10-08",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           },
           "30d": {
             "available": true,
-            "referenceDate": "2026-09-14",
+            "referenceDate": "2026-09-15",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           }
@@ -206,19 +206,19 @@
         "trends": {
           "1d": {
             "available": true,
-            "referenceDate": "2026-10-13",
+            "referenceDate": "2026-10-14",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           },
           "7d": {
             "available": true,
-            "referenceDate": "2026-10-07",
+            "referenceDate": "2026-10-08",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           },
           "30d": {
             "available": true,
-            "referenceDate": "2026-09-14",
+            "referenceDate": "2026-09-15",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           }
@@ -233,8 +233,8 @@
       "product": "USDe–tsUSDe pool",
       "type": "liquidity-pool",
       "apy": {
-        "current": 0.2862652,
-        "average7d": 0.2862652,
+        "current": 0.2850554,
+        "average7d": 0.2850554,
         "base": null,
         "rewards": null,
         "direction": null,
@@ -242,13 +242,13 @@
         "isMaximum": false,
         "isApproximate": false,
         "qualifier": "official-api-7d",
-        "observedAt": "2026-10-15T10:00:09.415Z",
+        "observedAt": "2026-10-15T15:05:22.432Z",
         "note": {
           "ru": "APY за последние 7 дней",
           "en": "APY over the last 7 days"
         }
       },
-      "tvlUsd": 176554.937506333,
+      "tvlUsd": 176560.039642285,
       "utilizationRate": null,
       "links": {
         "official": "https://ston.fi/",
@@ -258,7 +258,7 @@
         "type": "api",
         "provider": "STON.fi official API",
         "url": "https://api.ston.fi/v1/pools/EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
-        "lastChecked": "2026-10-15T10:00:09.415Z",
+        "lastChecked": "2026-10-15T15:05:22.432Z",
         "origin": "automatic collector"
       },
       "status": {
@@ -269,7 +269,7 @@
         "requiresDisambiguation": false
       },
       "verification": {
-        "verifiedAt": "2026-10-15T10:00:09.415Z",
+        "verifiedAt": "2026-10-15T15:05:22.432Z",
         "note": {
           "ru": "Доходность взята из официального API STON.fi (7d период). TVL — поле lp_total_supply_usd. Резервы: on-chain проверка временно недоступна.",
           "en": "Yield comes from the official STON.fi API (7d period). TVL uses lp_total_supply_usd. Reserves: on-chain check temporarily unavailable."
@@ -278,11 +278,11 @@
       "externalId": "EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5",
       "sourceDetails": {
         "metricPeriod": "7d",
-        "apy1d": 0.09446679999999999,
-        "apy7d": 0.2862652,
-        "apy30d": 0.2445562,
-        "underlyingApr": 3.0827406,
-        "volume24hUsd": 1142.567465023,
+        "apy1d": 0.0836307,
+        "apy7d": 0.2850554,
+        "apy30d": 0.2329598,
+        "underlyingApr": 3.0827631,
+        "volume24hUsd": 1011.451995619,
         "dexVersion": "v2",
         "assetAddresses": [
           "EQAIb6KmdfdDR7CN1GBqVJuP25iCnLKCvBlJ07Evuu2dzP5f",
@@ -296,12 +296,12 @@
       },
       "metrics": {
         "yield": {
-          "value": 0.2862652,
+          "value": 0.2850554,
           "metric": "apy",
           "origin": "protocol-reported-apy",
-          "apyEquivalent": 0.2862652
+          "apyEquivalent": 0.2850554
         },
-        "tvlUsd": 176554.937506333,
+        "tvlUsd": 176560.039642285,
         "confidence": {
           "score": 100,
           "grade": "A",
@@ -325,7 +325,7 @@
           "score": 46,
           "grade": "D",
           "components": {
-            "yield": 0.83,
+            "yield": 0.82,
             "confidence": 30,
             "tvl": 4.99,
             "risk": 9.75
@@ -334,21 +334,21 @@
         "trends": {
           "1d": {
             "available": true,
-            "referenceDate": "2026-10-13",
-            "apyChangePoints": -0.26601850000000005,
-            "tvlChangePercent": -0.25699788749532504
+            "referenceDate": "2026-10-14",
+            "apyChangePoints": 0.010690400000000044,
+            "tvlChangePercent": -0.02431286573866391
           },
           "7d": {
             "available": true,
-            "referenceDate": "2026-10-07",
-            "apyChangePoints": -0.052358700000000036,
-            "tvlChangePercent": -5.578165027803738
+            "referenceDate": "2026-10-08",
+            "apyChangePoints": -0.05236299999999999,
+            "tvlChangePercent": -5.5557766424864115
           },
           "30d": {
             "available": true,
-            "referenceDate": "2026-09-14",
-            "apyChangePoints": -0.5583884372250948,
-            "tvlChangePercent": -5.723042759707412
+            "referenceDate": "2026-09-15",
+            "apyChangePoints": -0.4844265390645964,
+            "tvlChangePercent": -5.644621958277794
           }
         }
       }
@@ -368,7 +368,7 @@
         "direction": null,
         "metric": "apr",
         "qualifier": "calculated-fee-apr-7d",
-        "observedAt": "2026-10-15T10:00:10.141Z",
+        "observedAt": "2026-10-15T15:05:23.553Z",
         "note": {
           "ru": "Расчётный fee APR за 7 дней",
           "en": "Calculated 7-day fee APR"
@@ -386,7 +386,7 @@
         "type": "api",
         "provider": "DeDust official API + TON blockchain",
         "url": "https://api.dedust.io/v2/pools/EQA-X_yo3fzzbDbJ_0bzFWKqtRuZFIRa1sJsveZJ1YpViO3r/trades",
-        "lastChecked": "2026-10-15T10:00:10.141Z",
+        "lastChecked": "2026-10-15T15:05:23.553Z",
         "origin": "automatic collector"
       },
       "status": {
@@ -397,7 +397,7 @@
         "requiresDisambiguation": false
       },
       "verification": {
-        "verifiedAt": "2026-10-15T10:00:10.141Z",
+        "verifiedAt": "2026-10-15T15:05:23.553Z",
         "note": {
           "ru": "Пул TON/USDT закреплён по адресу. APR рассчитан по фактическим сделкам за 7 дней и доле LP 80%. TVL рассчитан по резервам пула (приближённо). Резервы: on-chain проверка временно недоступна.",
           "en": "The TON/USDT pool is locked by address. APR is calculated from actual 7-day trades and the 80% LP fee share. TVL is calculated from pool reserves (approximate). Reserves: on-chain check temporarily unavailable."
@@ -443,21 +443,21 @@
         "trends": {
           "1d": {
             "available": true,
-            "referenceDate": "2026-10-13",
+            "referenceDate": "2026-10-14",
             "apyChangePoints": 0,
             "tvlChangePercent": 0
           },
           "7d": {
             "available": true,
-            "referenceDate": "2026-10-07",
+            "referenceDate": "2026-10-08",
             "apyChangePoints": 0,
             "tvlChangePercent": 0
           },
           "30d": {
             "available": true,
-            "referenceDate": "2026-09-14",
+            "referenceDate": "2026-09-15",
             "apyChangePoints": 0,
-            "tvlChangePercent": 6.692630506425725
+            "tvlChangePercent": 6.088539543498269
           }
         }
       },
@@ -473,7 +473,7 @@
         "tradesWindow": {
           "trades": [],
           "complete": true,
-          "cutoff": "2026-10-08T10:00:12.171Z",
+          "cutoff": "2026-10-08T15:05:26.044Z",
           "newestAt": null,
           "oldestAt": null
         },
@@ -579,19 +579,19 @@
         "trends": {
           "1d": {
             "available": true,
-            "referenceDate": "2026-10-13",
+            "referenceDate": "2026-10-14",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           },
           "7d": {
             "available": true,
-            "referenceDate": "2026-10-07",
+            "referenceDate": "2026-10-08",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           },
           "30d": {
             "available": true,
-            "referenceDate": "2026-09-14",
+            "referenceDate": "2026-09-15",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           }
@@ -684,19 +684,19 @@
         "trends": {
           "1d": {
             "available": true,
-            "referenceDate": "2026-10-13",
+            "referenceDate": "2026-10-14",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           },
           "7d": {
             "available": true,
-            "referenceDate": "2026-10-07",
+            "referenceDate": "2026-10-08",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           },
           "30d": {
             "available": true,
-            "referenceDate": "2026-09-14",
+            "referenceDate": "2026-09-15",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           }
@@ -789,19 +789,19 @@
         "trends": {
           "1d": {
             "available": true,
-            "referenceDate": "2026-10-13",
+            "referenceDate": "2026-10-14",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           },
           "7d": {
             "available": true,
-            "referenceDate": "2026-10-07",
+            "referenceDate": "2026-10-08",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           },
           "30d": {
             "available": true,
-            "referenceDate": "2026-09-14",
+            "referenceDate": "2026-09-15",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           }
@@ -894,19 +894,19 @@
         "trends": {
           "1d": {
             "available": true,
-            "referenceDate": "2026-10-13",
+            "referenceDate": "2026-10-14",
             "apyChangePoints": 0.08919588569345294,
             "tvlChangePercent": null
           },
           "7d": {
             "available": true,
-            "referenceDate": "2026-10-07",
+            "referenceDate": "2026-10-08",
             "apyChangePoints": 0.08919588569345294,
             "tvlChangePercent": null
           },
           "30d": {
             "available": true,
-            "referenceDate": "2026-09-14",
+            "referenceDate": "2026-09-15",
             "apyChangePoints": 0.08919588569345294,
             "tvlChangePercent": null
           }
@@ -1001,19 +1001,19 @@
         "trends": {
           "1d": {
             "available": true,
-            "referenceDate": "2026-10-13",
+            "referenceDate": "2026-10-14",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           },
           "7d": {
             "available": true,
-            "referenceDate": "2026-10-07",
+            "referenceDate": "2026-10-08",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           },
           "30d": {
             "available": true,
-            "referenceDate": "2026-09-14",
+            "referenceDate": "2026-09-15",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           }
@@ -1106,19 +1106,19 @@
         "trends": {
           "1d": {
             "available": true,
-            "referenceDate": "2026-10-13",
+            "referenceDate": "2026-10-14",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           },
           "7d": {
             "available": true,
-            "referenceDate": "2026-10-07",
+            "referenceDate": "2026-10-08",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           },
           "30d": {
             "available": true,
-            "referenceDate": "2026-09-14",
+            "referenceDate": "2026-09-15",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           }
@@ -1215,19 +1215,19 @@
         "trends": {
           "1d": {
             "available": true,
-            "referenceDate": "2026-10-13",
+            "referenceDate": "2026-10-14",
             "apyChangePoints": null,
             "tvlChangePercent": null
           },
           "7d": {
             "available": true,
-            "referenceDate": "2026-10-07",
+            "referenceDate": "2026-10-08",
             "apyChangePoints": null,
             "tvlChangePercent": null
           },
           "30d": {
             "available": true,
-            "referenceDate": "2026-09-14",
+            "referenceDate": "2026-09-15",
             "apyChangePoints": null,
             "tvlChangePercent": null
           }
@@ -1323,19 +1323,19 @@
         "trends": {
           "1d": {
             "available": true,
-            "referenceDate": "2026-10-13",
+            "referenceDate": "2026-10-14",
             "apyChangePoints": null,
             "tvlChangePercent": null
           },
           "7d": {
             "available": true,
-            "referenceDate": "2026-10-07",
+            "referenceDate": "2026-10-08",
             "apyChangePoints": null,
             "tvlChangePercent": null
           },
           "30d": {
             "available": true,
-            "referenceDate": "2026-09-14",
+            "referenceDate": "2026-09-15",
             "apyChangePoints": null,
             "tvlChangePercent": null
           }
@@ -1428,19 +1428,19 @@
         "trends": {
           "1d": {
             "available": true,
-            "referenceDate": "2026-10-13",
+            "referenceDate": "2026-10-14",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           },
           "7d": {
             "available": true,
-            "referenceDate": "2026-10-07",
+            "referenceDate": "2026-10-08",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           },
           "30d": {
             "available": true,
-            "referenceDate": "2026-09-14",
+            "referenceDate": "2026-09-15",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           }
@@ -1533,19 +1533,19 @@
         "trends": {
           "1d": {
             "available": true,
-            "referenceDate": "2026-10-13",
+            "referenceDate": "2026-10-14",
             "apyChangePoints": 1.7105326413145967,
             "tvlChangePercent": null
           },
           "7d": {
             "available": true,
-            "referenceDate": "2026-10-07",
+            "referenceDate": "2026-10-08",
             "apyChangePoints": 1.7105326413145967,
             "tvlChangePercent": null
           },
           "30d": {
             "available": true,
-            "referenceDate": "2026-09-14",
+            "referenceDate": "2026-09-15",
             "apyChangePoints": 1.7105326413145967,
             "tvlChangePercent": null
           }
@@ -1638,19 +1638,19 @@
         "trends": {
           "1d": {
             "available": true,
-            "referenceDate": "2026-10-13",
+            "referenceDate": "2026-10-14",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           },
           "7d": {
             "available": true,
-            "referenceDate": "2026-10-07",
+            "referenceDate": "2026-10-08",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           },
           "30d": {
             "available": true,
-            "referenceDate": "2026-09-14",
+            "referenceDate": "2026-09-15",
             "apyChangePoints": 0,
             "tvlChangePercent": null
           }
@@ -1658,6 +1658,6 @@
       }
     }
   ],
-  "normalizedAt": "2026-10-15T10:00:12.971Z",
-  "insightsGeneratedAt": "2026-10-15T10:00:13.717Z"
+  "normalizedAt": "2026-10-15T15:05:26.907Z",
+  "insightsGeneratedAt": "2026-10-15T15:05:27.425Z"
 }
