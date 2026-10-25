@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T01:15:00.299Z",
+  "generatedAt": "2026-10-25T06:14:57.502Z",
   "mode": "exact-pool-endpoint",
   "opportunities": [
     {
@@ -18,20 +18,20 @@
         ],
         "poolType": null,
         "dexVersion": "v2",
-        "tvlUsd": 175867.086722761,
-        "yieldRate": 0.15934020000000002,
+        "tvlUsd": 175877.938136386,
+        "yieldRate": 0.1599852,
         "yieldMetric": "apy",
         "yieldPeriod": "7d",
         "yieldPeriods": {
-          "apy1d": 0.5164257,
-          "apy7d": 0.15934020000000002,
-          "apy30d": 0.23946649999999997,
-          "underlyingApr": 3.0704765
+          "apy1d": 0.5222457,
+          "apy7d": 0.1599852,
+          "apy30d": 0.23972619999999997,
+          "underlyingApr": 3.0731203
         },
-        "volume24hUsd": 6220.208689285,
+        "volume24hUsd": 6290.594863391,
         "rawReserves": [
-          "67935468813",
-          "82283392177"
+          "67841684056",
+          "82354892619"
         ],
         "routerAddress": "EQAGV9vw11tKW2QOCYCXEmIdyufM3p5CfcgHcY9NiiBLfZGH",
         "onchain": {
