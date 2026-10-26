@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T14:21:18.770Z",
+  "generatedAt": "2026-10-26T20:32:46.712Z",
   "pools": [
     {
       "address": "EQAAABGlCyy4Vd1Vly6ifo-7dsPq8TWRhyOEmw5b22nq5lY3",
@@ -783515,7 +783515,9 @@
     },
     {
       "address": "EQClg0R5vlg5_EyZnxMOGPczmAMyRqu12saUGyT3fEItkvYT",
-      "symbols": [],
+      "symbols": [
+        "CHERRY"
+      ],
       "assetAddresses": [
         "EQBKRSNRkeP1-2jcg5T_f__0s5Hj-vrbfNLMQy8dnZs7xd_p",
         "EQBWloHTmMp0sfprWYySPYjjAIwHs2A6w-s2W92DnBtKLpW1"
@@ -783524,7 +783526,12 @@
         {
           "type": "jetton",
           "address": "EQBKRSNRkeP1-2jcg5T_f__0s5Hj-vrbfNLMQy8dnZs7xd_p",
-          "metadata": null
+          "metadata": {
+            "name": "Hot Cherry",
+            "symbol": "CHERRY",
+            "image": "https://assets.dedust.io/images/vl_EQBKRSNRkeP1.webp",
+            "decimals": 9
+          }
         },
         {
           "type": "jetton",
@@ -1422441,7 +1422448,9 @@
     },
     {
       "address": "EQAqzTMsccBztAQmF_2Iyh6-DSCD6DQqlZr7AyVvGfsiFwYJ",
-      "symbols": [],
+      "symbols": [
+        "CHERRY"
+      ],
       "assetAddresses": [
         "EQBKRSNRkeP1-2jcg5T_f__0s5Hj-vrbfNLMQy8dnZs7xd_p",
         "EQCxvMXPTfbX_gY5e31EQUJgiNzpc0TNDIOnP8uZ8br-k27B"
@@ -1422450,7 +1422459,12 @@
         {
           "type": "jetton",
           "address": "EQBKRSNRkeP1-2jcg5T_f__0s5Hj-vrbfNLMQy8dnZs7xd_p",
-          "metadata": null
+          "metadata": {
+            "name": "Hot Cherry",
+            "symbol": "CHERRY",
+            "image": "https://assets.dedust.io/images/vl_EQBKRSNRkeP1.webp",
+            "decimals": 9
+          }
         },
         {
           "type": "jetton",
@@ -1565285,6 +1565299,7 @@
     {
       "address": "EQBIy_u1gDvdPufOPZmyA3hikivGoJfCBK8-E6uBaVNcCxJR",
       "symbols": [
+        "CHERRY",
         "TRUMP"
       ],
       "assetAddresses": [
@@ -1565295,7 +1565310,12 @@
         {
           "type": "jetton",
           "address": "EQBKRSNRkeP1-2jcg5T_f__0s5Hj-vrbfNLMQy8dnZs7xd_p",
-          "metadata": null
+          "metadata": {
+            "name": "Hot Cherry",
+            "symbol": "CHERRY",
+            "image": "https://assets.dedust.io/images/vl_EQBKRSNRkeP1.webp",
+            "decimals": 9
+          }
         },
         {
           "type": "jetton",
@@ -2021090,6 +2021110,7 @@
     {
       "address": "EQCp2h4VUTSzJZ4DWolbOm6hDnYzntOTQQbjcvtTVSVDbGiQ",
       "symbols": [
+        "CHERRY",
         "DIDI"
       ],
       "assetAddresses": [
@@ -2021100,7 +2021121,12 @@
         {
           "type": "jetton",
           "address": "EQBKRSNRkeP1-2jcg5T_f__0s5Hj-vrbfNLMQy8dnZs7xd_p",
-          "metadata": null
+          "metadata": {
+            "name": "Hot Cherry",
+            "symbol": "CHERRY",
+            "image": "https://assets.dedust.io/images/vl_EQBKRSNRkeP1.webp",
+            "decimals": 9
+          }
         },
         {
           "type": "jetton",
