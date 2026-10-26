@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-26T06:24:21.595Z",
+  "generatedAt": "2026-10-26T14:21:18.770Z",
   "source": {
     "provider": "DeDust official API + TON blockchain",
     "url": "https://api.dedust.io/v2/pools"
@@ -97,7 +97,7 @@
       "tradesWindow": {
         "trades": [],
         "complete": true,
-        "cutoff": "2026-10-19T06:24:24.633Z",
+        "cutoff": "2026-10-19T14:21:21.462Z",
         "newestAt": null,
         "oldestAt": null
       },
