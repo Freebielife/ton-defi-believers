@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-28T02:20:37.105Z",
+  "generatedAt": "2026-10-28T09:45:49.804Z",
   "source": {
     "provider": "STON.fi official API",
     "mode": "exact-pool-endpoint"
@@ -22,17 +22,17 @@
         ],
         "poolType": null,
         "dexVersion": "v2",
-        "tvlUsd": 175609.558708578,
+        "tvlUsd": 175654.024967325,
         "yieldRate": 0.21116720000000003,
         "yieldMetric": "apy",
         "yieldPeriod": "7d",
         "yieldPeriods": {
-          "apy1d": 0.0444717,
+          "apy1d": 0.044316,
           "apy7d": 0.21116720000000003,
-          "apy30d": 0.2548233,
+          "apy30d": 0.2372372,
           "underlyingApr": 3.0473587
         },
-        "volume24hUsd": 534.736998143,
+        "volume24hUsd": 533.000505334,
         "rawReserves": [
           "68668266357",
           "81554572196"
