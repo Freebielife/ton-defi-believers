@@ -1,13 +1,13 @@
 {
   "schemaVersion": "2.0",
-  "updatedAt": "2026-10-28T14:43:30+00:00",
+  "updatedAt": "2026-10-29T14:50:11+00:00",
   "snapshot": {
     "source": "TON Yields Daily",
-    "sourceUrl": "https://t.me/ton_yields_daily/321",
-    "post": 321,
-    "publishedAt": "2026-10-28T14:43:30+00:00",
-    "marketTvlUsd": 50600000,
-    "marketTvlChange24hPercent": 1.14,
+    "sourceUrl": "https://t.me/ton_yields_daily/322",
+    "post": 322,
+    "publishedAt": "2026-10-29T14:50:11+00:00",
+    "marketTvlUsd": 49900000,
+    "marketTvlChange24hPercent": -1.36,
     "declaredOpportunityCount": 25,
     "categoryCount": 3,
     "note": {
@@ -73,7 +73,7 @@
       },
       "active": true,
       "opportunitiesCount": 1,
-      "trackedTvlUsd": 178000000
+      "trackedTvlUsd": 179100000
     },
     {
       "id": "stakee",
@@ -84,7 +84,7 @@
       },
       "active": true,
       "opportunitiesCount": 1,
-      "trackedTvlUsd": 26000000
+      "trackedTvlUsd": 25800000
     },
     {
       "id": "hipo",
@@ -95,7 +95,7 @@
       },
       "active": true,
       "opportunitiesCount": 1,
-      "trackedTvlUsd": 10600000
+      "trackedTvlUsd": 10500000
     },
     {
       "id": "kton",
@@ -117,7 +117,7 @@
       },
       "active": true,
       "opportunitiesCount": 2,
-      "trackedTvlUsd": 2097100
+      "trackedTvlUsd": 2098300
     },
     {
       "id": "storm-trade",
@@ -128,7 +128,7 @@
       },
       "active": true,
       "opportunitiesCount": 2,
-      "trackedTvlUsd": 3343100
+      "trackedTvlUsd": 3346400
     },
     {
       "id": "evaa",
@@ -139,18 +139,7 @@
       },
       "active": true,
       "opportunitiesCount": 5,
-      "trackedTvlUsd": 1324200
-    },
-    {
-      "id": "affluent",
-      "name": "Affluent",
-      "links": {
-        "official": "https://affluent.org/",
-        "app": "https://t.me/AffluentAppBot"
-      },
-      "active": true,
-      "opportunitiesCount": 2,
-      "trackedTvlUsd": 993700
+      "trackedTvlUsd": 1256400
     },
     {
       "id": "ston-fi",
@@ -160,8 +149,8 @@
         "app": "https://app.ston.fi/pools"
       },
       "active": true,
-      "opportunitiesCount": 3,
-      "trackedTvlUsd": 9822100
+      "opportunitiesCount": 4,
+      "trackedTvlUsd": 9997800
     },
     {
       "id": "gtc",
@@ -172,7 +161,7 @@
       },
       "active": true,
       "opportunitiesCount": 2,
-      "trackedTvlUsd": 86600
+      "trackedTvlUsd": 89000
     },
     {
       "id": "morpho",
@@ -197,6 +186,17 @@
       "trackedTvlUsd": 1200000000
     },
     {
+      "id": "affluent",
+      "name": "Affluent",
+      "links": {
+        "official": "https://affluent.org/",
+        "app": "https://t.me/AffluentAppBot"
+      },
+      "active": true,
+      "opportunitiesCount": 1,
+      "trackedTvlUsd": 271600
+    },
+    {
       "id": "telegram-wallet",
       "name": "Telegram Wallet",
       "links": {
@@ -205,7 +205,7 @@
       },
       "active": true,
       "opportunitiesCount": 1,
-      "trackedTvlUsd": 212200
+      "trackedTvlUsd": 211700
     },
     {
       "id": "tonco",
@@ -216,7 +216,7 @@
       },
       "active": true,
       "opportunitiesCount": 1,
-      "trackedTvlUsd": 140900
+      "trackedTvlUsd": 141800
     }
   ],
   "opportunities": [
@@ -234,13 +234,13 @@
         "trend": "flat",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "Близко к среднему за 7 дней",
           "en": "Close to the 7-day average"
         }
       },
-      "tvlUsd": 178000000,
+      "tvlUsd": 179100000,
       "utilizationRate": null,
       "links": {
         "official": "https://tonstakers.com/",
@@ -249,8 +249,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -274,13 +274,13 @@
         "trend": "up",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "Текущая ставка выше среднего за 7 дней",
           "en": "Current rate is above the 7-day average"
         }
       },
-      "tvlUsd": 26000000,
+      "tvlUsd": 25800000,
       "utilizationRate": null,
       "links": {
         "official": "https://stakee.org/",
@@ -289,8 +289,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -308,19 +308,19 @@
       "product": "GRAM-hTON (hTON)",
       "type": "liquid-staking",
       "apy": {
-        "current": 15.3,
-        "average7d": 15.4,
+        "current": 16.1,
+        "average7d": 15.3,
         "metric": "apy",
-        "trend": "down",
+        "trend": "up",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
-          "ru": "Текущая ставка ниже среднего за 7 дней",
-          "en": "Current rate is below the 7-day average"
+          "ru": "Текущая ставка выше среднего за 7 дней",
+          "en": "Current rate is above the 7-day average"
         }
       },
-      "tvlUsd": 10600000,
+      "tvlUsd": 10500000,
       "utilizationRate": null,
       "links": {
         "official": "https://hipo.finance/",
@@ -329,8 +329,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -354,7 +354,7 @@
         "trend": "down",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "Текущая ставка ниже среднего за 7 дней",
           "en": "Current rate is below the 7-day average"
@@ -369,8 +369,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -388,16 +388,16 @@
       "product": "GRAM-stTON (stTON)",
       "type": "liquid-staking",
       "apy": {
-        "current": 13.8,
+        "current": 14.1,
         "average7d": 13.9,
         "metric": "apy",
-        "trend": "down",
+        "trend": "up",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
-          "ru": "Текущая ставка ниже среднего за 7 дней",
-          "en": "Current rate is below the 7-day average"
+          "ru": "Текущая ставка выше среднего за 7 дней",
+          "en": "Current rate is above the 7-day average"
         }
       },
       "tvlUsd": 1700000,
@@ -409,8 +409,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -428,19 +428,19 @@
       "product": "GRAM-bmTON (bmTON)",
       "type": "liquid-staking",
       "apy": {
-        "current": 13.8,
+        "current": 14.1,
         "average7d": 14,
         "metric": "apy",
-        "trend": "down",
+        "trend": "up",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
-          "ru": "Текущая ставка ниже среднего за 7 дней",
-          "en": "Current rate is below the 7-day average"
+          "ru": "Текущая ставка выше среднего за 7 дней",
+          "en": "Current rate is above the 7-day average"
         }
       },
-      "tvlUsd": 397100,
+      "tvlUsd": 398300,
       "utilizationRate": null,
       "links": {
         "official": "https://bemo.fi/",
@@ -449,8 +449,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -469,18 +469,18 @@
       "type": "vault",
       "apy": {
         "current": 8.3,
-        "average7d": 7.1,
+        "average7d": 7.4,
         "metric": "apy",
         "trend": "up",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "Текущая ставка выше среднего за 7 дней",
           "en": "Current rate is above the 7-day average"
         }
       },
-      "tvlUsd": 943100,
+      "tvlUsd": 946400,
       "utilizationRate": null,
       "links": {
         "official": "https://storm.tg/",
@@ -489,8 +489,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -509,18 +509,18 @@
       "type": "lending",
       "apy": {
         "current": 4.4,
-        "average7d": 4.6,
+        "average7d": 4.5,
         "metric": "apy",
         "trend": "down",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "Текущая ставка ниже среднего за 7 дней",
           "en": "Current rate is below the 7-day average"
         }
       },
-      "tvlUsd": 736500,
+      "tvlUsd": 741200,
       "utilizationRate": null,
       "links": {
         "official": "https://evaa.finance/",
@@ -529,8 +529,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -549,18 +549,18 @@
       "type": "lending",
       "apy": {
         "current": 6.4,
-        "average7d": 6.8,
+        "average7d": 6.6,
         "metric": "apy",
         "trend": "down",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "Текущая ставка ниже среднего за 7 дней",
           "en": "Current rate is below the 7-day average"
         }
       },
-      "tvlUsd": 13400,
+      "tvlUsd": 13700,
       "utilizationRate": null,
       "links": {
         "official": "https://evaa.finance/",
@@ -569,48 +569,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
-        "origin": "public daily TON DeFi market snapshot"
-      },
-      "status": {
-        "active": true,
-        "stale": false,
-        "lowTvl": false,
-        "sourceError": false
-      }
-    },
-    {
-      "id": "affluent-gram-tston",
-      "protocol": "Affluent",
-      "category": "gram",
-      "asset": "GRAM-TSTON",
-      "product": "GRAM-TSTON",
-      "type": "vault",
-      "apy": {
-        "current": 11.4,
-        "average7d": 11.4,
-        "metric": "apy",
-        "trend": "flat",
-        "base": null,
-        "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
-        "note": {
-          "ru": "Близко к среднему за 7 дней",
-          "en": "Close to the 7-day average"
-        }
-      },
-      "tvlUsd": 722100,
-      "utilizationRate": null,
-      "links": {
-        "official": "https://affluent.org/",
-        "app": "https://t.me/AffluentAppBot"
-      },
-      "source": {
-        "type": "aggregated-snapshot",
-        "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -628,13 +588,13 @@
       "product": "GRAM-tsTON (tsTON)",
       "type": "liquidity-pool",
       "apy": {
-        "current": 1.1,
-        "average7d": 1.3,
+        "current": 1.3,
+        "average7d": 1.4,
         "metric": "apy",
         "trend": "down",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "Текущая ставка ниже среднего за 7 дней",
           "en": "Current rate is below the 7-day average"
@@ -649,8 +609,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -668,20 +628,20 @@
       "product": "GRAM vault",
       "type": "lending",
       "apy": {
-        "current": 17.5,
-        "average7d": 16.7,
+        "current": 17.2,
+        "average7d": 16.8,
         "metric": "apy",
         "trend": "up",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "Текущая ставка выше среднего за 7 дней",
           "en": "Current rate is above the 7-day average"
         }
       },
-      "tvlUsd": 53200,
-      "utilizationRate": 64.2,
+      "tvlUsd": 53100,
+      "utilizationRate": 63.8,
       "links": {
         "official": "https://giftcredit.app/",
         "app": "https://t.me/GiftToCreditBot/app"
@@ -689,8 +649,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -714,7 +674,7 @@
         "trend": "flat",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "Близко к среднему за 7 дней",
           "en": "Close to the 7-day average"
@@ -729,8 +689,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -754,7 +714,7 @@
         "trend": "flat",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "Близко к среднему за 7 дней",
           "en": "Close to the 7-day average"
@@ -769,8 +729,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -794,7 +754,7 @@
         "trend": "flat",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "Близко к среднему за 7 дней",
           "en": "Close to the 7-day average"
@@ -809,8 +769,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -829,12 +789,12 @@
       "type": "vault",
       "apy": {
         "current": 5,
-        "average7d": 4.5,
+        "average7d": 4.7,
         "metric": "apy",
         "trend": "up",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "Текущая ставка выше среднего за 7 дней",
           "en": "Current rate is above the 7-day average"
@@ -849,8 +809,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -868,19 +828,19 @@
       "product": "USDT (Main)",
       "type": "lending",
       "apy": {
-        "current": 2.2,
-        "average7d": 2.5,
+        "current": 5.5,
+        "average7d": 2.7,
         "metric": "apy",
-        "trend": "down",
+        "trend": "up",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
-          "ru": "Текущая ставка ниже среднего за 7 дней",
-          "en": "Current rate is below the 7-day average"
+          "ru": "Текущая ставка выше среднего за 7 дней",
+          "en": "Current rate is above the 7-day average"
         }
       },
-      "tvlUsd": 484100,
+      "tvlUsd": 411300,
       "utilizationRate": null,
       "links": {
         "official": "https://evaa.finance/",
@@ -889,8 +849,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -909,12 +869,12 @@
       "type": "lending",
       "apy": {
         "current": 1.1,
-        "average7d": 3.1,
+        "average7d": 2.1,
         "metric": "apy",
         "trend": "down",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "Текущая ставка ниже среднего за 7 дней",
           "en": "Current rate is below the 7-day average"
@@ -929,8 +889,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -954,7 +914,7 @@
         "trend": "flat",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "Близко к среднему за 7 дней",
           "en": "Close to the 7-day average"
@@ -969,8 +929,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -988,13 +948,13 @@
       "product": "TSUSDE-USDT-VAULT7",
       "type": "vault",
       "apy": {
-        "current": 5.8,
-        "average7d": 6.6,
+        "current": 5.4,
+        "average7d": 6.4,
         "metric": "apy",
         "trend": "down",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "Текущая ставка ниже среднего за 7 дней",
           "en": "Current rate is below the 7-day average"
@@ -1009,8 +969,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -1034,13 +994,13 @@
         "trend": "flat",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "7d trailing",
           "en": "7d trailing"
         }
       },
-      "tvlUsd": 212200,
+      "tvlUsd": 211700,
       "utilizationRate": null,
       "links": {
         "official": "https://wallet.tg/",
@@ -1049,8 +1009,48 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
+        "origin": "public daily TON DeFi market snapshot"
+      },
+      "status": {
+        "active": true,
+        "stale": false,
+        "lowTvl": false,
+        "sourceError": false
+      }
+    },
+    {
+      "id": "ston-fi-usde-tsusde-amm-weighted-stable",
+      "protocol": "STON.fi",
+      "category": "stablecoins",
+      "asset": "AMM: weighted_stable",
+      "product": "USDe-tsUSDe (AMM: weighted_stable)",
+      "type": "liquidity-pool",
+      "apy": {
+        "current": 0.1,
+        "average7d": 0.2,
+        "metric": "apy",
+        "trend": "down",
+        "base": null,
+        "rewards": null,
+        "observedAt": "2026-10-29T14:50:11+00:00",
+        "note": {
+          "ru": "Текущая ставка ниже среднего за 7 дней",
+          "en": "Current rate is below the 7-day average"
+        }
+      },
+      "tvlUsd": 175700,
+      "utilizationRate": null,
+      "links": {
+        "official": "https://ston.fi/",
+        "app": "https://app.ston.fi/pools"
+      },
+      "source": {
+        "type": "aggregated-snapshot",
+        "provider": "TON Yields Daily",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -1068,20 +1068,20 @@
       "product": "USDT vault",
       "type": "lending",
       "apy": {
-        "current": 30.8,
-        "average7d": 29.9,
+        "current": 29.7,
+        "average7d": 30.2,
         "metric": "apy",
-        "trend": "up",
+        "trend": "down",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
-          "ru": "Текущая ставка выше среднего за 7 дней",
-          "en": "Current rate is above the 7-day average"
+          "ru": "Текущая ставка ниже среднего за 7 дней",
+          "en": "Current rate is below the 7-day average"
         }
       },
-      "tvlUsd": 33400,
-      "utilizationRate": 99.9,
+      "tvlUsd": 35900,
+      "utilizationRate": 98.3,
       "links": {
         "official": "https://giftcredit.app/",
         "app": "https://t.me/GiftToCreditBot/app"
@@ -1089,8 +1089,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -1108,13 +1108,13 @@
       "product": "USDT-GRAM (USDT)",
       "type": "liquidity-pool",
       "apy": {
-        "current": 2.1,
-        "average7d": 5.7,
+        "current": 4.1,
+        "average7d": 6.3,
         "metric": "apy",
         "trend": "down",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "Текущая ставка ниже среднего за 7 дней",
           "en": "Current rate is below the 7-day average"
@@ -1129,8 +1129,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -1148,13 +1148,13 @@
       "product": "USDT-GRAM (USDT)",
       "type": "liquidity-pool",
       "apy": {
-        "current": 4.9,
-        "average7d": 5.7,
+        "current": 6.1,
+        "average7d": 6.3,
         "metric": "apy",
         "trend": "down",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "Текущая ставка ниже среднего за 7 дней",
           "en": "Current rate is below the 7-day average"
@@ -1169,8 +1169,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
@@ -1188,19 +1188,19 @@
       "product": "GRAM-USDT (USDT)",
       "type": "liquidity-pool",
       "apy": {
-        "current": 118,
-        "average7d": 138.5,
+        "current": 141.6,
+        "average7d": 146,
         "metric": "apy",
         "trend": "down",
         "base": null,
         "rewards": null,
-        "observedAt": "2026-10-28T14:43:30+00:00",
+        "observedAt": "2026-10-29T14:50:11+00:00",
         "note": {
           "ru": "Текущая ставка ниже среднего за 7 дней",
           "en": "Current rate is below the 7-day average"
         }
       },
-      "tvlUsd": 140900,
+      "tvlUsd": 141800,
       "utilizationRate": null,
       "links": {
         "official": "https://tonco.io/",
@@ -1209,8 +1209,8 @@
       "source": {
         "type": "aggregated-snapshot",
         "provider": "TON Yields Daily",
-        "url": "https://t.me/ton_yields_daily/321",
-        "lastChecked": "2026-10-28T14:43:30+00:00",
+        "url": "https://t.me/ton_yields_daily/322",
+        "lastChecked": "2026-10-29T14:50:11+00:00",
         "origin": "public daily TON DeFi market snapshot"
       },
       "status": {
