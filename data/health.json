@@ -1,12 +1,12 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-11-04T23:44:22.514Z",
+  "generatedAt": "2026-11-05T06:54:41.223Z",
   "run": {
-    "startedAt": "2026-11-04T23:44:16.788Z",
-    "finishedAt": "2026-11-04T23:44:22.514Z",
-    "durationMs": 5726,
+    "startedAt": "2026-11-05T06:54:37.148Z",
+    "finishedAt": "2026-11-05T06:54:41.223Z",
+    "durationMs": 4075,
     "publishedFreshData": true,
-    "previousSnapshotUpdatedAt": "2026-11-04T18:01:47.795Z"
+    "previousSnapshotUpdatedAt": "2026-11-04T23:44:22.514Z"
   },
   "status": "degraded",
   "buildQuality": 56,
@@ -17,7 +17,7 @@
     "degraded": 8,
     "errors": 0,
     "disabled": 0,
-    "averageDurationMs": 572
+    "averageDurationMs": 407
   },
   "protocols": [
     {
@@ -25,7 +25,7 @@
       "protocol": "stonfi",
       "status": "ok",
       "sourceStatus": "ok",
-      "durationMs": 975,
+      "durationMs": 922,
       "items": 1,
       "updated": 1,
       "unresolved": 0,
@@ -37,7 +37,7 @@
       "protocol": "dedust",
       "status": "ok",
       "sourceStatus": "ok",
-      "durationMs": 4749,
+      "durationMs": 3151,
       "items": 1,
       "updated": 1,
       "unresolved": 0,
