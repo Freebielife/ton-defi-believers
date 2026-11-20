@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-11-20T03:24:10.764Z",
+  "generatedAt": "2026-11-20T13:00:00.498Z",
   "count": 15,
   "facets": {
     "protocols": [
@@ -48,6 +48,7 @@
       "yield-token"
     ],
     "risks": [
+      "high",
       "low",
       "medium"
     ]
@@ -117,16 +118,16 @@
       "asset": "USDe–tsUSDe",
       "category": "stablecoins",
       "type": "liquidity-pool",
-      "apy": 0.1901862,
-      "tvlUsd": 174786.98879913,
-      "yieldScore": 45,
+      "apy": 0.19020120000000001,
+      "tvlUsd": 0,
+      "yieldScore": 38,
       "confidence": 100,
-      "risk": "medium",
+      "risk": "high",
       "links": {
         "official": "https://ston.fi/",
         "app": "https://app.ston.fi/pools/EQAF6mNbKhaMrfyhdNcrEnRKW1fXA3jmkS6KM7azm9PunYx5"
       },
-      "searchText": "ston fi usde tsusde weighted stable ston fi usde tsusde pool usde tsusde stablecoins liquidity pool medium a impermanent loss or lp risk moderate tvl",
+      "searchText": "ston fi usde tsusde weighted stable ston fi usde tsusde pool usde tsusde stablecoins liquidity pool high a impermanent loss or lp risk low tvl",
       "terms": [
         "ston fi usde tsusde weighted stable",
         "ston fi",
@@ -134,10 +135,10 @@
         "usde tsusde",
         "stablecoins",
         "liquidity pool",
-        "medium",
+        "high",
         "a",
         "impermanent loss or lp risk",
-        "moderate tvl"
+        "low tvl"
       ]
     },
     {
