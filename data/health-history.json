@@ -1,77 +1,8 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-11-22T06:57:23.141Z",
+  "updatedAt": "2026-11-22T15:24:52.449Z",
   "limit": 168,
   "entries": [
-    {
-      "generatedAt": "2026-10-14T01:15:38.229Z",
-      "status": "degraded",
-      "buildQuality": 56,
-      "durationMs": 5126,
-      "publishedFreshData": true,
-      "protocols": {
-        "stonfi": {
-          "status": "ok",
-          "sourceStatus": "ok",
-          "durationMs": 934,
-          "items": 1
-        },
-        "dedust": {
-          "status": "ok",
-          "sourceStatus": "ok",
-          "durationMs": 4190,
-          "items": 1
-        },
-        "tonstakers": {
-          "status": "degraded",
-          "sourceStatus": "integration-ready",
-          "durationMs": 1,
-          "items": 1
-        },
-        "evaa": {
-          "status": "degraded",
-          "sourceStatus": "integration-ready",
-          "durationMs": 0,
-          "items": 1
-        },
-        "hipo": {
-          "status": "degraded",
-          "sourceStatus": "integration-ready",
-          "durationMs": 0,
-          "items": 1
-        },
-        "bemo": {
-          "status": "degraded",
-          "sourceStatus": "integration-ready",
-          "durationMs": 0,
-          "items": 1
-        },
-        "affluent": {
-          "status": "degraded",
-          "sourceStatus": "integration-ready",
-          "durationMs": 0,
-          "items": 1
-        },
-        "storm": {
-          "status": "degraded",
-          "sourceStatus": "integration-ready",
-          "durationMs": 0,
-          "items": 1
-        },
-        "ethena": {
-          "status": "degraded",
-          "sourceStatus": "integration-ready",
-          "durationMs": 0,
-          "items": 1
-        },
-        "telegram-wallet": {
-          "status": "degraded",
-          "sourceStatus": "manual-until-public-source",
-          "durationMs": 0,
-          "items": 1
-        }
-      }
-    },
     {
       "generatedAt": "2026-10-14T06:14:40.911Z",
       "status": "degraded",
@@ -11543,6 +11474,75 @@
           "status": "ok",
           "sourceStatus": "ok",
           "durationMs": 4647,
+          "items": 1
+        },
+        "tonstakers": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "evaa": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "hipo": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "bemo": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "affluent": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "storm": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "ethena": {
+          "status": "degraded",
+          "sourceStatus": "integration-ready",
+          "durationMs": 0,
+          "items": 1
+        },
+        "telegram-wallet": {
+          "status": "degraded",
+          "sourceStatus": "manual-until-public-source",
+          "durationMs": 0,
+          "items": 1
+        }
+      }
+    },
+    {
+      "generatedAt": "2026-11-22T15:24:52.449Z",
+      "status": "degraded",
+      "buildQuality": 56,
+      "durationMs": 5834,
+      "publishedFreshData": true,
+      "protocols": {
+        "stonfi": {
+          "status": "ok",
+          "sourceStatus": "ok",
+          "durationMs": 1036,
+          "items": 1
+        },
+        "dedust": {
+          "status": "ok",
+          "sourceStatus": "ok",
+          "durationMs": 4796,
           "items": 1
         },
         "tonstakers": {
